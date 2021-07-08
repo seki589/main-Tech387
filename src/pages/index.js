@@ -3,14 +3,15 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import '../styles/styles.css'
-import Header from "../components/header"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Lottie from "../components/lottie"
 
 
 const IndexPage = () => (
-  
-  <Layout>
+
+
+    <Layout>
     <Seo title="Home" />
     <div className="container">
     <main className="main">
@@ -21,7 +22,9 @@ const IndexPage = () => (
           </h1>
           <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
         </div>
-        <div className="lottie" ></div>
+        <div className="lottie"  >
+        <Lottie/>
+        </div>
       </div>
       <div className="main-links">
         <p>Partners</p>
@@ -36,5 +39,5 @@ const IndexPage = () => (
     </div>
   </Layout>
   
-)
+);
 export default IndexPage
