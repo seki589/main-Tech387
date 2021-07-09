@@ -8,7 +8,7 @@
 
 .container{
     width: 90%;
-    max-width: 1300px;
+    max-width: 1720px;
     margin: auto;
     position: relative;
 }
@@ -20,7 +20,7 @@
     position: fixed;
     top: 0;
     width: 90%;
-    max-width: 1300px;
+    max-width: 1720px;
     display: flex;
     justify-content: space-between;
     align-items: center;
