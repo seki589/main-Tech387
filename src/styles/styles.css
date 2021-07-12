@@ -51,7 +51,8 @@
 .navigation a{
     font-family: "Rubik",sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    line-height: 17px;
+    font-weight: 400;
     color: #0C2317DE;
     margin-right: 5px;
     padding: 10px 20px;
@@ -97,7 +98,6 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
-    margin-bottom: 0;
     color: #000000BD;
     align-items: center;
     
@@ -205,6 +205,8 @@
     .navigation a{
         font-family: "Rubik", sans-serif;
         font-size: 60px;
+        line-height: 71px;
+        letter-spacing: 0.45px;
         text-align: left;
         color: #FFFFFF;
     }
@@ -217,12 +219,15 @@
     .linkedin-menu p{
         font-family: "Rubik";
         font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.43px;
         font-weight: 400;
-        margin-bottom: 0;
         color: #ffffff;
         
     }
     .linkedin-menu img{
+        height: 18px;
+        width: 18px;
         margin-bottom: 0;
         margin-right: 10px;
     }
