@@ -30,7 +30,7 @@ const Header = () => {
             <Link to="/company">Company</Link>
             <Link to="/hire-us">Hire Us</Link>
           </nav>
-          <div className="linkedin">
+          <div className="linkedin-menu">
           <a href="https://www.linkedin.com/company/tech-387">
           <img src={LinkeWhite} alt="linkedin"/> <p>Follow us</p>
           </a>

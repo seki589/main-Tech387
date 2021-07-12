@@ -6,6 +6,8 @@ import '../styles/styles.css'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Lottie from "../components/lottie"
+import LinkeBlack from "../images/linkedin-black.png"
+import Samsung from "../images/samsung-logo.png"
 
 
 const IndexPage = () => (
@@ -29,10 +31,12 @@ const IndexPage = () => (
       <div className="main-links">
         <p>Partners</p>
         <div className="partners">
-
+        <div className="img"> <img src={Samsung} alt="samsung"/></div>
         </div>
         <div className="linkedin">
-          <h3>Follow us</h3>
+        <a href="https://www.linkedin.com/company/tech-387">
+          <img src={LinkeBlack} alt="linkedin"/> <p>Follow us</p>
+          </a>
         </div>
       </div>
     </main>

@@ -72,24 +72,62 @@
     width: 100%;
     margin-bottom: 0;
 }
-
+.partners .img{
+    width: 117px;
+    height: 47px;
+}
+.main-links p{
+    font-family: "Rubiko";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 8px;
+}
+.img img{
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: -6px;
+}
+.linkedin a{  
+    display: flex;
+    margin-bottom: 27px;
+}
+.linkedin p{
+    font-family: "Rubik";
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: #000000BD;
+    align-items: center;
+    
+}
+.linkedin img{
+    height: 18px;
+    width: 18px;
+    margin-bottom: 0;
+    margin-right: 11px;
+    opacity: .9;
+}
 
 
 /* Main */
 
 .main{
-    padding-top: 20vh;
+    padding-top: 100px;
 
 }
 .main-text{
     display: flex;
-    margin-bottom: 10vh;
+    margin-bottom: 0vh;
 }
 .text h1{
     font-size: 60px;
     color: #0C2317DE;
 }
 .text p{
+    font-size: 16px;
+    line-height: 19px;
     color: #27BA70;
     border-bottom: 1px solid #27BA70;
 }
@@ -98,7 +136,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    height: 50vh;
+    height: 500px;
     align-items: flex-start;
 }
 /* .animation-container{
@@ -116,7 +154,7 @@
     .menuIcon{
         display: none;
     }
-    .linkedin{
+    .linkedin-menu{
         display: none;
     }
 }
@@ -170,14 +208,13 @@
         text-align: left;
         color: #FFFFFF;
     }
-    .linkedin a{
-        
+    .linkedin-menu a{  
         position: absolute;
         bottom: 27px;
         display: flex;
         z-index: 100;
     }
-    .linkedin p{
+    .linkedin-menu p{
         font-family: "Rubik";
         font-size: 14px;
         font-weight: 400;
@@ -185,7 +222,7 @@
         color: #ffffff;
         
     }
-    .linkedin img{
+    .linkedin-menu img{
         margin-bottom: 0;
         margin-right: 10px;
     }
