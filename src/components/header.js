@@ -7,7 +7,7 @@ import LinkeWhite from "../images/linkedin-white.png"
 import '../styles/styles.css'
 
 const Header = () => {
-  const [nav, showNav] = useState(false);
+  const [status, setStatus] = useState('open');
  return(
   <header>
     <div className="container">
@@ -18,12 +18,14 @@ const Header = () => {
             <img src={LogoDark} alt="logo"/>
           </Link>
         </div>
-        <div className="menuIcon">
-          <div/>
-          <div/>
-          <div/>
+        <div className="menuIcon"
+        role="button"
+        onClick={() => setStatus(status === "open" ? "close" : "open")}>
+          <div className={status}/>
+          <div className={status}/>
+          <div className={status}/>
         </div>
-        <div className="navigation">
+        <div className="navigation {status}">
           <nav>
             <Link to="/work">Work</Link>
             <Link to="/services">Services</Link>

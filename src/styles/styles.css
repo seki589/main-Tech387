@@ -46,7 +46,27 @@
     height:2px;
     background: grey;
     border-radius: 5px;
-    position:relative;
+    transition: all .3s ease;
+    /* position: relative; */
+}
+.menuIcon>div.open:nth-child(1){
+    transform: rotate(45deg) translateY(7px) ;
+}
+.menuIcon>div.open:nth-child(2){
+    opacity: 0;
+    transform: translateX(-10px);
+}
+.menuIcon>div.open:nth-child(3){
+    transform: rotate(-45deg) translateY(-7px) ;
+}
+.menuIcon>div.close:nth-child(1){
+    transform: rotate(0);
+}
+.menuIcon>div.close:nth-child(2){
+    opacity: 1;
+}
+.menuIcon>div.close:nth-child(3){
+    transform: rotate(0);
 }
 .navigation a{
     font-family: "Rubik",sans-serif;
@@ -190,7 +210,13 @@
         flex-direction:column;
         justify-content: center;
         z-index: 99;
+        
+    }
+    .navigation.open{
         transform: translateX(0);
+    }
+    .navigation.close{
+        transform: translateX(100%);
     }
     .navigation nav {
         height: 55%;
