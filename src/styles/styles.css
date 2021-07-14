@@ -180,7 +180,6 @@
         width: 90%;
     }
     .header{
-        /* position: relative; */
         top: 0;
         left: 0;
         /* height: 100vh; */
@@ -240,7 +239,7 @@
         position: absolute;
         bottom: 27px;
         display: flex;
-        z-index: 100;
+        z-index: 99;
     }
     .linkedin-menu p{
         font-family: "Rubik";
