@@ -20,7 +20,7 @@ const IndexPage = () => (
       <div className="main-text">
         <div className="text">
           <h1>
-          Design,<br></br> development &<br></br> identity for your<br></br> product
+          Design,<br></br> development & identity for your<br></br> product
           </h1>
           <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
         </div>

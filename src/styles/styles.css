@@ -8,7 +8,7 @@
 }
 
 .container{
-    width: 90%;
+    width: 92.5%;
     max-width: 1720px;
     margin: auto;
     position: relative;
@@ -20,7 +20,7 @@
 .header{
     position: fixed;
     top: 0;
-    width: 90%;
+    width: 92.5%;
     max-width: 1720px;
     display: flex;
     justify-content: space-between;
@@ -49,25 +49,25 @@
     transition: all .3s ease;
     /* position: relative; */
 }
-.menuIcon>div.open:nth-child(1){
+.menuIcon>div.is-active:nth-child(1){
     transform: rotate(45deg) translateY(7px) ;
 }
-.menuIcon>div.open:nth-child(2){
+.menuIcon>div.is-active:nth-child(2){
     opacity: 0;
     transform: translateX(-10px);
 }
-.menuIcon>div.open:nth-child(3){
+.menuIcon>div.is-active:nth-child(3){
     transform: rotate(-45deg) translateY(-7px) ;
 }
-.menuIcon>div.close:nth-child(1){
+/* .menuIcon>div:nth-child(1){
     transform: rotate(0);
 }
-.menuIcon>div.close:nth-child(2){
+.menuIcon>div:nth-child(2){
     opacity: 1;
 }
-.menuIcon>div.close:nth-child(3){
+.menuIcon>div:nth-child(3){
     transform: rotate(0);
-}
+} */
 .navigation a{
     font-family: "Rubik",sans-serif;
     font-size: 14px;
@@ -134,7 +134,7 @@
 /* Main */
 
 .main{
-    padding-top: 100px;
+    padding-top: 15%;
 
 }
 .main-text{
@@ -159,10 +159,7 @@
     height: 500px;
     align-items: flex-start;
 }
-/* .animation-container{
-    height: 40vh;
 
-} */
 
 @media only screen and (min-width: 600px){
     .logo img:last-child{
@@ -210,14 +207,13 @@
         flex-direction:column;
         justify-content: center;
         z-index: 99;
-        
+        transform: translateX(100%);
+        transition: .3s ease;
     }
-    .navigation.open{
+    .is-active{
         transform: translateX(0);
     }
-    .navigation.close{
-        transform: translateX(100%);
-    }
+   
     .navigation nav {
         height: 55%;
         display:flex;
@@ -235,6 +231,10 @@
         letter-spacing: 0.45px;
         text-align: left;
         color: #FFFFFF;
+    }
+    .main{
+        padding-top: 30%;
+    
     }
     .linkedin-menu a{  
         position: absolute;
