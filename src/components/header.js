@@ -37,10 +37,10 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-              <Link to="/work" onClick={this.toggleMenu}>Work</Link>
-              <Link to="/services" onClick={this.toggleMenu}>Services</Link>
-              <Link to="/company" onClick={this.toggleMenu}>Company</Link>
-              <Link to="/hire-us" onClick={this.toggleMenu}>Hire Us</Link>
+              <Link to="/work" onClick={this.toggleMenu} activeClassName="active">Work</Link>
+              <Link to="/services" onClick={this.toggleMenu} activeClassName="active">Services</Link>
+              <Link to="/company" onClick={this.toggleMenu} activeClassName="active">Company</Link>
+              <Link to="/hire-us" onClick={this.toggleMenu}activeClassName="active">Hire Us</Link>
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">

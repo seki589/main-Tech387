@@ -11,7 +11,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: rubik , serif;
+  font-family: "rubik" , serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -19,6 +19,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  background-color: #FAFAFA;
 }
 article,
 aside,
