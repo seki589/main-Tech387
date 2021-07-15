@@ -9,26 +9,55 @@
 }
 
 .container{
-    width: 92.5%;
+    /* width: 100%; */
+    padding: 0 3.75%;
     height: 100%;
     max-width: 1776px;
     margin: auto;
+    /* position: relative; */
+    background-color: #FAFAFA;
+}
+.container-2{
+    /* width: 92.5%; */
+    padding: 0 3.75%;
+    height: 100vh;
+    max-width: 1776px;
+    margin: auto;
     position: relative;
-    
+    background-color: #092628;
+}
+.container-2 .text h1{
+    color: #FFFFFF;
 }
 .container a{
     text-decoration: none;
 }
-
+.triangle{
+    position: fixed;
+    height: 102px;
+    bottom: 96px;
+    right: 3.75%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.triangle img{
+    margin-top: 13px;
+    cursor: pointer;
+    
+}
 .header{
     position: fixed;
     top: 0;
-    width: 92.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
     max-width: 1776px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+    padding: 30px 3.75%;
+    /* margin: 0 auto; */
     z-index: 100;
 }
 .menuIcon{
@@ -173,7 +202,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    height: 500px;
+    height: 300px;
     align-items: flex-start;
 }
 
@@ -194,12 +223,13 @@
 }
 @media only screen and (max-width: 600px){
     .container{
-        width: 90%;
+        width: 100%;
         
     }
     .header{
         top: 0;
         left: 0;
+        transform: translate(0);
         /* height: 100vh; */
         width:100vw;
     }
@@ -257,7 +287,12 @@
     
     .main{
         padding-top: 30%;
-    
+        display: flex;
+        justify-content: center;
+    }
+    .triangle{
+        right: initial;
+        left: 16px;
     }
     .linkedin-menu a{  
         position: absolute;

@@ -8,6 +8,7 @@ import Seo from "../components/seo"
 import Lottie from "../components/lottie"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
+import Triangle from "../images/triangle.svg"
 
 
 const IndexPage = () => (
@@ -16,6 +17,12 @@ const IndexPage = () => (
     <Layout>
     <Seo title="Home" />
     <div className="container">
+      <div className="triangle">
+      <img src={Triangle} alt="triangle"/>
+      <img src={Triangle} alt="triangle"/>
+      <img src={Triangle} alt="triangle"/>
+      <img src={Triangle} alt="triangle"/>
+      </div>
     <main className="main">
       <div className="main-text">
         <div className="text">
@@ -37,6 +44,21 @@ const IndexPage = () => (
         <a href="https://www.linkedin.com/company/tech-387">
           <img src={LinkeBlack} alt="linkedin"/> <p>Follow us</p>
           </a>
+        </div>
+      </div>
+    </main>
+    </div>
+    <div className="container-2">
+    <main className="main">
+      <div className="main-text">
+        <div className="text">
+          <h1>
+          Innovating the<br></br> fitness industry
+          </h1>
+          <Link to="/hire-us"><p>Read more about SpartanApps &gt; </p></Link>
+        </div>
+        <div className="lottie"  >
+        <Lottie/>
         </div>
       </div>
     </main>
