@@ -13,14 +13,14 @@ class Header extends React.Component {
   toggleMenu = () => {
     this.setState({
       showMenu: !this.state.showMenu
-    })
+    });
   }
 
  render() {
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
-      <div className="container">
+      <div className="wraper">
         <div className="header">
           <div className="logo">
             <Link to="/">

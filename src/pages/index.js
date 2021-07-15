@@ -6,23 +6,27 @@ import '../styles/styles.css'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Lottie from "../components/lottie"
+import Triangle from "../components/triangle"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
-import Triangle from "../images/triangle.svg"
+// import Triangle from "../images/triangle.svg"
 
 
 const IndexPage = () => (
 
-
+    
     <Layout>
     <Seo title="Home" />
+    <Triangle/>
     <div className="container">
-      <div className="triangle">
+    
+    <section className={` slide-1`}>
+      {/* <div className="triangle">
       <img src={Triangle} alt="triangle"/>
       <img src={Triangle} alt="triangle"/>
       <img src={Triangle} alt="triangle"/>
       <img src={Triangle} alt="triangle"/>
-      </div>
+      </div> */}
     <main className="main">
       <div className="main-text">
         <div className="text">
@@ -47,8 +51,8 @@ const IndexPage = () => (
         </div>
       </div>
     </main>
-    </div>
-    <div className="container-2">
+    </section>
+    <section className={` slide-2`}>
     <main className="main">
       <div className="main-text">
         <div className="text">
@@ -62,6 +66,22 @@ const IndexPage = () => (
         </div>
       </div>
     </main>
+    </section>
+    <section className={` slide-3`}>
+      <main className="main">
+      <div className="main-text">
+        <div className="text">
+          <h1>
+          Efficient electric<br></br> vehicle charging
+          </h1>
+          <Link to="/hire-us"><p>Read more about 12Charge &gt; </p></Link>
+        </div>
+        <div className="lottie"  >
+        <Lottie/>
+        </div>
+      </div>
+    </main>
+    </section>
     </div>
   </Layout>
   
