@@ -35,7 +35,7 @@
 .wraper{
     /* width: 100%; */
     
-    /* padding: 0 3.75%; */
+    padding: 0 3.75%;
     height: 100%;
     width: 92.5%;
     max-width: 1776px;
@@ -43,6 +43,7 @@
     position: relative;
     background-color: #FAFAFA;
     margin: 0 auto;
+    transform: translate();
 }
 .container>section{
     width: 100%;
@@ -82,7 +83,6 @@
 .header{
     position: fixed;
     top: 0;
-    left: 0;
     left: 50%;
     transform: translatex(-50%);
     width: 100%;
@@ -177,7 +177,12 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+}
+.main-links{
+    position: absolute;
+    left: 3.75%;
+    bottom: 27px;
 }
 .main-links p{
     font-family: "Rubiko";
@@ -186,6 +191,7 @@
     line-height: 14px;
     margin-bottom: 8px;
 }
+
 .img img{
     width: 100%;
     margin-bottom: 0;
@@ -193,7 +199,6 @@
 }
 .linkedin a{  
     display: flex;
-    margin-bottom: 27px;
     text-decoration: none;
 }
 .linkedin p{
@@ -216,10 +221,10 @@
 
 /* Main */
 
-.main{
+/* .main{
     padding-top: 15%;
 
-}
+} */
 .main-text{
     display: flex;
     margin-bottom: 0vh;
@@ -241,11 +246,23 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    height: 300px;
+    height: 50vh;
     align-items: flex-start;
+    padding: 0;
+}
+.lottie{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
+@media only screen and (min-width: 1772px){
+    .header{
+        padding:30px 66.6px;
+    }
+}
 @media only screen and (min-width: 600px){
     .logo img:last-child{
         display: none;
@@ -359,6 +376,9 @@
     }
     .text h1{
         font-size: 48px;
+    }
+    .main-links{
+        display: none;
     }
 
 }

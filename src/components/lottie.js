@@ -12,7 +12,7 @@ const Lottie = () => {
       renderer: "svg",
       loop: true,
       autoplay: true,
-      animationData: animation
+      animationData: animation,
     });
     return () => anim.destroy(); // optional clean up for unmounting
   }, []);

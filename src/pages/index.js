@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
 
 import '../styles/styles.css'
 import Layout from "../components/layout"
@@ -9,6 +9,8 @@ import Lottie from "../components/lottie"
 import Triangle from "../components/triangle"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
+// import Draggable from "../gsap/Draggable3.min.js"
+// import gsap from "../gsap/gsap.min.js"
 // import Triangle from "../images/triangle.svg"
 
 
@@ -16,17 +18,18 @@ const IndexPage = () => (
 
     
     <Layout>
+    {/* <Helmet>
+      <script src={withPrefix('script.js')} type="text/javascript"></script>
+      <script src={withPrefix('gsap.min.js')} type="text/javascript"></script>
+      <script src={withPrefix('Draggable3.min.js')} type="text/javascript"></script>
+      <script src={withPrefix('InertiaPlugin.min.js')} type="text/javascript"></script>
+      
+    </Helmet> */}
     <Seo title="Home" />
     <Triangle/>
-    <div className="container">
+   <div className="container">
     
     <section className={` slide-1`}>
-      {/* <div className="triangle">
-      <img src={Triangle} alt="triangle"/>
-      <img src={Triangle} alt="triangle"/>
-      <img src={Triangle} alt="triangle"/>
-      <img src={Triangle} alt="triangle"/>
-      </div> */}
     <main className="main">
       <div className="main-text">
         <div className="text">
@@ -84,6 +87,5 @@ const IndexPage = () => (
     </section>
     </div>
   </Layout>
-  
 );
 export default IndexPage
