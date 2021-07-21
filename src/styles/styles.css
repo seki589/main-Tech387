@@ -31,7 +31,7 @@
     position: relative;
     background-color: #FAFAFA;
     transform: translateY(0);
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .wraper{
     /* width: 100%; */
