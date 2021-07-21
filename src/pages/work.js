@@ -17,7 +17,7 @@ const WorkPage = () => (
         <script src={withPrefix('./InertiaPlugin.min.js')} type="text/jsx"></script>      
        </Helmet> */}
         <Seo title="Work" />
-        <div className="hideMe">
+        {/* <div className="hideMe">
             <div className="masterWrap">
               <div className="panelWrap">
                 <section>
@@ -68,7 +68,7 @@ const WorkPage = () => (
 			Desing
 		</div>
 	</div>
-        </div>
+        </div> */}
     </Layout>
 )
 
