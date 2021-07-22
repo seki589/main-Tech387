@@ -71,7 +71,8 @@
     position: absolute;
     height: 102px;
     top: 75vh;
-    right: 3.75%;
+    /* right: 3.75%; */
+    right: 0;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -262,6 +263,9 @@
 @media only screen and (min-width: 1772px){
     .header{
         padding:30px 66.6px;
+    }
+    .triangle{
+        right: 66.6px;
     }
 }
 @media only screen and (min-width: 600px){
