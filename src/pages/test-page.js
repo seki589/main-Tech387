@@ -40,6 +40,7 @@ const TestPage = () => {
 
       
     <Layout>
+    <Seo title="Home" />
      <div className="container">
      <Swiper
         
