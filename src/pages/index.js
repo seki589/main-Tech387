@@ -15,7 +15,7 @@ import Samsung from "../images/samsung-logo.png"
 
 
 const IndexPage = () => (
-
+     
     
     <Layout>
     {/* <Helmet>
@@ -83,6 +83,11 @@ const IndexPage = () => (
         <Lottie/>
         </div>
       </div>
+    </main>
+    </section>
+    <section className={` slide-4`}>
+      <main className="main">
+      
     </main>
     </section>
     </div>
