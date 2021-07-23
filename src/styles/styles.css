@@ -9,6 +9,7 @@
 }
 /* Light Mode */
 :root {
+    --swiper-theme-color: #27BA70 !important;
     --color-background:#FAFAFA;
     --color-text: #0C2317DE;
     --color-primary: #000;
