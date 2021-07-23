@@ -3,7 +3,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import {Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper';
-import '../styles/styles.css'
+
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Lottie from "../components/lottie"
@@ -14,6 +14,7 @@ import TriangleSvg from "../images/triangle.svg"
 
 import "swiper/swiper-bundle.css";
 import "../styles/styles-1.css"
+import '../styles/styles.css'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel]);
 const TestPage = () => {
