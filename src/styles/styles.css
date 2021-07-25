@@ -9,6 +9,8 @@
 }
 /* Light Mode */
 :root {
+    --logo-light: none;
+    --logo-dark: block;
     --swiper-theme-color: #27BA70 !important;
     --color-background:#FAFAFA;
     --color-text: #0C2317DE;
@@ -17,7 +19,9 @@
   }
   
   /* Dark Mode */
-  :root.dark {
+  :root .dark {
+    --logo-light: block;
+    --logo-dark: none;
     --color-background: #092628;
     --color-text: #FFF;
     --color-primary: #fff;
@@ -122,7 +126,7 @@ section{
 .menuIcon>div{
     width:100%;
     height:2px;
-    background: grey;
+    background: var(--color-primary);
     border-radius: 5px;
     transition: all .3s ease;
     /* position: relative; */
@@ -278,11 +282,17 @@ section{
     }
 }
 @media only screen and (min-width: 600px){
-    .logo img:last-child{
-        display: none;
+    .logo .logoLight{
+        display: var(--logo-light);
     }
-    .logo img:first-child{
-        display: block; 
+    .logo .logoDark{
+        display: var(--logo-dark);
+    }
+    .logo.logoLight{
+        display: var(--logo-light);
+    }
+    .logo.logoDark{
+        display: var(--logo-dark);
     }
     .menuIcon{
         display: none;
@@ -310,8 +320,14 @@ section{
         left: 16px;
         z-index: 100;
     }
-    .logo img:first-child{
+    /* .logo img:first-child{
         display: none;
+    } */
+    .logo .logoLight{
+        display: var(--logo-light);
+    }
+    .logo .logoDark{
+        display: var(--logo-dark);
     }
     .navigation {
         position: absolute;
@@ -319,7 +335,7 @@ section{
         left: 0%;
         height:100vh;
         width: 100vw;
-        background-color: #092628;
+        background-color: var(--color-background) ;
         display:flex;
         flex-direction:column;
         justify-content: center;
@@ -340,7 +356,7 @@ section{
     }
     .navigation a:last-child{
         background-color: transparent;
-        color: #fff;
+        color:  var(--color-text);
     }
     .navigation a{
         font-family: "Rubik", sans-serif;
@@ -348,7 +364,7 @@ section{
         line-height: 71px;
         letter-spacing: 0.45px;
         text-align: left;
-        color: #FFFFFF;
+        color:  var(--color-text);
         transition: all .3s ease;
     }
     .navigation a.active{
@@ -376,7 +392,7 @@ section{
         letter-spacing: 0.43px;
         text-transform: initial;
         font-weight: 400;
-        color: #ffffff;
+        color: var(--color-primary);
         
     }
     .linkedin-menu img{
