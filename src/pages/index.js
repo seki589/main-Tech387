@@ -1,5 +1,5 @@
 import * as React from "react"
-import {useState, useRef, useEffect} from "react"
+import {useState, useEffect} from "react"
 import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
@@ -8,8 +8,9 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Footer from "../components/footer"
 import Lottie from "../components/lottie"
-import Triangle from "../components/triangle"
+// import Triangle from "../components/triangle"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
@@ -22,41 +23,20 @@ import '../styles/styles.css'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
-  // const [mode, setMode] = useState(false)
-  // const darkMode = useRef(null)
 
-  // useEffect (() => {
-  //   swiper.on('slideChange', function () {
-  //     console.log('slide changed');
-  //   });
 
-  // },[]);
-
-  useEffect(() => {
-    const body = document.body
-    
-    // If dark mode is enabled - adds classes to update dark-mode styling.
-    // Else, removes and styling is as normal.
-    if( darkMode === true ) {
-      body.classList.add('dark')
-    } else {
-      body.classList.remove('dark')
-    }
-  }, [darkMode],)
+      useEffect(() => {
+        const body = document.body
+        
+        // If dark mode is enabled - adds classes to update dark-mode styling.
+        // Else, removes and styling is as normal.
+        if( darkMode === true ) {
+          body.classList.add('dark')
+        } else {
+          body.classList.remove('dark')
+        }
+      }, [darkMode],)
   
-  // const onSelectMode = () => {
-  //   setMode()
-  //   if (mode === true )
-  //     document.body.classList.add('dark');
-  //   else 
-  //     document.body.classList.remove('dark');
-  //    if (mode === 'light' )
-  //     document.body.classList.add('light');
-  //   else
-  //     document.body.classList.remove('light');
-  //     console.log(onSelectMode);
-  // }
-  // const onSelectMode = (!setMode)
      
   return(
   <Layout >
@@ -71,13 +51,10 @@ const IndexPage = () => {
       pagination={{ "clickable": true }} 
       className="mySwiper"
       onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={(e) => onSelectMode('dark')}
       onSlideChange={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)}
       // onSlideChange={(e) => console.log(body)}
       >
-      <SwiperSlide 
-      // onClick={(e) => onSelectMode('light')} 
-      >
+      <SwiperSlide>
       <section className={` slide-1`}>
           <main className="main">
               <div className="main-text">
@@ -105,9 +82,7 @@ const IndexPage = () => {
           </main>
       </section>
       </SwiperSlide>
-      <SwiperSlide 
-      // onClick={() => onSelectMode('dark')}
-      >
+      <SwiperSlide >
       <section className={` slide-2`}>
           <main className="main">
               <div className="main-text">
@@ -144,7 +119,7 @@ const IndexPage = () => {
       <SwiperSlide >
       <section className={` slide-4`}>
           <main className="main">
-          
+          <Footer/>
           </main>
       </section>
       </SwiperSlide>
