@@ -66,7 +66,7 @@ const IndexPage = () => {
       direction={'vertical'} 
       slidesPerView={1}
       spaceBetween={5}
-      speed={400} 
+      speed={300} 
       mousewheel={true}
       pagination={{ "clickable": true }} 
       className="mySwiper"
