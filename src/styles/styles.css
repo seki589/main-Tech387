@@ -65,8 +65,8 @@
     opacity: 0.2;
   }
   .swiper-container-vertical > .swiper-pagination-bullets {
-    right: 3.75%;
-    top: 75%;
+    right: 3.75% !important;
+    top: 75% !important;
     transform: translate3d(0px, -50%, 0);
   }
   .swiper-pagination-bullet-active {
