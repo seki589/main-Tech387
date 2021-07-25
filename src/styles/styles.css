@@ -55,6 +55,28 @@
     margin: 0 auto;
     transform: translate();
 }
+/* Pagiantor */
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0.2;
+  }
+  .swiper-container-vertical > .swiper-pagination-bullets {
+    right: 3.75%;
+    top: 75%;
+    transform: translate3d(0px, -50%, 0);
+  }
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  }
+  .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 6px 0;
+    display: block;
+  }
 section{
     width: 100%;
     padding: 0 3.75%;
