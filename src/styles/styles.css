@@ -431,6 +431,10 @@ section{
     .logo .logoDark{
         display: var(--logo-dark);
     }
+    .linkedin-menu img{
+        width: 18px;
+        height: 18px;
+    }
     .navigation {
         position: absolute;
         top: 0;

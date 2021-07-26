@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../images/logo_horizontal_light.png"
 import LogoDark from "../images/logo_horizontal_dark.png"
+import LinkLight from "../images/logo_horizontal_light.png"
+import LinkDark from "../images/logo_horizontal_dark.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {
@@ -46,6 +48,8 @@ class Header extends React.Component {
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
+            {/* <img src={LinkLight} className="link-white" alt="linkedin"/>
+            <img src={LinkDark} className="link-black" alt="linkedin"/> */}
             <StaticImage src="../images/linkedin-white.png" className="link-white" alt="linkedin"/>
             <StaticImage src="../images/linkedin-black.png" className="link-black" alt="linkedin"/>
              <p>Follow us</p>
