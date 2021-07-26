@@ -28,7 +28,7 @@ const Footer = ({data}) => {
                         </ul>
                     </div>
                     <div className="right-li">
-                        <h3>Work whit us</h3>
+                        <h3>Work with us</h3>
                         <ul>
                             <li> <a href="#">Hire us</a> </li>
                             <li> <a href="#">Start-Up Calculator</a> </li>
