@@ -500,10 +500,10 @@ section{
         font-weight: 400;
         color: var(--color-primary);        
     }
-    .link-white{
+    .linkedin-menu .link-white{
         display: var(--logo-light);
     }
-    .link-black{
+    .linkedin-menu .link-black{
         display: var(--logo-dark);
     }
     .linkedin-menu img{
