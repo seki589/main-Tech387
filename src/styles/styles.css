@@ -354,6 +354,7 @@ section{
 .footer-mid h3{
     font-family: "Rubik";
     font-size: 20px;
+    font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.15px;
     margin-bottom: 10px;
@@ -365,8 +366,14 @@ section{
     color: #FFFFFFBD;
     margin-bottom: 20px;
 }
+.footer .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .footer .right{
     transform: translate(17%,24%) scale(1.4);
+    background-color: #092628;
 }
 @media only screen and (min-width: 1772px){
     .header{
@@ -467,7 +474,7 @@ section{
     }
     
     .main{
-        padding-top: 10%;
+        padding-top: 20%;
         display: flex;
         justify-content: center;
     }
@@ -487,8 +494,13 @@ section{
         letter-spacing: 0.43px;
         text-transform: initial;
         font-weight: 400;
-        color: var(--color-primary);
-        
+        color: var(--color-primary);        
+    }
+    .link-white{
+        display: var(--logo-light);
+    }
+    .link-black{
+        display: var(--logo-dark);
     }
     .linkedin-menu img{
         height: 18px;

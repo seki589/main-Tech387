@@ -1,9 +1,9 @@
 import React,{useState} from "react"
 import { Link } from "gatsby"
 
+import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../images/logo_horizontal_light.png"
 import LogoDark from "../images/logo_horizontal_dark.png"
-import LinkeWhite from "../images/linkedin-white.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {
@@ -25,6 +25,8 @@ class Header extends React.Component {
           <div className="logo">
             <Link to="/">
               <img src={LogoLight} className="logoDark" alt="logo"/>
+              {/* <StaticImage src="../images/logo_horizontal_light.png" className="logoDark" alt="logo"/>
+              <StaticImage src="../images/logo_horizontal_dark.png" className="logoLight" alt="logo"/> */}
               <img src={LogoDark} className="logoLight" alt="logo"/>
             </Link>
           </div>
@@ -44,7 +46,9 @@ class Header extends React.Component {
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
-            <img src={LinkeWhite} alt="linkedin"/> <p>Follow us</p>
+            <StaticImage src="../images/linkedin-white.png" className="link-white" alt="linkedin"/>
+            <StaticImage src="../images/linkedin-black.png" className="link-black" alt="linkedin"/>
+             <p>Follow us</p>
             </a>
             </div>
           </div>       
