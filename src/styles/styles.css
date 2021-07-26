@@ -490,7 +490,7 @@ section{
         position: absolute;
         bottom: 27px;
         display: flex;
-        justify-content: center;
+        align-items: center;
     }
     .linkedin-menu p{
         font-family: "Rubik";
