@@ -1,12 +1,24 @@
 import * as React from 'react'
 
-// import { graphql } from 'gatsby'
-import {StaticImage} from 'gatsby-plugin-image'
+import { graphql,useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 import LinkeWhite from '../images/linkedin-white.png'
 import '../styles/styles.css'
 
 
-const Footer = ({data}) => {
+const Footer = () => {
+    const data = useStaticQuery(graphql`
+    query ImgPlant {
+        file(relativePath: {eq: "plant_2.png"}) {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+    
+            }
+          }
+        }
+      }
+    `)
 
     return(
         <div className="footer">
@@ -52,7 +64,7 @@ const Footer = ({data}) => {
                 </div>
             </div>
             <div className="right">
-                <StaticImage src="../images/plant_2.png"  alt="plant"/>
+                <Img fluid={data.file.childImageSharp.fluid}/>
             </div>
 
         </div>
@@ -63,13 +75,14 @@ const Footer = ({data}) => {
 export default Footer
 
 // export const query = graphql`
-//     query {
-//        plantImage: file(relativePath: {eq: "plant_2.png"}) {
-//             childImageSharp {
-//               fluid(maxWidth: 2000) {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
+// query ImgPlant {
+//     file(relativePath: {eq: "plant_2.png"}) {
+//       childImageSharp {
+//         fluid {
+//           ...GatsbyImageSharpFluid
+
+//         }
+//       }
 //     }
+//   }
 // `
