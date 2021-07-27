@@ -155,14 +155,14 @@ section{
     /* position: relative; */
 }
 .menuIcon>div.is-active:nth-child(1){
-    transform: rotate(405deg) translate(4px,3px) ;
+    transform: rotate(45deg) translate(4px,3px) ;
 }
 .menuIcon>div.is-active:nth-child(2){
     opacity: 0;
     transform: translateX(-10px);
 }
 .menuIcon>div.is-active:nth-child(3){
-    transform: rotate(-405deg) translate(4px,-3px) ;
+    transform: rotate(-45deg) translate(4px,-3px) ;
 }
 /* .menuIcon>div:nth-child(1){
     transform: rotate(0);

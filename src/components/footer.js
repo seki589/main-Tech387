@@ -73,16 +73,3 @@ const Footer = () => {
 
 
 export default Footer
-
-// export const query = graphql`
-// query ImgPlant {
-//     file(relativePath: {eq: "plant_2.png"}) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid
-
-//         }
-//       }
-//     }
-//   }
-// `
