@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { graphql,useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import LinkeWhite from '../images/linkedin-white.png'
 import '../styles/styles.css'
 
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="right">
-                <Img fluid={data.file.childImageSharp.fluid}/>
+                {/* <Img fluid={data.file.childImageSharp.fluid}/> */}
             </div>
 
         </div>
