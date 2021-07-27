@@ -4,6 +4,7 @@ import { graphql,useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import LinkeWhite from '../images/linkedin-white.png'
 import '../styles/styles.css'
+// neka funkcija
 
 
 const Footer = () => {
