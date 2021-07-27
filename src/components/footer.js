@@ -8,18 +8,18 @@ import '../styles/styles.css'
 
 
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-    query ImgPlant {
-        file(relativePath: {eq: "plant_2.png"}) {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+    // const data = useStaticQuery(graphql`
+    // query ImgPlant {
+    //     file(relativePath: {eq: "plant_2.png"}) {
+    //       childImageSharp {
+    //         fluid {
+    //           ...GatsbyImageSharpFluid
     
-            }
-          }
-        }
-      }
-    `)
+    //         }
+    //       }
+    //     }
+    //   }
+    // `)
 
     return(
         <div className="footer">
@@ -65,7 +65,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="right">
-                <Img fluid={data.file.childImageSharp.fluid}/>
+                {/* <Img fluid={data.file.childImageSharp.fluid}/> */}
             </div>
 
         </div>
