@@ -7,7 +7,7 @@ import '../styles/styles.css'
 //test restore
 
 
-const Footer = ({data}) => {
+const Footer = () => {
 
     return(
         <div className="footer">
