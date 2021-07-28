@@ -15,6 +15,7 @@ import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
 // import gsap from "../gsap/gsap.min.js"
+// import Triangle from "../images/triangle.svg"
 import "swiper/swiper-bundle.css";
 import "../styles/styles-1.css"
 import '../styles/styles.css'

@@ -1,11 +1,11 @@
-import React,{useState} from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../images/logo_horizontal_light.png"
 import LogoDark from "../images/logo_horizontal_dark.png"
-import LinkLight from "../images/logo_horizontal_light.png"
-import LinkDark from "../images/logo_horizontal_dark.png"
+// import LinkLight from "../images/logo_horizontal_light.png"
+// import LinkDark from "../images/logo_horizontal_dark.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {

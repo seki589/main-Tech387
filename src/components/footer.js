@@ -4,7 +4,6 @@ import * as React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
 import LinkeWhite from '../images/linkedin-white.png'
 import '../styles/styles.css'
-//test restore
 
 
 const Footer = () => {
