@@ -2,7 +2,7 @@ import React, { useEffect, createRef } from "react";
 import '../styles/styles.css'
 
 import lottie from "lottie-web";
-import animation from "../animations/data3.json";
+import animation from "../animations/data4.json";
 
 const Lottie = () => {
   let animationContainer = createRef();

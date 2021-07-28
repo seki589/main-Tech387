@@ -377,7 +377,7 @@ section{
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFFBD;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .footer .left{
     display: flex;
@@ -387,6 +387,7 @@ section{
 .footer .right{
     transform: translate(17%,24%) scale(1.4);
     background-color: #092628;
+    object-fit: fill;
 }
 @media only screen and (min-width: 1772px){
     .header{
