@@ -1,6 +1,4 @@
 import * as React from 'react'
-
-// import { graphql } from 'gatsby'
 import {StaticImage} from 'gatsby-plugin-image'
 import LinkeWhite from '../images/linkedin-white.png'
 import '../styles/styles.css'
@@ -52,7 +50,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="right">
-                <StaticImage src="../images/plant_2.png"  alt="plant"/>
+                <StaticImage 
+                src="../images/plant_2.png"  
+                alt="plant"
+                placeholder="tracedSVG"
+                />
             </div>
 
         </div>
