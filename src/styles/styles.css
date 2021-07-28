@@ -531,6 +531,8 @@ section{
     }
     .text h1{
         font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.36px;
     }
     .main-links{
         display: none;
