@@ -11,8 +11,6 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import Lottie from "../components/lottie"
 // import Triangle from "../components/triangle"
-import Spartan from "../images/spartan_dark.png"
-import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
@@ -62,7 +60,7 @@ const IndexPage = () => {
               <div className="main-text">
                   <div className="text">
                   <h1>
-                  Design,<br></br> development <br></br>& identity for your<br></br> product
+                  Design,<br></br> development &<br></br> identity for your<br></br> product
                   </h1>
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
@@ -89,7 +87,6 @@ const IndexPage = () => {
           <main className="main">
               <div className="main-text">
                   <div className="text">
-                  <img src={Spartan} alt="spartan-logo"/>
                   <h1>
                   Innovating the<br></br> fitness industry
                   </h1>
@@ -107,7 +104,6 @@ const IndexPage = () => {
         <main className="main">
           <div className="main-text">
               <div className="text">
-              <img src={Echarge} alt="e-charge-logo"/>
               <h1>
               Efficient electric<br></br> vehicle charging
               </h1>
