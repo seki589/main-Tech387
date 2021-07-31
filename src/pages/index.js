@@ -5,12 +5,11 @@ import { Link } from "gatsby"
 import {Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper';
 
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 import Lottie from "../components/lottie"
-// import Triangle from "../components/triangle"
+import Triangle from "../components/triangle"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
@@ -18,6 +17,7 @@ import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
 // import gsap from "../gsap/gsap.min.js"
 // import Triangle from "../images/triangle.svg"
+import SvgTri from "../assets/triangle_4.svg"
 import "swiper/swiper-bundle.css";
 import "../styles/styles-1.css"
 import '../styles/styles.css'
@@ -27,17 +27,27 @@ const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
 
 
-      useEffect(() => {
-        const body = document.body
-        
-        // If dark mode is enabled - adds classes to update dark-mode styling.
-        // Else, removes and styling is as normal.
-        if( darkMode === true ) {
-          body.classList.add('dark')
-        } else {
-          body.classList.remove('dark')
-        }
-      }, [darkMode],)
+  useEffect(() => {
+    const body = document.body
+    
+    if( darkMode === true ) {
+      body.classList.add('dark')
+    } else {
+      body.classList.remove('dark')
+    }
+  }, [darkMode],)
+
+  // var menu = ['Slide-1', 'Slide-2', 'Slide-3', 'Slide-4']
+  // var mySwiper = new Swiper ('.swiper-container', {
+  //   // If we need pagination
+  //   pagination: {
+  //     el: '.swiper-pagination',
+	// 		clickable: true,
+  //       renderBullet: function (index, className) {
+  //         return '<span class="' + triSvg + '">' + (menu[index]) + '</span>';
+  //       },
+  //   },
+  // })
   
      
   return(
@@ -54,15 +64,20 @@ const IndexPage = () => {
       className="mySwiper"
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)}
-      // onSlideChange={(e) => console.log(body)}
       >
+      <div className="">
+          <SvgTri className={`triSvg `}/>
+          <SvgTri className="triSvg"/>
+          <SvgTri className="triSvg"/>
+          <SvgTri className="triSvg"/>
+    </div>
       <SwiperSlide>
       <section className={` slide-1`}>
           <main className="main">
               <div className="main-text">
                   <div className="text">
                   <h1>
-                  Design,<br></br> development &<br></br> identity for your<br></br> product
+                  Design,<br></br> development <br></br>& identity for your<br></br> product
                   </h1>
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
@@ -103,7 +118,9 @@ const IndexPage = () => {
       </section>
       </SwiperSlide>
       <SwiperSlide >
+        
       <section className={` slide-3`}>
+        
         <main className="main">
           <div className="main-text">
               <div className="text">
@@ -127,12 +144,6 @@ const IndexPage = () => {
           </main>
       </section>
       </SwiperSlide>
-      {/* <div className="triangle">
-        <img src={TriangleSvg} alt="triangle" />
-        <img src={TriangleSvg} alt="triangle" />
-        <img src={TriangleSvg} alt="triangle" />
-        <img src={TriangleSvg} alt="triangle" />
-      </div> */}
     </Swiper>
     
      </div>

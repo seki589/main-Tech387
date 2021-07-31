@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const HireUsPage = () => (
     <Layout>
-
+    <div></div>
     </Layout>
 )
 

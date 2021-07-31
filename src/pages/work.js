@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 
 const WorkPage = () => (
     <Layout>
-       
+     <div></div>
     </Layout>
 )
 

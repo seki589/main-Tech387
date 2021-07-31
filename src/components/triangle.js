@@ -8,10 +8,10 @@ const Triangle = () => (
 
     <div className="wraper">
         <div className="triangle">
-          <img src={TriangleSvg} alt="triangle"  />
-          <img src={TriangleSvg} alt="triangle"/>
-          <img src={TriangleSvg} alt="triangle"/>
-          <img src={TriangleSvg} alt="triangle"/>
+          <img src={TriangleSvg} className="pagangle" alt="triangle"  />
+          <img src={TriangleSvg} className="pagangle" alt="triangle"/>
+          <img src={TriangleSvg} className="pagangle" alt="triangle"/>
+          <img src={TriangleSvg} className="pagangle" alt="triangle"/>
           </div>
     </div>
 )

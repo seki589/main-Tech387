@@ -9,23 +9,23 @@
 }
 /* Light Mode */
 :root {
+    /* --head-back:#FAFAFA; */
     --logo-light: none;
     --logo-dark: block;
     --swiper-theme-color: #27BA70 !important;
-    --color-background:#FAFAFA;
+    --color-background:#7c7c7c;
     --color-text: #0C2317DE;
     --color-primary: #000;
-    /* ... more colors */
   }
   
   /* Dark Mode */
   :root .dark {
+    /* --head-back:#092628; */
     --logo-light: block;
     --logo-dark: none;
     --color-background: #092628;
     --color-text: #FFF;
     --color-primary: #fff;
-    /* ... more colors */
   }
 
 .container{
@@ -102,21 +102,45 @@ section{
     color: #FFFFFF;
 }
 
-.triangle{
+/* .swiper-pagination{
     position: absolute;
     height: 102px;
     top: 75vh;
-    /* right: 3.75%; */
+    right: 3.75%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+} */
+/* .triangle{
+    position: absolute;
+    height: 102px;
+    top: 75vh;
     right: 0;
     display: flex;
     flex-direction: column;
     z-index: 2;
-}
-.triangle img{
+    background-color: slateblue;
+} */
+.triangle .pagangle{
     margin-top: 13px;
     cursor: pointer;
+    background-color: seagreen;
     
 }
+/* .triSvg{
+    width: 18px;
+    height: 15.5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.triSvg .st0 {
+    fill:#27BA70;
+    stroke: #585858;
+    stroke-width:20;
+    width: 35.5px;
+    height: 18px;
+} */
+
 .header{
     position: fixed;
     top: 0;
@@ -132,6 +156,7 @@ section{
     /* margin: 0 auto; */
     z-index: 100;
     /* transform: translate(0); */
+    backdrop-filter: blur(4px);
 }
 .menuIcon{
     position: fixed;
@@ -155,24 +180,16 @@ section{
     /* position: relative; */
 }
 .menuIcon>div.is-active:nth-child(1){
-    transform: rotate(45deg) translateY(7px) ;
+    transform: rotate(45deg) translate(4px,3px) ;
 }
 .menuIcon>div.is-active:nth-child(2){
     opacity: 0;
     transform: translateX(-10px);
 }
 .menuIcon>div.is-active:nth-child(3){
-    transform: rotate(-45deg) translateY(-7px) ;
+    transform: rotate(-45deg) translate(4px,-3px) ;
 }
-/* .menuIcon>div:nth-child(1){
-    transform: rotate(0);
-}
-.menuIcon>div:nth-child(2){
-    opacity: 1;
-}
-.menuIcon>div:nth-child(3){
-    transform: rotate(0);
-} */
+
 .navigation a{
     font-family: "Rubik",sans-serif;
     font-size: 14px;

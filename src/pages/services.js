@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 
 const ServicePage = () => (
     <Layout>
-
+     <div></div>
     </Layout>
 )
 
