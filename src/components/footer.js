@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
             <div className="right">
                 <StaticImage 
-                src="../images/plant_2.png"  
+                src="../images/plant.png"  
                 alt="plant"
                 placeholder="tracedSVG"
                 />

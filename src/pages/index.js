@@ -25,15 +25,15 @@ import '../styles/styles.css'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
-
-
+  
   useEffect(() => {
     const body = document.body
     
-    if( darkMode === true ) {
-      body.classList.add('dark')
-    } else {
-      body.classList.remove('dark')
+    if( darkMode === true) {
+    
+        body.classList.add('dark')
+       } else {
+          body.classList.remove('dark')
     }
   }, [darkMode],)
 
@@ -60,18 +60,28 @@ const IndexPage = () => {
       spaceBetween={5}
       speed={300} 
       mousewheel={true}
-      pagination={{ "clickable": true }} 
+      pagination={{ 
+        "clickable": true, 
+        // "bulletClass": `swiper-pagination-bullet st0`,
+        // "type": `custom`,
+        // "el": `swiper-pagination `,
+         
+      }} 
+      // dots= {false}
       className="mySwiper"
       onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => darkMode === false ? setDarkMode(true) : setDarkMode(false)}
+      // onSlideChange={() =>  setDarkMode(!darkMode)}
+      onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false)}
       >
-      <div className="">
-          <SvgTri className={`triSvg `}/>
-          <SvgTri className="triSvg"/>
-          <SvgTri className="triSvg"/>
-          <SvgTri className="triSvg"/>
-    </div>
-      <SwiperSlide>
+      {/* <div className={`swiper-pagination swiper-pagination-clickable swiper-pagination-bullets `}>
+        <span className="swiper-pagination-bullet "  aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `}/></span>
+        <span className="swiper-pagination-bullet " aria-label="Go to slide 2" tabIndex=""><SvgTri className={` st0 `}/></span>
+        <span className="swiper-pagination-bullet " aria-label="Go to slide 3" tabIndex=""><SvgTri className={` st0 `}/></span>
+        <span className="swiper-pagination-bullet " aria-label="Go to slide 4" tabIndex=""><SvgTri className={` st0 `}/></span>
+    </div> */}
+      <SwiperSlide
+      >
+
       <section className={` slide-1`}>
           <main className="main">
               <div className="main-text">
