@@ -75,7 +75,7 @@
     background: var(--swiper-pagination-color, var(--swiper-theme-color));
   }
   .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 16px 0 !important;
+    margin: 2px 0 !important;
     display: block;
   }
 section{
@@ -103,7 +103,7 @@ section{
     color: #FFFFFF;
 }
 
-/* .swiper-pagination{
+.swiper-pagination{
     position: absolute;
     height: 102px;
     top: 75vh !important;
@@ -111,7 +111,8 @@ section{
     display: flex;
     flex-direction: column;
     z-index: 10;
-} */
+    
+}
 /* .triangle{
     position: absolute;
     height: 102px;
@@ -123,16 +124,16 @@ section{
     background-color: slateblue;
 } */
 
-/* .swiper-pagination-bullet{
+.swiper-pagination-bullet{
     width: 18px !important;
     height: 25.5px !important;
     margin-bottom: 10px !important;
     background: transparent !important;
     opacity: 1 !important;
     border-radius: none !important;
-    
+    pointer-events: all !important;
 }
-.swiper-pagination-bullet .st0 {
+.swiper-pagination-bullet  {
     width: 100%;
     height: 100%;
     stroke: #585858;
@@ -140,10 +141,10 @@ section{
     fill: transparent;
     pointer-events: all !important;
 }
- .swiper-pagination-bullet-active .st0{
+ .swiper-pagination-bullet-active {
     fill:#27BA70 !important;
     stroke-width:4;
-} */
+}
 
 .header{
     position: fixed;
@@ -393,6 +394,11 @@ section{
     letter-spacing: 0.15px;
     margin-bottom: 10px;
     color: #FFFFFFBD;
+}
+.footer-bot{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .footer-bot p{
     font-size: 14px;

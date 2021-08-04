@@ -3,13 +3,12 @@ import {useState, useEffect} from "react"
 import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard } from 'swiper';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 import Lottie from "../components/lottie"
-import Triangle from "../components/triangle"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
@@ -17,12 +16,11 @@ import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
 // import gsap from "../gsap/gsap.min.js"
 // import Triangle from "../images/triangle.svg"
-import SvgTri from "../assets/triangle_4.svg"
 import "swiper/swiper-bundle.css";
 import "../styles/styles-1.css"
 import '../styles/styles.css'
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel]);
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
   
@@ -58,27 +56,42 @@ const IndexPage = () => {
       direction={'vertical'} 
       slidesPerView={1}
       spaceBetween={5}
-      speed={300} 
-      mousewheel={true}
+      speed={400} 
+      draggable={true}
+      preventInteractionOnTransition= {true}
+      keyboard={true}
+      mousewheel={{
+        "sensitivity": 1000,
+        "releaseOnEdges": true,
+      }}
+
       pagination={{ 
         "clickable": true, 
-        // "bulletClass": `swiper-pagination-bullet st0`,
+        "bulletClass": `swiper-pagination-bullet`,
         // "type": `custom`,
-        // "el": `swiper-pagination `,
-         
+        "pagination": `swiper-pagination `,
+        "bulletElement": "span",
+        renderBullet: function(index, className) {
+          return '<span class="' + className + '">' + `<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+       <style type="text/css">
+         .triSvg{fill:none;stroke:#0C2317;stroke-width:4;stroke-miterlimit:10;}
+       </style>
+       <polygon class="st0" points="255.97,68.84 38.71,445.15 473.29,445.15 "/>
+       </svg>` + "</span>";
+        }
       }} 
-      // dots= {false}
       className="mySwiper"
       onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() =>  setDarkMode(!darkMode)}
       onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false)}
       >
-      {/* <div className={`swiper-pagination swiper-pagination-clickable swiper-pagination-bullets `}>
-        <span className="swiper-pagination-bullet "  aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `}/></span>
+      <div className={`swiper-pagination`}>
+        {/* <span className="swiper-pagination-bullet " aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `} onClick={console.log("eeeeeeeeeee")} /></span>
         <span className="swiper-pagination-bullet " aria-label="Go to slide 2" tabIndex=""><SvgTri className={` st0 `}/></span>
         <span className="swiper-pagination-bullet " aria-label="Go to slide 3" tabIndex=""><SvgTri className={` st0 `}/></span>
-        <span className="swiper-pagination-bullet " aria-label="Go to slide 4" tabIndex=""><SvgTri className={` st0 `}/></span>
-    </div> */}
+        <span className="swiper-pagination-bullet " aria-label="Go to slide 4" tabIndex=""><SvgTri className={` st0 `}/></span> */}
+    </div>
       <SwiperSlide
       >
 
