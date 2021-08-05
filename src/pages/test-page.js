@@ -9,7 +9,6 @@ import Seo from "../components/seo"
 import Lottie from "../components/lottie"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
-import TriangleSvg from "../images/triangle.svg"
 
 
 import "swiper/swiper-bundle.css";

@@ -113,16 +113,6 @@ section{
     z-index: 10;
     
 }
-/* .triangle{
-    position: absolute;
-    height: 102px;
-    top: 75vh;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-    background-color: slateblue;
-} */
 
 .swiper-pagination-bullet{
     width: 18px !important;
@@ -423,6 +413,109 @@ section{
     /* transform: translate(5%,10%) scale(1.2); */
     overflow-x: visible;
 }
+/* Hire Us */
+.hireUs{
+    display: flex;
+    align-items: center;
+}
+.client{
+    flex: 1;
+}
+.team{
+    flex: 1;
+}
+.hireUsForm>form{
+    display: flex;
+    flex-direction: column;
+}
+.hireUs p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #092628;
+    border-bottom: none;
+    margin-bottom: 10px;
+    pointer-events: none;
+}
+.hireUsForm input{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00000099;
+    opacity: 1;
+    padding: 10px;
+    margin-bottom:15px;
+    border: 1px solid #0000001F;
+    border-radius: 4px;
+    background-color: #FAFAFA;
+}
+.hireUsForm .send{
+    font-family:"Rubik", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    width: 69px;
+    height: 36px;
+    background-color: #27BA70;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px #00000029;
+}
+.team{
+    display: flex;
+    justify-content: center;
+}
+.team-box{
+    /* margin-left: 20%; */
+    padding: 62px;
+    border-left: 1px solid #AFAFAF;
+}
+.team-box h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #092628;
+}
+.team-cards>div{
+    display: flex;
+}
+.team-card h6{
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #0C231799;
+}
+.team-cards h5{
+    font-family: "Rubik";
+    font-weight: 400;
+    font-size: 14px;
+    color: #0C231799;
+    margin-bottom: 10px;
+}
+.team-cards{
+    margin-bottom: 65px;
+}
+.team-card p{
+    margin-bottom: 5px;
+}
+.team-card .profile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.team-card{
+    display: flex;
+    margin-bottom: 8px;
+}
+.contact img{
+    width: 20px;
+    height: 20px;
+    margin-right:10px ;
+}
 @media only screen and (min-width: 1772px){
     .header{
         padding:30px 66.6px;
@@ -449,6 +542,9 @@ section{
     }
     .linkedin-menu{
         display: none;
+    }
+    .hireUs{
+        justify-content: center;
     }
 }
 @media only screen and (max-width: 600px){
@@ -586,6 +682,19 @@ section{
     }
     .footer .right {
         display: none;
+    }
+    .hireUs{
+        flex-direction: column;
+        padding-top: 20vh;
+    }
+    .team-box{
+        /* margin-left: 20%; */
+        padding: 0px;
+        border-left: none;
+
+    }
+    .hireUs{
+        align-items: flex-start;
     }
 
 }
