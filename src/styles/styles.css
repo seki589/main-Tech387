@@ -415,8 +415,12 @@ section{
 }
 /* Hire Us */
 .hireUs{
+    padding-top: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #FAFAFA;
 }
 .client{
     flex: 1;
@@ -543,9 +547,7 @@ section{
     .linkedin-menu{
         display: none;
     }
-    .hireUs{
-        justify-content: center;
-    }
+
 }
 @media only screen and (max-width: 600px){
     .container{
@@ -685,7 +687,7 @@ section{
     }
     .hireUs{
         flex-direction: column;
-        padding-top: 20vh;
+        padding-top: 15vh;
     }
     .team-box{
         /* margin-left: 20%; */
