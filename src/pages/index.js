@@ -24,7 +24,6 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
   
-  window.onscroll =() => console.log("i'm scrolling!");
 
   useEffect(() => {
     const body = document.body
@@ -35,7 +34,6 @@ const IndexPage = () => {
        } else {
           body.classList.remove('dark')
     }
-    window.onscroll =() => console.log("i'm scrolling!");
   }, [darkMode],)
 
   // var menu = ['Slide-1', 'Slide-2', 'Slide-3', 'Slide-4']
