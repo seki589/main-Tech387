@@ -419,11 +419,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
     background-color: #FAFAFA;
 }
 .client{
     flex: 1;
+    padding-right: 2%;
 }
 .team{
     flex: 1;
@@ -697,6 +697,7 @@ section{
     }
     .hireUs{
         align-items: flex-start;
+        height: auto;
     }
 
 }
