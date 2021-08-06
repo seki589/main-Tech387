@@ -56,14 +56,14 @@
     transform: translate();
 }
 /* Pagiantor */
-.swiper-pagination-bullet {
+/* .swiper-pagination-bullet {
     width: 8px;
     height: 8px;
     display: inline-block;
     border-radius: 50%;
     background: #000;
     opacity: 0.2;
-}
+} */
 
   .swiper-container-vertical > .swiper-pagination-bullets {
     right: 3.75% !important;
@@ -124,8 +124,8 @@ section{
     pointer-events: all !important;
 }
 .swiper-pagination-bullet  {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     stroke: #585858;
     stroke-width:20;
     fill: transparent;
@@ -693,11 +693,17 @@ section{
         /* margin-left: 20%; */
         padding: 0px;
         border-left: none;
-
+        
     }
     .hireUs{
         align-items: flex-start;
         height: auto;
+    }
+    .team{
+        margin-top: 30px;
+    }
+    .team-cards{
+        margin: 30px 0;
     }
 
 }
