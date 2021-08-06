@@ -61,9 +61,10 @@ const IndexPage = () => {
       draggable={true}
       keyboard={true}
       mousewheel={{
-        "thresholdDelta": 70,
+        "thresholdDelta": 50,
+        "lastScrollTime":100,
         "forceToAxis": true,
-        "releaseOnEdges": true,
+        "releaseOnEdges": false,
       }}
 
       pagination={{ 
