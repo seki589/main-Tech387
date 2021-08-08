@@ -278,6 +278,12 @@ section{
 .main-text{
     display: flex;
     margin-bottom: 0vh;
+    transform: translateY(200px);
+    opacity: 0;
+}
+.text{
+    /* opacity: 0; */
+    /* transform: translateY(-100px); */
 }
 .text h1{
     font-family: "Rubik", sans-serif;
@@ -465,6 +471,7 @@ section{
     border-radius: 4px;
     text-transform: uppercase;
     box-shadow: 0 3px 6px #00000029;
+    cursor: pointer;
 }
 .team{
     display: flex;

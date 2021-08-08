@@ -14,6 +14,7 @@ const Lottie = () => {
       autoplay: true,
       animationData: animation,
     });
+    
     return () => anim.destroy(); // optional clean up for unmounting
   }, []);
 

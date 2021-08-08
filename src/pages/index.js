@@ -1,5 +1,5 @@
 import * as React from "react"
-import {useState, useEffect} from "react"
+import {useState, useEffect,useRef} from "react"
 import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
@@ -14,8 +14,8 @@ import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
 // import Draggable from "../gsap/Draggable3.min.js"
-// import gsap from "../gsap/gsap.min.js"
-// import Triangle from "../images/triangle.svg"
+import gsap from "gsap";
+import { TweenMax, Power3 } from "gsap";
 import "swiper/swiper-bundle.css";
 import "../styles/styles-1.css"
 import '../styles/styles.css'
@@ -23,30 +23,44 @@ import '../styles/styles.css'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
-  
+  const headText1 = useRef()
+  const headText2 = useRef()
+  const headText3 = useRef()
+
+  console.log(headText1)
 
   useEffect(() => {
     const body = document.body
     
     if( darkMode === true) {
-    
         body.classList.add('dark')
        } else {
           body.classList.remove('dark')
-    }
+       }
+       gsap.to(
+        [headText1.current,headText2.current,headText3.current],
+        .8,
+        {
+          opacity: 1,
+          y: 0,
+          ease : Power3.easeOut
+        }
+      )
   }, [darkMode],)
 
-  // var menu = ['Slide-1', 'Slide-2', 'Slide-3', 'Slide-4']
-  // var mySwiper = new Swiper ('.swiper-container', {
-  //   // If we need pagination
-  //   pagination: {
-  //     el: '.swiper-pagination',
-	// 		clickable: true,
-  //       renderBullet: function (index, className) {
-  //         return '<span class="' + triSvg + '">' + (menu[index]) + '</span>';
-  //       },
-  //   },
-  // })
+  const Slide = () => {
+    useEffect(() => {
+      gsap.to(
+        [headText1.current,headText2.current,headText3.current],
+        .8,
+        {
+          opacity: 1,
+          y: 0,
+          ease : "Power3.easeOut"
+        }
+      )
+  },[darkMode])
+  }
   
      
   return(
@@ -86,7 +100,7 @@ const IndexPage = () => {
       className="mySwiper"
       onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() =>  setDarkMode(!darkMode)}
-      onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false)}
+      onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false) && Slide()}
       >
       <div className={`swiper-pagination`}>
         {/* <span className="swiper-pagination-bullet " aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `} onClick={console.log("eeeeeeeeeee")} /></span>
@@ -94,13 +108,12 @@ const IndexPage = () => {
         <span className="swiper-pagination-bullet " aria-label="Go to slide 3" tabIndex=""><SvgTri className={` st0 `}/></span>
         <span className="swiper-pagination-bullet " aria-label="Go to slide 4" tabIndex=""><SvgTri className={` st0 `}/></span> */}
     </div>
-      <SwiperSlide
-      >
+      <SwiperSlide >
 
       <section className={` slide-1`}>
           <main className="main">
-              <div className="main-text">
-                  <div className="text">
+              <div className="main-text" ref={headText1}>
+                  <div className="text" >
                   <h1>
                   Design,<br></br> development <br></br>& identity for your<br></br> product
                   </h1>
@@ -127,8 +140,8 @@ const IndexPage = () => {
       <SwiperSlide >
       <section className={` slide-2`}>
           <main className="main">
-              <div className="main-text">
-                  <div className="text">
+              <div className="main-text" ref={headText2}>
+                  <div className="text" >
                   <img src={Spartan} alt="spartan-logo"/>
                   <h1>
                   Innovating the<br></br> fitness industry
@@ -147,8 +160,8 @@ const IndexPage = () => {
       <section className={` slide-3`}>
         
         <main className="main">
-          <div className="main-text">
-              <div className="text">
+          <div className="main-text" ref={headText3}>
+              <div className="text" >
               <img src={Echarge} alt="e-charge-logo"/>
               <h1>
               Efficient electric<br></br> vehicle charging

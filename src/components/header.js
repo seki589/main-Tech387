@@ -9,6 +9,9 @@ import LogoDark from "../images/logo_horizontal_dark.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props)
+}
   
   state = { showMenu: false }
 
@@ -17,6 +20,10 @@ class Header extends React.Component {
       showMenu: !this.state.showMenu
     });
   }
+  setLight() {
+   document.body.classList.remove('dark')
+  }
+  
 
  render() {
   const menuActive = this.state.showMenu ? 'is-active' : '';
@@ -27,8 +34,6 @@ class Header extends React.Component {
           <div className="logo">
             <Link to="/">
               <img src={LogoLight} className="logoDark" alt="logo"/>
-              {/* <StaticImage src="../images/logo_horizontal_light.png" className="logoDark" alt="logo"/>
-              <StaticImage src="../images/logo_horizontal_dark.png" className="logoLight" alt="logo"/> */}
               <img src={LogoDark} className="logoLight" alt="logo"/>
             </Link>
           </div>
@@ -41,15 +46,13 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-              <Link to="/work" onClick={this.toggleMenu} activeClassName="active">Work</Link>
-              <Link to="/services" onClick={this.toggleMenu} activeClassName="active">Services</Link>
-              <Link to="/company" onClick={this.toggleMenu} activeClassName="active">Company</Link>
-              <Link to="/hire-us" onClick={this.toggleMenu}activeClassName="active">Hire Us</Link>
+              <Link to="/work" onClick={this.toggleMenu,this.setLight} activeClassName="active">Work</Link>
+              <Link to="/services" onClick={this.toggleMenu,this.setLight} activeClassName="active">Services</Link>
+              <Link to="/company" onClick={this.toggleMenu,this.setLight} activeClassName="active">Company</Link>
+              <Link to="/hire-us" onClick={this.toggleMenu,this.setLight}activeClassName="active">Hire Us</Link>
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
-            {/* <img src={LinkLight} className="link-white" alt="linkedin"/>
-            <img src={LinkDark} className="link-black" alt="linkedin"/> */}
             <StaticImage src="../images/linkedin-white.png" className="link-white" alt="linkedin"/>
             <StaticImage src="../images/linkedin-black.png" className="link-black" alt="linkedin"/>
              <p>Follow us</p>
