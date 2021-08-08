@@ -496,7 +496,8 @@ section{
     margin-bottom: 5px;
     color: #0C231799;
 }
-.team-cards h5{
+.team-cards h5,
+.team-cards a{
     font-family: "Rubik";
     font-weight: 400;
     font-size: 14px;

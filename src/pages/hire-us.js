@@ -44,7 +44,7 @@ const HireUsPage = () => {
                             <h2>Partnerships Team:</h2>
                             <div className="team-cards">
                                 <div className="team-card">
-                                <StaticImage src="../images/Samir.png" alt="team-member" className="profile"/>
+                                <StaticImage src="../images/Samir.png" alt="Samir Avdibegović" className="profile"/>
                                 <div className="team-name">
                                     <p>Samir Avdibegović</p>
                                     <h6>Head of Partnerships and <br></br>Business Development</h6>
@@ -52,16 +52,18 @@ const HireUsPage = () => {
                                 </div>
                                 <div className="contact">
                                     <img src={Mail} alt="mail"/> 
-                                    <h5>savdibegovic@tech387.com</h5>
+                                    <a href="mailto:savdibegovic@tech387.com" 
+                                    
+                                    >savdibegovic@tech387.com</a>
                                 </div>
                                 <div className="contact">
                                     <img src={Phone} alt="phone"/> 
-                                    <h5>+38761 209 884</h5>
+                                    <a href="tel:+38761 209 884">+38761 209 884</a>
                                 </div>
                             </div>
                             <div className="team-cards">
                                 <div className="team-card">
-                                <StaticImage src="../images/Emir.jpg" alt="team-member" className="profile"/>
+                                <StaticImage src="../images/Emir.jpg" alt="Emir Čorbo" className="profile"/>
                                 <div className="team-name">
                                     <p>Emir Čorbo</p>
                                     <h6>Business Development <br></br>Executive</h6>
@@ -69,13 +71,13 @@ const HireUsPage = () => {
                                 </div>
                                 <div className="contact">
                                     <img src={Mail} alt="mail"/> 
-                                    <h5>ecorbo@tech387.com</h5>
+                                    <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
                                 </div>
                                 <div className="contact">
                                      <img src={Phone} alt="phone"/>
                                      <div>
-                                        <h5>+447402 947 615</h5>
-                                        <h5>+38760 315 9309</h5>
+                                        <a href="tel:+447402 947 615">+447402 947 615</a><br></br>
+                                        <a href="tel:+38760 315 9309">+38760 315 9309</a>
                                      </div>
                                 </div>
                                 
