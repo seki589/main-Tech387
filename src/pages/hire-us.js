@@ -8,17 +8,8 @@ import Phone from "../images/phone-1.png"
 
 
 const HireUsPage = () => {
-//     const [darkMode, setDarkMode] = useState(false);
-  
-  
-//   useEffect((darkMode) => {
-//     const body = document.body
+
     
-//     if( darkMode === false) {
-    
-//           body.classList.remove('dark')
-//     }
-//   }, [darkMode],)
      return   (
             <Layout>
             <div className="container">

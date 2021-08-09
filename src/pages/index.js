@@ -17,7 +17,7 @@ import Samsung from "../images/samsung-logo.png"
 import gsap from "gsap";
 import { TweenMax, Power3 } from "gsap";
 import "swiper/swiper-bundle.css";
-import "../styles/styles-1.css"
+// import "../styles/styles-1.css"
 import '../styles/styles.css'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
@@ -27,7 +27,6 @@ const IndexPage = () => {
   const headText2 = useRef()
   const headText3 = useRef()
 
-  console.log(headText1)
 
   useEffect(() => {
     const body = document.body
@@ -48,19 +47,19 @@ const IndexPage = () => {
       )
   }, [darkMode],)
 
-  const Slide = () => {
-    useEffect(() => {
-      gsap.to(
-        [headText1.current,headText2.current,headText3.current],
-        .8,
-        {
-          opacity: 1,
-          y: 0,
-          ease : "Power3.easeOut"
-        }
-      )
-  },[darkMode])
-  }
+  // const Slide = () => {
+  //   useEffect(() => {
+  //     gsap.to(
+  //       [headText1.current,headText2.current,headText3.current],
+  //       .8,
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         ease : "Power3.easeOut"
+  //       }
+  //     )
+  // },[darkMode])
+  // }
   
      
   return(
@@ -98,9 +97,9 @@ const IndexPage = () => {
         }
       }} 
       className="mySwiper"
-      onSwiper={(swiper) => console.log(swiper)}
+      // onSwiper={(swiper) => console.log(swiper)}
       // onSlideChange={() =>  setDarkMode(!darkMode)}
-      onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false) && Slide()}
+      onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false) }
       >
       <div className={`swiper-pagination`}>
         {/* <span className="swiper-pagination-bullet " aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `} onClick={console.log("eeeeeeeeeee")} /></span>
