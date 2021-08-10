@@ -1,11 +1,33 @@
 import * as React from 'react'
+import { useState, useEffect } from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
 import LinkeWhite from '../images/linkedin-white.png'
+import { Link } from "gatsby"
 import '../styles/styles.css'
 
 
 const Footer = () => {
+    const [light, setLight] = useState('dark')
+    console.log(light)
+    useEffect(() => {
+        const body = document.body
+        if(body === 'dark'){
+            body.classList.remove('dark')
+        }else{
+            body.classList.remove('dark')
+        }
+    },[light])
 
+        // const light = document.body.classList
+        // setTheme = () => {
+        //     document.body.classList.remove('dark')
+        //     setLight('')
+        //    }
+
+    
+    // setLight = () => {
+    //     document.body.classList.remove('dark')
+    //    }
     return(
         <div className="footer">
             <div className="left">
@@ -16,7 +38,7 @@ const Footer = () => {
                     <div className="left-li">
                     <h3>Work with us</h3>
                         <ul>
-                            <li> <a href="#">Hire us</a> </li>
+                            <li> <Link to="/hire-us" onClick={() => setLight(!light)}>Hire us</Link> </li>
                             <li> <a href="#">Start-Up Calculator</a> </li>
                         </ul>
                         <h3>Contact</h3>

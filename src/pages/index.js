@@ -70,7 +70,6 @@ const IndexPage = () => {
         "forceToAxis": true,
         "releaseOnEdges": false,
       }}
-
       pagination={{ 
         "clickable": true, 
         "bulletClass": `swiper-pagination-bullet`,
