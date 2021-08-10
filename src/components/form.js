@@ -14,7 +14,9 @@ const Form = () => {
         e.preventDefault();
         const mail = {name, email, project}
         console.log(mail);
-        setMessage('Your message has been sent')
+        setTimeout(() => {
+            setMessage("Your message has been sent")
+        },300);
         setTimeout(() => {
             setMessage('')
           }, 4000);
@@ -36,7 +38,7 @@ const Form = () => {
                             pattern='^[a-zA-Z]+(?:\s+[a-zA-Z]+)*$'
                             value={name}
                             onChange={(e) => setName(e.target.value)}
-                            placeholder="Name"
+                            placeholder="Name*"
                     ></input>
                     <input
                             type="text"
@@ -45,7 +47,7 @@ const Form = () => {
                             value={email}
                             pattern="^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$"
                             onChange={(e) => setEmail(e.target.value)}
-                            placeholder="Email"
+                            placeholder="Email*"
                     ></input>
                     <input
                             type="text"
