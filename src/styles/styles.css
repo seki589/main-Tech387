@@ -223,6 +223,7 @@ section{
     padding: 10px 20px;
     text-transform: uppercase;
     transition: all .3s ease;
+    
 }
 .navigation a.active{
     color: #27BA70;
@@ -244,6 +245,12 @@ section{
 .logo img{
     width: 100%;
     margin-bottom: 0;
+}
+.partners{
+    visibility: hidden;
+}
+.partners-title{
+    visibility: hidden;
 }
 .partners .img{
     width: 117px;
@@ -306,6 +313,8 @@ section{
 .main-text{
     display: flex;
     margin-bottom: 0vh;
+}
+.anim{
     transform: translateY(200px);
     opacity: 0;
 }
@@ -379,10 +388,11 @@ section{
 }
 .footer-mid{
     display: flex;
+    z-index: 1;
 }
 .footer-mid>div{
     flex: 1;
-    margin:0 55px 20px 0;
+    margin:0 7.5% 20px 0;
 }
 .footer-mid ul{
     margin: 0;
@@ -416,6 +426,9 @@ section{
     margin-bottom: 10px;
     color: #FFFFFFBD;
 }
+.right-li{
+    margin-right: 50px;
+}
 .footer-bot{
     display: flex;
     flex-direction: column;
@@ -443,6 +456,47 @@ section{
 .footer .right img{
     /* transform: translate(5%,10%) scale(1.2); */
     overflow-x: visible;
+}
+.tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    color: black;
+    border-radius: 5px;
+    background-color: #ffffff23 !important;
+    /* border: 1px solid #FAFAFA; */
+    padding: 10px;
+    text-align: center;
+    backdrop-filter: blur(20px);
+    margin-bottom: 20px;
+}
+.tab>h3{
+    color: white;
+}
+.tab>p{
+    color: #FFFFFFBD;
+    font-weight: 300;
+    font-size: 16px;
+}
+.tab .link{
+    font-size: 16px;
+    color: #FFFFFFBD;
+    text-decoration: underline;
+}
+.tab .btn{
+    font-family: "Rubik",sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: var(--color-text);
+    padding: 10px 20px;
+    background-color: #27BA70;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: all .3s ease
 }
 /* Hire Us */
 .hireUs{
@@ -724,6 +778,15 @@ section{
     .footer .right {
         display: none;
     }
+    .footer-mid{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .tab{
+        width: 95%;
+        
+    }
+    /* HireUs Page */
     .hireUs{
         flex-direction: column;
         padding-top: 15vh;

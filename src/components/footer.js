@@ -1,6 +1,8 @@
 import * as React from 'react'
 import {StaticImage} from 'gatsby-plugin-image'
 import LinkeWhite from '../images/linkedin-white.png'
+import TabSupport from './tabSupport'
+import TabSales from './tabSales'
 import '../styles/styles.css'
 
 
@@ -14,8 +16,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-mid">
                     <div className="left-li">
-                        <h3>Capabilities</h3>
-                        <ul>
+                        {/* <h3>Capabilities</h3> */}
+                        <TabSupport/>
+                        {/* <ul>
                             <li> <a href="#">App Development</a> </li>
                             <li> <a href="#">Web Development</a> </li>
                             <li> <a href="#">Backend Solutions</a> </li>
@@ -23,10 +26,11 @@ const Footer = () => {
                             <li> <a href="#">Branding</a> </li>
                             <li> <a href="#">Design System</a> </li>
                             <li> <a href="#">UI/UX</a> </li>
-                        </ul>
+                        </ul> */}
                     </div>
                     <div className="right-li">
-                        <h3>Work with us</h3>
+                        <TabSales/>
+                        {/* <h3>Work with us</h3>
                         <ul>
                             <li> <a href="#">Hire us</a> </li>
                             <li> <a href="#">Start-Up Calculator</a> </li>
@@ -35,7 +39,7 @@ const Footer = () => {
                         <ul>
                             <li className="contact"> <a >mail@tech387.com</a> </li>
                             <li className="contact"> <a >+387 62 667 266</a> </li>
-                        </ul>
+                        </ul> */}
                     </div>
                 </div>
                 <div className="footer-bot">

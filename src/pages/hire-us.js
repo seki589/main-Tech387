@@ -5,13 +5,17 @@ import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import Mail from "../images/mail.png"
 import Phone from "../images/phone-1.png"
+import PageTransition from 'gatsby-plugin-page-transitions';
 
 
 const HireUsPage = () => {
 
-    
+
      return   (
+            
             <Layout>
+            <PageTransition
+            >
             <div className="container">
                 <section className="hireUs">
                     <div className="client">
@@ -21,7 +25,7 @@ const HireUsPage = () => {
                          Our clients get the best results when they have our team dedicated
                          to their business for extended periods of time. This is why we are 
                          looking for ongoing collaboration where our professionals are like 
-                         your team members who just happen to be remote. Ready to move forward?<br></br>                   
+                         your team members who just happen to be remote.<br></br>                   
                          </p>  
                          <p>
                          We believe in power of partnership where 1+1 makes 3.
@@ -78,6 +82,7 @@ const HireUsPage = () => {
 
                 </section>
             </div>
+            </PageTransition>
             </Layout>
         )
 }

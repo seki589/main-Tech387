@@ -13,7 +13,7 @@ import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
-// import Draggable from "../gsap/Draggable3.min.js"
+import PageTransition from 'gatsby-plugin-page-transitions';
 import gsap from "gsap";
 import { TweenMax, Power3 } from "gsap";
 import "swiper/swiper-bundle.css";
@@ -24,8 +24,8 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
 const IndexPage = () => {
   const [darkMode, setDarkMode] = useState(false);
   const headText1 = useRef()
-  const headText2 = useRef()
-  const headText3 = useRef()
+  // const headText2 = useRef()
+  // const headText3 = useRef()
 
 
   useEffect(() => {
@@ -36,33 +36,25 @@ const IndexPage = () => {
        } else {
           body.classList.remove('dark')
        }
-       gsap.to(
-        [headText1.current,headText2.current,headText3.current],
-        .8,
-        {
-          opacity: 1,
-          y: 0,
-          ease : Power3.easeOut
-        }
-      )
+
   }, [darkMode],)
 
-  // const Slide = () => {
-  //   useEffect(() => {
-  //     gsap.to(
-  //       [headText1.current,headText2.current,headText3.current],
-  //       .8,
-  //       {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease : "Power3.easeOut"
-  //       }
-  //     )
-  // },[darkMode])
-  // }
+
+  useEffect(() => {
+        gsap.to(
+          headText1.current,
+          .8,
+          {
+            opacity: 1,
+            y: 0,
+            ease : "Power3.easeOut"
+          }
+        )
+    },[])
   
      
   return(
+  <PageTransition>
   <Layout >
   <Seo title="Home" />
    <div className="container">
@@ -101,17 +93,12 @@ const IndexPage = () => {
       // onSlideChange={() =>  setDarkMode(!darkMode)}
       onSlideChange={(swiper) => swiper.activeIndex === 1||swiper.activeIndex === 3? setDarkMode(true): setDarkMode(false) }
       >
-      <div className={`swiper-pagination`}>
-        {/* <span className="swiper-pagination-bullet " aria-label="Go to slide 1" tabIndex="" role="button"><SvgTri className={` st0 `} onClick={console.log("eeeeeeeeeee")} /></span>
-        <span className="swiper-pagination-bullet " aria-label="Go to slide 2" tabIndex=""><SvgTri className={` st0 `}/></span>
-        <span className="swiper-pagination-bullet " aria-label="Go to slide 3" tabIndex=""><SvgTri className={` st0 `}/></span>
-        <span className="swiper-pagination-bullet " aria-label="Go to slide 4" tabIndex=""><SvgTri className={` st0 `}/></span> */}
-    </div>
+      <div className={`swiper-pagination`}></div>
       <SwiperSlide >
 
       <section className={` slide-1`}>
           <main className="main">
-              <div className="main-text" ref={headText1}>
+              <div className={`main-text anim`} ref={headText1}>
                   <div className="text" >
                   <h1>
                   Design,<br></br> development <br></br>& identity for your<br></br> product
@@ -123,7 +110,7 @@ const IndexPage = () => {
                   </div>
               </div>
               <div className="main-links">
-                  <p>Partners</p>
+                  <p className="partners-title">Partners</p>
                   <div className="partners">
                   <div className="img"> <img src={Samsung} alt="samsung"/></div>
                   </div>
@@ -139,7 +126,7 @@ const IndexPage = () => {
       <SwiperSlide >
       <section className={` slide-2`}>
           <main className="main">
-              <div className="main-text" ref={headText2}>
+              <div className="main-text">
                   <div className="text" >
                   <img src={Spartan} alt="spartan-logo"/>
                   <h1>
@@ -159,7 +146,7 @@ const IndexPage = () => {
       <section className={` slide-3`}>
         
         <main className="main">
-          <div className="main-text" ref={headText3}>
+          <div className="main-text">
               <div className="text" >
               <img src={Echarge} alt="e-charge-logo"/>
               <h1>
@@ -185,5 +172,6 @@ const IndexPage = () => {
     
      </div>
     </Layout>
+    </PageTransition>
 );}
 export default IndexPage

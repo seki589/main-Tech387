@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../images/logo_horizontal_light.png"
 import LogoDark from "../images/logo_horizontal_dark.png"
-// import LinkLight from "../images/logo_horizontal_light.png"
-// import LinkDark from "../images/logo_horizontal_dark.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {
@@ -15,17 +13,26 @@ class Header extends React.Component {
   
   state = { showMenu: false }
 
-  toggleMenu = () => {
+  toggleMenu = async () => {
+    
     this.setState({
+      
       showMenu: !this.state.showMenu
     });
   }
-  setLight() {
+  setLight = async () => {
    document.body.classList.remove('dark')
+  }
+  closeMenu = () => {
+
+       setTimeout( async  () => {
+        this.toggleMenu();
+       },400)
   }
   
 
  render() {
+   
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
@@ -46,10 +53,10 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-              <Link to="/work" onClick={this.toggleMenu,this.setLight} activeClassName="active">Work</Link>
+              <Link to="/work" onClick={this.toggleMenu,this.setLight} activeClassName="active" >Work</Link>
               <Link to="/services" onClick={this.toggleMenu,this.setLight} activeClassName="active">Services</Link>
               <Link to="/company" onClick={this.toggleMenu,this.setLight} activeClassName="active">Company</Link>
-              <Link to="/hire-us" onClick={this.toggleMenu,this.setLight}activeClassName="active">Hire Us</Link>
+              <Link to="/hire-us" onClick={this.toggleMenu,this.setLight}activeClassName="active" partiallyActive={true}>Hire Us</Link>
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
