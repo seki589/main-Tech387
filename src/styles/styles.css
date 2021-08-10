@@ -562,6 +562,16 @@ section{
     box-shadow: 0 3px 6px #00000029;
     cursor: pointer;
 }
+.subBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subBtn p{
+    margin: 5px 0;
+    transition: all .5s ease-in;
+    color:#00000099 ;
+}
 .team{
     display: flex;
     justify-content: center;
