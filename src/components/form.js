@@ -17,7 +17,7 @@ const Form = () => {
         setMessage('Your message has been sent')
         setTimeout(() => {
             setMessage('')
-          }, 3000);
+          }, 4000);
         setName('');
         setEmail('');
         setProject('');

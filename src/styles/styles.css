@@ -568,9 +568,13 @@ section{
     justify-content: space-between;
 }
 .subBtn p{
-    margin: 5px 0;
+    padding: 0px 15px;
+    margin: 0;
     transition: all .5s ease-in;
-    color:#00000099 ;
+    color:#ffffff ;
+    background-color: #4646467a;
+    line-height: 36px;
+    border-radius: 4px;
 }
 .team{
     display: flex;
