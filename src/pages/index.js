@@ -15,7 +15,6 @@ import LinkeBlack from "../images/linkedin-black.png"
 import Samsung from "../images/samsung-logo.png"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import gsap from "gsap";
-import { TweenMax, Power3 } from "gsap";
 import "swiper/swiper-bundle.css";
 // import "../styles/styles-1.css"
 import '../styles/styles.css'
@@ -75,7 +74,6 @@ const IndexPage = () => {
       pagination={{ 
         "clickable": true, 
         "bulletClass": `swiper-pagination-bullet`,
-        // "type": `custom`,
         "pagination": `swiper-pagination `,
         "bulletElement": "span",
         renderBullet: function(index, className) {
