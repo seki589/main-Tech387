@@ -3,8 +3,8 @@ import Form from "../components/form";
 
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
-import Mail from "../images/ic_email.svg"
-import Phone from "../images/ic_phone.svg"
+import Mail from "../assets/ic_email.svg"
+import Phone from "../assets/ic_phone.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
@@ -46,13 +46,13 @@ const HireUsPage = () => {
                                 </div>
                                 </div>
                                 <div className="contact">
-                                    <img src={Mail} alt="mail"/> 
+                                    <Mail className="icon"/>
                                     <a href="mailto:savdibegovic@tech387.com" 
                                     
                                     >savdibegovic@tech387.com</a>
                                 </div>
                                 <div className="contact">
-                                    <img src={Phone} alt="phone"/> 
+                                    <Phone className="icon"/>
                                     <a href="tel:+38761 209 884">+38761 209 884</a>
                                 </div>
                             </div>
@@ -65,11 +65,11 @@ const HireUsPage = () => {
                                 </div>
                                 </div>
                                 <div className="contact">
-                                    <img src={Mail} alt="mail"/> 
+                                    <Mail className="icon"/>
                                     <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
                                 </div>
                                 <div className="contact">
-                                     <img src={Phone} alt="phone"/>
+                                     <Phone className="icon"/>
                                      <div>
                                         <a href="tel:+447402 947 615">+447402 947 615</a><br></br>
                                         <a href="tel:+38760 315 9309">+38760 315 9309</a>

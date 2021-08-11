@@ -181,10 +181,10 @@ section{
 }
 .menuIcon{
     position: fixed;
-    top: 34px;
-    right: 21px;
-    width: 22px;
-    height:12px;
+    top: 24px;
+    right: 11px;
+    width: 42px;
+    height:32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -192,6 +192,7 @@ section{
     /* cursor: pointer; */
     z-index: 102;
     pointer-events: all;
+    padding: 10px;
 }
 .menuIcon>div{
     width:100%;
@@ -624,10 +625,13 @@ section{
     display: flex;
     margin-bottom: 8px;
 }
-.contact img{
+.contact .icon{
+    margin-right:14px ;
+    fill: #0C231799;
+}
+.contact .icon path{
     width: 20px;
-    height: 20px;
-    margin-right:10px ;
+    height: 16px;
 }
 @media only screen and (min-width: 1772px){
     .header{
