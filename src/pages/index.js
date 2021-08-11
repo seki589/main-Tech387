@@ -53,11 +53,12 @@ const IndexPage = () => {
   
      
   return(
-  <PageTransition>
+  
   <Layout >
-  <Seo title="Home" />
-   <div className="container">
-   <Swiper      
+    <PageTransition>
+    <Seo title="Home" />
+    <div className="container">
+    <Swiper      
       direction={'vertical'} 
       slidesPerView={1}
       spaceBetween={5}
@@ -168,7 +169,8 @@ const IndexPage = () => {
     </Swiper>
     
      </div>
+     </PageTransition>
     </Layout>
-    </PageTransition>
+    
 );}
 export default IndexPage
