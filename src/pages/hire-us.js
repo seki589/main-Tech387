@@ -3,8 +3,8 @@ import Form from "../components/form";
 
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
-import Mail from "../images/mail.png"
-import Phone from "../images/phone-1.png"
+import Mail from "../images/ic_email.svg"
+import Phone from "../images/ic_phone.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 

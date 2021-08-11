@@ -152,16 +152,14 @@ section{
     pointer-events: all !important;
 }
 .swiper-pagination-bullet  {
-    /* width: 100%;
-    height: 100%; */
     stroke: #585858;
-    stroke-width:20;
+    stroke-width:50;
     fill: transparent;
     pointer-events: all !important;
 }
  .swiper-pagination-bullet-active {
+    stroke: #27BA70;
     fill:#27BA70 !important;
-    stroke-width:4;
 }
 
 .header{
