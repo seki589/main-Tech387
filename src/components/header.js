@@ -7,9 +7,7 @@ import LogoDark from "../images/logo_horizontal_dark.png"
 import '../styles/styles.css'
 
 class Header extends React.Component {
-//   constructor(props) {
-//     super(props)
-// }
+
   
   state = { showMenu: false }
 

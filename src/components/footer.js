@@ -8,7 +8,7 @@ import '../styles/styles.css'
 
 const Footer = () => {
     const [light, setLight] = useState('dark')
-    console.log(light)
+
     useEffect(() => {
         const body = document.body
         if(body === 'dark'){
@@ -18,16 +18,7 @@ const Footer = () => {
         }
     },[light])
 
-        // const light = document.body.classList
-        // setTheme = () => {
-        //     document.body.classList.remove('dark')
-        //     setLight('')
-        //    }
-
-    
-    // setLight = () => {
-    //     document.body.classList.remove('dark')
-    //    }
+        
     return(
         <div className="footer">
             <div className="left">
