@@ -86,6 +86,7 @@ section{
 .slide-4{
     background-color: #092628;
     overflow: hidden;
+    min-height: -webkit-fill-available;
 }
 .slide-2 .text h1{
     color: #FFFFFF;
@@ -718,6 +719,7 @@ section{
         top: 0;
         left: 0%;
         height:100vh;
+        min-height: -webkit-fill-available;
         width: 100vw;
         background-color: var(--color-background) ;
         display:flex;

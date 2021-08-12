@@ -2,6 +2,7 @@ import * as React from "react"
 import Form from "../components/form";
 
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import Mail from "../assets/ic_email.svg"
 import Phone from "../assets/ic_phone.svg"
@@ -14,8 +15,8 @@ const HireUsPage = () => {
      return   (
             
             <Layout>
-            <PageTransition
-            >
+            <PageTransition>
+            <Seo title="HireUs" />
             <div className="container">
                 <section className="hireUs">
                     <div className="client">
