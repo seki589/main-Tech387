@@ -173,7 +173,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 3.75%;
+    padding: 16px 3.75%;
     /* margin: 0 auto; */
     z-index: 100;
     /* transform: translate(0); */
@@ -247,15 +247,33 @@ section{
     margin-bottom: 0;
 }
 .partners{
-    visibility: hidden;
+    visibility: visible;
 }
 .partners-title{
-    visibility: hidden;
+    visibility: visible;
 }
 .partners .img{
-    width: 117px;
-    height: 47px;
+    display: flex;
+    margin-left: -6px;
+    margin-bottom: 28px;
 }
+.partners-logo img{
+    width: 100%;
+    /* width: 112px; */
+    height: 28px;
+    /* margin-right: 35px; */
+    object-position: center;
+    object-fit: contain;
+    /* padding: 10px 0px; */
+}
+.partners-logo{
+    object-fit: contain;
+    margin-right: 20px;
+}
+/* .diaSvg {
+    width: 112px;
+    height: 30px;
+} */
 .main{
     width: 100%;
     height: 100vh;
@@ -270,17 +288,18 @@ section{
     bottom: 27px;
 }
 .main-links p{
-    font-family: "Rubiko";
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
+    color: #0C231799;
     margin-bottom: 8px;
 }
 
 .img img{
     width: 100%;
     margin-bottom: 0;
-    margin-left: -6px;
+    /* margin-left: -6px; */
 }
 .linkedin a{  
     display: flex;
@@ -443,7 +462,7 @@ section{
     color: #FFFFFFBD;
 }
 .footer-bot a{
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 .footer .left{
     display: flex;
@@ -635,7 +654,7 @@ section{
 }
 @media only screen and (min-width: 1772px){
     .header{
-        padding:30px 66.6px;
+        padding:16px 66.6px;
     }
     .triangle{
         right: 66.6px;

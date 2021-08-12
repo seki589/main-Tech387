@@ -1,7 +1,7 @@
 import * as React from "react"
 import {useState, useEffect,useRef} from "react"
 import { Link } from "gatsby"
-// import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard } from 'swiper';
 
@@ -12,11 +12,9 @@ import Lottie from "../components/lottie"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin-black.png"
-import Samsung from "../images/samsung-logo.png"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import gsap from "gsap";
 import "swiper/swiper-bundle.css";
-// import "../styles/styles-1.css"
 import '../styles/styles.css'
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard]);
@@ -110,7 +108,14 @@ const IndexPage = () => {
               <div className="main-links">
                   <p className="partners-title">Partners</p>
                   <div className="partners">
-                  <div className="img"> <img src={Samsung} alt="samsung"/></div>
+                     <div className="img">
+                     <StaticImage src="../images/samsung-logo.png" className="partners-logo" alt="samsung" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/volkswagen-group-log.png" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/Huawei-logo.png" className="partners-logo" alt="huawei" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/GoCloudgroup.png" className="partners-logo" alt="goCloudgroup" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/DiamountAppLogo.png" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/>
+                     
+                     </div>
                   </div>
                   <div className="linkedin">
                   <a href="https://www.linkedin.com/company/tech-387">
@@ -130,7 +135,7 @@ const IndexPage = () => {
                   <h1>
                   Innovating the<br></br> fitness industry
                   </h1>
-                  <Link to="/hire-us"><p>Read more about SpartanApps &gt; </p></Link>
+                  <Link to="/hire-us" onClick={() => setDarkMode(false)}><p>Read more about SpartanApps &gt; </p></Link>
                   </div>
                   <div className="lottie"  >
                   <Lottie/>
