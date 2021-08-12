@@ -246,9 +246,7 @@ section{
     width: 100%;
     margin-bottom: 0;
 }
-.partners{
-    visibility: visible;
-}
+
 .partners-title{
     visibility: visible;
 }
@@ -664,6 +662,9 @@ section{
     .team-box{
         padding: 10%;
     }
+    .partners{
+        display: none;
+    }
 }
 @media only screen and (min-width: 601px){
     .logo .logoLight{
@@ -768,7 +769,7 @@ section{
     }
     .linkedin-menu a{  
         position: absolute;
-        bottom: 27px;
+        bottom: 3vh;
         display: flex;
         align-items: center;
     }
@@ -823,7 +824,7 @@ section{
     .footer-bot{
  
         left: 0;
-        bottom: 14%;
+        bottom: 14vh;
     }
     .tab{
         width: 95%;
