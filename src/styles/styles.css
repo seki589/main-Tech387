@@ -769,7 +769,7 @@ section{
     }
     .linkedin-menu a{  
         position: absolute;
-        bottom: 3vh;
+        bottom: 3%;
         display: flex;
         align-items: center;
     }
