@@ -124,7 +124,7 @@ section{
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
     right: 3.75% !important;
-    top: 82% !important;
+    top: 80% !important;
     transform: translate3d(0px, -50%, 0);
 }
 .swiper-pagination-bullet-active {
@@ -829,7 +829,7 @@ section{
     .footer-bot{
  
         left: 0;
-        bottom: 14vh;
+        bottom: 17vh;
     }
     .tab{
         width: 95%;
