@@ -467,7 +467,7 @@ section{
     justify-content: center;
 }
 .footer .right{
-    transform: translate(10%,3%) scale(1.4);
+    transform: translate(10%,15%) scale(1.4);
     background-color: #092628;
     /* object-fit: cover; */
     display: flex;
@@ -519,6 +519,120 @@ section{
     margin-top: 10px;
     transition: all .3s ease
 }
+/* Service Page */
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.top-services{
+    display: flex;
+    margin-bottom: 140px;
+}
+/* .top-services>div{
+    flex: 1;
+} */
+.servLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+}
+.servLeft>div{
+    width: 65%;
+}
+.servLeft h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 96px;
+    line-height: 114px;
+    letter-spacing: 0.72px;
+    color: #092628;
+    margin-bottom: 20px;
+}
+.servLeft p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0C231799;
+}
+.servRight{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servRight a{
+    margin-bottom: -30px;
+}
+.plant{
+    width: 100%;
+    /* width: 349px;
+    height: 349px; */
+}
+.bottom-services{
+    display: flex;
+    margin-bottom: 80px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+    /* gap: 30%; */
+}
+/* .icons>div{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+} */
+.icons .icon{
+    height: 44px;
+    width: 44px;
+    margin-bottom: 25px;
+}
+.icon img{
+    width: 100%;
+}
+.icon-name{
+    display: flex;
+    justify-content: space-between ;
+}
+.icons-tab{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.dots{
+    color: #0C231761;
+    margin-bottom: 30px;
+    padding: 0 4%;
+}
+.icons-tab h3{
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    color: #0C231761;
+    position: absolute;
+    top: 80px;
+    width: 150px;
+    text-align: center;
+}
+.bottom-services>.servRight{
+    justify-content: flex-end;
+}
+/* .servRight p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #27BA70;
+    border-bottom: 1px solid #27BA70;
+    transition: all .3s ease;
+} */
 /* Hire Us */
 .hireUs{
     padding-top: 10vh;
@@ -747,11 +861,13 @@ section{
     .navigation a{
         font-family: "Rubik", sans-serif;
         font-size: 60px;
+        font-weight: 500;
         line-height: 71px;
         letter-spacing: 0.45px;
         text-align: left;
         color:  var(--color-text);
         transition: all .3s ease;
+        text-transform: capitalize;
     }
     .navigation a.active{
         color: #27BA70;

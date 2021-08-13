@@ -13,6 +13,16 @@ const Form = () => {
     const handleSent = (e) => {
         e.preventDefault();
         const mail = {name, email, project}
+        fetch('https://us-central1-tech-387-main.cloudfunctions.net/tech387-website-contact', {
+        method: 'POST',
+       
+        body: JSON.stringify(mail)
+        }).then(function(response) {
+            console.log(response)
+           // return response.json();
+        });
+
+        
         console.log(mail);
         setTimeout(() => {
             setMessage("Your message has been sent")
@@ -23,9 +33,7 @@ const Form = () => {
         setName('');
         setEmail('');
         setProject('');
-        
-        
-        
+               
     }
 
         return (
