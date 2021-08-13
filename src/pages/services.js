@@ -50,8 +50,27 @@ const ServicePage = () => (
              </div>
          </div>
      </section>
-     <section className={`services`}>
-         
+     <section className={`service-2nd`}>
+         <div>
+             <StaticImage src="../images/bussines-idea.jpg" alt="bussines-idea" placeholder="tracedSVG"/>
+         </div>
+         <div>
+             <h2>
+             Bussines developet of your idea
+             </h2>
+             <p>
+             Our clients get the best results when they have our team dedicated to their business for 
+             extended periods of time. This is why we are looking for ongoing collaboration where our 
+             professionals are like your team members who just happen to be remote. Ready to move forward?
+             </p>
+             <h5>Research</h5>
+             <h5>Monetisation</h5>
+             <h5>Retention</h5>
+             <div className={`text`}>
+             <Link to="/work"><p>Find out more &gt; </p></Link>
+             </div>
+         </div>
+         <div></div>
      </section>
     </Layout>
 )

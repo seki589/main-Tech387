@@ -626,6 +626,17 @@ section{
 .bottom-services>.servRight{
     justify-content: flex-end;
 }
+.service-2nd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-2nd>div{
+    flex: 1;
+}
+.service-2nd:last-child{
+    padding: 50px;
+}
 /* .servRight p{
     font-size: 16px;
     line-height: 19px;
@@ -807,6 +818,7 @@ section{
         transform: translate(0);
         /* height: 100vh; */
         width:100vw;
+        min-height: 75px;
     }
 
     .logo{
