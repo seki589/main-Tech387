@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-style:"Rubik", sans-serif;
 }
-
+html{
+    height: 100%;
+}
 /* Light Mode */
 :root {
     /* --head-back:#FAFAFA; */
@@ -393,6 +395,9 @@ section{
     display: flex;
     flex-direction: row;
     margin-top: 10%;
+    background-color: #092628;
+    height: 100vh;
+    width: 100%;
 }
 .footer>div{
     flex: 1;
@@ -626,16 +631,100 @@ section{
 .bottom-services>.servRight{
     justify-content: flex-end;
 }
-.service-2nd{
+
+.service-2nd,
+.service-4nd,
+.service-3nd{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.service-2nd>div{
+.service-2nd .one{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    /* padding: 0 5%; */
+}
+.serviceImg1{
+    width: 424px;
+}
+.serviceImg2{
+    width: 584px;
+}
+.serviceImg3{
+    width: 502px;
+    margin-right: 10%;
+}
+.service-2nd .two,
+.service-4nd .two,
+.service-3nd .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex: 1;
 }
-.service-2nd:last-child{
-    padding: 50px;
+.service-2nd .two{
+    padding: 2% 10% 2% 0;
+    
+}
+.service-3nd .two{
+    padding: 2% 2% 2% 10%;
+    
+}
+.service-4nd .two{
+    padding: 2% 10% 2% 10%;
+    
+}
+.two h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: left;
+}
+.two h6{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.two>p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #0C231799;
+    margin-bottom: 16px;
+}
+.two .text p{
+    margin-top: 18px;
+}
+.top-head{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    border-bottom: 1px solid #27BA70;
+    padding: 21px 0 !important;
+}
+.top-head h3{
+    margin-bottom: 0;
+}
+.top-triangle{
+    line-height: 57px;
+}
+.trianglePng{
+    width: 31px;
+    margin-left: 10px;
+}
+.left-tab{
+    display: flex;
+    flex-direction: row;
+}
+.left-tab .icon{
+    width: 35px;
+    height: 35px;
+}
+.left-tab h6{
+    margin-bottom: 0;
 }
 /* .servRight p{
     font-size: 16px;

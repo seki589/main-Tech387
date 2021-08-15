@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: left;
+}
+h6{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+H5{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    color: #0C231761;
+    margin-bottom: 0;
+    transition: all .3s ease;
+}
+.service-container{
+    width: 100%;
+    padding: 0 3.75%;
+    min-height: 100vh;
+    max-width: 1776px;
+    margin: auto;
+    position: relative;
+    background-color: #FAFAFA;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.top-services{
+    display: flex;
+    margin-bottom: 140px;
+}
+/* .top-services>div{
+    flex: 1;
+} */
+.servLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 2;
+}
+.servLeft>div{
+    width: 65%;
+}
+.servLeft h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 96px;
+    line-height: 114px;
+    letter-spacing: 0.72px;
+    color: #092628;
+    margin-bottom: 20px;
+}
+.servLeft p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0C231799;
+}
+.servRight{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servRight a{
+    margin-bottom: -30px;
+}
+.plant{
+    width: 100%;
+    /* width: 349px;
+    height: 349px; */
+}
+.bottom-services{
+    display: flex;
+    margin-bottom: 80px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-top: 20px;
+    /* gap: 30%; */
+}
+/* .icons>div{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+} */
+.icons .icon{
+    height: 44px;
+    width: 44px;
+    margin-bottom: 25px;
+}
+.icon img{
+    width: 100%;
+}
+.icon-name{
+    display: flex;
+    justify-content: space-between ;
+}
+.icons-tab{
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+.dots{
+    color: #0C231761;
+    margin-bottom: 30px;
+    padding: 0 4%;
+}
+.icons-tab h3{
+    font-family: "Rubik";
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0px;
+    color: #0C231761;
+    position: absolute;
+    top: 80px;
+    width: 150px;
+    text-align: center;
+}
+.bottom-services>.servRight{
+    justify-content: flex-end;
+}
+
+.service-2nd,
+.service-4nd,
+.service-3nd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-2nd .one{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+    /* padding: 0 5%; */
+}
+.serviceImg1{
+    width: 424px;
+}
+.serviceImg2{
+    width: 584px;
+}
+.serviceImg3{
+    width: 502px;
+    margin-right: 10%;
+}
+.service-2nd .two,
+.service-4nd .two,
+.service-3nd .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+.service-2nd .two{
+    padding: 2% 10% 2% 0;
+    
+}
+.service-3nd .two{
+    padding: 2% 2% 2% 10%;
+    
+}
+.service-4nd .two{
+    padding: 2% 10% 2% 10%;
+    
+}
+.two h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: left;
+}
+.two h6{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.two>p{
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #0C231799;
+    margin-bottom: 16px;
+}
+.two .text p{
+    margin-top: 18px;
+}
+.service-nd{
+    background-color: #FAFAFA;
+    height: 100%;
+}
+.top-head{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    border-bottom: 1px solid #27BA70;
+    padding: 21px 0 !important;
+}
+.top-head h3{
+    margin-bottom: 0;
+}
+.top-triangle{
+    line-height: 57px;
+}
+.trianglePng{
+    width: 31px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.bot-head{
+    display: flex;
+}
+.left-tabs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    flex: 1;
+}
+.left-tab{
+    display: flex;
+    flex-direction: row;
+    
+}
+.left-tab .icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 41px;
+}
+.left-tab {
+    /* margin-bottom: 48px; */
+    padding: 24px 0;
+    cursor: pointer;
+}
+.left-tab .icon path{
+    fill: #0C231761;
+    transition: all .3s ease;
+}
+.left-tab:hover .icon path{
+    fill: #27BA70;
+}
+.left-tab:hover h5{
+    color: #27BA70;
+    
+}
+.right-tabs{
+    flex: 2;
+}
+/* .servRight p{
+    font-size: 16px;
+    line-height: 19px;
+    color: #27BA70;
+    border-bottom: 1px solid #27BA70;
+    transition: all .3s ease;
+} */
