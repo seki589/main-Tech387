@@ -29,7 +29,7 @@ const ServicePage = () => (
                 </div>
              </div>
              <div className="servRight">
-                 <StaticImage src="../images/plant_8.png" className="plant" alt="plant" placeholder="tracedSVG"/>
+                 <StaticImage src="../images/plant_8.png" className="plant" alt="plant" placeholder="blurred"/>
              </div>
          </div>
          <div className="bottom-services">
@@ -63,11 +63,11 @@ const ServicePage = () => (
      </section>
      <section className={`service-container service-2nd`}>
          <div className="one">
-             <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="tracedSVG"/>
+             <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
          </div>
          <div className="two">
              <h3>
-             Bussines developet of your idea
+             Bussines development of your idea
              </h3>
              <p>
              Our clients get the best results when they have our team dedicated to their business for 
@@ -101,12 +101,12 @@ const ServicePage = () => (
              </div>
          </div>
          <div className="one">
-             <StaticImage src="../images/planing.jpg" className="serviceImg2" alt="bussines-idea" placeholder="tracedSVG"/>
+             <StaticImage src="../images/planing.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </div>
      </section>
      <section className={`service-container service-2nd`}>
          <div className="one">
-             <StaticImage src="../images/system.jpg" className="serviceImg2" alt="bussines-idea" placeholder="tracedSVG"/>
+             <StaticImage src="../images/system.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </div>
          <div className="two">
              <h3>
@@ -141,12 +141,12 @@ const ServicePage = () => (
              </div>
          </div>
          <div className="one">
-             <StaticImage src="../images/science.jpg" className="serviceImg3" alt="bussines-idea" placeholder="tracedSVG"/>
+             <StaticImage src="../images/science.jpg" className="serviceImg3" alt="bussines-idea" placeholder="blurred"/>
          </div>
      </section>
      <section className="service-nd">
      <div className={`top-head two`}>
-         <h3>Industies we served</h3>
+         <h3>Industies we serve</h3>
          <div className="top-triangle">
              <StaticImage src="../images/triangle_2.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
              <StaticImage src="../images/triangle_9.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
@@ -184,7 +184,28 @@ const ServicePage = () => (
                 <h5>Customised Software</h5>
              </div>
          </div>
-         <div className="right-tabs"></div>
+         <div className="right-tabs">
+             <div className="tab-wraper">
+             <StaticImage src="../images/meeting.jpg" className="serviceImg4" alt="bussines-idea" placeholder="blurred"/>
+             <div className="tab-head">
+                 <div className="head-img">
+                     <StaticImage src="../images/user.png" alt="user" className="user"/>
+                 </div>
+                 <dev className="head-name">
+                     <h6>Name Surname</h6>
+                     <p>Founder & CEO</p>
+                 </dev>
+                 
+             </div>
+             <div className="tab-text">
+                     <p>
+                     “Natus error sit voluptartem accusantium doloremque laudantium, 
+                     totam rem aperiam, eaque ipsa quae ab illo inventore.”
+                     </p>
+             </div>
+
+             </div>
+         </div>
      </div>
      </section>
      {/* <section >

@@ -525,7 +525,8 @@ section{
     transition: all .3s ease
 }
 /* Service Page */
-.services{
+
+/* .services{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -534,9 +535,6 @@ section{
     display: flex;
     margin-bottom: 140px;
 }
-/* .top-services>div{
-    flex: 1;
-} */
 .servLeft{
     display: flex;
     flex-direction: column;
@@ -573,8 +571,7 @@ section{
 }
 .plant{
     width: 100%;
-    /* width: 349px;
-    height: 349px; */
+
 }
 .bottom-services{
     display: flex;
@@ -583,15 +580,9 @@ section{
 .icons{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding-top: 20px;
-    /* gap: 30%; */
 }
-/* .icons>div{
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-} */
+
 .icons .icon{
     height: 44px;
     width: 44px;
@@ -606,7 +597,6 @@ section{
 }
 .icons-tab{
     display: flex;
-    /* flex: 1; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -643,7 +633,6 @@ section{
     display: flex;
     justify-content: center;
     flex: 2;
-    /* padding: 0 5%; */
 }
 .serviceImg1{
     width: 424px;
@@ -725,14 +714,10 @@ section{
 }
 .left-tab h6{
     margin-bottom: 0;
-}
-/* .servRight p{
-    font-size: 16px;
-    line-height: 19px;
-    color: #27BA70;
-    border-bottom: 1px solid #27BA70;
-    transition: all .3s ease;
 } */
+
+
+
 /* Hire Us */
 .hireUs{
     padding-top: 10vh;
@@ -869,6 +854,12 @@ section{
     }
     .triangle{
         right: 66.6px;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .text h1{
+        font-size: 48px;
+        line-height: 48px;
     }
 }
 @media only screen and (max-width: 768px){
