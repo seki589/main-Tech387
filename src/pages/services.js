@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { Link } from "gatsby"
-// import Tabs from "../components/Tabs"
+import Tabs from "../components/tabs"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Bed from "../assets/bed.svg"
@@ -211,7 +211,7 @@ const ServicePage = () => (
      </div>
      </section>
      <section className="tabs-section">
-     {/* <Tabs> 
+     <Tabs> 
         <div label="Web" className="tabs"> 
             <div className="tab-1">
                 <div className="tab-item">
@@ -348,7 +348,7 @@ const ServicePage = () => (
                 </div>
             </div>
         </div> 
-     </Tabs> */}
+     </Tabs>
      </section>
      </PageTransition>
     </Layout>
