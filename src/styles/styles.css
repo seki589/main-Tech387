@@ -894,9 +894,12 @@ section{
     .partners-logo img{
         height: 20px !important;
         width: 100%;
+        object-fit: fill;
     }
     .hireUs{
-        height: 200vh;
+        height: initial;
+        padding-top: 25vh;
+        align-items: flex-start;
     }
 }
 @media only screen and (max-width: 768px){
@@ -1086,7 +1089,7 @@ section{
     /* HireUs Page */
     .hireUs{
         flex-direction: column;
-        padding-top: 15vh;
+        padding-top: 16vh;
     }
     .team-box{
         /* margin-left: 20%; */
