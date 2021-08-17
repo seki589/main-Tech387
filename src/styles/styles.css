@@ -901,6 +901,9 @@ section{
         padding-top: 25vh;
         align-items: flex-start;
     }
+    .team-box {
+        padding-bottom: 0;
+    }
 }
 @media only screen and (max-width: 768px){
     .text h1{
