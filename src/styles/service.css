@@ -385,7 +385,7 @@ ol.tab-list{
 }
 .lang-icon img{
     width: auto;
-    height: 45px;
+    height: 45px !important;
 }
 .lang-icon p{
     font-size: 16px;
