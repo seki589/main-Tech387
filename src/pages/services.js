@@ -1,8 +1,9 @@
 import * as React from "react"
 
+import { Link } from "gatsby"
+import Tabs from "../components/Tabs"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 import Bed from "../assets/bed.svg"
 import BriefCase from "../assets/briefcase.svg"
 import Coin from "../assets/coin.svg"
@@ -11,8 +12,7 @@ import ElectricCar from "../assets/electric-car.svg"
 import Megaphone from "../assets/megaphone.svg"
 import Paintbrush from "../assets/paintbrush.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
-import { Link } from "gatsby"
-import Tabs from "../components/Tabs"; 
+
 
 // import '../styles/styles.css'
 import '../styles/service.css'
