@@ -211,7 +211,7 @@ const ServicePage = () => (
      </div>
      </section>
      <section className="tabs-section">
-     <Tabs> 
+     {/* <Tabs> 
         <div label="Web" className="tabs"> 
             <div className="tab-1">
                 <div className="tab-item">
@@ -348,10 +348,7 @@ const ServicePage = () => (
                 </div>
             </div>
         </div> 
-        {/* <div label="Sarcosuchus"> 
-            Nothing to see here, this tab is <em>extinct</em>! 
-        </div>  */}
-     </Tabs>
+     </Tabs> */}
      </section>
      </PageTransition>
     </Layout>
