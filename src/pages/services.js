@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import { Link } from "gatsby"
-import Tabs from "../components/Tabs"
+// import Tabs from "../components/Tabs"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Bed from "../assets/bed.svg"
