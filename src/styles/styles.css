@@ -6,7 +6,9 @@
     box-sizing: border-box;
     font-style:"Rubik", sans-serif;
 }
-
+html{
+    height: 100%;
+}
 /* Light Mode */
 :root {
     /* --head-back:#FAFAFA; */
@@ -393,6 +395,9 @@ section{
     display: flex;
     flex-direction: row;
     margin-top: 10%;
+    background-color: #092628;
+    height: 100vh;
+    width: 100%;
 }
 .footer>div{
     flex: 1;
@@ -404,7 +409,8 @@ section{
 }
 .footer-mid{
     display: flex;
-    z-index: 1;
+    position: relative;
+    /* z-index: 1; */
 }
 .footer-mid>div{
     flex: 1;
@@ -462,6 +468,8 @@ section{
     margin-bottom: 27px;
 }
 .footer .left{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,7 +528,8 @@ section{
     transition: all .3s ease
 }
 /* Service Page */
-.services{
+
+/* .services{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -529,9 +538,6 @@ section{
     display: flex;
     margin-bottom: 140px;
 }
-/* .top-services>div{
-    flex: 1;
-} */
 .servLeft{
     display: flex;
     flex-direction: column;
@@ -568,8 +574,7 @@ section{
 }
 .plant{
     width: 100%;
-    /* width: 349px;
-    height: 349px; */
+
 }
 .bottom-services{
     display: flex;
@@ -578,15 +583,9 @@ section{
 .icons{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     padding-top: 20px;
-    /* gap: 30%; */
 }
-/* .icons>div{
-    display: flex;
-    flex: 1;
-    justify-content: flex-start;
-} */
+
 .icons .icon{
     height: 44px;
     width: 44px;
@@ -601,7 +600,6 @@ section{
 }
 .icons-tab{
     display: flex;
-    /* flex: 1; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -626,24 +624,103 @@ section{
 .bottom-services>.servRight{
     justify-content: flex-end;
 }
-.service-2nd{
+
+.service-2nd,
+.service-4nd,
+.service-3nd{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.service-2nd>div{
+.service-2nd .one{
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+.serviceImg1{
+    width: 424px;
+}
+.serviceImg2{
+    width: 584px;
+}
+.serviceImg3{
+    width: 502px;
+    margin-right: 10%;
+}
+.service-2nd .two,
+.service-4nd .two,
+.service-3nd .two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex: 1;
 }
-.service-2nd:last-child{
-    padding: 50px;
+.service-2nd .two{
+    padding: 2% 10% 2% 0;
+    
 }
-/* .servRight p{
+.service-3nd .two{
+    padding: 2% 2% 2% 10%;
+    
+}
+.service-4nd .two{
+    padding: 2% 10% 2% 10%;
+    
+}
+.two h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: left;
+}
+.two h6{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.two>p{
     font-size: 16px;
-    line-height: 19px;
-    color: #27BA70;
+    line-height: 20px;
+    text-align: left;
+    color: #0C231799;
+    margin-bottom: 16px;
+}
+.two .text p{
+    margin-top: 18px;
+}
+.top-head{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
     border-bottom: 1px solid #27BA70;
-    transition: all .3s ease;
+    padding: 21px 0 !important;
+}
+.top-head h3{
+    margin-bottom: 0;
+}
+.top-triangle{
+    line-height: 57px;
+}
+.trianglePng{
+    width: 31px;
+    margin-left: 10px;
+}
+.left-tab{
+    display: flex;
+    flex-direction: row;
+}
+.left-tab .icon{
+    width: 35px;
+    height: 35px;
+}
+.left-tab h6{
+    margin-bottom: 0;
 } */
+
+
+
 /* Hire Us */
 .hireUs{
     padding-top: 10vh;
@@ -782,6 +859,42 @@ section{
         right: 66.6px;
     }
 }
+@media only screen and (max-width: 1020px){
+    .text h1{
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+/* Landscape mode */
+@media only screen and (max-width: 1020px) and (min-width: 600px),
+            screen and (max-height: 500px){
+    .text h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .main-links{
+        bottom: 7px;
+    }
+    .partners .img {
+        margin-bottom: 8px;
+    }
+    .text h1{
+        margin-bottom: 1rem;
+    }
+    .footer-head h1 {
+        display: none;
+    }
+    .footer-bot{
+        bottom: 7px;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets{
+        top: 70% !important;
+    }
+    .hireUs{
+        height: 200vh;
+    }
+}
 @media only screen and (max-width: 768px){
     .text h1{
         font-size: 48px;
@@ -791,6 +904,9 @@ section{
     }
     .partners{
         display: none;
+    }
+    .footer .right{
+        transform: translate(10%,0%) scale(1.5);
     }
 }
 @media only screen and (min-width: 601px){
