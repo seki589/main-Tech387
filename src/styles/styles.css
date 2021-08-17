@@ -893,6 +893,7 @@ section{
     }
     .partners-logo img{
         height: 20px !important;
+        width: 100%;
     }
     .hireUs{
         height: 200vh;
