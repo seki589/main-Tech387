@@ -1075,6 +1075,9 @@ section{
         left: 0;
         bottom: 17vh;
     }
+    .footer .left{
+        justify-content: flex-start;
+    }
     .tab{
         width: 95%;
         
