@@ -891,6 +891,9 @@ section{
     .swiper-container-vertical > .swiper-pagination-bullets{
         top: 70% !important;
     }
+    .partners-logo img{
+        height: 20px !important;
+    }
     .hireUs{
         height: 200vh;
     }
