@@ -865,6 +865,36 @@ section{
         line-height: 48px;
     }
 }
+
+/* Landscape mode */
+@media only screen and (max-width: 1020px) and (min-width: 600px),
+            screen and (max-height: 500px){
+    .text h1{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .main-links{
+        bottom: 7px;
+    }
+    .partners .img {
+        margin-bottom: 8px;
+    }
+    .text h1{
+        margin-bottom: 1rem;
+    }
+    .footer-head h1 {
+        display: none;
+    }
+    .footer-bot{
+        bottom: 7px;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets{
+        top: 70% !important;
+    }
+    .hireUs{
+        height: 200vh;
+    }
+}
 @media only screen and (max-width: 768px){
     .text h1{
         font-size: 48px;

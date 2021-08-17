@@ -22,10 +22,11 @@ H5{
     margin-bottom: 0;
     transition: all .3s ease;
 }
+
 .service-container{
     width: 100%;
     padding: 0 3.75%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     max-width: 1776px;
     margin: auto;
     position: relative;
@@ -324,7 +325,7 @@ H5{
 }
 .tab-list {  
     padding-left: 40%;
-    cursor: pointer;
+    
 }
   
 .tab-list-item {
@@ -336,7 +337,7 @@ H5{
     margin-right: 20px;
     padding: 0.5rem 1.75rem;
     border-radius: 7px 7px 0 0 ;
-    
+    cursor: pointer; 
 }
   
 .tab-list-active {
