@@ -254,6 +254,7 @@ section{
 }
 .partners .img{
     display: flex;
+    align-items: flex-start;
     margin-left: -6px;
     margin-bottom: 28px;
 }
@@ -264,13 +265,11 @@ section{
     object-fit: contain;
 }
 .partners-logo{
-    object-fit: contain;
+    display: flex;
+    height: 28px !important;
+    align-items: flex-start;
     margin-right: 20px;
 }
-/* .diaSvg {
-    width: 112px;
-    height: 30px;
-} */
 .main{
     width: 100%;
     height: 100vh;
@@ -878,7 +877,7 @@ section{
         margin-bottom: 8px;
     }
     .text h1{
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem;
     }
     .footer-head h1 {
         display: none;
@@ -889,8 +888,21 @@ section{
     .swiper-container-vertical > .swiper-pagination-bullets{
         top: 70% !important;
     }
+    .partners-logo {
+        height: 20px !important;
+    }
+    .partners-logo img{
+        height: 20px !important;
+        width: 100%;
+        object-fit: cover;
+    }
     .hireUs{
-        height: 200vh;
+        height: initial;
+        padding-top: 25vh;
+        align-items: flex-start;
+    }
+    .team-box {
+        padding-bottom: 0;
     }
 }
 @media only screen and (max-width: 768px){
