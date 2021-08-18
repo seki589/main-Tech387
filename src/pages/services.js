@@ -23,7 +23,7 @@ import '../styles/service.css'
 const ServicePage = () => (
     <Layout>
     <PageTransition>
-    <Seo title="Service" />
+    <Seo title="Services" />
      <section className={`service-container`}>
          <div className="top-services">
              <div className="servLeft">
