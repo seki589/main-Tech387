@@ -2,6 +2,8 @@ import * as React from "react"
 
 import { Link } from "gatsby"
 import Tabs from "../components/tabs"
+import Seo from "../components/seo"
+import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Bed from "../assets/bed.svg"
@@ -17,9 +19,11 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 // import '../styles/styles.css'
 import '../styles/service.css'
 
+
 const ServicePage = () => (
     <Layout>
     <PageTransition>
+    <Seo title="Service" />
      <section className={`service-container`}>
          <div className="top-services">
              <div className="servLeft">
@@ -210,7 +214,7 @@ const ServicePage = () => (
          </div>
      </div>
      </section>
-     <section className="tabs-section">
+     <div className="tabs-section">
      <Tabs> 
         <div label="Web" className="tabs"> 
             <div className="tab-1">
@@ -346,10 +350,40 @@ const ServicePage = () => (
                         <p>Pyton</p>
                     </div>
                 </div>
+                <div className="tab-item">
+                    <h6>Frameworks</h6>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/angularjs.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>Angular</p>
+                    </div>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/ruby_on_rails.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>Ruby on rails</p>
+                    </div>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/atom.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>React</p>
+                    </div>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/mvc.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>ASP.net MVC</p>
+                    </div>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/nodejs.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>NodeJS</p>
+                    </div>
+                    <div className="lang-icon">
+                        <StaticImage src="../images/tab-images/laravel.png" alt="icon" placeholder="tracedSVG"/>
+                        <p>Laravel</p>
+                    </div>
+                </div>
             </div>
         </div> 
      </Tabs>
-     </section>
+     </div>
+     <div className="footer-service" >
+         <Footer/>
+     </div>
      </PageTransition>
     </Layout>
 )

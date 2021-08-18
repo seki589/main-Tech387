@@ -6,9 +6,7 @@
     box-sizing: border-box;
     font-style:"Rubik", sans-serif;
 }
-html{
-    height: 100%;
-}
+
 /* Light Mode */
 :root {
     /* --head-back:#FAFAFA; */
@@ -959,9 +957,10 @@ section{
     .navigation {
         position: absolute;
         top: 0;
-        left: 0%;
+        left: 0;
+        bottom: 0;
         height: -webkit-fill-available;
-        height: 100vh;
+        min-height: 100vh;
         width: 100vw;
         background-color: var(--color-background) ;
         display:flex;
@@ -1071,6 +1070,9 @@ section{
  
         left: 0;
         bottom: 17vh;
+    }
+    .footer .left{
+        justify-content: flex-start;
     }
     .tab{
         width: 95%;
