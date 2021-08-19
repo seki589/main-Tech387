@@ -23,7 +23,7 @@ class Header extends React.Component {
   }
   closeMenu = () => {
 
-       setTimeout( async  () => {
+       setTimeout(() => {
         this.toggleMenu();
        },400)
   }

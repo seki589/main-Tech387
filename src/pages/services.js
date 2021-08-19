@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Tabs from "../components/tabs"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
+import useMousePosition from "../hooks/useMousePosition"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Bed from "../assets/bed.svg"
@@ -16,11 +17,16 @@ import Paintbrush from "../assets/paintbrush.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
-// import '../styles/styles.css'
 import '../styles/service.css'
 
 
-const ServicePage = () => (
+const ServicePage = () => {
+   
+   
+    const {x, y} = useMousePosition()
+    console.log(x,y);
+
+   return(
     <Layout>
     <PageTransition>
     <Seo title="Services" />
@@ -218,7 +224,7 @@ const ServicePage = () => (
      <Tabs> 
         <div label="Web" className="tabs"> 
             <div className="tab-1">
-                <div className="tab-item">
+                <div className="tab-item" x={x} y={y}>
                     <h6>Languages</h6>
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/c.png" alt="icon" placeholder="tracedSVG"/>
@@ -387,5 +393,5 @@ const ServicePage = () => (
      </PageTransition>
     </Layout>
 )
-
+}
 export default ServicePage

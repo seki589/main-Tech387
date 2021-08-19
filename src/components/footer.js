@@ -13,7 +13,8 @@ const Footer = () => {
         const body = document.body
         if(body === 'dark'){
             body.classList.remove('dark')
-        }else{
+        } 
+        else{
             body.classList.remove('dark')
         }
     },[light])

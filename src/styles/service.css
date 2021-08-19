@@ -275,6 +275,7 @@ H5{
     cursor: pointer;
     margin-bottom: 40px;
 }
+
 .left-tab .icon path{
     fill: #0C231761;
     transition: all .3s ease;
@@ -358,7 +359,7 @@ H5{
     list-style: none;
     margin-bottom: -1px;
     margin-right: 20px;
-    padding: 0.5rem 1.75rem;
+    padding: 0.5rem 2rem;
     border-radius: 7px 7px 0 0 ;
     cursor: pointer; 
 }
