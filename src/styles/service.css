@@ -254,6 +254,54 @@ H5{
     position: relative !important;
     overflow: hidden;
 }
+.iner-hover{
+    position: absolute;
+    top: 22%;
+    /* bottom: 12%; */
+    left: 17%;
+    padding: 7% 3%;
+    width: 485px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+.iner-hover::after{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bussines-idea.jpg");
+    background-position: center;
+    opacity: .3;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+.text-hover h6{
+    cursor: pointer;
+    transition:all 0.3s ease;
+    position: relative;
+}
+.text-hover h6::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000000ff;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+.text-hover h6:hover::after{
+    transform: scaleX(1);
+}
+.iner-hover h6{
+    font-size: 26px;
+    margin-bottom: 30px;
+}
 .left-tabs{
     display: flex;
     flex-direction: column;
@@ -302,7 +350,7 @@ H5{
     width: 40%;
     position: absolute;
     top: -20%;
-    left: 40%;
+    left: 30%;
     
 }
 .serviceImg4{

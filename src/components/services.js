@@ -67,9 +67,7 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              x= {x} y={y}
              className="left-tab">
                  <img src={icon} className="icon" alt="icon" />
-                {/* <Cardiogram className="icon"/> */}
                 <h5>{title}</h5>
-                {/* <StaticImage src={img} alt="user" className="user"/> */}
              </motion.div>
              <motion.div 
              initial={{opacity: 0,
@@ -77,14 +75,13 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                 y: 0,
             }}
              animate={{
-                 opacity: hoverState? 1 : 0,
-                 x:  x - listPosition.left ,
+                 opacity: hoverState? [0, 1] : 0,
+                 x:  x - listPosition.left * 0.7 ,
                  y:  y * 0.10 + listPosition.top * 0.1 ,
              }}
              
             transition={{ ease: 'linear'}}
              className="tab-wraper">
-             {/* <StaticImage src={`../images/${img}.png`} className="serviceImg4" alt="bussines-idea" placeholder="blurred"/> */}
              <img src={img} alt="service" className="serviceImg4"/>
              <div className="tab-head">
                  <div className="head-img">

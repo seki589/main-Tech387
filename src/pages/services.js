@@ -6,17 +6,21 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
+import {useState} from 'react'
 
+import data from "../data/services-data.json"
+import { motion } from "framer-motion"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Services from "../components/services"
 
 
 import '../styles/service.css'
+import { render } from "react-dom"
 
 
 const ServicePage = () => {
    
-
+    const [imageHover, setImageHover] = useState(false)
 
    return(
     <Layout>
@@ -66,9 +70,12 @@ const ServicePage = () => {
          </div>
      </section>
      <section className={`service-container service-2nd`}>
-         <div className="one">
+         <motion.div 
+         initial={{opacity: 1}}
+         animate={{opacity: imageHover? 0 : [0, 1]}}
+         className="one">
              <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
-         </div>
+         </motion.div>
          <div className="two">
              <h3>
              Bussines development of your idea
@@ -78,9 +85,106 @@ const ServicePage = () => {
              extended periods of time. This is why we are looking for ongoing collaboration where our 
              professionals are like your team members who just happen to be remote. Ready to move forward?
              </p>
-             <h6>Research</h6>
-             <h6>Monetisation</h6>
-             <h6>Retention</h6>
+             
+                 {data.map(el => 
+                      (
+                     <Items 
+                     imageHover={imageHover}
+                     setImageHover={setImageHover}
+                     key={el.id}
+                     title={el.title}
+                     text={el.text}
+                     />
+                 )
+                 )}
+             {/* <motion.h6
+             onHoverStart={() => setHoverState(true)}
+             onHoverEnd={() => setHoverState(false)}
+             >Research</motion.h6>
+             <motion.div
+               initial={{opacity: 0}}
+                animate={{
+                    opacity: hoverState? 1 : 0}} 
+                transition={{ ease: 'linear'}}
+                className="iner-hover">
+                 <h6>Research</h6>
+                 <p>
+                 Our multidisciplinary experts research your end users’ behaviours, routines and pain 
+                 points to identify opportunities for amazement. We analyse your market, competitors 
+                 and explore methods for differentiation.
+                 </p>
+             </motion.div>
+             </div>
+             <div className="text-hover">
+             <motion.h6
+             onHoverStart={() => setHoverState(true)}
+             onHoverEnd={() => setHoverState(false)}
+             >Monetisation</motion.h6>
+             <motion.div
+               initial={{opacity: 0}}
+                animate={{
+                    opacity: hoverState? 1 : 0}} 
+                transition={{ ease: 'linear'}}
+                className="iner-hover">
+                 <h6>Monetisation</h6>
+                 <p>
+                 We iterate on revenue models and aim to hit the sweet spot where value creation 
+                 happens for you and your end users. Based on research data, we design ROI and 
+                 growth plans using multi-channel marketing strategies.
+                 </p>
+             </motion.div>
+             </div>
+             <div className="text-hover">
+             <motion.h6
+             onHoverStart={() => setHoverState(true)}
+             onHoverEnd={() => setHoverState(false)}
+             >Retention</motion.h6>
+             <motion.div
+               initial={{opacity: 0}}
+                animate={{
+                    opacity: hoverState? 1 : 0}} 
+                transition={{ ease: 'linear'}}
+                className="iner-hover">
+                 <h6>Retention</h6>
+                 <p>
+                 Our experts assist you to gather and analyse user insights and expand your offer. 
+                 Using insights, we help you prioritise what brings the most value and renders 
+                 your product indispensable.
+                 </p>
+             </motion.div>
+             </div>
+             <div className="text-hover">
+             <h6>Conceptualisation</h6>
+             <div className="iner-hover">
+                 <h6>Conceptualisation</h6>
+                 <p>
+                 We align project to your business mission and goals to allocate team and resources 
+                 accordingly. Following an order of prioritisation, we plan project implementation, 
+                 estimate schedule and project cost.
+                 </p>
+             </div>
+             </div>
+             <div className="text-hover">
+             <h6>Requirements Engineering</h6>
+             <div className="iner-hover">
+                 <h6>Requirements Engineering</h6>
+                 <p>
+                 Our team gathers functional, system and technical requirements from various stakeholders 
+                 to understand what technologies will be used and how a project implementation will be structured.
+                 </p>
+             </div>
+             </div>
+             <div className="text-hover">
+             <h6>Prototyping</h6>
+             <div className="iner-hover">
+                 <h6>Prototyping</h6>
+                 <p>
+                 With the requirements in place, we design prototypes to envision what a product will look 
+                 like and how it will function. This stage is important to validate ideas and get valuable 
+                 feedback before committing to implementation.
+                 </p>
+             </div>
+             </div> */}
              <div className={`text`}>
              <Link to="/work"><p>See our creative work &gt; </p></Link>
              </div>
@@ -333,5 +437,40 @@ const ServicePage = () => {
      </PageTransition>
     </Layout>
 )
+}
+
+const Items = ({title, text, setImageHover}) => {
+
+    const [hoverState, setHoverState] = useState(false)
+       
+    return(
+        <div className="text-hover"  >
+                        <motion.h6
+                        onHoverStart={() => setHoverState(true)&setImageHover(true)}
+                        onHoverEnd={() => setHoverState(false)&setImageHover(false)}
+                        >{title}
+                        </motion.h6>
+                        <motion.div
+                          initial={{opacity: 0}}
+                           animate={{
+                               opacity: hoverState? [0,1] : 0}} 
+                           transition={{ ease: "backOut"}}
+                           
+                           className="iner-hover">
+                            <motion.h6
+                            initial={{x : -70}}
+                            animate={{x : hoverState?  0 : -50}}
+                            transition={{duration: 0.3}}
+                            >{title}</motion.h6>
+                            <motion.p
+                            initial={{x : -70}}
+                            animate={{x : hoverState? 0 : -70}}
+                            transition={{delay: 0.3, duration: 0.3}}
+                            >
+                            {text}
+                            </motion.p>
+                        </motion.div>
+                    </div>
+    )
 }
 export default ServicePage
