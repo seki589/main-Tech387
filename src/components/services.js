@@ -73,6 +73,8 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              </motion.div>
              <motion.div 
              initial={{opacity: 0,
+                x: 0,
+                y: 0,
             }}
              animate={{
                  opacity: hoverState? 1 : 0,
