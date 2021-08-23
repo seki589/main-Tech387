@@ -3,7 +3,7 @@
         "title": "Health & Fitness",
         "id": "Health & Fitness",
         "icon": "/icons/cardiogram.svg",
-        "src": "assets/images/fitnes.jpg",
+        "src": "/images/fitnes.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"  
@@ -12,7 +12,7 @@
         "title": "Automotive",
         "id": "Automotive",
         "icon": "/icons/electric-car.svg",
-        "src": "assets/images/car.jpg",
+        "src": "/images/car.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
@@ -21,7 +21,7 @@
         "title": "E Commerce",
         "id": "E Commerce",
         "icon": "/icons/briefcase.svg",
-        "src": "/assets/images/cart.jpg",
+        "src": "/images/cart.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
@@ -30,7 +30,7 @@
         "title": "Finance",
         "id": "Finance",
         "icon": "/icons/coin.svg",
-        "src": "/assets/images/finance.jpg",
+        "src": "/images/finance.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
@@ -39,7 +39,7 @@
         "title": "Hospitality",
         "id": "Hospitality",
         "icon": "/icons/bed.svg",
-        "src": "/assets/images/hospital.jpg",
+        "src": "/images/hospital.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
@@ -48,7 +48,7 @@
         "title": "Social Media",
         "id": "Social Media",
         "icon": "/icons/megaphone.svg",
-        "src": "/assets/images/media.jpg",
+        "src": "/images/media.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
@@ -57,7 +57,7 @@
         "title": "Customised Software",
         "id": "Customised Software",
         "icon": "/icons/paintbrush.svg",
-        "src": "/assets/images/meeting.jpg",
+        "src": "/images/meeting.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
         "text": "“Natus error sit voluptartem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.”"   
