@@ -4,17 +4,11 @@ import { Link } from "gatsby"
 import Tabs from "../components/tabs"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
-import useMousePosition from "../hooks/useMousePosition"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import Bed from "../assets/bed.svg"
-import BriefCase from "../assets/briefcase.svg"
-import Coin from "../assets/coin.svg"
-import Cardiogram from "../assets/cardiogram.svg"
-import ElectricCar from "../assets/electric-car.svg"
-import Megaphone from "../assets/megaphone.svg"
-import Paintbrush from "../assets/paintbrush.svg"
-import PageTransition from 'gatsby-plugin-page-transitions';
+
+import PageTransition from 'gatsby-plugin-page-transitions'
+import Services from "../components/services"
 
 
 import '../styles/service.css'
@@ -22,9 +16,7 @@ import '../styles/service.css'
 
 const ServicePage = () => {
    
-   
-    const {x, y} = useMousePosition()
-    console.log(x,y);
+
 
    return(
     <Layout>
@@ -158,73 +150,21 @@ const ServicePage = () => {
      </section>
      <section className="service-nd">
      <div className={`top-head two`}>
-         <h3>Industies we serve</h3>
+         <h3>Industries we serve</h3>
          <div className="top-triangle">
              <StaticImage src="../images/triangle_2.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
              <StaticImage src="../images/triangle_9.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
              <StaticImage src="../images/triangle_11.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
          </div>
      </div>
-     <div className="bot-head">
-         <div className="left-tabs">
-             <div className="left-tab">
-                <Cardiogram className="icon"/>
-                <h5>Health & Fitness</h5>
-             </div>
-             <div className="left-tab">
-                <ElectricCar className="icon"/>
-                <h5>Automotive</h5>
-             </div>
-             <div className="left-tab">
-                <BriefCase className="icon"/>
-                <h5>E Commerce</h5>
-             </div>
-             <div className="left-tab">
-                <Coin className="icon"/>
-                <h5>Finance</h5>
-             </div>
-             <div className="left-tab">
-                <Bed className="icon"/>
-                <h5>Hospitality</h5>
-             </div>
-             <div className="left-tab">
-                <Megaphone className="icon"/>
-                <h5>Social Media</h5>
-             </div>
-             <div className="left-tab">
-                <Paintbrush className="icon"/>
-                <h5>Customised Software</h5>
-             </div>
-         </div>
-         <div className="right-tabs">
-             <div className="tab-wraper">
-             <StaticImage src="../images/meeting.jpg" className="serviceImg4" alt="bussines-idea" placeholder="blurred"/>
-             <div className="tab-head">
-                 <div className="head-img">
-                     <StaticImage src="../images/user.png" alt="user" className="user"/>
-                 </div>
-                 <div className="head-name">
-                     <h6>Name Surname</h6>
-                     <p>Founder & CEO</p>
-                 </div>
-                 
-             </div>
-             <div className="tab-text">
-                     <p>
-                     “Natus error sit voluptartem accusantium doloremque laudantium, 
-                     totam rem aperiam, eaque ipsa quae ab illo inventore.”
-                     </p>
-             </div>
-
-             </div>
-         </div>
-     </div>
+     <Services />
+     
      </section>
      <div className="tabs-section">
      <Tabs> 
         <div label="Web" className="tabs"> 
             <div className="tab-1">
-                <div className="tab-item" x={x} y={y}>
+                <div className="tab-item" >
                     <h6>Languages</h6>
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/c.png" alt="icon" placeholder="tracedSVG"/>

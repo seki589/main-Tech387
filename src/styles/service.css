@@ -25,8 +25,8 @@ H5{
 
 .service-container{
     width: 100%;
-    padding: 0 3.75%;
-    /* min-height: 100vh; */
+    padding: 10% 3.75%;
+    height: initial;
     max-width: 1776px;
     margin: auto;
     position: relative;
@@ -251,6 +251,8 @@ H5{
 }
 .bot-head{
     display: flex;
+    position: relative !important;
+    overflow: hidden;
 }
 .left-tabs{
     display: flex;
@@ -276,12 +278,15 @@ H5{
     margin-bottom: 40px;
 }
 
-.left-tab .icon path{
-    fill: #0C231761;
+
+.left-tab .icon{
+    filter: invert(77%) sepia(6%) saturate(233%) hue-rotate(98deg) brightness(87%) contrast(85%);
     transition: all .3s ease;
 }
-.left-tab:hover .icon path{
-    fill: #27BA70;
+
+.left-tab:hover .icon  {
+    filter: invert(63%) sepia(71%) saturate(434%) hue-rotate(97deg) brightness(82%) contrast(93%);
+    transition: all .3s ease;
 }
 .left-tab:hover h5{
     color: #27BA70;
@@ -294,10 +299,16 @@ H5{
     flex: 2;
 }
 .tab-wraper{
-    width: 70%;
+    width: 40%;
+    position: absolute;
+    top: -20%;
+    left: 40%;
+    
 }
 .serviceImg4{
-    aspect-ratio: 20/9;
+    aspect-ratio: 21/9;
+    object-fit: cover;
+    object-position: center;
 }
 .tab-head{
     display: flex;

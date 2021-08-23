@@ -22,8 +22,7 @@ const Form = () => {
            // return response.json();
         });
 
-        
-        console.log(mail);
+    
         setTimeout(() => {
             setMessage("Your message has been sent")
         },300);
