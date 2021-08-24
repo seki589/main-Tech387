@@ -44,15 +44,15 @@ H5{
     background-color: #092628;
     position: relative;
     z-index: 1;
-    
+
 }
 .footer-service .footer{
     transform: translateY(-25vh);
     /* height: 90vh; */
-    
-    
+
+
     /* margin: auto; */
-    
+
 }
 .services{
     display: flex;
@@ -109,7 +109,7 @@ H5{
 .bottom-services{
     display: flex;
     padding-bottom: 80px;
-    
+
 }
 
 .icons{
@@ -199,15 +199,15 @@ H5{
 }
 .service-2nd .two{
     padding: 2% 5% 2% 0;
-    
+
 }
 .service-3nd .two{
     padding: 2% 10% 2% 10%;
-    
+
 }
 .service-4nd .two{
     padding: 2% 10% 2% 10%;
-    
+
 }
 .two h3{
     font-family: "Rubik", sans-serif;
@@ -270,18 +270,23 @@ H5{
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .iner-hover{
     top: 22%;
     left: 15%;
-    width: 485px;
-    height: 550px;
+    /* width: 485px; */
+    width: 33%;
+    /* height: 550px; */
+    height: 63%;
 }
 .iner-hover-1{
     top: 22%;
     right: 5%;
-    width: 600px;
-    height: 430px;
+    /* width: 600px; */
+    width: 47%;
+    /* height: 430px; */
+    height: 55%;
 }
 .iner-hover-2{
     top: 22%;
@@ -291,7 +296,7 @@ H5{
 }
 .iner-hover-3{
     top: 22%;
-    right: 5%;
+    right: 0%;
     width: 630px;
     height: 430px;
 }
@@ -310,18 +315,19 @@ H5{
     background-size: cover;
     position: absolute;
     z-index: -1;
+
 }
 .iner-hover::after{
-    background-image: url("../images/bussines-idea.jpg"); 
+    background-image: url("../images/bussines-idea.jpg");
 }
 .iner-hover-1::after{
-    background-image: url("../images/planing.jpg"); 
+    background-image: url("../images/planing.jpg");
 }
 .iner-hover-2::after{
-    background-image: url("../images/system.jpg"); 
+    background-image: url("../images/system.jpg");
 }
 .iner-hover-3::after{
-    background-image: url("../images/science.jpg"); 
+    background-image: url("../images/science.jpg");
 }
 .text-hover h6{
     cursor: pointer;
@@ -366,24 +372,23 @@ H5{
     padding: 94px;
     flex: 1;
 }
-.left-tab{
-    display: flex;
-    flex-direction: row;
-    
-}
+
 .left-tab .icon{
     width: 35px;
     height: 35px;
     margin-right: 41px;
 }
 .left-tab {
-    /* margin-bottom: 48px; */
+    display: flex;
+    flex-direction: row;
     padding: 24px 0;
     cursor: pointer;
     margin-bottom: 40px;
 }
 
-
+.left-tab h5{
+    margin-top: 5px;
+}
 .left-tab .icon{
     /* filter: invert(77%) sepia(6%) saturate(233%) hue-rotate(98deg) brightness(87%) contrast(85%); */
     transition: all .3s ease;
@@ -395,7 +400,7 @@ H5{
 }
 .left-tab:hover h5{
     color: #27BA70;
-    
+
 }
 .right-tabs{
     display: flex;
@@ -413,7 +418,7 @@ H5{
     width: 40%;
     position: absolute;
     top: -20%;
-    left: 30%;
+    left: 40%;
     z-index: 1;
     background-color: #FAFAFA;
 }
@@ -470,11 +475,11 @@ H5{
     margin: auto;
     background-color: #FAFAFA;
 }
-.tab-list {  
+.tab-list {
     padding-left: 40%;
-    
+
 }
-  
+
 .tab-list-item {
     display: inline-block;
     font-weight: 600;
@@ -484,9 +489,9 @@ H5{
     margin-right: 20px;
     padding: 0.5rem 2rem;
     border-radius: 7px 7px 0 0 ;
-    cursor: pointer; 
+    cursor: pointer;
 }
-  
+
 .tab-list-active {
     background-color: black;
     color: white;
@@ -527,8 +532,9 @@ ol.tab-list{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
-    /* transform: scale(1.3); */
+    /* margin-left: 70px; */
+    margin-left: 5%;
+
 }
 .lang-icon img{
     width: auto;
@@ -539,10 +545,56 @@ ol.tab-list{
     padding: 5px 0;
 }
 
-/* .servRight p{
-    font-size: 16px;
-    line-height: 19px;
-    color: #27BA70;
-    border-bottom: 1px solid #27BA70;
-    transition: all .3s ease;
-} */
+@media only screen and (max-width: 1024px){
+    .servLeft{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 5%;
+        /* flex-direction: row;
+        flex: 1; */
+
+    }
+    .servRight{
+        display: none;
+    }
+    .service-2nd,
+    .service-4nd,
+    .service-3nd{
+        flex-direction: column;
+    }
+    .serviceImg1{
+        width: 90%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        margin-left: 5%;
+    }
+    .serviceImg2{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .serviceImg3{
+        width: 90%;
+        margin-right: 0%;
+    }
+    .service-2nd .two{
+        /* padding: 2% 5% 2% 0; */
+        width: 90%;
+       
+    }
+    .service-3nd .two{
+        padding: 2% 0 2% 0;;
+        width: 90%;
+        order: 2;
+    }
+    .service-2nd .one{
+        justify-content: flex-start;
+    }
+    .service-4nd .two{
+        order: 2;
+        padding: 2% 5%;
+    }
+    .service-4nd .one{
+        padding: 2% 5%;
+    }
+    
+}

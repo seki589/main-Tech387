@@ -63,6 +63,8 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
         <div >
              <motion.div ref={list}
              onHoverStart={() => setHoverState(true)}
+             onClick={() => setHoverState(true)}
+             onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => setHoverState(false)}
              x= {x} y={y}
              className="left-tab">
@@ -71,13 +73,15 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              </motion.div>
              <motion.div 
              initial={{opacity: 0,
-                x: 0,
-                y: 0,
+                // x: x,
+                // y: y,
             }}
              animate={{
-                 opacity: hoverState? [0, 1] : 0,
-                 x:  x - listPosition.left * 0.7 ,
-                 y:  y * 0.10 + listPosition.top * 0.1 ,
+                 opacity: hoverState? 1 : 0,
+                 x:  (x - listPosition.left) * 0.5 ,
+                //  y:  y * 0.17 + listPosition.top * 0.5 ,
+                 y:  y * 0.10 + listPosition.top * 0.3 ,
+                
              }}
             transition={{ ease: 'linear'}}
              className="tab-wraper">
