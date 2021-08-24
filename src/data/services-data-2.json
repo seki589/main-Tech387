@@ -1,0 +1,20 @@
+[
+    {   
+        "id" : 1,
+        "title": "Cloud Architecture",
+        "text": "We build your product on a cloud-based delivery model which includes development of a front-end platform (the client or device used to access the cloud), back-end platform (servers and storage) and network\n\n",
+        "textTwo": "With our cloud architecture, your will gain:\n1.  Accelerated delivery of new products / features\n2.  Compliance with the latest regulations (including GDPR)\n3.  Greater transparency into resources to cut costs and prevent data breaches\n4.  Faster provisioning of resources \n5.  Consistency in meeting service targets \n6.  Insight into IT spending patterns and cloud utilization"
+    },
+    {   
+        "id" : 2,
+        "title": "DevOps",
+        "text": " Through effective communication and collaboration, our DevOps team assures that our IT team builds software that perfectly meets your requirements, deploys without any wasted time and runs optimally on the first try. \n\nWe do this through continuous integration and continuous delivery (CI/CD) tools with an emphasis on task automation such as real-time monitoring and incident management systems, cloud computing, microservices, configuration management and collaboration platforms.\n\n",
+        "textTwo": "You can visualize a DevOps process as an infinite loop, comprising these steps: plan, code, build, test, release, deploy, operate, monitor and -- through feedback -- plan, which resets the loop."
+    },
+    {
+        "id" : 3,
+        "title": "Scaling",
+        "text": "In order to meet your changing demand, our team efficiently scales data storage capacity, computing power and network while maintaining availability and performance as utilization changes. \n\nOur scalable solutions driven by virtualization enable stable, longer-term growth in a pre-planned manner. Whether your user requests increase or decrease, our IT administrators continually perform scalability tests in order to adapt your product accordingly and minimize operational overheads. By harnessing the power of cloud computing, your scaling process will be convenient, fast, flexible and cost-saving."
+    }
+    
+]

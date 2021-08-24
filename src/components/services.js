@@ -79,7 +79,6 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                  x:  x - listPosition.left * 0.7 ,
                  y:  y * 0.10 + listPosition.top * 0.1 ,
              }}
-             
             transition={{ ease: 'linear'}}
              className="tab-wraper">
              <img src={img} alt="service" className="serviceImg4"/>
@@ -90,19 +89,15 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                  <div className="head-name">
                      <h6>{name}</h6>
                     <p>{position}</p>
-                 </div>
-                 
+                 </div>  
              </div>
              <div className="tab-text">
                      <p>
                      {text}
                      </p>
              </div>
-
-             </motion.div>  
-             
-         </div>
-         
+             </motion.div>            
+         </div>  
     )
 }
 

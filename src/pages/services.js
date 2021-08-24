@@ -8,19 +8,25 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import {useState} from 'react'
 
-import data from "../data/services-data.json"
+import dataOne from "../data/services-data.json"
+import dataTwo from "../data/services-data-1.json"
+import dataThree from "../data/services-data-2.json"
+import dataFour from "../data/services-data-3.json"
 import { motion } from "framer-motion"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import Services from "../components/services"
 
 
 import '../styles/service.css'
-import { render } from "react-dom"
+
 
 
 const ServicePage = () => {
    
-    const [imageHover, setImageHover] = useState(false)
+    const [imageHoverOne, setImageHoverOne] = useState(false);
+    const [imageHoverTwo, setImageHoverTwo] = useState(false);
+    const [imageHoverThree, setImageHoverThree] = useState(false);
+    const [imageHoverFour, setImageHoverFour] = useState(false);
 
    return(
     <Layout>
@@ -30,7 +36,7 @@ const ServicePage = () => {
          <div className="top-services">
              <div className="servLeft">
                 <div>
-                <h1>Services</h1>
+                <h1>We offer the diversity of skills</h1>
                  <p>
                  We work with you from idea to launch or help you solve a specific problem using cutting-edge technology. We are here to prepare you for a more digital future.
                  </p>
@@ -71,8 +77,11 @@ const ServicePage = () => {
      </section>
      <section className={`service-container service-2nd`}>
          <motion.div 
-         initial={{opacity: 1}}
-         animate={{opacity: imageHover? 0 : [0, 1]}}
+         initial={{opacity: 1, scale: 1}}
+         animate={{
+             opacity: imageHoverOne? 0 : [0, 1],
+             scale: imageHoverOne? 1.1 : 1,
+            }}
          className="one">
              <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -86,105 +95,17 @@ const ServicePage = () => {
              professionals are like your team members who just happen to be remote. Ready to move forward?
              </p>
              
-                 {data.map(el => 
+                 {dataOne.map(el => 
                       (
-                     <Items 
-                     imageHover={imageHover}
-                     setImageHover={setImageHover}
+                     <ItemOne 
+                     imageHoverOne={imageHoverOne}
+                     setImageHoverOne={setImageHoverOne}
                      key={el.id}
                      title={el.title}
                      text={el.text}
                      />
                  )
                  )}
-             {/* <motion.h6
-             onHoverStart={() => setHoverState(true)}
-             onHoverEnd={() => setHoverState(false)}
-             >Research</motion.h6>
-             <motion.div
-               initial={{opacity: 0}}
-                animate={{
-                    opacity: hoverState? 1 : 0}} 
-                transition={{ ease: 'linear'}}
-                className="iner-hover">
-                 <h6>Research</h6>
-                 <p>
-                 Our multidisciplinary experts research your end users’ behaviours, routines and pain 
-                 points to identify opportunities for amazement. We analyse your market, competitors 
-                 and explore methods for differentiation.
-                 </p>
-             </motion.div>
-             </div>
-             <div className="text-hover">
-             <motion.h6
-             onHoverStart={() => setHoverState(true)}
-             onHoverEnd={() => setHoverState(false)}
-             >Monetisation</motion.h6>
-             <motion.div
-               initial={{opacity: 0}}
-                animate={{
-                    opacity: hoverState? 1 : 0}} 
-                transition={{ ease: 'linear'}}
-                className="iner-hover">
-                 <h6>Monetisation</h6>
-                 <p>
-                 We iterate on revenue models and aim to hit the sweet spot where value creation 
-                 happens for you and your end users. Based on research data, we design ROI and 
-                 growth plans using multi-channel marketing strategies.
-                 </p>
-             </motion.div>
-             </div>
-             <div className="text-hover">
-             <motion.h6
-             onHoverStart={() => setHoverState(true)}
-             onHoverEnd={() => setHoverState(false)}
-             >Retention</motion.h6>
-             <motion.div
-               initial={{opacity: 0}}
-                animate={{
-                    opacity: hoverState? 1 : 0}} 
-                transition={{ ease: 'linear'}}
-                className="iner-hover">
-                 <h6>Retention</h6>
-                 <p>
-                 Our experts assist you to gather and analyse user insights and expand your offer. 
-                 Using insights, we help you prioritise what brings the most value and renders 
-                 your product indispensable.
-                 </p>
-             </motion.div>
-             </div>
-             <div className="text-hover">
-             <h6>Conceptualisation</h6>
-             <div className="iner-hover">
-                 <h6>Conceptualisation</h6>
-                 <p>
-                 We align project to your business mission and goals to allocate team and resources 
-                 accordingly. Following an order of prioritisation, we plan project implementation, 
-                 estimate schedule and project cost.
-                 </p>
-             </div>
-             </div>
-             <div className="text-hover">
-             <h6>Requirements Engineering</h6>
-             <div className="iner-hover">
-                 <h6>Requirements Engineering</h6>
-                 <p>
-                 Our team gathers functional, system and technical requirements from various stakeholders 
-                 to understand what technologies will be used and how a project implementation will be structured.
-                 </p>
-             </div>
-             </div>
-             <div className="text-hover">
-             <h6>Prototyping</h6>
-             <div className="iner-hover">
-                 <h6>Prototyping</h6>
-                 <p>
-                 With the requirements in place, we design prototypes to envision what a product will look 
-                 like and how it will function. This stage is important to validate ideas and get valuable 
-                 feedback before committing to implementation.
-                 </p>
-             </div>
-             </div> */}
              <div className={`text`}>
              <Link to="/work"><p>See our creative work &gt; </p></Link>
              </div>
@@ -197,25 +118,46 @@ const ServicePage = () => {
              Product development
              </h3>
              <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-             sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
+             Bringing your original vision for a product to life rarely resembles a straight line. 
+             We are here to help you grow and succeed across product approaches and platforms.We 
+             will work with you, collaboratively, to define and make digital products and solutions that will set your brand apart.
              </p>
-             <h6>Mobile</h6>
-             <h6>Web</h6>
-             <h6>Backend</h6>
-             <h6>Design</h6>
+             {dataTwo.map(el => 
+                      (
+                     <ItemTwo 
+                     imageHoverTwo={imageHoverTwo}
+                     setImageHoverTwo={setImageHoverTwo}
+                     key={el.id}
+                     title={el.title}
+                     text={el.text}
+                     textTwo={el.textTwo}
+                     />
+                 )
+                 )}
              <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
              </div>
          </div>
-         <div className="one">
+         <motion.div 
+         initial={{opacity: 1, scale: 1}}
+         animate={{
+             opacity: imageHoverTwo? 0 : [0, 1],
+             scale: imageHoverTwo? 1.1 : 1,
+            }}
+         className="one">
              <StaticImage src="../images/planing.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
-         </div>
+         </motion.div>
      </section>
      <section className={`service-container service-2nd`}>
-         <div className="one">
+     <motion.div 
+         initial={{opacity: 1, scale: 1}}
+         animate={{
+             opacity: imageHoverThree? 0 : [0, 1],
+             scale: imageHoverThree? 1.1 : 1,
+            }}
+         className="one">
              <StaticImage src="../images/system.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
-         </div>
+         </motion.div>
          <div className="two">
              <h3>
              Complex systems
@@ -224,9 +166,21 @@ const ServicePage = () => {
              Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
              sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
              </p>
-             <h6>Cloud architecture</h6>
+             {dataThree.map(el => 
+                      (
+                     <ItemThree 
+                     imageHoverThree={imageHoverThree}
+                     setImageHoverThree={setImageHoverThree}
+                     key={el.id}
+                     title={el.title}
+                     text={el.text}
+                     textTwo={el.textTwo}
+                     />
+                 )
+                 )}
+             {/* <h6>Cloud architecture</h6>
              <h6>DevOps</h6>
-             <h6>Scaling</h6>
+             <h6>Scaling</h6> */}
              <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
              </div>
@@ -242,15 +196,33 @@ const ServicePage = () => {
              Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
              sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
              </p>
-             <h6>Data Science</h6>
-             <h6>Engineering</h6>
+             {dataFour.map(el => 
+                      (
+                     <ItemFour 
+                     imageHoverFour={imageHoverFour}
+                     setImageHoverFour={setImageHoverFour}
+                     key={el.id}
+                     title={el.title}
+                     text={el.text}
+                     textTwo={el.textTwo}
+                     />
+                 )
+                 )}
+             {/* <h6>Data Science</h6>
+             <h6>Engineering</h6> */}
              <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
              </div>
          </div>
-         <div className="one">
+         <motion.div 
+         initial={{opacity: 1, scale: 1}}
+         animate={{
+             opacity: imageHoverFour? 0 : [0, 1],
+             scale: imageHoverFour? 1.1 : 1,
+            }}
+         className="one">
              <StaticImage src="../images/science.jpg" className="serviceImg3" alt="bussines-idea" placeholder="blurred"/>
-         </div>
+         </motion.div>
      </section>
      <section className="service-nd">
      <div className={`top-head two`}>
@@ -439,15 +411,15 @@ const ServicePage = () => {
 )
 }
 
-const Items = ({title, text, setImageHover}) => {
+const ItemOne = ({title, text, setImageHoverOne}) => {
 
     const [hoverState, setHoverState] = useState(false)
        
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHover(true)}
-                        onHoverEnd={() => setHoverState(false)&setImageHover(false)}
+                        onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -458,16 +430,209 @@ const Items = ({title, text, setImageHover}) => {
                            
                            className="iner-hover">
                             <motion.h6
-                            initial={{x : -70}}
-                            animate={{x : hoverState?  0 : -50}}
-                            transition={{duration: 0.3}}
+                            initial={{
+                                x : -50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                x : hoverState?  0 : -50,
+                                
+                            }}
+                            transition={{duration: 0.3, type: 'spring'}}
                             >{title}</motion.h6>
                             <motion.p
-                            initial={{x : -70}}
-                            animate={{x : hoverState? 0 : -70}}
-                            transition={{delay: 0.3, duration: 0.3}}
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
                             >
                             {text}
+                            </motion.p>
+                        </motion.div>
+                    </div>
+    )
+}
+const ItemTwo = ({title, text,textTwo, setImageHoverTwo}) => {
+
+    const [hoverState, setHoverState] = useState(false)
+       
+    return(
+        <div className="text-hover"  >
+                        <motion.h6
+                        onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
+                        >{title}
+                        </motion.h6>
+                        <motion.div
+                          initial={{opacity: 0}}
+                           animate={{
+                               opacity: hoverState? [0,1] : 0}} 
+                           transition={{ ease: "backOut"}}
+                           
+                           className="iner-hover-1">
+                            <motion.h6
+                            initial={{
+                                x : -50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                x : hoverState?  0 : -50,
+                                
+                            }}
+                            transition={{duration: 0.3, type: 'spring'}}
+                            >{title}</motion.h6>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {text}
+                            </motion.p>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {textTwo}
+                            </motion.p>
+                        </motion.div>
+                    </div>
+    )
+}
+const ItemThree = ({title, text,textTwo, setImageHoverThree}) => {
+
+    const [hoverState, setHoverState] = useState(false)
+       
+    return(
+        <div className="text-hover"  >
+                        <motion.h6
+                        onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
+                        >{title}
+                        </motion.h6>
+                        <motion.div
+                          initial={{opacity: 0}}
+                           animate={{
+                               opacity: hoverState? [0,1] : 0}} 
+                           transition={{ ease: "backOut"}}
+                           
+                           className="iner-hover-2">
+                            <motion.h6
+                            initial={{
+                                x : -50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                x : hoverState?  0 : -50,
+                                
+                            }}
+                            transition={{duration: 0.3, type: 'spring'}}
+                            >{title}</motion.h6>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {text}
+                            </motion.p>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {textTwo}
+                            </motion.p>
+                        </motion.div>
+                    </div>
+    )
+}
+const ItemFour = ({title, text,textTwo, setImageHoverFour}) => {
+
+    const [hoverState, setHoverState] = useState(false)
+       
+    return(
+        <div className="text-hover"  >
+                        <motion.h6
+                        onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
+                        >{title}
+                        </motion.h6>
+                        <motion.div
+                          initial={{opacity: 0}}
+                           animate={{
+                               opacity: hoverState? [0,1] : 0}} 
+                           transition={{ ease: "backOut"}}
+                           
+                           className="iner-hover-3">
+                            <motion.h6
+                            initial={{
+                                x : -50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                x : hoverState?  0 : -50,
+                                
+                            }}
+                            transition={{duration: 0.3, type: 'spring'}}
+                            >{title}</motion.h6>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {text}
+                            </motion.p>
+                            <motion.p
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            animate={{
+                                opacity : hoverState?  [0.5 ,1] : 0,
+                                y : hoverState?  0 : 50
+                            }}
+                            transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            >
+                            {textTwo}
                             </motion.p>
                         </motion.div>
                     </div>

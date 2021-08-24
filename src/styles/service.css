@@ -198,7 +198,7 @@ H5{
     
 }
 .service-3nd .two{
-    padding: 2% 2% 2% 10%;
+    padding: 2% 10% 2% 10%;
     
 }
 .service-4nd .two{
@@ -254,17 +254,46 @@ H5{
     position: relative !important;
     overflow: hidden;
 }
+.iner-hover-1,
+.iner-hover-2,
+.iner-hover-3,
 .iner-hover{
     position: absolute;
-    top: 22%;
-    /* bottom: 12%; */
-    left: 17%;
-    padding: 7% 3%;
-    width: 485px;
-    height: 550px;
+    padding: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: 1;
 }
+.iner-hover{
+    top: 22%;
+    left: 17%;
+    width: 485px;
+    height: 550px;
+}
+.iner-hover-1{
+    top: 22%;
+    right: 5%;
+    width: 600px;
+    height: 430px;
+}
+.iner-hover-2{
+    top: 22%;
+    left: 15%;
+    width: 630px;
+    height: 430px;
+}
+.iner-hover-3{
+    top: 22%;
+    right: 5%;
+    width: 630px;
+    height: 430px;
+}
+.iner-hover-1::after,
+.iner-hover-2::after,
+.iner-hover-3::after,
 .iner-hover::after{
     content: "";
     top: 0;
@@ -278,6 +307,18 @@ H5{
     position: absolute;
     z-index: -1;
 }
+.iner-hover::after{
+    background-image: url("../images/bussines-idea.jpg"); 
+}
+.iner-hover-1::after{
+    background-image: url("../images/planing.jpg"); 
+}
+.iner-hover-2::after{
+    background-image: url("../images/system.jpg"); 
+}
+.iner-hover-3::after{
+    background-image: url("../images/science.jpg"); 
+}
 .text-hover h6{
     cursor: pointer;
     transition:all 0.3s ease;
@@ -286,11 +327,11 @@ H5{
 .text-hover h6::after{
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: #000000ff;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -2px;
     transform-origin: left;
     transform: scaleX(0);
     transition: transform .5s ease;
@@ -298,9 +339,21 @@ H5{
 .text-hover h6:hover::after{
     transform: scaleX(1);
 }
+.iner-hover-1 h6,
+.iner-hover-2 h6,
+.iner-hover-3 h6,
 .iner-hover h6{
     font-size: 26px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+.iner-hover-1 p,
+.iner-hover-2 p,
+.iner-hover-3 p,
+.iner-hover p{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    white-space: pre-line;
 }
 .left-tabs{
     display: flex;
