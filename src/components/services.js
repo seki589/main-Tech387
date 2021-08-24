@@ -33,7 +33,7 @@ const Services = () => {
              ))}
          </div>
             <div className="right-tabs">
-
+            <StaticImage src="../images/pointilism.png" alt="cover" className="cover"/>
             </div>
          </div>
     )

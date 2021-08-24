@@ -32,7 +32,7 @@ const ServicePage = () => {
     <Layout>
     <PageTransition>
     <Seo title="Services" />
-     <section className={`service-container`}>
+     <section className={`service-container topPad`}>
          <div className="top-services">
              <div className="servLeft">
                 <div>
@@ -43,24 +43,26 @@ const ServicePage = () => {
                 </div>
              </div>
              <div className="servRight">
-                 <StaticImage src="../images/plant_8.png" className="plant" alt="plant" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_3.png" className="plant" alt="plant" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_plant_1.png" className="plant" alt="plant" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_5.png" className="plant" alt="plant" placeholder="blurred"/>
              </div>
          </div>
          <div className="bottom-services">
              <div className="servLeft">
                  <div className="icons">
                     <div className="icons-tab">
-                    <StaticImage src="../images/paintbrush.png" alt="icons" className="icon" placeholder="tracedSVG"/>
+                    <StaticImage src="../images/brush_1.png" alt="icons" className="icon" placeholder="tracedSVG"/>
                     <h3>DESIGN</h3>
                     </div>
                      <p className="dots">- - - - - - - - - - - - - - -</p>
                     <div className="icons-tab">
-                    <StaticImage src="../images/gear.png" alt="icons" className="icon" placeholder="tracedSVG"/>
+                    <StaticImage src="../images/settings.png" alt="icons" className="icon" placeholder="tracedSVG"/>
                     <h3>DEVELOPMENT</h3>                    
                     </div>
                      <p className="dots">- - - - - - - - - - - - - - -</p>
                     <div className="icons-tab">
-                    <StaticImage src="../images/analytics.png" alt="icons" className="icon" placeholder="tracedSVG"/>
+                    <StaticImage src="../images/chart.png" alt="icons" className="icon" placeholder="tracedSVG"/>
                     <h3>DATA ANALYTICS</h3>
                     </div>
                  </div>
@@ -70,7 +72,7 @@ const ServicePage = () => {
                      
                  </div>
              </div>
-             <div className={`servRight text`}>
+             <div className={`servRight text`} >
              <Link to="/work"><p>Find out more &gt; </p></Link>
              </div>
          </div>
