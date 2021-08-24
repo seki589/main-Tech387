@@ -61,7 +61,7 @@ H5{
 }
 .top-services{
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 16px;
 }
 
 .servLeft{
@@ -69,7 +69,7 @@ H5{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    flex: 2;
+    flex: 3;
     z-index: 1;
 }
 .servLeft>div{
@@ -97,7 +97,6 @@ H5{
     align-items: center;
 }
 .servRight a{
-    /* margin-bottom: -30px; */
     padding-bottom: 20px;
     visibility: hidden;
 }
@@ -116,8 +115,6 @@ H5{
 .icons{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    padding-top: 20px;
     margin-bottom: 50px;
 }
 /* .icons>div{
@@ -276,7 +273,7 @@ H5{
 }
 .iner-hover{
     top: 22%;
-    left: 17%;
+    left: 15%;
     width: 485px;
     height: 550px;
 }
@@ -288,7 +285,7 @@ H5{
 }
 .iner-hover-2{
     top: 22%;
-    left: 15%;
+    left: 10%;
     width: 630px;
     height: 430px;
 }
@@ -388,7 +385,7 @@ H5{
 
 
 .left-tab .icon{
-    filter: invert(77%) sepia(6%) saturate(233%) hue-rotate(98deg) brightness(87%) contrast(85%);
+    /* filter: invert(77%) sepia(6%) saturate(233%) hue-rotate(98deg) brightness(87%) contrast(85%); */
     transition: all .3s ease;
 }
 

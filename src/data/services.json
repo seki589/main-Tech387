@@ -2,7 +2,7 @@
     {
         "title": "Health & Fitness",
         "id": "Health & Fitness",
-        "icon": "/icons/cardiogram.svg",
+        "icon": "/icons/heart.svg",
         "src": "/images/fitnes.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
@@ -11,7 +11,7 @@
     {
         "title": "Automotive",
         "id": "Automotive",
-        "icon": "/icons/electric-car.svg",
+        "icon": "/icons/car.svg",
         "src": "/images/car.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
@@ -20,7 +20,7 @@
     {
         "title": "E Commerce",
         "id": "E Commerce",
-        "icon": "/icons/briefcase.svg",
+        "icon": "/icons/bag.svg",
         "src": "/images/cart.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",
@@ -29,7 +29,7 @@
     {
         "title": "Finance",
         "id": "Finance",
-        "icon": "/icons/coin.svg",
+        "icon": "/icons/money.svg",
         "src": "/images/finance.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
@@ -47,7 +47,7 @@
     {
         "title": "Social Media",
         "id": "Social Media",
-        "icon": "/icons/megaphone.svg",
+        "icon": "/icons/social_media.svg",
         "src": "/images/media.jpg",
         "name": "name Surname",
         "position": "Founder & CEO",
@@ -56,7 +56,7 @@
     {
         "title": "Customised Software",
         "id": "Customised Software",
-        "icon": "/icons/paintbrush.svg",
+        "icon": "/icons/brush_2.svg",
         "src": "/images/meeting.jpg",
         "name": "Name Surname",
         "position": "Founder & CEO",

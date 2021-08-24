@@ -36,7 +36,7 @@ const ServicePage = () => {
          <div className="top-services">
              <div className="servLeft">
                 <div>
-                <h1>We offer the diversity of skills</h1>
+                <h1>We offer <br/>the diversity <br/>of skills</h1>
                  <p>
                  We work with you from idea to launch or help you solve a specific problem using cutting-edge technology. We are here to prepare you for a more digital future.
                  </p>
