@@ -698,7 +698,7 @@ ol.tab-list{
         width: 93%;
         top: 0%;
         left: 3.75%;
-        overflow: hidden;
+        overflow-y: scroll;
     }
     .iner-hover{
         height: 39%;
@@ -751,5 +751,8 @@ ol.tab-list{
     }
     .tab-wraper{
         width: 100% !important;
+    }
+    .footer .left {
+        justify-content: center;
     }
 }
