@@ -17,7 +17,7 @@
     --color-text: #0C2317DE;
     --color-primary: #000;
   }
-  
+
   /* Dark Mode */
   :root .dark {
     /* --head-back:#092628; */
@@ -44,7 +44,7 @@
 }
 .wraper{
     /* width: 100%; */
-    
+
     padding: 0 3.75%;
     height: 100%;
     width: 92.5%;
@@ -65,7 +65,7 @@
     opacity: 0.2;
 } */
 
-  
+
 section{
     width: 100%;
     padding: 0 3.75%;
@@ -78,16 +78,30 @@ section{
     background-color: #EBEBEB;
 }
 .slide-2{
-    background-color: #092628;
+    background-color: #0C2317;
     overflow: hidden;
 }
 .slide-3{
-    background-color: #FAFAFA;
+    position: relative;
+    background-color: #ffffffd0;
+    z-index: 1;
+}
+.slide-3::after{
+    content: "";
+    background-image: url("../images/masu_background.png");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
 }
 .slide-4{
     background-color: #092628;
     overflow: hidden;
-    
+
 }
 .slide-2 .text h1{
     color: #FFFFFF;
@@ -110,7 +124,7 @@ section{
     -webkit-align-items: center;
     align-items: center;
 }
-  
+
 .swiper-slide img {
     display: block;
     object-fit: cover;
@@ -141,7 +155,7 @@ section{
     display: flex;
     flex-direction: column;
     z-index: 10;
-    
+
 }
 
 .swiper-pagination-bullet{
@@ -225,7 +239,7 @@ section{
     padding: 10px 20px;
     text-transform: uppercase;
     transition: all .3s ease;
-    
+
 }
 .navigation a.active{
     color: #27BA70;
@@ -255,18 +269,19 @@ section{
 .partners .img{
     display: flex;
     align-items: flex-start;
-    margin-left: -6px;
-    margin-bottom: 28px;
+    /* margin-left: -6px; */
+    margin-bottom: 18px;
 }
 .partners-logo img{
-    width: 112px;
-    height: 28px !important;
+    width: 80px;
+    height: 48px !important;
     object-position: center;
-    object-fit: contain;
+    object-fit: cover;
+    filter: invert(39%) sepia(5%) saturate(15%) hue-rotate(332deg) brightness(89%) contrast(85%);
 }
 .partners-logo{
     display: flex;
-    height: 28px !important;
+    
     align-items: flex-start;
     margin-right: 20px;
 }
@@ -295,9 +310,8 @@ section{
 .img img{
     width: 100%;
     margin-bottom: 0;
-    /* margin-left: -6px; */
 }
-.linkedin a{  
+.linkedin a{
     display: flex;
     text-decoration: none;
     align-items: center;
@@ -341,7 +355,7 @@ section{
     font-size: 60px;
     line-height: 71px;
     letter-spacing: 0.45px;
-    color: #0C2317DE;
+    color: #092628;
 }
 
 .text p{
@@ -356,7 +370,7 @@ section{
     border-bottom: 1px solid #FFF;
 }
 .text p:hover{
-    
+
     color: #092628;
     border-bottom: 1px solid #092628;
 }
@@ -364,10 +378,18 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex: 1;
     min-height: 40vh;
     align-items: flex-start;
     padding: 0;
+}
+.main-text .text{
+    flex: 1.1;
+}
+.main-text .lottie{
+    flex: 1;
+}
+.main-image{
+    transform: scale(1.2) translateY(10%);
 }
 .lottie{
     width: 100%;
@@ -435,7 +457,7 @@ section{
     font-size: 16px;
     text-align: left;
     line-height: 19px;
-    
+
 }
 .footer-mid h3{
     font-family: "Rubik";
@@ -656,15 +678,15 @@ section{
 }
 .service-2nd .two{
     padding: 2% 10% 2% 0;
-    
+
 }
 .service-3nd .two{
     padding: 2% 2% 2% 10%;
-    
+
 }
 .service-4nd .two{
     padding: 2% 10% 2% 10%;
-    
+
 }
 .two h3{
     font-family: "Rubik", sans-serif;
@@ -857,10 +879,24 @@ section{
         right: 66.6px;
     }
 }
-@media only screen and (max-width: 1020px){
+@media only screen and (max-width: 1024px){
     .text h1{
         font-size: 48px;
         line-height: 48px;
+    }
+    .main-text{
+        flex-direction: column;
+    }
+    .main{
+        padding-top: 15vh;
+    }
+    .main-image{
+        transform: scale(1) translateY(0%);
+    }
+    .main-text .text{
+        order: 2;
+        flex: .5;
+        justify-content: flex-start;
     }
 }
 
@@ -937,7 +973,7 @@ section{
 }
 @media only screen and (max-width: 600px){
     .container{
-        width: 100%;  
+        width: 100%;
     }
     .header{
         top: 0;
@@ -986,13 +1022,13 @@ section{
     .is-active{
         transform: translateX(0);
     }
-    
+
     .navigation nav {
         height: 55%;
         display:flex;
         flex-direction:column;
         justify-content: space-between;
-        
+
     }
     .navigation a:last-child{
         background-color: transparent;
@@ -1012,20 +1048,23 @@ section{
     .navigation a.active{
         color: #27BA70;
     }
-    
+
     .main{
-        padding-top: 20%;
+        padding-top: 0%;
         display: flex;
-        justify-content: center;
-    }
-    .main:last-child{
-        padding-top: 30%;
         justify-content: flex-start;
     }
-    .swiper-container-vertical > .swiper-pagination-bullets{
-        left: 3.75%;
+    .slide-2 .main{
+        justify-content: flex-end;
     }
-    .linkedin-menu a{  
+    .slide-3 .main{
+        justify-content: center;
+    }
+
+    .swiper-container-vertical > .swiper-pagination-bullets{
+        right: 3.75%;
+    }
+    .linkedin-menu a{
         position: absolute;
         bottom: 3%;
         display: flex;
@@ -1038,7 +1077,7 @@ section{
         letter-spacing: 0.43px;
         text-transform: initial;
         font-weight: 400;
-        color: var(--color-primary);        
+        color: var(--color-primary);
     }
     .linkedin-menu .link-white{
         display: var(--logo-light);
@@ -1054,6 +1093,9 @@ section{
     }
     .main-text{
         flex-direction: column;
+    }
+    .main-text .text{
+        order: 2;
     }
     .text h1{
         font-size: 48px;
@@ -1080,7 +1122,7 @@ section{
         justify-content: center;
     }
     .footer-bot{
- 
+
         left: 0;
         bottom: 17vh;
     }
@@ -1089,7 +1131,7 @@ section{
     }
     .tab{
         width: 95%;
-        
+
     }
     /* HireUs Page */
     .hireUs{
@@ -1100,13 +1142,13 @@ section{
         /* margin-left: 20%; */
         padding: 0px;
         border-left: none;
-        
+
     }
     .hireUs{
         align-items: flex-start;
         height: auto;
     }
-    
+
     .team{
         margin-top: 30px;
     }

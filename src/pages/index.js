@@ -97,7 +97,7 @@ const IndexPage = () => {
               <div className={`main-text anim`} ref={headText1}>
                   <div className="text" >
                   <h1>
-                  Designing and developing your ideas into data-driven digital products.
+                  Designing and developing your ideas <br/> into data-driven digital products.
                   </h1>
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
@@ -110,11 +110,11 @@ const IndexPage = () => {
                   <p className="partners-title">Partners</p>
                   <div className="partners">
                      <div className="img">
-                     <StaticImage src="../images/samsung-logo.png" className="partners-logo" alt="samsung" placeholder="tracedSVG"/>
-                     <StaticImage src="../images/volkswagen-group-log.png" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
-                     <StaticImage src="../images/Huawei-logo.png" className="partners-logo" alt="huawei" placeholder="tracedSVG"/>
-                     <StaticImage src="../images/GoCloudgroup.png" className="partners-logo" alt="goCloudgroup" placeholder="tracedSVG"/>
-                     <StaticImage src="../images/DiamountAppLogo.png" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/volkswagen group.svg" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/Samsung.svg" className="partners-logo" alt="samsung" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/Huawei.svg" className="partners-logo" alt="huawei" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/goCloudGroup.svg" className="partners-logo" alt="goCloudgroup" placeholder="tracedSVG"/>
+                     <StaticImage src="../images/DiamoundApp Group.svg" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/>
                      
                      </div>
                   </div>
@@ -139,7 +139,8 @@ const IndexPage = () => {
                   <Link to="/hire-us" onClick={() => setDarkMode(false)}><p>Read more about SpartanApps &gt; </p></Link>
                   </div>
                   <div className="lottie"  >
-                  <Lottie/>
+                  <StaticImage src="../images/spartan.png" className="main-image" alt="spartan" placeholder="tracedSVG"/>
+                  {/* <Lottie/> */}
                   </div>
               </div>
           </main>
@@ -159,7 +160,8 @@ const IndexPage = () => {
               <Link to="/hire-us"><p>Read more about 12Charge &gt; </p></Link>
               </div>
               <div className="lottie"  >
-              <Lottie/>
+              <StaticImage src="../images/masu.png" className="main-image" alt="masu" placeholder="tracedSVG"/>
+              {/* <Lottie/> */}
               </div>
           </div>
         </main>
