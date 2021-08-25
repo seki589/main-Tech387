@@ -99,9 +99,23 @@ section{
     z-index: -1;
 }
 .slide-4{
-    background-color: #092628;
+    /* background-color: #092628; */
     overflow: hidden;
-
+    position: relative;
+    z-index: 1;
+}
+.slide-4::after{
+    content: "";
+    background-image: url("../images/footer_web.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+    z-index: -1;
 }
 .slide-2 .text h1{
     color: #FFFFFF;
@@ -415,17 +429,23 @@ section{
     display: flex;
     flex-direction: row;
     margin-top: 10%;
-    background-color: #092628;
     height: 100vh;
     width: 100%;
 }
 .footer>div{
     flex: 1;
 }
+.footer .right{
+    flex: 2;
+}
+.footer .left{
+    flex: 1;
+}
 .footer-head h1{
     font-family: "Rubik";
     font-weight: 500;
-    font-size: 60px;
+    font-size: 48px;
+    line-height: 57px;
 }
 .footer-mid{
     display: flex;
@@ -436,6 +456,7 @@ section{
     flex: 1;
     margin:0 7.5% 20px 0;
 }
+
 .footer-mid ul{
     margin: 0;
     display: flex;
@@ -485,18 +506,18 @@ section{
     color: #FFFFFFBD;
 }
 .footer-bot a{
-    margin-bottom: 27px;
+    margin-bottom: 7px;
 }
 .footer .left{
     position: relative;
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .footer .right{
-    transform: translate(10%,15%) scale(1.4);
-    background-color: #092628;
+
+
     /* object-fit: cover; */
     display: flex;
     align-items: center;
