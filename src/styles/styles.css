@@ -75,7 +75,7 @@ section{
     position: relative;
 }
 .slide-1{
-    background-color: #FAFAFA;
+    background-color: #EBEBEB;
 }
 .slide-2{
     background-color: #092628;
@@ -300,6 +300,7 @@ section{
 .linkedin a{  
     display: flex;
     text-decoration: none;
+    align-items: center;
 }
 .linkedin p{
     font-family: "Rubik";
@@ -308,11 +309,11 @@ section{
     font-weight: 400;
     color: #000000BD;
     align-items: center;
-    
+    margin: 0;
 }
 .linkedin img{
-    height: 18px;
-    width: 18px;
+    height: 32px;
+    width: 32px;
     margin-bottom: 0;
     margin-right: 11px;
     opacity: .9;

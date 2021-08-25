@@ -11,7 +11,7 @@ import Footer from "../components/footer"
 import Lottie from "../components/lottie"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
-import LinkeBlack from "../images/linkedin-black.png"
+import LinkeBlack from "../images/linkedin_light.png"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import gsap from "gsap";
 import "swiper/swiper-bundle.css";
@@ -97,12 +97,13 @@ const IndexPage = () => {
               <div className={`main-text anim`} ref={headText1}>
                   <div className="text" >
                   <h1>
-                  Design,<br></br> development <br></br>& identity for your<br></br> product
+                  Designing and developing your ideas into data-driven digital products.
                   </h1>
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
-                  <div className="lottie"  >
-                  <Lottie/>
+                  <div className="lottie">
+                  <StaticImage src="../images/main.png"  alt="main" placeholder="tracedSVG"/>
+                  {/* <Lottie/> */}
                   </div>
               </div>
               <div className="main-links">
