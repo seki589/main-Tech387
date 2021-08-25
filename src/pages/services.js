@@ -85,7 +85,7 @@ const ServicePage = () => {
              scale: imageHoverOne? 1 : 1,
             }}
          className="one">
-             <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
+             <StaticImage src="../images/buisiness_dev.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
          <div className="two">
              <h3>
@@ -147,7 +147,7 @@ const ServicePage = () => {
              scale: imageHoverTwo? 1 : 1,
             }}
          className="one">
-             <StaticImage src="../images/planing.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
+             <StaticImage src="../images/product_dev.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
      </section>
      <section className={`service-container service-2nd`}>
@@ -158,7 +158,7 @@ const ServicePage = () => {
              scale: imageHoverThree? 1 : 1,
             }}
          className="one">
-             <StaticImage src="../images/system.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
+             <StaticImage src="../images/complex_systems.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
          <div className="two">
              <h3>
@@ -218,7 +218,7 @@ const ServicePage = () => {
              scale: imageHoverFour? 1 : 1,
             }}
          className="one">
-             <StaticImage src="../images/science.jpg" className="serviceImg3" alt="bussines-idea" placeholder="blurred"/>
+             <StaticImage src="../images/data_sience.jpg" className="serviceImg3" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
      </section>
      <section className="service-nd">

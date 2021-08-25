@@ -318,16 +318,16 @@ H5{
 
 }
 .iner-hover::after{
-    background-image: url("../images/bussines-idea.jpg");
+    background-image: url("../images/buisiness_dev.jpg");
 }
 .iner-hover-1::after{
-    background-image: url("../images/planing.jpg");
+    background-image: url("../images/product_dev.jpg");
 }
 .iner-hover-2::after{
-    background-image: url("../images/system.jpg");
+    background-image: url("../images/complex_systems.jpg");
 }
 .iner-hover-3::after{
-    background-image: url("../images/science.jpg");
+    background-image: url("../images/data_sience.jpg");
 }
 .text-hover h6{
     cursor: pointer;
@@ -663,27 +663,63 @@ ol.tab-list{
     } */
 }
 @media only screen and (max-width: 600px){
+    .topPad{
+        padding-top: 15vh;
+    }
     .servLeft{
         padding: 0;
     }
     .servRight a{
         display: none;
     }
+    .icons-tab h3{
+        font-size: 13px;
+    }
     .dots{
         padding: 0;
         transform: scaleX(.7);
-        /* margin: 0 -2%; */
+        overflow-x: hidden;
+    }
+    /* .icons{
+        width: 100%;;
+    } */
+    .servLeft>div{
+        width: 85%;
     }
     .icons .icon{
         height: 42px;
         width: 41px;
         margin-bottom: 25px;
     }
+    .iner-hover-1,
+    .iner-hover-2,
+    .iner-hover-3,
+    .iner-hover{
+        width: 93%;
+        top: 0%;
+        left: 3.75%;
+        overflow: hidden;
+    }
+    .iner-hover{
+        height: 39%;
+    }
+    .iner-hover-1{
+        
+        height: 39%;
+    }
+    .iner-hover-2{
+        height: 47%;
+    }
+    .iner-hover-3{
+        height: 48%;
+    }
     .serviceImg1{
         margin-left: 3.75%;
+        width: 93%;
     }
     .serviceImg2{
         margin-left: 3.75%;
+        width: 93%;
     }
     .service-2nd .two{
         width: 93%;
@@ -700,6 +736,9 @@ ol.tab-list{
     }
     .service-4nd .one{
         padding: 2% 3.75%;
+    }
+    .service-4nd .one img{
+        width: 100%;
     }
     .top-head{
         margin: 0;
