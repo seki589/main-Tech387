@@ -522,10 +522,19 @@ ol.tab-list{
     display: flex;
     padding: 25px 0;
 }
+.tab-item{
+    display: flex;
+    flex-wrap: wrap;
+}
 .tab-item h6{
-    width: 15%;
+    /* width: 15%; */
     margin-bottom: 0;
-    padding: 15px 0;
+    padding: 15px 25px 15px 0;
+}
+.langIcon{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
 }
 .lang-icon{
     display: flex;
@@ -533,7 +542,7 @@ ol.tab-list{
     justify-content: center;
     align-items: center;
     /* margin-left: 70px; */
-    margin-left: 5%;
+    margin-right: 5%;
 
 }
 .lang-icon img{
@@ -554,6 +563,12 @@ ol.tab-list{
         flex: 1; */
 
     }
+    .dots{
+        white-space: nowrap
+    }
+    .servLeft h1{
+        font-size: 84px;
+    }
     .servRight{
         display: none;
     }
@@ -561,29 +576,28 @@ ol.tab-list{
     .service-4nd,
     .service-3nd{
         flex-direction: column;
+        padding: 5% 0;
     }
     .serviceImg1{
-        width: 90%;
+        width: 85%;
         aspect-ratio: 1/1;
         object-fit: cover;
-        margin-left: 5%;
+        margin-left: 7.5%;
     }
     .serviceImg2{
-        width: 90%;
-        margin-left: 5%;
+        width: 85%;
+        margin-left: 7.5%;
     }
     .serviceImg3{
-        width: 90%;
+        width: 85%;
         margin-right: 0%;
     }
     .service-2nd .two{
-        /* padding: 2% 5% 2% 0; */
-        width: 90%;
-       
+        width: 85%;
     }
     .service-3nd .two{
         padding: 2% 0 2% 0;;
-        width: 90%;
+        width: 85%;
         order: 2;
     }
     .service-2nd .one{
@@ -591,10 +605,112 @@ ol.tab-list{
     }
     .service-4nd .two{
         order: 2;
-        padding: 2% 5%;
+        padding: 2% 7.5%;
     }
     .service-4nd .one{
-        padding: 2% 5%;
+        padding: 2% 7.5%;
     }
-    
+    .iner-hover-1,
+    .iner-hover-2,
+    .iner-hover-3,
+    .iner-hover{
+        width: 85%;
+        height: 55%;
+        top: 0%;
+        left: 7.5%;
+    }
+    .top-head {
+        margin: 0 3.5%;
+    }
+    .left-tabs{
+        padding: 2% 3.5%;
+    }
+    .left-tab {
+        margin-bottom: 0;
+    }
+    .right-tabs{
+        display: none;
+    }
+    :root .tab-wraper{
+        top: 0;
+        left: 0;
+        width: 60%;
+        position: initial;
+        transform: translateX(0px) translateY(0px) translateZ(0px) !important;
+    }
+    /* :root element.style{
+        transform: translateY(0%),translateX(0%) !important;
+    } */
+    .tabs{
+        padding: 2% 3.5%;
+    }
+   
+
+}
+@media only screen and (max-width: 768px){
+    .servLeft h1{
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .top-triangle{
+        display: none;
+    }
+    .tab-list {
+        padding-left: 0;
+    }
+    /* .dots{
+        white-space: nowrap
+    } */
+}
+@media only screen and (max-width: 600px){
+    .servLeft{
+        padding: 0;
+    }
+    .servRight a{
+        display: none;
+    }
+    .dots{
+        padding: 0;
+        transform: scaleX(.7);
+        /* margin: 0 -2%; */
+    }
+    .icons .icon{
+        height: 42px;
+        width: 41px;
+        margin-bottom: 25px;
+    }
+    .serviceImg1{
+        margin-left: 3.75%;
+    }
+    .serviceImg2{
+        margin-left: 3.75%;
+    }
+    .service-2nd .two{
+        width: 93%;
+    }
+    .service-3nd .two{
+        width: 93%;
+    }
+    .tab-item{
+        flex-direction: column;
+    }
+    .service-4nd .two{
+        order: 2;
+        padding: 2% 3.75%;
+    }
+    .service-4nd .one{
+        padding: 2% 3.75%;
+    }
+    .top-head{
+        margin: 0;
+    }
+    .left-tabs {
+        padding: 2% 0%;
+    }
+    .tabs{
+        padding: 2% 0%;
+    }
+    .tab-wraper{
+        width: 100% !important;
+    }
 }

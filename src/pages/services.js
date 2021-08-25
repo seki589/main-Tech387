@@ -82,7 +82,7 @@ const ServicePage = () => {
          initial={{opacity: 1, scale: 1}}
          animate={{
              opacity: imageHoverOne? 0 : [0, 1],
-             scale: imageHoverOne? 1.1 : 1,
+             scale: imageHoverOne? 1 : 1,
             }}
          className="one">
              <StaticImage src="../images/bussines-idea.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
@@ -144,7 +144,7 @@ const ServicePage = () => {
          initial={{opacity: 1, scale: 1}}
          animate={{
              opacity: imageHoverTwo? 0 : [0, 1],
-             scale: imageHoverTwo? 1.1 : 1,
+             scale: imageHoverTwo? 1 : 1,
             }}
          className="one">
              <StaticImage src="../images/planing.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
@@ -155,7 +155,7 @@ const ServicePage = () => {
          initial={{opacity: 1, scale: 1}}
          animate={{
              opacity: imageHoverThree? 0 : [0, 1],
-             scale: imageHoverThree? 1.1 : 1,
+             scale: imageHoverThree? 1 : 1,
             }}
          className="one">
              <StaticImage src="../images/system.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
@@ -215,7 +215,7 @@ const ServicePage = () => {
          initial={{opacity: 1, scale: 1}}
          animate={{
              opacity: imageHoverFour? 0 : [0, 1],
-             scale: imageHoverFour? 1.1 : 1,
+             scale: imageHoverFour? 1 : 1,
             }}
          className="one">
              <StaticImage src="../images/science.jpg" className="serviceImg3" alt="bussines-idea" placeholder="blurred"/>
@@ -239,6 +239,7 @@ const ServicePage = () => {
             <div className="tab-1">
                 <div className="tab-item" >
                     <h6>Languages</h6>
+                    <div className="langIcon">
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/c.png" alt="icon" placeholder="tracedSVG"/>
                         <p>C#</p>
@@ -263,60 +264,66 @@ const ServicePage = () => {
                         <StaticImage src="../images/tab-images/python.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Pyton</p>
                     </div>
+                    </div>
                 </div>
                 <div className="tab-item">
                     <h6>Frameworks</h6>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/angularjs.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>Angular</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/ruby_on_rails.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>Ruby on rails</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/atom.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>React</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/mvc.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>ASP.net MVC</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/nodejs.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>NodeJS</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/laravel.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>Laravel</p>
+                    <div className="langIcon">
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/angularjs.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>Angular</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/ruby_on_rails.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>Ruby on rails</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/atom.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>React</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/mvc.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>ASP.net MVC</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/nodejs.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>NodeJS</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/laravel.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>Laravel</p>
+                        </div>
                     </div>
                 </div>
                 <div className="tab-item">
                     <h6>Detebase</h6>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/redis.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>Redis</p>
+                    <div className="langIcon">
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/redis.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>Redis</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/elasticsearch.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>Elasticsearch</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/mongodb.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>MongoDB</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/postgresql.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div className="lang-icon">
+                            <StaticImage src="../images/tab-images/mysql.png" alt="icon" placeholder="tracedSVG"/>
+                            <p>MySQL</p>
+                        </div>
                     </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/elasticsearch.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>Elasticsearch</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/mongodb.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>MongoDB</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/postgresql.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>PostgreSQL</p>
-                    </div>
-                    <div className="lang-icon">
-                        <StaticImage src="../images/tab-images/mysql.png" alt="icon" placeholder="tracedSVG"/>
-                        <p>MySQL</p>
-                    </div>
-                    
                 </div>
+                {/* </div> */}
                 <div className="tab-item">
                     <h6>CMS</h6>
+                    <div className="langIcon">
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/wordpress.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Wordpress</p>
@@ -337,6 +344,7 @@ const ServicePage = () => {
                         <StaticImage src="../images/tab-images/shopify.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Shopify</p>
                     </div>
+                    </div>
                 </div>
             </div>
         </div> 
@@ -344,6 +352,7 @@ const ServicePage = () => {
             <div className="tab-1">
             <div className="tab-item">
                     <h6>Languages</h6>
+                    <div className="langIcon">
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/c.png" alt="icon" placeholder="tracedSVG"/>
                         <p>C#</p>
@@ -368,9 +377,11 @@ const ServicePage = () => {
                         <StaticImage src="../images/tab-images/python.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Pyton</p>
                     </div>
+                    </div>
                 </div>
                 <div className="tab-item">
                     <h6>Frameworks</h6>
+                    <div className="langIcon">
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/angularjs.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Angular</p>
@@ -394,6 +405,7 @@ const ServicePage = () => {
                     <div className="lang-icon">
                         <StaticImage src="../images/tab-images/laravel.png" alt="icon" placeholder="tracedSVG"/>
                         <p>Laravel</p>
+                    </div>
                     </div>
                 </div>
             </div>

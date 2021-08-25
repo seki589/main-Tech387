@@ -72,11 +72,12 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                 <h5>{title}</h5>
              </motion.div>
              <motion.div 
-             initial={{opacity: 0,
+             initial={{display: 'none',
                 // x: x,
                 // y: y,
             }}
              animate={{
+                 display: hoverState? 'block' : 'none',
                  opacity: hoverState? 1 : 0,
                  x:  (x - listPosition.left) * 0.5 ,
                 //  y:  y * 0.17 + listPosition.top * 0.5 ,
