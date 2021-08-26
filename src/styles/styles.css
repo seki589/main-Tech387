@@ -21,7 +21,7 @@
   :root .dark {
     --logo-light: block;
     --logo-dark: none;
-    --color-background: #092628;
+    --color-background: #0C2317;
     --color-text: #FFF;
     --color-primary: #fff;
   }
@@ -764,7 +764,7 @@ section{
         top: 49%;
         right: 0%;
         width: 100%;
-        height: 100%;
+        height: 60%;
         z-index: -1;
     }
     .footer-iner{
@@ -886,8 +886,8 @@ section{
         display: var(--logo-dark);
     }
     .linkedin-menu img{
-        width: 18px;
-        height: 18px;
+        width: 32px;
+        height: 32px;
     }
     .navigation {
         position: absolute;

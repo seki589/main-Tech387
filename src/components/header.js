@@ -59,8 +59,8 @@ class Header extends React.Component {
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
-            <StaticImage src="../images/linkedin-white.png" className="link-white" alt="linkedin"/>
-            <StaticImage src="../images/linkedin-black.png" className="link-black" alt="linkedin"/>
+            <StaticImage src="../images/linkedin.png" className="link-white" alt="linkedin"/>
+            <StaticImage src="../images/linkedin_light.png" className="link-black" alt="linkedin"/>
              <p>Follow us</p>
             </a>
             </div>
