@@ -23,10 +23,13 @@ const Footer = () => {
         
     return(
         <div className="footer">
+        <div className="footer-iner">
             <div className="right">
                 
             </div>
-            {/* <div className="mid"></div> */}
+            <div className="mid">
+                
+            </div>
             <div className="left">
                 <div className="footer-head">
                     <h1>Create your digital<br></br> products</h1>
@@ -54,24 +57,17 @@ const Footer = () => {
                         </ul>
                         <div className="linkedin">
                             <a href="https://www.linkedin.com/company/tech-387">
-                            <img src={LinkeWhite} alt="linkedin"/> <p className="foot-link">Follow us</p>
+                            <img src={LinkeWhite} alt="linkedin"/> <p>Follow us</p>
                             </a>
                             </div>
                             <div className="linkedin">
                             <a href="mailto:support@tech387.com">
-                            <img src={Mail} alt="linkedin"/> <p className="foot-link">Work with us</p>
+                            <img src={Mail} alt="linkedin"/> <p>Work with us</p>
                             </a>
-                            </div>   
+                            </div> 
+                              
                     </div>
                     <div className="right-li">                       
-                        
-                        {/* <ul>
-                            <li> <a href="#">App Development</a> </li>
-                            <li> <a href="#">Web Development</a> </li>
-                            <li> <a href="#">Backend Solutions</a> </li>
-                            <li> <a href="#">Data Analytics</a> </li>
-                            
-                        </ul> */}
                         <ul>
                             <li> <a href="#">Branding</a> </li>
                             <li> <a href="#">Design System</a> </li>
@@ -86,6 +82,7 @@ const Footer = () => {
                   </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
