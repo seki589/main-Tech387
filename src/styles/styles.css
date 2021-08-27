@@ -424,7 +424,7 @@ section{
 
 /* Footer */
 .footer{
-    width: 100vw;
+    width: 100% !important;
     background-image: url("../images/footer_web.png");
     background-position: center;
     background-size: cover;
@@ -709,6 +709,66 @@ section{
 .contact .icon path{
     width: 20px;
     height: 16px;
+}
+/* Work */
+.work-container{
+    width: 100%;
+    padding: 0 3.75%;
+    height: initial;
+    max-width: 1776px;
+    margin: auto;
+    position: relative;
+    background-color: #FAFAFA;
+    overflow: hidden;
+}
+.workRight{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.workRight .plant-1{
+    transform:  rotate(-30deg) scale(1.5) translate(25%,35%);
+    width: 30%;
+}
+.work-midle{
+    width: 100% !important;
+}
+.buttons button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    margin-right: 16px;
+}
+.work-midle{
+    width: 80%;
+    height: 100%;
+
+    padding: 5% 0;
+}
+.card{
+    width: 384px;
+    /* margin-right: 30px;
+    margin-top: 30px; */
+}
+.card .plant-2{
+    width: 384px;
+    height: 407px;
+    margin-bottom: 30px;
+}
+.midle-top,
+.midle-bot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:last-child{
+    /* margin-top: 30px; */
+    transform: translate(70px,70px);
+}
+.card p{
+    color: #27BA70;
+    margin-bottom: 50px;
 }
 @media only screen and (min-width: 1772px){
     .header{
