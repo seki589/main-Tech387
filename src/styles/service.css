@@ -37,22 +37,14 @@ H5{
 }
 .footer-service{
     height:90vh;
-     /* overflow: hidden; */
     margin: auto;
     max-width: 1776px; 
-    /* background-color: #092628; */
-    /* position: relative;
-    z-index: 1;  */
     width: 100vw;
-    /* transform: translateY(-10vh); */
+
     overflow: hidden;
 }
-.footer-service .footer-serv{
-    /* transform: translateY(-10%); */
-    /* height: 90vh; */
-
-
-    /* margin: auto; */
+.footer-service .footer{
+    transform: translateY(-10%);
 
 }
 .services{
@@ -722,16 +714,25 @@ ol.tab-list{
     .iner-hover-3{
         height: 48%;
     }
-    .serviceImg1{
-        margin-left: 3.75%;
+    .service-2nd .one{
         width: 93%;
+        padding: 0 3.75;
     }
+    .serviceImg1{
+
+        width: 100%;
+    }
+
     .serviceImg2{
-        margin-left: 3.75%;
-        width: 93%;
+        /* margin-left: 3.75%; */
+        width: 100%;
     }
     .service-2nd .two{
         width: 93%;
+    }
+    .service-3nd .one{
+        width: 93%;
+        padding: 0 3.75;
     }
     .service-3nd .two{
         width: 93%;
