@@ -47,8 +47,8 @@ H5{
     /* transform: translateY(-10vh); */
     overflow: hidden;
 }
-.footer-service .footer{
-    transform: translateY(-10%);
+.footer-service .footer-serv{
+    /* transform: translateY(-10%); */
     /* height: 90vh; */
 
 

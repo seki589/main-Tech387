@@ -438,8 +438,6 @@ section{
     
     width: 93%;
     margin: auto;
-    /* max-width: 1772px;
-    flex: 1; */
 }
 .slide-4 .main{
     padding-top: 0%;
@@ -522,7 +520,6 @@ section{
 }
 .footer .left{
     position: relative;
-    /* z-index: 2; */
     display: flex;
     flex: 2;
     flex-direction: column;
@@ -761,7 +758,7 @@ section{
         content: "";
         position: absolute;
         background-color: #0C2317;
-        top: 49%;
+        top: 50%;
         right: 0%;
         width: 100%;
         height: 60%;
@@ -972,8 +969,8 @@ section{
         display: var(--logo-dark);
     }
     .linkedin-menu img{
-        height: 18px !important;
-        width: 18px !important;
+        height: 32px !important;
+        width: 32px !important;
         margin-bottom: 0 !important;
         margin-right: 10px !important;
     }
@@ -1013,6 +1010,9 @@ section{
         left: 0;
         bottom: 7vh;
     }
+    .footer .right{
+        transform: translate(0%,0%) scale(1);
+    }
     .footer .left{
         justify-content: flex-start;
         flex: 7;
@@ -1021,11 +1021,9 @@ section{
         top: 40%;
     }
     .footer::after{
-        bottom: 53%;
+        bottom: 50%;
     }
-    /* .linkedin  p{
-        color: white !important;
-    } */
+
     .tab{
         width: 95%;
 

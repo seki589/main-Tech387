@@ -235,7 +235,7 @@ const ServicePage = () => {
      </section>
      
      <div className="footer-service" >
-         <Footer/>
+         <Footer className="footer-serv"/>
      </div>
      </PageTransition>
     </Layout>
