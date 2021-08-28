@@ -367,8 +367,14 @@ section{
     font-weight: 500;
     font-size: 60px;
     line-height: 71px;
+    /* white-space: nowrap; */
     letter-spacing: 0.45px;
     color: #092628;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .text p{
@@ -396,13 +402,15 @@ section{
     padding: 0;
 }
 .main-text .text{
-    flex: 1.1;
+    flex: 1.2;
+    z-index: 1;
 }
 .main-text .lottie{
     flex: 1;
+    transform: scale(1.2);
 }
 .main-image{
-    transform: scale(1.2) translateY(10%);
+    transform: translateY(10%);
 }
 .lottie{
     width: 100%;
@@ -715,6 +723,8 @@ section{
     width: 100%;
     padding: 0 3.75%;
     height: initial;
+    display: flex;
+    flex-direction: column;
     max-width: 1776px;
     margin: auto;
     position: relative;
@@ -742,7 +752,6 @@ section{
 .work-midle{
     width: 80%;
     height: 100%;
-
     padding: 5% 0;
 }
 .card{
@@ -770,6 +779,172 @@ section{
     color: #27BA70;
     margin-bottom: 50px;
 }
+/* Company */
+
+.top-company{
+    display: flex;
+    margin-bottom: 16px;
+}
+.companyLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-left: 7%;
+    flex: 4;
+    z-index: 1;
+}
+.companyLeft p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0C231799;
+    width: 50%;
+    margin-bottom: 5%;
+}
+.bottom-company{
+    display: flex;
+    padding:0 7%;
+    justify-content: space-between;
+}
+.plant-2{
+    object-fit: cover;
+    width: 274px;
+    height: 277px;
+}
+.vision{
+    background-color: #F1F9FF;
+    /* padding: 5% 7%; */
+}
+.vision-card{
+    display: flex;
+    padding: 7% 7%;
+}
+.vision-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 10%;
+    border-bottom: 2px solid #27BA70;
+}
+.vision-title h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 36px;
+}
+.vision-title .text{
+    margin-bottom: 22px;
+}
+.vision-text{
+    flex: 3;
+}
+.vision-text p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.27px;
+    margin-bottom: 16px;
+}
+.vision-text .text-grean{
+    font-size: 20px;
+    font-style: italic;
+    color: #138E56;
+    margin-bottom: 0;
+}
+.benefits{
+    display: flex;
+    padding: 5% 0;
+}
+.benefits>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+.benefit-text{
+    padding: 7%;
+}
+.benefit-text p{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.27px;
+    margin-bottom: 35px;
+    /* width: 80%; */
+}
+.benefit-text .text p{
+    margin-bottom: 0px;
+}
+.team-section{
+    width: 100%;
+}
+.team-head{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #27BA70;
+}
+.team-head .text{
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+.sub-text{
+    display: flex;
+    margin-bottom: 10%;
+}
+.sub-text>p{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    flex: 1;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+.team-images{
+    width: 100%;
+    display: flex;
+    padding: 7% 0;
+}
+.team-img{
+    aspect-ratio: 21/9;
+}
+.carirer-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.carirer-card{
+    width: 32%;
+    padding: 2% 3%;
+    background-color: #F1F9FF;
+}
+.card-icon{
+    margin-bottom: 16px;
+}
+.carirer-card h5{
+    font-family: "Rubik";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #092628;
+    margin-bottom: 24px;
+}
+.carirer-card p{
+    font-family: "Rubik";
+    font-size: 14px;
+    line-height: 20px;
+    width: 90%;
+}
+.card-icon{
+    width: 35px;
+    height: 35px;
+}
+.padBot{
+    padding-bottom: 5%;
+}
+
 @media only screen and (min-width: 1772px){
     .header{
         padding:16px 66.6px;
@@ -1044,6 +1219,10 @@ section{
         font-size: 48px;
         line-height: 57px;
         letter-spacing: 0.36px;
+        overflow: unset;
+        text-overflow: unset;
+        -webkit-line-clamp: none;
+        -webkit-box-orient: horizontal;
     }
     .main-links{
         display: none;
