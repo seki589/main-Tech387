@@ -6,6 +6,7 @@ import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import PageTransition from 'gatsby-plugin-page-transitions'
+import '../styles/styles.css'
 
 const CompanyPage = () => (
     <Layout>
@@ -146,8 +147,9 @@ const CompanyPage = () => (
                         eu fugiat nulla pariatur.
                         </p>
                     </div>
-                    <div className="carirer-cards">
-                        <div className="carirer-card">
+                    <div className="carier-bot">
+                    <div className="carier-cards">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg"  className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>UI/UX Designer</h5>
                         <p>
@@ -157,7 +159,7 @@ const CompanyPage = () => (
                         ex ea commodo consequat.
                         </p>
                         </div>
-                        <div className="carirer-card">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg"  className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>Front-End Developer</h5>
                         <p>
@@ -167,7 +169,7 @@ const CompanyPage = () => (
                         ex ea commodo consequat.
                         </p>
                         </div>
-                        <div className="carirer-card">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg" className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>Back-End Developer</h5>
                         <p>
@@ -178,8 +180,8 @@ const CompanyPage = () => (
                         </p>
                         </div>
                     </div>  
-                    <div className="carirer-cards">
-                        <div className="carirer-card">
+                    <div className="carier-cards">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg"  className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>UI/UX Designer</h5>
                         <p>
@@ -189,7 +191,7 @@ const CompanyPage = () => (
                         ex ea commodo consequat.
                         </p>
                         </div>
-                        <div className="carirer-card">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg"  className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>Front-End Developer</h5>
                         <p>
@@ -199,7 +201,7 @@ const CompanyPage = () => (
                         ex ea commodo consequat.
                         </p>
                         </div>
-                        <div className="carirer-card">
+                        <div className="carier-card">
                         <StaticImage src="../images//brush_2.svg"  className="card-icon" alt="icon" placeholder="blurred" />
                         <h5>Back-End Developer</h5>
                         <p>
@@ -209,6 +211,7 @@ const CompanyPage = () => (
                         ex ea commodo consequat.
                         </p>
                         </div>
+                    </div>
                     </div>  
                 </div>
             </div>

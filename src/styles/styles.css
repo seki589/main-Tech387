@@ -15,17 +15,45 @@
     --color-background:#FAFAFA;
     --color-text: #0C2317DE;
     --color-primary: #000;
-  }
+}
 
-  /* Dark Mode */
-  :root .dark {
-    --logo-light: block;
-    --logo-dark: none;
-    --color-background: #0C2317;
-    --color-text: #FFF;
-    --color-primary: #fff;
-  }
-
+/* Dark Mode */
+:root .dark {
+--logo-light: block;
+--logo-dark: none;
+--color-background: #0C2317;
+--color-text: #FFF;
+--color-primary: #fff;
+}
+h1{
+font-family: "Rubik", sans-serif;
+font-size: 96px;
+line-height: 114px;
+letter-spacing: 0.72px;
+    
+}
+h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: left;
+}
+h6{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+}
+H5{
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.18px;
+    color: #0C231761;
+    margin-bottom: 0;
+    transition: all .3s ease;
+}
 .container{
     width: 100%;
     height: 100vh;
@@ -912,12 +940,16 @@ section{
 .team-img{
     aspect-ratio: 21/9;
 }
-.carirer-cards{
+.carier-bot{
+    display: flex;
+    flex-direction: column;
+}
+.carier-cards{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
 }
-.carirer-card{
+.carier-card{
     width: 32%;
     padding: 2% 3%;
     background-color: #F1F9FF;
@@ -1095,6 +1127,18 @@ section{
     .card:last-child{
         transform: translate(0px,0px);
     }
+    .carier-bot{
+        flex-direction: row;
+        gap: 15px;
+    }
+    .carier-cards{
+        flex-direction: column;
+    }
+    .carier-card{
+        width: 100%;
+        margin-bottom: 15px;
+        
+    }
 }
 @media only screen and (min-width: 601px){
     .logo .logoLight{
@@ -1243,6 +1287,15 @@ section{
         -webkit-line-clamp: none;
         -webkit-box-orient: horizontal;
     }
+    h1{
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.36px;
+        /* overflow: unset;
+        text-overflow: unset;
+        -webkit-line-clamp: none;
+        -webkit-box-orient: horizontal; */
+    }
     .main-links{
         display: none;
     }
@@ -1312,9 +1365,59 @@ section{
         display: none;
     }
     .work-midle{
-        /* padding: 5 3.75%; */
         width: 100%;
     }
-    
+    /* Company */
+    .companyLeft{
+        padding-left: 0%;
+    }
+    .companyLeft p {
+        width: 100%;
+    }
+    .companyLeft h1{
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0.36px;
+    }
+    .compLeft {
+        display: none;
+    }
+    .bottom-company{
+        padding: 0 0 5% 0;
+    }
+    .vision-card{
+        flex-direction: column;
+        padding: 7% 0 ;
+    }
+    .vision-title{
+        margin-bottom: 5%;
+        margin-right: 0%;
+    }
+    .benefits{
+        flex-direction: column;
+    }
+    .benefit-text{
+        padding: 5% 0%;
+        order: 2;
+    }
+    .team-head{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .team-head h3{
+        margin-bottom: 0;
+    }
+    .team-head .text{
+        margin-bottom: 20px;
+    }
+    .sub-text{
+        flex-direction: column;
+    }
+    .sub-text>p{
+        margin: 20px 0 0 0;
+    }
+    .carier-bot{
+        flex-direction: column;
+    }
 
 }
