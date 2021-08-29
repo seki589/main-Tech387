@@ -740,17 +740,19 @@ section{
     transform:  rotate(-30deg) scale(1.5) translate(25%,35%);
     width: 30%;
 }
-.work-midle{
+/* .work-midle{
     width: 100% !important;
-}
+} */
 .buttons button{
     border: none;
     padding: 10px 20px;
     border-radius: 18px;
     margin-right: 16px;
+    margin-bottom: 10px;
 }
 .work-midle{
     width: 80%;
+    margin: auto;
     height: 100%;
     padding: 5% 0;
 }
@@ -1075,7 +1077,24 @@ section{
     .footer .right{
         transform: translate(10%,0%) scale(1.5);
     }
-    
+    .work-midle{
+        /* padding: 5 3.75%; */
+        width: 90%;
+    }
+    .midle-top,
+    .midle-bot{
+        flex-direction: column;
+    }
+    .card{
+
+        width: 100%;
+    }
+    .card .plant-2{
+        width: 100%;
+    }
+    .card:last-child{
+        transform: translate(0px,0px);
+    }
 }
 @media only screen and (min-width: 601px){
     .logo .logoLight{
@@ -1288,5 +1307,14 @@ section{
     .team-cards{
         margin: 30px 0;
     }
+    /* Work */
+    .workRight{
+        display: none;
+    }
+    .work-midle{
+        /* padding: 5 3.75%; */
+        width: 100%;
+    }
+    
 
 }
