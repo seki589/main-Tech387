@@ -55,7 +55,7 @@ class Header extends React.Component {
               <Link to="/work" onClick={this.toggleMenu,this.setLight} activeClassName="active" partiallyActive={true}>Work</Link>
               <Link to="/services" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Services</Link>
               <Link to="/company" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Company</Link>
-              <Link to="/hire-us" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Hire Us</Link>
+              <Link to="/hire-us" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Work With Us</Link>
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
