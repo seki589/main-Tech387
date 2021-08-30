@@ -61,24 +61,24 @@ const WorkPage = () => (
                         <div className="card">
                         <StaticImage src="../images/work_1.png" className="plant-2" alt="plant" placeholder="blurred"/>
                         <h6>How to do analytics for Fintech</h6>
-                        {/* <p>Design, App Development</p>   */}
+                        <p>Design, App Development</p>  
                         </div>
                         <div className="card">
                         <StaticImage src="../images/work_2.png" className="plant-2" alt="plant" placeholder="blurred"/>
                         <h6>How to do analytics for Fintech</h6>
-                        {/* <p>Design, App Development</p>   */}
+                        <p>Design, App Development</p>  
                         </div>
                     </div>
                     <div className="midle-bot">
                     <div className="card">
                         <StaticImage src="../images/work_3.png" className="plant-2" alt="plant" placeholder="blurred"/>
                         <h6>How to do analytics for Fintech</h6>
-                        {/* <p>Design, App Development</p>   */}
+                        <p>Design, App Development</p>  
                         </div>
                         <div className="card">
                         <StaticImage src="../images/work_4.png" className="plant-2" alt="plant" placeholder="blurred"/>
                         <h6>How to do analytics for Fintech</h6>
-                        {/* <p>Design, App Development</p>   */}
+                        <p>Design, App Development</p>  
                         </div>
                     </div>
                 </div>
