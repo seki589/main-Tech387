@@ -1221,23 +1221,31 @@ section{
     .footer .right{
         transform: translate(10%,0%) scale(1.5);
     }
+    .workLeft h1{
+        font-size: 48px;
+        line-height: 57px;
+        letter-spacing: 0px;
+    }
+    .workRight{
+        display: none;
+    }
     .work-midle{
-        /* padding: 5 3.75%; */
         width: 90%;
     }
     .midle-top,
     .midle-bot{
         flex-direction: column;
+        align-items: flex-start;
     }
     .card{
-
-        width: 100%;
+        margin-bottom: 64px;
+        width: 70%;
     }
     .card .plant-2{
         width: 100%;
     }
     .card:last-child{
-        transform: translate(0px,0px);
+        transform: translate(35%,0);
     }
     .carier-bot{
         flex-direction: row;
