@@ -1226,6 +1226,9 @@ section{
         line-height: 57px;
         letter-spacing: 0px;
     }
+    .workLeft{
+        padding-left: 0;
+    }
     .workRight{
         display: none;
     }
@@ -1246,6 +1249,9 @@ section{
     }
     .card:last-child{
         transform: translate(35%,0);
+    }
+    .card p{
+        opacity: 1;
     }
     .carier-bot{
         flex-direction: row;
@@ -1481,11 +1487,21 @@ section{
         margin: 30px 0;
     }
     /* Work */
-    .workRight{
+    /* .workRight{
         display: none;
-    }
+    } */
     .work-midle{
         width: 100%;
+    }
+    .card{
+        margin-bottom: 64px;
+        width: 100%;
+    }
+    .card .plant-2{
+        width: 100%;
+    }
+    .card:last-child{
+        transform: translate(0,0);
     }
     /* Company */
     .companyLeft{
