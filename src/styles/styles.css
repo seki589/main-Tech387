@@ -1646,7 +1646,6 @@ section{
     }
     .benefit-text{
         padding: 5% 0%;
-        order: 2;
     }
     .team-head{
         flex-direction: column;
