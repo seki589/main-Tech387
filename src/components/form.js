@@ -63,7 +63,7 @@ const Form = () => {
                             onChange={(e) => setProject(e.target.value)}
                             placeholder="Project Details (optional)"
                     ></input>
-                    <div className="subBtn"><button className="send">Send</button><p>{message}</p></div>
+                    <div className="subBtn"><p>{message}</p><button className="send">Send</button></div>
                 </form>
             </div>
         )

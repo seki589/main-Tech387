@@ -646,19 +646,36 @@ section{
 
 /* Hire Us */
 .hireUs{
-    padding-top: 10vh;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    background-color: #FAFAFA;
+    min-height: 100% !important;
+}
+.hireBot{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 0 7%;
+}
+.hireBot .partners{
+    opacity: .15;
+}
+.hireTop{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FAFAFA;
+    padding: 0 7%;
 }
 .client{
     flex: 1;
     padding-right: 2%;
 }
-.team{
+/* .team{
     flex: 1;
-}
+} */
 .hireUsForm>form{
     display: flex;
     flex-direction: column;
@@ -717,11 +734,13 @@ section{
 .team{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding-top: 10%;
 }
-.team-box{
+/* .team-box{
     padding: 62px;
-    border-left: 1px solid #AFAFAF;
-}
+} */
 .team-box h2{
     font-family: "Rubik", sans-serif;
     font-size: 24px;
@@ -733,11 +752,12 @@ section{
 }
 .team-card h6{
     font-family: "Rubik", sans-serif;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: 12px;
     font-weight: 400;
     margin-bottom: 5px;
-    color: #0C231799;
+    text-transform: uppercase;
+    color: #138E56;
 }
 .team-cards h5,
 .team-cards a{
@@ -751,12 +771,15 @@ section{
     margin-bottom: 65px;
 }
 .team-card p{
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0C2317DE;
     margin-bottom: 5px;
 }
 .team-card .profile{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
+    height: 140px;
+    width: 140px;
     margin-right: 8px;
 }
 .team-card{
@@ -1364,9 +1387,16 @@ section{
     .text h1{
         font-size: 48px;
     }
-    .team-box{
-        padding: 10%;
+    .hireUs{
+        align-items: center;
+        justify-content: center;
     }
+    .hireTop{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+    }
+
     .partners{
         display: none;
     }
@@ -1429,16 +1459,7 @@ section{
 
     }
 }
-@media only screen and (min-width: 601px){
-    
-    /* .menuIcon{
-        display: none;
-    } */
-    /* .linkedin-menu{
-        display: none;
-    } */
 
-}
 @media only screen and (max-width: 600px){
     .container{
         width: 100%;
@@ -1551,6 +1572,10 @@ section{
         border-left: none;
 
     }
+    .hireTop{
+        width: 100%;
+        padding: 0;
+    }
     .hireUs{
         align-items: flex-start;
         height: auto;
@@ -1562,7 +1587,7 @@ section{
         min-width: 60%;
     }
     .team{
-        margin-top: 30px;
+        padding-top: 0;
     }
     .team-cards{
         margin: 30px 0;
