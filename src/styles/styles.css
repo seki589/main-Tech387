@@ -277,7 +277,6 @@ section{
     padding: 10px 20px;
     text-transform: uppercase;
     transition: all .3s ease;
-    mix-blend-mode: difference; 
 }
 .navigation a.active{
     color: #27BA70;
@@ -764,6 +763,7 @@ section{
     display: flex;
     margin-bottom: 8px;
 }
+
 .contact .icon{
     margin-right:14px ;
     fill: #0C231799;
@@ -1028,6 +1028,7 @@ section{
     align-items: flex-start;
     min-width: 40%;
     
+    
 }
 .team-images::-webkit-scrollbar{
     display: none;
@@ -1035,8 +1036,9 @@ section{
 }
 .team-img img{
     object-fit: unset !important;
-    min-height: 100%;
+    /* min-height: 100%; */
     margin-top: 0 !important;
+    min-width: 100%;
 }
 .carier-bot{
     display: flex;
@@ -1048,34 +1050,36 @@ section{
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 2%;
-    padding: 0 5%;
+    padding: 0 7%;
 }
 .carier-card{
     width: 49%;
-    padding: 2% 3%;
+    padding: 2.5% 4%;
     gap: 20px;
     background-color: #EBEBEB;
+    border-radius: 3px;
 }
 .top-card{
     display: flex;
     justify-content: space-between;
 }
 .card-icon{
-    margin-bottom: 16px;
+    width: 15.5px;
+    height: 15.5px;
 }
-.carirer-card h5{
+.top-card h5{
     font-family: "Rubik";
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
-    color: #0C2317DE;
+    color: #0C2317DE !important;
     margin-bottom: 24px;
 }
 .carirer-card p{
     font-family: "Rubik";
     font-size: 14px;
     line-height: 20px;
-    width: 90%;
+    color: #0C2317DE;
 }
 .card-icon{
     width: 35px;
@@ -1416,9 +1420,11 @@ section{
     }
     .carier-cards{
         flex-direction: column;
+        width: 100%;
+        gap: 0;
     }
     .carier-card{
-        width: 100%;
+        width: 99%;
         margin-bottom: 15px;
 
     }
@@ -1549,7 +1555,12 @@ section{
         align-items: flex-start;
         height: auto;
     }
-
+    .team-images{
+        gap: 10px;
+    }
+    .team-images .img-wraper{
+        min-width: 60%;
+    }
     .team{
         margin-top: 30px;
     }
@@ -1585,11 +1596,17 @@ section{
         line-height: 57px;
         letter-spacing: 0.36px;
     }
+    .companyRight{
+        display: none;
+    }
     .compLeft {
         display: none;
     }
     .bottom-company{
         padding: 0 0 5% 0;
+    }
+    .company1{
+        transform: scale(1.1);
     }
     .vision-card{
         flex-direction: column;
@@ -1621,6 +1638,9 @@ section{
     }
     .sub-text>p{
         margin: 20px 0 0 0;
+    }
+    .carier-cards{
+        padding: 0;
     }
     .carier-bot{
         flex-direction: column;
