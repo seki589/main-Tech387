@@ -65,7 +65,7 @@ const IndexPage = () => {
       keyboard={true}
       mousewheel={{
         "thresholdDelta": 50,
-        "lastScrollTime":100,
+        "lastScrollTime":500,
         "forceToAxis": true,
         "releaseOnEdges": false,
       }}

@@ -11,6 +11,7 @@
 :root {
     --logo-light: none;
     --logo-dark: block;
+    /* --logo-dark: #FFFFFF; */
     --swiper-theme-color: #27BA70 !important;
     --color-background:#FAFAFA;
     --color-text: #0C2317DE;
@@ -21,6 +22,7 @@
 :root .dark {
 --logo-light: block;
 --logo-dark: none;
+/* --logo-dark: #FFFFFF; */
 --color-background: #0C2317;
 --color-text: #FFF;
 --color-primary: #fff;
@@ -203,14 +205,14 @@ section{
     border-radius: none !important;
     pointer-events: all !important;
 }
-.swiper-pagination-bullet  {
-    stroke: #585858;
-    stroke-width:50;
-    fill: transparent;
+.swiper-pagination-bullet .st0 {
+    stroke: #585858 !important;
+    stroke-width:50 !important;
+    fill: transparent !important;
     pointer-events: all !important;
 }
- .swiper-pagination-bullet-active {
-    stroke: #27BA70;
+ .swiper-pagination-bullet-active .st0{
+    stroke: #27BA70 !important;
     fill:#27BA70 !important;
 }
 
@@ -226,9 +228,7 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 16px 3.75%;
-    /* margin: 0 auto; */
     z-index: 100;
-    /* transform: translate(0); */
     backdrop-filter: blur(4px);
 }
 .menuIcon{
@@ -293,21 +293,36 @@ section{
 .linkedin-menu{
     display: none;
 }
-.logo .logoLight{
+.logo .logoLight {
     display: var(--logo-light);
+    /* fill: var(--logo-light); */
+}
+.logo .logoLight .st0{
+    
+    fill:#FFFFFF;
+}
+.logo .logoLight .st1{
+    fill:#0C2317;
 }
 .logo .logoDark{
     display: var(--logo-dark);
 }
+.logo .logoDark .st0{
+    fill:#0C2317;
+}
+.logo .logoDark .st1{
+    fill:#FFFFFF;
+}
 .logo {
     width: 150px;
-    display: flex;
+    /* height: 30px; */
+    display: block;
     object-fit: cover;
 }
-.logo img{
+/* .logo img{
     width: 100%;
     margin-bottom: 0;
-}
+} */
 
 .partners-title{
     visibility: visible;

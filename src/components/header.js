@@ -2,12 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
-import LogoLight from "../images/Logo - horizontal - Light.svg"
-import LogoDark from "../images/Logo - horizontal - Dark.svg"
+// import LogoLight from "../images/Logo - horizontal - Light.svg"
+import LogoLight from "../assets/LogoHorizontalLight.svg"
+// import LogoDark from "../images/Logo - horizontal - Dark.svg"
+import LogoDark from "../assets/LogoHorizontalDark.svg"
 import '../styles/styles.css'
 
 class Header extends React.Component {
-
   
   state = { showMenu: false }
 
@@ -30,16 +31,18 @@ class Header extends React.Component {
   
 
  render() {
-   
+  console.log(LogoDark)
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
       <div className="wraper">
         <div className="header">
-          <div className="logo">
-            <Link to="/">
-              <img src={LogoLight} className="logoDark" alt="logo"/>
-              <img src={LogoDark} className="logoLight" alt="logo"/>
+          <div >
+            <Link className="logo" to="/">
+              {/* <img src={LogoLight} className="logoDark" alt="logo"/> */}
+              <LogoLight className="logoDark"/>
+              {/* <img src={LogoDark} className="logoLight" alt="logo"/> */}
+              <LogoDark className="logoLight"/>
             </Link>
           </div>
           <div className="menuIcon"
