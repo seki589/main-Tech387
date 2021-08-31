@@ -230,6 +230,7 @@ section{
     padding: 16px 3.75%;
     z-index: 100;
     backdrop-filter: blur(4px);
+    
 }
 .menuIcon{
     position: fixed;
@@ -276,7 +277,7 @@ section{
     padding: 10px 20px;
     text-transform: uppercase;
     transition: all .3s ease;
-
+    mix-blend-mode: difference; 
 }
 .navigation a.active{
     color: #27BA70;
@@ -489,6 +490,7 @@ section{
     background-image: url("../images/footer_web.png");
     background-position: center;
     background-size: cover;
+    
 }
 .footer-iner{
     overflow: inherit;
@@ -496,7 +498,6 @@ section{
     display: flex;
     flex-direction: row;
     height: 100vh;
-
     width: 93%;
     margin: auto;
 }
@@ -901,9 +902,18 @@ section{
     font-size: 16px;
     line-height: 21px;
     color: #0C231799;
-    width: 50%;
+    width: 60%;
     margin-bottom: 5%;
 }
+.companyRight{
+    /* z-index: -1; */
+    flex: 2;
+    transform: scale(1.8) translate(-20%,40%);
+}
+/* .compLeft {
+    width: 60%;
+    transform: translate( 30%,-100%);
+} */
 .bottom-company{
     display: flex;
     padding:0 7%;
@@ -966,7 +976,7 @@ section{
     flex: 1;
 }
 .benefit-text{
-    padding: 7%;
+    padding: 0 7%;
 }
 .benefit-text p{
     font-family: "Roboto", sans-serif;
@@ -1008,9 +1018,25 @@ section{
     width: 100%;
     display: flex;
     padding: 7% 0;
+    overflow-x: auto;
+    transform: scaleX(105%);
+    transform-origin: left;
 }
-.team-img{
-    aspect-ratio: 21/9;
+.team-images .img-wraper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 40%;
+    
+}
+.team-images::-webkit-scrollbar{
+    display: none;
+    
+}
+.team-img img{
+    object-fit: unset !important;
+    min-height: 100%;
+    margin-top: 0 !important;
 }
 .carier-bot{
     display: flex;
@@ -1018,13 +1044,21 @@ section{
 }
 .carier-cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
     margin-bottom: 2%;
+    padding: 0 5%;
 }
 .carier-card{
-    width: 32%;
+    width: 49%;
     padding: 2% 3%;
-    background-color: #F1F9FF;
+    gap: 20px;
+    background-color: #EBEBEB;
+}
+.top-card{
+    display: flex;
+    justify-content: space-between;
 }
 .card-icon{
     margin-bottom: 16px;
@@ -1034,7 +1068,7 @@ section{
     font-size: 24px;
     font-weight: 500;
     line-height: 28px;
-    color: #092628;
+    color: #0C2317DE;
     margin-bottom: 24px;
 }
 .carirer-card p{
@@ -1268,6 +1302,7 @@ section{
         color:  var(--color-text);
         transition: all .3s ease;
         text-transform: capitalize;
+
     }
     .navigation a.active{
         color: #27BA70;
