@@ -25,6 +25,13 @@
 --color-text: #FFF;
 --color-primary: #fff;
 }
+:root[data-theme='dark']{
+    --logo-light: block;
+    --logo-dark: none;
+    --color-background: #0C2317;
+    --color-text: #FFF;
+    --color-primary: #fff;  
+}
 h1{
 font-family: "Rubik", sans-serif;
 font-size: 96px;
@@ -293,12 +300,12 @@ section{
 }
 .logo .logoLight {
     display: var(--logo-light);
-    /* fill: var(--logo-light); */
 }
-.logo .logoLight .st0{
-    
+
+.logo .logoLight .st0{ 
     fill:#FFFFFF !important;
 }
+
 .logo .logoLight .st1{
     fill:#0C2317 !important;
 }
@@ -327,7 +334,6 @@ section{
 .partners .img{
     display: flex;
     align-items: flex-start;
-    /* margin-left: -6px; */
     margin-bottom: 18px;
 }
 .partners-logo img{
@@ -1542,10 +1548,13 @@ section{
     .main{
         padding-top: 0%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+    .main-text>div{
+        min-height: unset;
     }
     .slide-2 .main{
-        justify-content: flex-end;
+        justify-content: center;
     }
     .slide-3 .main{
         justify-content: center;
@@ -1561,8 +1570,10 @@ section{
         order: 2;
     }
     .text h1{
-        font-size: 48px;
-        line-height: 57px;
+        font-size: 10vw;
+        /* font-size: 48px; */
+        /* line-height: 57px; */
+        line-height: 12vw;
         letter-spacing: 0.36px;
         overflow: unset;
         text-overflow: unset;
@@ -1732,3 +1743,12 @@ section{
     }
 
 }
+@media (prefers-color-scheme: dark) {
+    img {
+      opacity: .75;
+      transition: opacity .5s ease-in-out;
+    }
+    img:hover {
+      opacity: 1;
+    }
+  }
