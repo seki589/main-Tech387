@@ -90,9 +90,9 @@ const CompanyPage = () => (
                     </div> */}
                     
                     <div className="team-images">
-                    <div className="img-wraper"><StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
-                    <div className="img-wraper"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>
-                    <div className="img-wraper"><StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/></div>
+                    <div className="img-wraper1"><StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
+                    <div className="img-wraper2"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>
+                    <div className="img-wraper3"><StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/></div>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,6 @@ const CompanyPage = () => (
                             </p>
                         </div>
                         <div className="benefit-img">
-                        {/* <StaticImage src="../images/team.jpg"  className="company1" alt="plant" placeholder="blurred"/>   */}
                         </div>
                     </div>
                     <div className="carier-bot">

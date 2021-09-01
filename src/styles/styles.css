@@ -820,16 +820,16 @@ section{
     justify-content: flex-end;
     align-items: flex-start;
     padding-left: 5%;
-    flex: 2;
+    flex: 4;
     z-index: 1;
 }
 .workRight{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     flex: 1;
-    padding-right: 5%;
+
 }
 .workRight .plant-1{
     width: 140px;
@@ -870,7 +870,7 @@ section{
     padding: 10% 0;
 }
 .card{
-    width: 40%;
+    width: 44%;
     height: 100%;
     margin-bottom: 71px;
     overflow: hidden;
@@ -1051,13 +1051,17 @@ section{
     transform: scaleX(105%);
     transform-origin: left;
 }
-.team-images .img-wraper{
+.team-images>div{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-start;   
+}
+.img-wraper1,
+.img-wraper3{
     min-width: 40%;
-    
-    
+}
+.img-wraper2{
+    min-width: 35%;
 }
 .team-images::-webkit-scrollbar{
     display: none;
@@ -1067,7 +1071,7 @@ section{
     object-fit: unset !important;
     /* min-height: 100%; */
     margin-top: 0 !important;
-    min-width: 100%;
+    width: 100%;
 }
 .carier-bot{
     display: flex;
@@ -1392,6 +1396,9 @@ section{
         margin-bottom: 0 !important;
         margin-right: 10px !important;
     }
+    .header{
+        min-height: 75px;
+    }
     .text h1{
         font-size: 48px;
     }
@@ -1467,8 +1474,47 @@ section{
         margin-bottom: 15px;
 
     }
+    .companyLeft h1{
+        font-size: 48px;
+        line-height: 57px;
+    }
+    .companyLeft p{
+        width: 100%;
+    }
+    .img-wraper1,
+    .img-wraper3{
+        min-width: 60%;
+    }
+    .img-wraper2{
+        min-width: 45%;
+    }
+    .team-images{
+        gap: 10px;
+    }
+    .benefits{
+        flex-direction: column;
+    }
+    .benefit-img{
+        padding-left: 7%;
+    }
+    .benefit-text p{
+        width: 60%;
+    }
 }
-
+@media  (max-width: 600px) and (orientation: Landscape){
+    .navigation{
+        justify-content: flex-start;
+        padding-top: 10%;
+    }
+    .navigation a{
+        font-size: 38px;
+        line-height: 47px;
+        padding: 5px 20px;
+    }
+    .hireUs{
+        padding-top: 20% !important;
+    }
+}
 @media only screen and (max-width: 600px){
     .container{
         width: 100%;
@@ -1477,15 +1523,12 @@ section{
         top: 0;
         left: 0;
         transform: translate(0);
-        /* height: 100vh; */
         width:100vw;
         min-height: 75px;
     }
     .navigation nav{
         height: 50%;
     }
-    
-    
 
     .main{
         padding-top: 0%;
@@ -1502,8 +1545,6 @@ section{
     .swiper-container-vertical > .swiper-pagination-bullets{
         right: 3.75%;
     }
-    
-    
     .main-text{
         flex-direction: column;
     }
@@ -1523,10 +1564,6 @@ section{
         font-size: 48px;
         line-height: 57px;
         letter-spacing: 0.36px;
-        /* overflow: unset;
-        text-overflow: unset;
-        -webkit-line-clamp: none;
-        -webkit-box-orient: horizontal; */
     }
     .main-links{
         display: none;
@@ -1575,6 +1612,8 @@ section{
     .hireUs{
         flex-direction: column;
         padding-top: 15vh;
+        align-items: flex-start;
+        height: auto;
     }
     .team-box{
         padding: 0px;
@@ -1585,15 +1624,16 @@ section{
         width: 100%;
         padding: 0;
     }
-    .hireUs{
-        align-items: flex-start;
-        height: auto;
-    }
     .team-images{
         gap: 10px;
+        padding: 10% 0;
     }
-    .team-images .img-wraper{
-        min-width: 60%;
+    .img-wraper1,
+    .img-wraper3{
+        min-width: 70%;
+    }
+    .img-wraper2{
+        min-width: 50%;
     }
     .team{
         padding-top: 0;
@@ -1602,9 +1642,6 @@ section{
         margin: 30px 0;
     }
     /* Work */
-    /* .workRight{
-        display: none;
-    } */
     .work-midle{
         width: 100%;
     }
@@ -1638,6 +1675,12 @@ section{
     }
     .bottom-company{
         padding: 0 0 5% 0;
+    }
+    .benefit-img{
+        padding-left: 0%;
+    }
+    .benefit-text p{
+        width: 100%;
     }
     .company1{
         transform: scale(1.1);
