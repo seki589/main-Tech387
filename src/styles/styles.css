@@ -11,7 +11,6 @@
 :root {
     --logo-light: none;
     --logo-dark: block;
-    /* --logo-dark: #FFFFFF; */
     --swiper-theme-color: #27BA70 !important;
     --color-background:#FAFAFA;
     --color-text: #0C2317DE;
@@ -22,7 +21,6 @@
 :root .dark {
 --logo-light: block;
 --logo-dark: none;
-/* --logo-dark: #FFFFFF; */
 --color-background: #0C2317;
 --color-text: #FFF;
 --color-primary: #fff;
@@ -299,23 +297,22 @@ section{
 }
 .logo .logoLight .st0{
     
-    fill:#FFFFFF;
+    fill:#FFFFFF !important;
 }
 .logo .logoLight .st1{
-    fill:#0C2317;
+    fill:#0C2317 !important;
 }
 .logo .logoDark{
     display: var(--logo-dark);
 }
 .logo .logoDark .st0{
-    fill:#0C2317;
+    fill:#0C2317 !important;
 }
 .logo .logoDark .st1{
-    fill:#FFFFFF;
+    fill:#FFFFFF !important;
 }
 .logo {
     width: 150px;
-    /* height: 30px; */
     display: block;
     object-fit: cover;
 }
@@ -1278,6 +1275,15 @@ section{
         line-height: 38px;
         -webkit-line-clamp: initial;
     }
+    .workLeft h1,
+    .servLeft h1,
+    .companyLeft h1{
+        font-size: 48px !important;
+        line-height: 57px;
+    }
+    .companyLeft p{
+        width: 80%;
+    }
     .partners-title,
     .partners{
         display: none;
@@ -1510,6 +1516,9 @@ section{
         font-size: 38px;
         line-height: 47px;
         padding: 5px 20px;
+    }
+    .topPad{
+        padding-top: 20vh !important;
     }
     .hireUs{
         padding-top: 20% !important;
