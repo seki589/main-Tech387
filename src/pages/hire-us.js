@@ -4,8 +4,6 @@ import Form from "../components/form";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
-import Mail from "../assets/ic_email.svg"
-import Phone from "../assets/ic_phone.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 
@@ -17,7 +15,6 @@ const HireUsPage = () => {
             <Layout>
             <PageTransition>
             <Seo title="Work with us" />
-            {/* <div className="container"> */}
                 <section className="hireUs">
                    <div className="hireTop">
                     <div className="client">
@@ -87,7 +84,6 @@ const HireUsPage = () => {
                     </div>
                   </div>
                 </section>
-            {/* </div> */}
             </PageTransition>
             </Layout>
         )

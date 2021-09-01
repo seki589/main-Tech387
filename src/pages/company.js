@@ -93,9 +93,6 @@ const CompanyPage = () => (
                     <div className="img-wraper"><StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
                     <div className="img-wraper"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>
                     <div className="img-wraper"><StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/></div>
-                    {/* <StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/>    
-                    <StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/>    
-                    <StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/>     */}
                     </div>
                 </div>
             </div>
