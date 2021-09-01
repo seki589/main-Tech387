@@ -1501,7 +1501,7 @@ section{
         width: 60%;
     }
 }
-@media  (max-width: 600px) and (orientation: Landscape){
+@media  (max-width: 640px) and (orientation: Landscape){
     .navigation{
         justify-content: flex-start;
         padding-top: 10%;
