@@ -1246,6 +1246,10 @@ section{
     .main-text{
         flex-direction: row;
     }
+    .partners-title,
+    .partners{
+        display: none;
+    }
     .main{
         padding-top: 0vh;
     }
@@ -1277,10 +1281,8 @@ section{
 }
 @media (max-width: 824px) and (orientation: Landscape){
     .text h1{
-        /* font-size: 38px !important; */
-        font-size: 9vh !important;
-        line-height: 10vh;
-        /* line-height: 38px; */
+        font-size: 8.5vh !important;
+        line-height: 9.5vh;
         -webkit-line-clamp: initial;
     }
     .workLeft h1,
@@ -1575,10 +1577,10 @@ section{
         order: 2;
     }
     .text h1{
-        font-size: 10vw;
+        font-size: 6vh;
         /* font-size: 48px; */
         /* line-height: 57px; */
-        line-height: 12vw;
+        line-height: 6.5vh;
         letter-spacing: 0.36px;
         overflow: unset;
         text-overflow: unset;
