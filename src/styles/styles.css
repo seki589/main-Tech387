@@ -1277,8 +1277,10 @@ section{
 }
 @media (max-width: 824px) and (orientation: Landscape){
     .text h1{
-        font-size: 38px;
-        line-height: 38px;
+        /* font-size: 38px !important; */
+        font-size: 9vh !important;
+        line-height: 10vh;
+        /* line-height: 38px; */
         -webkit-line-clamp: initial;
     }
     .workLeft h1,
@@ -1304,6 +1306,9 @@ section{
 
     .footer-mid{
         padding-top: 10%;
+    }
+    .footer-iner .mid{
+        display: none;
     }
     .left-li .linkedin{
         display: none;
