@@ -2,10 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { StaticImage } from "gatsby-plugin-image"
-// import LogoLight from "../images/Logo - horizontal - Light.svg"
 import LogoLight from "../assets/LogoHorizontalLight.svg"
-// import LogoDark from "../images/Logo - horizontal - Dark.svg"
 import LogoDark from "../assets/LogoHorizontalDark.svg"
+import menuData from "../data/menu.json"
 import '../styles/styles.css'
 
 class Header extends React.Component {
@@ -25,7 +24,7 @@ class Header extends React.Component {
   
 
  render() {
-  console.log(this.toggleMenu)
+
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
@@ -33,9 +32,7 @@ class Header extends React.Component {
         <div className="header">
           <div >
             <Link className="logo" to="/">
-              {/* <img src={LogoLight} className="logoDark" alt="logo"/> */}
               <LogoLight className="logoDark"/>
-              {/* <img src={LogoDark} className="logoLight" alt="logo"/> */}
               <LogoDark className="logoLight"/>
             </Link>
           </div>
@@ -49,10 +46,10 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-              <Link to="/work" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Work</Link>
-              <Link to="/services" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Services</Link>
-              <Link to="/company" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Company</Link>
-              <Link to="/hire-us" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Work With Us</Link>
+            {menuData.map((li, id )=> (
+                <Link to={li.link} key={id} onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>{li.name}</Link>
+            )
+            )}
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">

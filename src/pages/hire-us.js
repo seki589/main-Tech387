@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import PageTransition from 'gatsby-plugin-page-transitions';
+import PartnersLogo from "../components/partnersLogo";
 
 
 const HireUsPage = () => {
@@ -73,14 +74,7 @@ const HireUsPage = () => {
                   </div>
                   <div className="hireBot">
                     <div className="partners">
-                        <div className="img">
-                        <StaticImage src="../images/volkswagen group.svg" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
-                        <StaticImage src="../images/Samsung.svg" className="partners-logo" alt="samsung" placeholder="tracedSVG"/>
-                        <StaticImage src="../images/Huawei.svg" className="partners-logo" alt="huawei" placeholder="tracedSVG"/>
-                        <StaticImage src="../images/goCloudGroup.svg" className="partners-logo" alt="goCloudgroup" placeholder="tracedSVG"/>
-                        <StaticImage src="../images/DiamoundApp Group.svg" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/>
-                        
-                        </div>
+                        <PartnersLogo/>
                     </div>
                   </div>
                 </section>
