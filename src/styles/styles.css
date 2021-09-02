@@ -1223,6 +1223,9 @@ section{
         flex-direction: row;
         background-image: url("../images/footer_web.png");
     }
+    .footer-head h1{
+        display: none;
+    }
     .footer-iner {
         flex-direction: row;
     }
@@ -1231,6 +1234,15 @@ section{
     }
     .footer-iner .left{
         align-items: flex-end;
+    }
+    .footer-iner .mid{
+        display: none;
+    }
+    .footer-iner .right{
+        flex: 0;
+    }
+    .right-li{
+        padding-top: 35px;
     }
     .footer-bot {
         left: 50%;
