@@ -1199,48 +1199,6 @@ section{
     }
 }
 
-/* Landscape mode */
-/* @media only screen and (max-width: 1020px) and (min-width: 600px),
-            screen and (max-height: 500px){
-    .text h1{
-        font-size: 38px;
-        line-height: 38px;
-    }
-    .main-links{
-        bottom: 7px;
-    }
-    .partners .img {
-        margin-bottom: 8px;
-    }
-    .text h1{
-        margin-bottom: 0.8rem;
-    }
-    .footer-head h1 {
-        display: none;
-    }
-    .footer-bot{
-        bottom: 7px;
-    }
-    .swiper-container-vertical > .swiper-pagination-bullets{
-        top: 70% !important;
-    }
-    .partners-logo {
-        height: 20px !important;
-    }
-    .partners-logo img{
-        height: 20px !important;
-        width: 100%;
-        object-fit: cover;
-    }
-    .hireUs{
-        height: initial;
-        padding-top: 25vh;
-        align-items: flex-start;
-    }
-    .team-box {
-        padding-bottom: 0;
-    }
-} */
 @media (max-width: 1024px) and (orientation: Landscape){
     .main-text{
         flex-direction: row;
@@ -1310,6 +1268,12 @@ section{
     }
     .footer-iner .mid{
         display: none;
+    }
+    .footer-iner .right{
+        flex: 0;
+    }
+    .right-li{
+        padding-top: 35px;
     }
     .left-li .linkedin{
         display: none;
