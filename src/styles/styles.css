@@ -359,8 +359,7 @@ section{
 }
 .main-links{
     position: absolute;
-    /* left: 3.75%; */
-    bottom: 27px;
+    bottom: 3%;
 }
 .main-links p{
     font-family: "Rubik", sans-serif;
