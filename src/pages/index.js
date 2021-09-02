@@ -12,6 +12,11 @@ import Lottie from "../components/lottie"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin_light.png"
+import Volkswagen from "../assets/volkswagenGroup.svg"
+import Samsung from "../assets/Samsung.svg"
+import Huawei from "../assets/Huawei.svg"
+import GoCloudGroup from "../assets/goCloudGroup.svg"
+import DiamoundApp from "../assets/DiamoundAppGroup.svg"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import gsap from "gsap";
 import "swiper/swiper-bundle.css";
@@ -110,12 +115,16 @@ const IndexPage = () => {
                   <p className="partners-title">Partners</p>
                   <div className="partners">
                      <div className="img">
-                     <StaticImage src="../images/volkswagen group.svg" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
+                     {/* <StaticImage src="../images/volkswagen group.svg" className="partners-logo" alt="volkswagen" placeholder="tracedSVG"/>
                      <StaticImage src="../images/Samsung.svg" className="partners-logo" alt="samsung" placeholder="tracedSVG"/>
                      <StaticImage src="../images/Huawei.svg" className="partners-logo" alt="huawei" placeholder="tracedSVG"/>
                      <StaticImage src="../images/goCloudGroup.svg" className="partners-logo" alt="goCloudgroup" placeholder="tracedSVG"/>
-                     <StaticImage src="../images/DiamoundApp Group.svg" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/>
-                     
+                     <StaticImage src="../images/DiamoundApp Group.svg" className="partners-logo" alt="DiamountAppLogo.png" placeholder="tracedSVG"/> */}
+                     <Volkswagen className="partners-logo"/>
+                     <Samsung className="partners-logo"/>
+                     <Huawei className="partners-logo"/>
+                     <GoCloudGroup className="partners-logo"/>
+                     <DiamoundApp className="partners-logo"/>
                      </div>
                   </div>
                   <div className="linkedin">

@@ -13,25 +13,19 @@ class Header extends React.Component {
   state = { showMenu: false }
 
   toggleMenu = () => {
-    
     this.setState({
-      
       showMenu: !this.state.showMenu
     });
   }
-  setLight = async () => {
+  setLight = () => {
    document.body.classList.remove('dark')
   }
-  closeMenu = () => {
-
-       setTimeout(() => {
-        this.toggleMenu();
-       },400)
-  }
+  
+  
   
 
  render() {
-  console.log(LogoDark)
+  console.log(this.toggleMenu)
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
@@ -55,10 +49,10 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-              <Link to="/work" onClick={this.toggleMenu,this.setLight} activeClassName="active" partiallyActive={true}>Work</Link>
-              <Link to="/services" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Services</Link>
-              <Link to="/company" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Company</Link>
-              <Link to="/hire-us" onClick={this.toggleMenu, this.setLight} activeClassName="active" partiallyActive={true}>Work With Us</Link>
+              <Link to="/work" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Work</Link>
+              <Link to="/services" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Services</Link>
+              <Link to="/company" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Company</Link>
+              <Link to="/hire-us" onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>Work With Us</Link>
             </nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
