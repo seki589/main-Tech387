@@ -1215,6 +1215,9 @@ section{
         flex:  1;
         justify-content: center;
     }
+    .main-text .lottie{
+        transform: translate(1);
+    }
     .footer::after,
     .footer::before{
         position: relative;
