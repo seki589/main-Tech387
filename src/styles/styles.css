@@ -1216,7 +1216,7 @@ section{
         justify-content: center;
     }
     .main-text .lottie{
-        transform: translate(1);
+        transform: scale(1) translateY(5%) !important;
     }
     .footer::after,
     .footer::before{
@@ -1254,7 +1254,7 @@ section{
 @media (max-width: 824px) and (orientation: Landscape){
     .text h1{
         font-size: 8.5vh !important;
-        line-height: 9.5vh;
+        line-height: 9.5vh !important;
         -webkit-line-clamp: initial;
     }
     .workLeft h1,
@@ -1728,12 +1728,15 @@ section{
     }
 
 }
-@media (prefers-color-scheme: dark) {
-    img {
-      opacity: .75;
-      transition: opacity .5s ease-in-out;
+@media (max-width: 600px) and (orientation: Landscape){
+    .main-text{
+        flex-direction: row;
     }
-    img:hover {
-      opacity: 1;
+    .main-text .text{
+        order: unset;
     }
-  }
+    .footer .left {
+        justify-content: center;
+
+    }
+}

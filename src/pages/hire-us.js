@@ -32,7 +32,7 @@ const HireUsPage = () => {
                             <div className="team-cards">
                                 <div className="team-card">
                                 <div className="team-img">
-                                <StaticImage src="../images/hire_samir.png" alt="Samir Avdibegović" className="profile"/>
+                                <StaticImage src="../images/hire_samir.png" alt="Samir Avdibegović" className="profile" placeholder="tracedSVG"/>
                                 </div>
                                 
                                 <div className="team-name">
@@ -51,7 +51,7 @@ const HireUsPage = () => {
                             <div className="team-cards">
                                 <div className="team-card">
                                 <div className="team-img">
-                                <StaticImage src="../images/hire_emir.png" alt="Emir Čorbo" className="profile"/>
+                                <StaticImage src="../images/hire_emir.png" alt="Emir Čorbo" className="profile" placeholder="tracedSVG"/>
                                 </div>  
                                 <div className="team-name">
                                     <p>Emir Čorbo</p>
