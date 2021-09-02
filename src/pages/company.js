@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import '../styles/styles.css'
 
@@ -28,7 +27,6 @@ const CompanyPage = () => (
                 </div>
                 <div className="bottom-company">
                    <div className={`compRight text`} >
-                      {/* <Link to="/work"><p>See more &gt; </p></Link> */}
                    </div>
                     <div className="compLeft">
                     
@@ -38,57 +36,9 @@ const CompanyPage = () => (
                     </div>
                 </div>
             </section>
-            {/* <div className={`work-container vision`}>
-                <div className="vision-card">
-                    <div className="vision-title">
-                        <h4>
-                        About us and our Vision
-                        </h4>
-                        <div className="text">
-                        <Link to="/work"><p>READ MORE &gt; </p></Link>
-                        </div>
-                    </div>
-                    <div className="vision-text">
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                        sed do eiusmod tempor incididunt ut ero labore et dolore 
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in uienply voluptate 
-                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                        sint occaecat cupidatat norin proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
-                        </p>
-                        <p className="text-grean">
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                        officia deserunt mollit anim id est laborum.  
-                        </p>
-                    </div>
-                </div>
-            </div> */}
             
             <div className="work-container">
                 <div className="team-section">
-                    {/* <div className="team-head">
-                        <div>
-                            <h3>Our Team</h3>
-                        </div>
-                        <div className="text">
-                        <Link to="/work"><p>See the full team &gt; </p></Link>
-                        </div>
-                    </div>
-                    <div className="sub-text">
-                        <p >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                        eiusmod tempor incididunt ut ero labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                        dolor in reprehenderit in uienply voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur.
-                        </p>
-                        <p></p>
-                    </div> */}
-                    
                     <div className="team-images">
                     <div className="img-wraper1"><StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
                     <div className="img-wraper2"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>

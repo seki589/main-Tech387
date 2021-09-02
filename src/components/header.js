@@ -4,10 +4,30 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../assets/LogoHorizontalLight.svg"
 import LogoDark from "../assets/LogoHorizontalDark.svg"
-import menuData from "../data/menu.json"
+import Menu from "../data/menu.json"
 import '../styles/styles.css'
 
 class Header extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      show: true,
+      scrollPos: -1
+    };
+  }
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    // console.log(document.body.getBoundingClientRect());
+    this.setState({
+      scrollPos: document.body.getBoundingClientRect().top,
+      show: document.body.getBoundingClientRect().top > this.state.scrollPos
+    });
+  };
   
   state = { showMenu: false }
 
@@ -24,12 +44,12 @@ class Header extends React.Component {
   
 
  render() {
-
+  // console.log(this.state);
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
-    <header>
+    <header >
       <div className="wraper">
-        <div className="header">
+        <div className={`header ${this.state.show ? "" : "hidden-nav"}`}>
           <div >
             <Link className="logo" to="/">
               <LogoLight className="logoDark"/>
@@ -46,9 +66,9 @@ class Header extends React.Component {
           </div>
           <div className={`navigation ${menuActive}`} >
             <nav>
-            {menuData.map((li, id )=> (
+            {Menu.map((li, id )=> (
                 <Link to={li.link} key={id} onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>{li.name}</Link>
-            )
+              )
             )}
             </nav>
             <div className="linkedin-menu">

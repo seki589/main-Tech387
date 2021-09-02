@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-style:"Rubik", sans-serif;
+    /* scroll-behavior: smooth; */
 }
 
 /* Light Mode */
@@ -235,7 +236,18 @@ section{
     padding: 16px 3.75%;
     z-index: 100;
     backdrop-filter: blur(4px);
+    transition: all 0.5s ease;
+}
+.active-nav {
+    /* visibility: visible; */
+    transition: all 0.5s ease;
+}
+.hidden-nav {
+    /* visibility: hidden; */
     
+    /* transform: translateY(-100%); */
+    top: -20%;
+    /* transition: all 0.5s ease; */
 }
 .menuIcon{
     position: fixed;
@@ -1054,8 +1066,9 @@ svg.partners-logo .st1.st0{
     display: flex;
     padding: 7% 0;
     overflow-x: auto;
-    transform: scaleX(105%);
-    transform-origin: left;
+    transform: scaleX(107%);
+    padding-left: 3.5%;
+    /* transform-origin: left; */
 }
 .team-images>div{
     display: flex;

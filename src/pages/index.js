@@ -38,17 +38,17 @@ const IndexPage = () => {
   }, [darkMode],)
 
 
-  useEffect(() => {
-        gsap.to(
-          headText1.current,
-          .8,
-          {
-            opacity: 1,
-            y: 0,
-            ease : "Power3.easeOut"
-          }
-        )
-    },[])
+  // useEffect(() => {
+  //       gsap.to(
+  //         headText1.current,
+  //         .8,
+  //         {
+  //           opacity: 1,
+  //           y: 0,
+  //           ease : "Power3.easeOut"
+  //         }
+  //       )
+  //   },[])
    
   return(
   
@@ -94,7 +94,7 @@ const IndexPage = () => {
 
       <section className={` slide-1`}>
           <main className="main">
-              <div className={`main-text anim`} ref={headText1}>
+              <div className={`main-text `} ref={headText1}>
                   <div className="text" >
                   <h1>
                   Designing and developing your ideas<br/> into data-driven digital products.

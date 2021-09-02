@@ -58,7 +58,7 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
          })
     },[hoverState]);
 
-
+    console.log(y);
     return(
         <div >
              <motion.div ref={list}
@@ -73,8 +73,8 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              </motion.div>
              <motion.div 
              initial={{display: 'none',
-                // x: x,
-                // y: y,
+                x: x,
+                y: y * 0.05,
             }}
              animate={{
                  display: hoverState? 'block' : 'none',

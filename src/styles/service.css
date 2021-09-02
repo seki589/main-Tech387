@@ -44,15 +44,15 @@ H5{
     padding-top: 20vh;
 }
 .footer-service{
-    height:90vh;
+    /* height:90vh; */
     margin: auto;
     max-width: 1776px; 
     overflow: hidden;
 }
-.footer-service .footer{
+/* .footer-service .footer{
     transform: translateY(-10%);
 
-}
+} */
 .services{
     display: flex;
     flex-direction: column;
