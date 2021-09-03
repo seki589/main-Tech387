@@ -235,7 +235,7 @@ section{
     align-items: center;
     padding: 16px 3.75%;
     z-index: 100;
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     transition: all 0.5s ease;
 }
 .active-nav {
@@ -246,7 +246,7 @@ section{
     /* visibility: hidden; */
     
     /* transform: translateY(-100%); */
-    top: -20%;
+    top: -20% !important;
     /* transition: all 0.5s ease; */
 }
 .menuIcon{
