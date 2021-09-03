@@ -391,15 +391,8 @@ H5{
 .left-tab h5{
     margin-top: 5px;
 }
-.left-tab .icon{
-    /* filter: invert(77%) sepia(6%) saturate(233%) hue-rotate(98deg) brightness(87%) contrast(85%); */
-    transition: all .3s ease;
-}
 
-.left-tab:hover .icon  {
-    filter: invert(63%) sepia(71%) saturate(434%) hue-rotate(97deg) brightness(82%) contrast(93%);
-    transition: all .3s ease;
-}
+
 .left-tab:hover h5{
     color: #27BA70;
 
