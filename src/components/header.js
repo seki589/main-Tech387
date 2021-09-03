@@ -16,6 +16,13 @@ class Header extends React.Component {
       showMenu: false
     };
   }
+
+  toggleMenu = () => {
+    this.setState({
+      showMenu: !this.state.showMenu,
+    });
+  }
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -30,30 +37,17 @@ class Header extends React.Component {
     });
   };
   
-  // state = { showMenu: false }
 
-  toggleMenu = () => {
-    this.setState({
-      showMenu: !this.state.showMenu,
-    });
-  }
-  // componentDidMount() {    
-  //   if(this.state.showMenu){
-  //     document.body.style.overflowY = 'hidden';
-  //   }    
-  // }
   
-  // componentWillUnmount() {
-  //     document.body.style.overflowY = 'unset' ;
-  // }
-  
-  
-  
+
   setLight = () => {
     document.body.classList.remove('dark')
    }
+  
+  
+  
+  
  render() {
-  // console.log(this.state);
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header >

@@ -58,7 +58,6 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
          })
     },[hoverState]);
 
-    console.log(y);
     return(
         <div >
              <motion.div ref={list}
