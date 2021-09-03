@@ -12,7 +12,8 @@ class Header extends React.Component {
     super();
     this.state = {
       show: true,
-      scrollPos: -1
+      scrollPos: -1,
+      showMenu: false
     };
   }
   componentDidMount() {
@@ -29,27 +30,35 @@ class Header extends React.Component {
     });
   };
   
-  state = { showMenu: false }
+  // state = { showMenu: false }
 
   toggleMenu = () => {
     this.setState({
-      showMenu: !this.state.showMenu
+      showMenu: !this.state.showMenu,
     });
   }
+  // componentDidMount() {    
+  //   if(this.state.showMenu){
+  //     document.body.style.overflowY = 'hidden';
+  //   }    
+  // }
+  
+  // componentWillUnmount() {
+  //     document.body.style.overflowY = 'unset' ;
+  // }
+  
+  
+  
   setLight = () => {
-   document.body.classList.remove('dark')
-  }
-  
-  
-  
-
+    document.body.classList.remove('dark')
+   }
  render() {
   // console.log(this.state);
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header >
       <div className="wraper">
-        <div className={`header ${this.state.show ? "" : "hidden-nav"}`}>
+        <div className={`header  ${!this.state.showMenu&&!this.state.show ? "hidden-nav" : ""}`}>
           <div >
             <Link className="logo" to="/">
               <LogoLight className="logoDark"/>
