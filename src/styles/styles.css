@@ -1310,10 +1310,18 @@ svg.partners-logo .st1.st0{
         color:  var(--color-text);
         transition: all .3s ease;
         text-transform: capitalize;
-
+        
+    }
+    .navigation a:hover{
+        background-color: transparent;
+    }
+    .navigation a:last-child.active, 
+    .navigation a:last-child:hover {
+        background-color: transparent;
     }
     .navigation a.active{
         color: #27BA70;
+        background-color: transparent;
     }
     .menuIcon{
         display: flex;
