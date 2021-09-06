@@ -62,6 +62,7 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
         <div >
              <motion.div ref={list}
              onHoverStart={() => setHoverState(true)}
+             on
              onClick={() => setHoverState(true)}
              onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => setHoverState(false)}
@@ -71,16 +72,18 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                 <h5>{title}</h5>
              </motion.div>
              <motion.div 
-             initial={{display: 'none',
-                x: x,
-                y: y * 0.05,
+             initial={{
+                y:  listPosition.top ,
+                display: 'none',
+                // x: x,
+                
             }}
              animate={{
+                 
+                 x:  (x - listPosition.left) * 0.5 ,
+                 y:  y * 0.055 + listPosition.top * 0.3 ,
                  display: hoverState? 'block' : 'none',
                  opacity: hoverState? 1 : 0,
-                 x:  (x - listPosition.left) * 0.5 ,
-                //  y:  y * 0.17 + listPosition.top * 0.5 ,
-                 y:  y * 0.10 + listPosition.top * 0.3 ,
                 
              }}
             transition={{ ease: 'linear'}}

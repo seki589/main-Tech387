@@ -220,12 +220,12 @@ const ServicePage = () => {
      </section>
      <section className="service-nd">
      <div className={`top-head two`}>
-         <h3>Industries we serve</h3>
-         <div className="top-triangle">
+         <h3>Industries we served</h3>
+         {/* <div className="top-triangle">
              <StaticImage src="../images/triangle_2.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
              <StaticImage src="../images/triangle_9.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
              <StaticImage src="../images/triangle_11.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
-         </div>
+         </div> */}
      </div>
      <Services />
      
