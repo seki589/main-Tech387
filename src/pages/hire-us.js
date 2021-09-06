@@ -40,11 +40,11 @@ const HireUsPage = () => {
                                     <p>Samir Avdibegović</p>
                                     <h6>Head of Partnerships and <br></br>Business Development</h6>
                                     <div className="contact">
-                                    <a href="tel:+38761 209 884">+38761 209 884</a>
-                                    </div>
-                                    <div className="contact">
                                     <a href="mailto:savdibegovic@tech387.com" 
                                     >savdibegovic@tech387.com</a>
+                                    </div>
+                                    <div className="contact">
+                                    <a href="https://www.linkedin.com/in/samir-a-03110b18">Linkedin</a>
                                     </div>
                                 </div>
                                 </div> 
@@ -58,13 +58,13 @@ const HireUsPage = () => {
                                     <p>Emir Čorbo</p>
                                     <h6>Business Development <br></br>Executive</h6>
                                     <div className="contact">
-                                        <div>
-                                            <a href="tel:+447402 947 615">+447402 947 615</a><br></br>
-                                            <a href="tel:+38760 315 9309">+38760 315 9309</a>
-                                        </div>
+                                    <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
                                     </div>
                                     <div className="contact">
-                                    <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
+                                        <div>
+                                            <a href="https://ba.linkedin.com/in/emir-corbo">Linkedin</a>
+                                            {/* <a href="tel:+38760 315 9309">+38760 315 9309</a> */}
+                                        </div>
                                     </div>
                                 </div>
                                 </div> 

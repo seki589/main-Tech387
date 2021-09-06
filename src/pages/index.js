@@ -52,7 +52,7 @@ const IndexPage = () => {
    
   return(
   
-  <Layout >
+  <Layout  >
     <PageTransition>
     <Seo title="Home" />
     <div className="container">
@@ -97,7 +97,7 @@ const IndexPage = () => {
               <div className={`main-text `} ref={headText1}>
                   <div className="text" >
                   <h1>
-                  Designing and developing your ideas<br/> into data-driven digital products.
+                  Designing and developing ideas into data-driven digital products
                   </h1>
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
