@@ -161,12 +161,12 @@ const IndexPage = () => {
       </section>
       </SwiperSlide>
       <SwiperSlide >
-      {/* <div className={` slide-4`}> */}
+      <div className={` slide-4`}>
           {/* <main className="main"> */}
       
           <Footer/>
           {/* </main> */}
-      {/* </div> */}
+      </div>
       </SwiperSlide>
     </Swiper>
     
