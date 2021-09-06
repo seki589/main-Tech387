@@ -198,7 +198,7 @@ section{
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
     right: 3.75% !important;
-    top: 80% !important;
+    top: 75% !important;
     transform: translate3d(0px, -50%, 0);
 }
 .swiper-pagination-bullet-active {
@@ -1195,6 +1195,7 @@ svg.partners-logo .st1.st0{
     .text h1{
         font-size: 48px;
         line-height: 48px;
+        width: 80%;
     }
     .main-text{
         flex-direction: column;
@@ -1209,6 +1210,9 @@ svg.partners-logo .st1.st0{
         order: 2;
         flex: .5;
         justify-content: flex-start;
+    }
+    .main .lottie{
+        transform: translate(0);
     }
     .footer{
         background-image: none;

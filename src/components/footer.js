@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className="left">
                 <div className="footer-head">
-                    <h1>Create your digital<br></br> products</h1>
+                    <h1>Create your digital products</h1>
                 </div>
                 <div className="footer-mid">
                     <div className="left-li">
