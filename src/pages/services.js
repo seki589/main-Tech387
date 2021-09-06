@@ -66,10 +66,7 @@ const ServicePage = () => {
                     <h3>DATA ANALYTICS</h3>
                     </div>
                  </div>
-                 <div className="icon-name">
-                     
-                     
-                     
+                 <div className="icon-name">  
                  </div>
              </div>
              <div className={`servRight text`} >
@@ -80,10 +77,10 @@ const ServicePage = () => {
      <section className={`service-container service-2nd`}>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-         animate={{
-             opacity: imageHoverOne? 0 : [0, 1],
-             scale: imageHoverOne? 1 : 1,
-            }}
+        //  animate={{
+        //      opacity: imageHoverOne? 0 : [0, 1],
+        //      scale: imageHoverOne? 1 : 1,
+        //     }}
          className="one">
              <StaticImage src="../images/buisiness_dev.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -142,10 +139,10 @@ const ServicePage = () => {
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-         animate={{
-             opacity: imageHoverTwo? 0 : [0, 1],
-             scale: imageHoverTwo? 1 : 1,
-            }}
+        //  animate={{
+        //      opacity: imageHoverTwo? 0 : [0, 1],
+        //      scale: imageHoverTwo? 1 : 1,
+        //     }}
          className="one">
              <StaticImage src="../images/product_dev.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -153,10 +150,10 @@ const ServicePage = () => {
      <section className={`service-container service-2nd`}>
      <motion.div 
          initial={{opacity: 1, scale: 1}}
-         animate={{
-             opacity: imageHoverThree? 0 : [0, 1],
-             scale: imageHoverThree? 1 : 1,
-            }}
+        //  animate={{
+        //      opacity: imageHoverThree? 0 : [0, 1],
+        //      scale: imageHoverThree? 1 : 1,
+        //     }}
          className="one">
              <StaticImage src="../images/complex_systems.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -213,10 +210,10 @@ const ServicePage = () => {
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-         animate={{
-             opacity: imageHoverFour? 0 : [0, 1],
-             scale: imageHoverFour? 1 : 1,
-            }}
+        //  animate={{
+        //      opacity: imageHoverFour? 0 : [0, 1],
+        //      scale: imageHoverFour? 1 : 1,
+        //     }}
          className="one">
              <StaticImage src="../images/data_sience.jpg" className="serviceImg3" alt="data_sience" placeholder="blurred"/>
          </motion.div>
@@ -249,10 +246,10 @@ const ItemOne = ({title, text, setImageHoverOne}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
-                        onClick={() => setHoverState(true)&setImageHoverOne(true)}
-                        onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
-                        onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
+                        // onClick={() => setHoverState(true)&setImageHoverOne(true)}
+                        // onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
+                        // onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -298,10 +295,10 @@ const ItemTwo = ({title, text,textTwo, setImageHoverTwo}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
-                        onClick={() => setHoverState(true)&setImageHoverTwo(true)}
-                        onMouseLeave={() => setHoverState(false)&setImageHoverTwo(false)}
-                        onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
+                        // onClick={() => setHoverState(true)&setImageHoverTwo(true)}
+                        // onMouseLeave={() => setHoverState(false)&setImageHoverTwo(false)}
+                        // onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -360,10 +357,10 @@ const ItemThree = ({title, text,textTwo, setImageHoverThree}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
-                        onClick={() => setHoverState(true)&setImageHoverThree(true)}
-                        onMouseLeave={() => setHoverState(false)&setImageHoverThree(false)}
-                        onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
+                        // onClick={() => setHoverState(true)&setImageHoverThree(true)}
+                        // onMouseLeave={() => setHoverState(false)&setImageHoverThree(false)}
+                        // onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -422,10 +419,10 @@ const ItemFour = ({title, text,textTwo, setImageHoverFour}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
-                        onClick={() => setHoverState(true)&setImageHoverFour(true)}
-                        onMouseLeave={() => setHoverState(false)&setImageHoverFour(false)}
-                        onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
+                        // onClick={() => setHoverState(true)&setImageHoverFour(true)}
+                        // onMouseLeave={() => setHoverState(false)&setImageHoverFour(false)}
+                        // onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
