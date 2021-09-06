@@ -1012,8 +1012,9 @@ svg.partners-logo .st1.st0{
     display: flex;
     padding: 7% 0;
     overflow-x: auto;
-    transform: scaleX(107%);
+    transform: scaleX(108%);
     padding-left: 3.5%;
+    gap: 15px;
 }
 .team-images>div{
     display: flex;
