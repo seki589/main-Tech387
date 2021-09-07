@@ -186,7 +186,7 @@ const ServicePage = () => {
      <section className={`service-container service-4nd`}>
      <div className="two">
              <h3>
-             Data Science
+             Data Science and Machine Learning
              </h3>
              <p>
              Embedding analytics is about more than just sharing data; it’s an opportunity to build 

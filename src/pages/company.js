@@ -53,10 +53,18 @@ const CompanyPage = () => (
                         Take a closer<br/> look at us
                         </h3>
                         <p>
-                        Tubik is the team of bright creative people from various areas: UI/UX, graphic and motion design, 
-                        mobile and web development, digital art, project management and copywriting. We are all united 
-                        with a desire to do our work the best way possible. We aren’t afraid of challenges and know the 
-                        power of teamwork. Let’s work together!
+                        People are always more important than numbers.
+                        </p>
+                        <p>
+                        We believe that if our employees are looked after, our clients will be too. Our people are 
+                        fundamental to our success and represent a core tenant of our mission, vision and values. 
+                        We believe that diversity and inclusion are a source of our innovation.
+                        </p>
+                        <p>
+                        We strive to create a thriving and encouraging environment where everyone’s contribution is valued, 
+                        and where mutual trust and respect generate excellence. We are a team of professionals united by a common 
+                        desire to push the boundaries with our creative minds and innovative technologies. We promote excellence in 
+                        every aspect of our operations by investing in our people to foster their development and encourage their passion to excel.
                         </p>
                     </div>
                     <div className="benefit-img">
