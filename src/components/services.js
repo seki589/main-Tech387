@@ -62,7 +62,6 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
         <div >
              <motion.div ref={list}
              onHoverStart={() => setHoverState(true)}
-             on
              onClick={() => setHoverState(true)}
              onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => setHoverState(false)}
