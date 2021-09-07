@@ -2,29 +2,28 @@
     {   
         "id" : 1,
         "title": "Mobile",
-        "text": "Be it native or hybrid apps we use the latest platforms, agile development model and research backed project execution workflows to build your apps, so that you get the maximum return on your investment.\n\n",
-        "textTwo": "Some of the advantages when developing mobile applications with us:\nInnovative mobile app development web services that generate new business models and user experiences for all\nMobility Solutions that emphasizes business transformation and speed to market\n\nUpgrade apps with the changing platforms to gain maximum functionality and features\n Significant saving of time and money with no compromise on quality Premium Quality apps designed to meet your requirements\nTechnical ability and infrastructure to cater to almost all types of mobile apps\nRich mobile UX developed over the years of implementation"
+        "text": "Be it native or hybrid apps, we use the latest platforms, agile development model and research-backed project execution workflows to build your application, so that you get the maximum return on your investment.\n\n Our experts will work around the clock to develop a premium quality application that not only meets your requirements, but offers a stable, scalable and secure solution that provides value for you and your customers.\n\n"
+        
     },
     {   
         "id" : 2,
         "title": "Web",
-        "text": " Tech 387 has been delivering professional Web solutions inclusive of web designing, web development, web content management, and ecommerce, since 2013 to startups, as well as, established enterprises of the IT world.\n\nWe offer a complete array of web development services. We put into action our expertise in the areas of internet strategy, web designing, branding, search engine optimization and cutting edge web technologies to empower clients to achieve and exceed their goals. \nWe are well versed with web development of diverse solutions ranging from corporate websites to custom web applications and from enterprise portals to e-business solutions.",
-        "textTwo": "Some of our key areas of expertise:\nVast domain knowledge and expertise in multiple Business verticals\nWeb site consulting and strategy reviews – Internet strategy, ecommerce consulting\nDesign Services – Concept, interface, architecture, branding, graphic design\nApplication Testing – Load, stress, performance testing etc.Technology Services – Technology evaluation, technical design and architecture, database design, Client side programming, server side scripting, application hosting, support and management"
+        "text": " Whether you are looking to increase sales by attracting new customers or improve user engagement, we offer you an end-to-end web development solution that will help you realize your goals.\n\n Our expertise in development of websites, web applications, CMS and e-commerce stores, coupled with aesthetic and user-friendly design will ensure intuitive web navigation and set your brand apart"
     },
     {
         "id" : 3,
         "title": "Backend",
-        "text": "In general terms, a website or dynamic web application is a number of files containing structure, design, content, and functionality. \nThe technologies and codes that enable functionality and make the site run invisibly to users is called backend.Our skilled development team specializes in providing high-quality backend services for various businesses. \n\nOur team of backend experts has a deep knowledge and extensive experience in a wide range of programming languages and technologies."
+        "text": "Our skilled development team specializes in providing high-quality backend services using a wide array of programming languages and technologies.\n\n Be it a low-code backend for your MVP or a backend-heavy production-level software development, we will ensure that your backend and its infrastructure are scalable according to your requirements."
     },
     {
         "id" : 4,
         "title": "Design",
-        "text": "We are dedicated to helping businesses communicate effectively through a range of graphic and digital media. \nWe can work with you for one project or form a long-term partnership and support your business in all it’s design needs.\n\nOur creative strategy and processes are designed to provide you with the best advice and outcomes aligned to your business needs and goals. \nWe will help you determine the most relevant creative direction to take for positioning your brand and ensure our designs help your business grow and engage your target audience."
+        "text": "We are dedicated to helping businesses communicate effectively through a range of graphic and digital media.\n\n Whether you are a startup looking to set up a brand identity, introduce a creative direction to position your brand or develop a memorable app or website UI/UX, we will ensure our designs help your business grow and engage your target audience."
     },
     {
         "id" : 5,
         "title": "Release / Launch",
-        "text": "It’s imperative your app makes a good first impression within the first few days, showing immediate value and providing good user experience. \nThis phase is a critical time to focus on highlighting the value of the app in order to optimize the onboarding process. If you don’t impress your new users quickly, you’ll likely lose their interest altogether.Engaged users are more likely to convert, make in-app purchases, and give you positive reviews. As such, re-engaging them is a definite must-do. \n\nOnce your app has launched it is important to plan how you will continue to engage users and provide the best service and experience.We are here to guide you through this process further and support your growth and success."
+        "text": "It’s imperative your product makes a good first impression within the first few days, showing immediate value and providing good user experience.\n\n Before your product is released, we ensure that it’s thoroughly tested. Once your product is launched it is important to plan how you will continue to engage users and provide the best service and experience. We are here to guide you through this process further and support your growth and success."
     }
     
 ]

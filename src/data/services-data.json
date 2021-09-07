@@ -2,31 +2,31 @@
     {   
         "id" : 1,
         "title": "Research",
-        "text": "Our multidisciplinary experts research your end users’ behaviours, routines and pain points to identify opportunities for amazement. We analyse your market, competitors and explore methods for differentiation"
+        "text": "Our multidisciplinary experts research your end users’ behaviours, routines and pain points to identify opportunities for amazement.\n We analyse your market, competitors and explore methods for differentiation."
     },
     {   
         "id" : 2,
         "title": "Monetisation",
-        "text": " We iterate on revenue models and aim to hit the sweet spot where value creation happens for you and your end users. Based on research data, we design ROI and growth plans using multi-channel marketing strategies."
+        "text": "We iterate on revenue models and aim to hit the sweet spot where value creation happens for you and your end users.\n Based on research data, we design ROI and growth plans using multi-channel marketing strategies."
     },
     {
         "id" : 3,
         "title": "Retention",
-        "text": "Our experts assist you to gather and analyse user insights and expand your offer. Using insights, we help you prioritise what brings the most value and renders your product indispensable."
+        "text": "Our experts assist you to gather and analyse user insights and expand your offer.\n Using insights, we help you prioritise what brings the most value and renders your product indispensable."
     },
     {
         "id" : 4,
         "title": "Conceptualisation",
-        "text": " We align project to your business mission and goals to allocate team and resources accordingly. Following an order of prioritisation, we plan project implementation, estimate schedule and project cost."
+        "text": "We align project to your business mission and goals to allocate team and resources accordingly.\n Following an order of prioritisation, we plan project implementation, estimate schedule and project cost."
     },
     {
         "id" : 5,
         "title": "Requirements Engineering",
-        "text": "Our team gathers functional, system and technical requirements from various stakeholders to understand what technologies will be used and how a project implementation will be structured."
+        "text": "Our team gathers functional, system and technical requirements from various stakeholders to understand what technologies will be used and how a project implementation will be architected."
     },
     {
         "id" : 6,
         "title": "Prototyping",
-        "text": "With the requirements in place, we design prototypes to envision what a product will look feedback before committing to implementation."
+        "text": "With the requirements in place, we design prototypes to envision what a product will look like and how it will function.\n\n This stage is important to validate ideas and get valuable feedback before committing to implementation."
     }
 ]

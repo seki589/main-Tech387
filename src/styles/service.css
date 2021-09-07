@@ -208,7 +208,7 @@ H5{
 
 }
 .service-4nd .two{
-    padding: 2% 20% 2% 10%;
+    padding: 2% 10% 2% 10%;
     width: 30%;
 }
 .two h3{
@@ -277,32 +277,32 @@ H5{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .iner-hover{
-    top: 22%;
-    left: 15%;
+    top: 15%;
+    left: 10%;
     /* width: 485px; */
-    width: 33%;
+    width: 43%;
     /* height: 550px; */
-    height: 63%;
+    height: 73%;
 }
 .iner-hover-1{
-    top: 22%;
-    right: 5%;
+    top: 17%;
+    right: 2%;
     /* width: 600px; */
     width: 47%;
     /* height: 430px; */
-    height: 55%;
+    height: 65%;
 }
 .iner-hover-2{
-    top: 18%;
+    top: 10%;
     left: 10%;
     width: 45%;
-    height: 70%;
+    height: 80%;
 }
 .iner-hover-3{
-    top: 22%;
-    right: 3.75%;
-    width: 45%;
-    height: 430px;
+    top: 15%;
+    right: 3%;
+    width: 40%;
+    height: 70%;
 }
 .iner-hover-1::after,
 .iner-hover-2::after,
@@ -352,7 +352,7 @@ H5{
     transition: transform .5s ease;
 }
 
-.text-hover:hover h6::after{
+.text-hover h6:hover::after{
     transform: scaleX(1);
 }
 
@@ -367,10 +367,12 @@ H5{
 .iner-hover-2 p,
 .iner-hover-3 p,
 .iner-hover p{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 18px;
     text-align: left;
     white-space: pre-line;
+    color: #000000;
 }
 .left-tabs{
     display: flex;

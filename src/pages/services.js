@@ -77,21 +77,20 @@ const ServicePage = () => {
      <section className={`service-container service-2nd`}>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-        //  animate={{
-        //      opacity: imageHoverOne? 0 : [0, 1],
-        //      scale: imageHoverOne? 1 : 1,
-        //     }}
+         animate={{
+             opacity: imageHoverOne? 0 : [0, 1],
+             scale: imageHoverOne? 1 : 1,
+            }}
          className="one">
              <StaticImage src="../images/buisiness_dev.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
          <div className="two">
              <h3>
-             Bussines development of your idea
+             Development of Your Idea
              </h3>
              <p>
-             Our clients get the best results when they have our team dedicated to their business for 
-             extended periods of time. This is why we are looking for ongoing collaboration where our 
-             professionals are like your team members who just happen to be remote. Ready to move forward?
+             In order to plan out execution of your final product, our experts work with you to conceptualize your idea, 
+             gather requirements and build product prototypes.
              </p>
              
                  {dataOne.map(el => 
@@ -117,9 +116,9 @@ const ServicePage = () => {
              Product development
              </h3>
              <p>
-             Bringing your original vision for a product to life rarely resembles a straight line. 
-             We are here to help you grow and succeed across product approaches and platforms.We 
-             will work with you, collaboratively, to define and make digital products and solutions that will set your brand apart.
+             Bringing your original vision for a product to life rarely 
+             resembles a straight line. We will work collaboratively to define 
+             and develop your digital product and solution that will set your brand apart
              </p>
              {dataTwo.map(el => 
                       (
@@ -139,10 +138,10 @@ const ServicePage = () => {
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-        //  animate={{
-        //      opacity: imageHoverTwo? 0 : [0, 1],
-        //      scale: imageHoverTwo? 1 : 1,
-        //     }}
+         animate={{
+             opacity: imageHoverTwo? 0 : [0, 1],
+             scale: imageHoverTwo? 1 : 1,
+            }}
          className="one">
              <StaticImage src="../images/product_dev.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -150,10 +149,10 @@ const ServicePage = () => {
      <section className={`service-container service-2nd`}>
      <motion.div 
          initial={{opacity: 1, scale: 1}}
-        //  animate={{
-        //      opacity: imageHoverThree? 0 : [0, 1],
-        //      scale: imageHoverThree? 1 : 1,
-        //     }}
+         animate={{
+             opacity: imageHoverThree? 0 : [0, 1],
+             scale: imageHoverThree? 1 : 1,
+            }}
          className="one">
              <StaticImage src="../images/complex_systems.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
          </motion.div>
@@ -162,8 +161,9 @@ const ServicePage = () => {
              Complex systems
              </h3>
              <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-             sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
+             In today's world we know that software size will grow, but software complexity will grow even faster. We create global, 
+             reliable and complex software systems that may require software containers, cloud architecture, continuous delivery/ continuous 
+             integration, microservices and we will be here to help you get the best possible solutions for your business
              </p>
              {dataThree.map(el => 
                       (
@@ -189,8 +189,14 @@ const ServicePage = () => {
              Data Science
              </h3>
              <p>
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-             sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.
+             Embedding analytics is about more than just sharing data; it’s an opportunity to build 
+             an ecosystem where you and your customers and partners can connect and centralize your 
+             shared data, explore it together to gain valuable insights, and build joint solutions that 
+             create value for all.
+             </p>
+             <p>
+             After we have the data, we use the ML for <strong>personalization,  
+             efficient searching experience</strong> for applications and ways to <strong>detect and control fraud</strong>.
              </p>
              {dataFour.map(el => 
                       (
@@ -210,10 +216,10 @@ const ServicePage = () => {
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
-        //  animate={{
-        //      opacity: imageHoverFour? 0 : [0, 1],
-        //      scale: imageHoverFour? 1 : 1,
-        //     }}
+         animate={{
+             opacity: imageHoverFour? 0 : [0, 1],
+             scale: imageHoverFour? 1 : 1,
+            }}
          className="one">
              <StaticImage src="../images/data_sience.jpg" className="serviceImg3" alt="data_sience" placeholder="blurred"/>
          </motion.div>
@@ -246,10 +252,10 @@ const ItemOne = ({title, text, setImageHoverOne}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        // onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
-                        // onClick={() => setHoverState(true)&setImageHoverOne(true)}
-                        // onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
-                        // onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
+                        onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
+                        onClick={() => setHoverState(true)&setImageHoverOne(true)}
+                        onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -295,10 +301,10 @@ const ItemTwo = ({title, text,textTwo, setImageHoverTwo}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        // onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
-                        // onClick={() => setHoverState(true)&setImageHoverTwo(true)}
-                        // onMouseLeave={() => setHoverState(false)&setImageHoverTwo(false)}
-                        // onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
+                        onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
+                        onClick={() => setHoverState(true)&setImageHoverTwo(true)}
+                        onMouseLeave={() => setHoverState(false)&setImageHoverTwo(false)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -357,10 +363,10 @@ const ItemThree = ({title, text,textTwo, setImageHoverThree}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        // onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
-                        // onClick={() => setHoverState(true)&setImageHoverThree(true)}
-                        // onMouseLeave={() => setHoverState(false)&setImageHoverThree(false)}
-                        // onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
+                        onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
+                        onClick={() => setHoverState(true)&setImageHoverThree(true)}
+                        onMouseLeave={() => setHoverState(false)&setImageHoverThree(false)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
@@ -419,10 +425,10 @@ const ItemFour = ({title, text,textTwo, setImageHoverFour}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        // onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
-                        // onClick={() => setHoverState(true)&setImageHoverFour(true)}
-                        // onMouseLeave={() => setHoverState(false)&setImageHoverFour(false)}
-                        // onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
+                        onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
+                        onClick={() => setHoverState(true)&setImageHoverFour(true)}
+                        onMouseLeave={() => setHoverState(false)&setImageHoverFour(false)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
