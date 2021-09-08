@@ -812,6 +812,9 @@ svg.partners-logo .st1.st0{
     width: 70%;
     margin-bottom: 48px;
 }
+.buttons{
+    width: 80%;
+}
 .buttons button{
     font-family: "Rubik";
     font-size: 14px;
@@ -1406,12 +1409,16 @@ svg.partners-logo .st1.st0{
     .workLeft{
         padding-left: 0;
     }
+    .buttons{
+        width: 100%;
+    }
     .workRight{
         display: none;
     }
     .work-midle{
         width: 90%;
     }
+    
     .midle-top,
     .midle-bot{
         flex-direction: column;
@@ -1621,6 +1628,9 @@ svg.partners-logo .st1.st0{
     }
     /* Work */
     .work-midle{
+        width: 100%;
+    }
+    .workLeft p{
         width: 100%;
     }
     .card{

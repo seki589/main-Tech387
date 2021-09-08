@@ -27,7 +27,7 @@ const WorkPage = () => (
                         <div className="buttons">
                           <button>APP DEVELOPMENT</button>  
                           <button>WEB DEVELOPMENT</button>  
-                          <button>BACKEND SOLUTIONS</button><br/> 
+                          <button>BACKEND SOLUTIONS</button>
                           <button>DATA ANALYTICS</button>  
                           <button>BRANDING</button>  
                           <button>DESIGN SYSTEM</button>  
