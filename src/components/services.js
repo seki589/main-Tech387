@@ -44,6 +44,7 @@ const Services = () => {
 const List = ({ title,name,img,icon, position, text, x, y}) => {
     
     const [hoverState, setHoverState] = useState(false)
+    const [clickState, setClickState] = useState(false)
 
     const [listPosition, setListPosition] = useState({
         top: 0,
@@ -61,8 +62,9 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
     return(
         <div >
              <motion.div ref={list}
-             onHoverStart={() => setHoverState(true)}
-             onClick={() => setHoverState(true)}
+             onHoverStart={() => {setHoverState(true);}}
+            //  onMouseOver={() => setClickState(false)}
+             onClick={() => {setHoverState(true);}}
              onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => setHoverState(false)}
              x= {x} y={y}
@@ -82,7 +84,9 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                  x:  (x - listPosition.left) * 0.5 ,
                  y:  y * 0.055 + listPosition.top * 0.3 ,
                  display: hoverState? 'block' : 'none',
+                //  display: clickState? 'block' : 'none',
                  opacity: hoverState? 1 : 0,
+                //  opacity: clickState? 1 : 0,
                 
              }}
             transition={{ ease: 'linear'}}

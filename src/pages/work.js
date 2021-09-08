@@ -19,15 +19,15 @@ const WorkPage = () => (
                 <div className="top-services">
                     <div className="workLeft">
                         <div>
-                        <h1>See our Work</h1>
+                        <h1>See our work</h1>
                         <p>
-                        Our innovative and bespoke software solutions for start-ups, scale-ups and companies implementing digital transformation. Check out our cross-industry portfolio.
+                        Our innovative and bespoke software solutions for start-ups, scale-ups and companies implementing digital transformation. Check out our <br/> cross-industry portfolio.
                         </p>
                         </div>
                         <div className="buttons">
                           <button>APP DEVELOPMENT</button>  
                           <button>WEB DEVELOPMENT</button>  
-                          <button>BACKEND SOLUTIONS</button>  
+                          <button>BACKEND SOLUTIONS</button><br/> 
                           <button>DATA ANALYTICS</button>  
                           <button>BRANDING</button>  
                           <button>DESIGN SYSTEM</button>  

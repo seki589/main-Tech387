@@ -822,18 +822,10 @@ svg.partners-logo .st1.st0{
     border-radius: 18px;
     margin-right: 16px;
     margin-bottom: 10px;
-    cursor: pointer;
     background-color: #E1E4E2;
     transition: all .3s ease;
 }
 
-.buttons button:hover{
-    background-color: #0C231761;
-}
-.buttons button:active{
-    background-color: #138E56;
-    color: #FFFFFF;
-}
 .work-midle{
     width: 90%;
     margin: auto;
