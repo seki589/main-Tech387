@@ -93,9 +93,9 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              className="tab-wraper">
              <img src={img} alt="service" className="serviceImg4"/>
              <div className="tab-head">
-                 <div className="head-img">
+                 {/* <div className="head-img">
                      <StaticImage src="../images/user.png" alt="user" className="user"/>
-                 </div>
+                 </div> */}
                  <div className="head-name">
                      <h6>{name}</h6>
                     <p>{position}</p>

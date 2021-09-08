@@ -69,9 +69,9 @@ const ServicePage = () => {
                  <div className="icon-name">  
                  </div>
              </div>
-             <div className={`servRight text`} >
+             {/* <div className={`servRight text`} >
              <Link to="/work"><p>Find out more &gt; </p></Link>
-             </div>
+             </div> */}
          </div>
      </section>
      <section className={`service-container service-2nd`}>
@@ -86,7 +86,7 @@ const ServicePage = () => {
          </motion.div>
          <div className="two">
              <h3>
-             Development of Your Idea
+             Development of your idea
              </h3>
              <p>
              In order to plan out execution of your final product, our experts work with you to conceptualize your idea, 
@@ -104,9 +104,9 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             <div className={`text`}>
+             {/* <div className={`text`}>
              <Link to="/work"><p>See our creative work &gt; </p></Link>
-             </div>
+             </div> */}
          </div>
          <div></div>
      </section>
@@ -132,9 +132,9 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             <div className={`text`}>
+             {/* <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div>
+             </div> */}
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
@@ -177,9 +177,9 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             <div className={`text`}>
+             {/* <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div>
+             </div> */}
          </div>
          <div></div>
      </section>
@@ -189,15 +189,14 @@ const ServicePage = () => {
              Data Science and Machine Learning
              </h3>
              <p>
-             Embedding analytics is about more than just sharing data; it’s an opportunity to build 
-             an ecosystem where you and your customers and partners can connect and centralize your 
-             shared data, explore it together to gain valuable insights, and build joint solutions that 
-             create value for all.
+             Embedding analytics is about more than just sharing data; it’s an opportunity to build an ecosystem where you, 
+             your customers and partners can connect and centralize your shared data, explore it together to gain valuable insights, 
+             and build joint solutions that create value for all. After we have the data, we use the ML to create predictive models that enhance user experience.
              </p>
-             <p>
+             {/* <p>
              After we have the data, we use the ML for <strong>personalization,  
              efficient searching experience</strong> for applications and ways to <strong>detect and control fraud</strong>.
-             </p>
+             </p> */}
              {dataFour.map(el => 
                       (
                      <ItemFour 
@@ -210,9 +209,9 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             <div className={`text`}>
+             {/* <div className={`text`}>
              <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div>
+             </div> */}
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}

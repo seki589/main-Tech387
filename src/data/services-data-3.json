@@ -1,14 +1,14 @@
 [
     {   
         "id" : 1,
-        "title": "Data Science and Machine Learning",
-        "text": "Realise the true potential of your business by unlocking the complete value of your data with our fully managed AI and machine learning services.\n\n We fuse AI and advanced machine learning with enterprise data engineering and expert knowledge to deliver a faster route for successful delivery of your data-driven ideas and products.\n\n We extract insights from structured and unstructured data, and draw on the full range of data science techniques to make informed predictions and optimise software operations.\n\n Whether you’re predicting personalised user experiences, looking to improve efficiency, or bringing products to market faster, we have the expertise to make it happen\n"
+        "title": "Machine Learning",
+        "text": "Realise the true potential of your business by unlocking the complete value of your data with our fully managed AI and machine learning services.\n\n We fuse AI and advanced machine learning with enterprise data engineering and expert knowledge to deliver a faster route for successful delivery of your data-driven ideas and products.\n\n We extract insights from structured and unstructured data, and draw on the full range of data science techniques to make informed predictions and optimise software operations.\n",
+        "textTwo": "Whether you’re predicting personalised user experiences, looking to improve efficiency, or bringing products to market faster, we have the expertise to make it happen."
     },
     {   
         "id" : 2,
-        "title": "Data Engineering",
-        "text": " Our data engineers will gather big data from different sources, and transform it so it can be used by our data scientists for further analysis.\n\n When dealing with big data platforms, performance becomes a key factor.\n\n Our data engineers will monitor the complete process and apply necessary infrastructure changes to speed up the query execution.\n\n",
-        "textTwo": "Our Data engineers will:\n•  Design the architecture of a big data platform\n•  Ensure and maintain data pipeline\n•  Customise and manage integration tools, databases, warehouses, and analytical systems\n•  Manage and structure data\n•  Setup data-access tools for data scientists"
+        "title": "Data Science and Data Engineering",
+        "text": " Using scientific methods and algorithms to extract knowledge and insights from structured and unstructured data, our data scientists apply valuable information across a broad range of application domains to increase operational efficiency or identify new business opportunities.\n\n When dealing with big data platforms, performance becomes a key factor.\n\n Our data engineers will monitor the complete process and apply necessary infrastructure changes to speed up the query execution.\n"
     }
 
 ]
