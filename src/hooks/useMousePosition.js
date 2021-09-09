@@ -5,7 +5,7 @@ export default function  useMousePosition() {
     
     useEffect(() => {
         function handlePosition(e) {
-           setMousePosition({x: e.pageX, y: e.pageY}) 
+           setMousePosition({x: e.x, y: e.y}) 
         }
 
 

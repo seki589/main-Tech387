@@ -13,6 +13,7 @@ import '../styles/service.css'
 const Services = () => {
 
     const { x, y} = useMousePosition()
+    // console.log(x,y)
     
 
     return(
@@ -47,8 +48,8 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
     const [clickState, setClickState] = useState(false)
 
     const [listPosition, setListPosition] = useState({
-        top: 0,
-        left: 0,
+        top: y,
+        left: x,
     })
     let list = useRef()
 
@@ -58,13 +59,13 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              left: list.current.getBoundingClientRect().left,
          })
     },[hoverState]);
-
+    console.log(x, y)
     return(
         <div >
              <motion.div ref={list}
-             onHoverStart={() => {setHoverState(true);}}
+             onHoverStart={() => setHoverState(true)}
             //  onMouseOver={() => setClickState(false)}
-             onClick={() => {setHoverState(true);}}
+             onClick={() => { setHoverState(true)}}
              onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => setHoverState(false)}
              x= {x} y={y}
@@ -74,22 +75,20 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              </motion.div>
              <motion.div 
              initial={{
-                y:  listPosition.top ,
+                y:  y,
+                x:  x,
+                // visibility: 'hidden',
                 display: 'none',
-                // x: x,
+                opacity: 0,
                 
             }}
              animate={{
-                 
-                 x:  (x - listPosition.left) * 0.5 ,
-                 y:  y * 0.055 + listPosition.top * 0.3 ,
+                x:  x - listPosition.left,
+                y: y - listPosition.top,
                  display: hoverState? 'block' : 'none',
-                //  display: clickState? 'block' : 'none',
-                 opacity: hoverState? 1 : 0,
-                //  opacity: clickState? 1 : 0,
-                
+                 opacity: hoverState? [0.3,1] : [0.3,0],
              }}
-            transition={{ ease: 'linear'}}
+            transition={{duration: 0.2, ease: 'linear'}}
              className="tab-wraper">
              <img src={img} alt="service" className="serviceImg4"/>
              <div className="tab-head">

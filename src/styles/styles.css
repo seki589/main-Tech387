@@ -1010,11 +1010,13 @@ svg.partners-logo .st1.st0{
     transform: scaleX(108%);
     padding-left: 3.5%;
     gap: 15px;
+    pointer-events: painted;
+    /* cursor: pointer; */
 }
 .team-images>div{
     display: flex;
     justify-content: center;
-    align-items: flex-start;   
+    align-items: flex-start; 
 }
 .img-wraper1,
 .img-wraper3{
