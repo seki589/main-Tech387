@@ -1700,6 +1700,9 @@ p span{
     .benefit-text p{
         width: 100%;
     }
+    .opening .benefits-title{
+        padding-left: 0;
+    }
     .company1{
         transform: scale(1.1);
     }
