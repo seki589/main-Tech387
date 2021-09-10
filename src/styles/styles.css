@@ -197,7 +197,9 @@ section{
     stroke: #27BA70 !important;
     fill:#27BA70 !important;
 }
-
+header{
+    overflow: hidden;
+}
 .header{
     position: fixed;
     top: 0;
@@ -211,6 +213,7 @@ section{
     align-items: center;
     padding: 16px 3.75%;
     z-index: 100;
+    /* overflow: hidden; */
     transition: all 0.5s ease;
 }
 .active-nav {
