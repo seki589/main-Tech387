@@ -74,40 +74,49 @@ const CompanyPage = () => (
             </div>
             <div className="work-container">
                 <div className={`team-section padBot`}>
-                    <div className="benefits">
+                    <div className={'benefits opening'}>
+                        <div className='benefits-title'>
+                               <h3>
+                                Current Openings
+                                </h3>
+                            </div>
                         <div className="benefit-text">
-                            <h3>
-                            Current Openings
-                            </h3>
+                            
                             <p>
-                            Our amazing team continues to grow as we expand to new cities around the world, 
-                            so if you would like to join us we’d love to hear from you.
+                            Working at Tech 387 is not just about technical knowledge. With Tech 387 you'll work in the industry you love, 
+                            all while improving people’s experiences and working with colleagues who share your passion. Being part of the 
+                            team is a great opportunity for you to develop and grow in a wide range of roles.
+                            </p>
+                            <p>
+                            Here at Tech 387 we’re fortunate enough to be growing as rapidly as our business, with an ever expanding list of our clients. 
+                            In that light, we're always looking for talented people who want to join our team.<br/><br/>
+                            <span>We are not afraid of challenges and we understand the power of teamwork. Let’s work together!</span>
                             </p>
                         </div>
-                        <div className="benefit-img">
-                        </div>
+                        {/* <div className="benefit-img">
+                        </div> */}
                     </div>
                     <div className="carier-bot">
                     <div className="carier-cards">
-                        <div className="carier-card">
-                        <div className='top-card'>
-                        <h5>UI/UX Designer</h5>
-                        <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
-                        </div>                       
-                        <p>
-                        Full Time
-                        </p>
-                        </div>
-                        <div className="carier-card">
-                        <div className='top-card'>
-                        <h5>Flutter Developer</h5>
-                        <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
-                        </div>
-                        <p>
-                        Full Time
-                        </p>
-                        </div>
-                        <div className="carier-card">
+                        <a  href="https://www.linkedin.com/jobs/view/2694596165/?refId=ZelDaHCjNwUBxs2LcNpM%2FQ%3D%3D&trackingId=a9aAv0MMEJgqsh8YkPYlsg%3D%3D&trk=d_flagship3_company" className="carier-card" target="_blank" rel="noreferrer">
+                            <div className='top-card'>
+                            <h5>Angular Developer</h5>
+                            <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
+                            </div>                       
+                            <p>
+                            Full Time
+                            </p>
+                        </a>
+                        <a  className="carier-card" href="https://www.linkedin.com/jobs/view/2691829142/?refId=ZelDaHCjNwUBxs2LcNpM%2FQ%3D%3D&trackingId=AURUNtl7FYp6bogzGku3Kg%3D%3D&trk=d_flagship3_company" target="_blank" rel="noreferrer">
+                            <div className='top-card'>
+                            <h5>Flutter Developer</h5>
+                            <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
+                            </div>
+                            <p>
+                            Full Time
+                            </p>
+                        </a>
+                        {/* <div className="carier-card">
                         <div className='top-card'>
                         <h5>Project Manager</h5>
                         <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
@@ -115,7 +124,7 @@ const CompanyPage = () => (
                         <p>
                         Full Time
                         </p>
-                        </div>
+                        </div> */}
                     </div>  
                     </div>  
                 </div>
