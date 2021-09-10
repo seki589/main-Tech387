@@ -1504,6 +1504,9 @@ p span{
     .benefit-text p{
         width: 60%;
     }
+    .opening .benefit-text{
+        flex-direction: column;
+    }
 }
 @media  (max-width: 640px) and (orientation: Landscape){
     .navigation{
