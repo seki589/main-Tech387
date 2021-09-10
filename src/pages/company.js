@@ -93,8 +93,6 @@ const CompanyPage = () => (
                             <span>We are not afraid of challenges and we understand the power of teamwork. Let’s work together!</span>
                             </p>
                         </div>
-                        {/* <div className="benefit-img">
-                        </div> */}
                     </div>
                     <div className="carier-bot">
                     <div className="carier-cards">
