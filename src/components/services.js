@@ -2,7 +2,7 @@ import React, {useState,useRef, useEffect} from 'react'
 
 
 import { StaticImage } from "gatsby-plugin-image"
-import { motion } from "framer-motion"
+import { motion, transform } from "framer-motion"
 import useMousePosition from "../hooks/useMousePosition"
 import data from "../data/services.json"
 
@@ -12,7 +12,7 @@ import '../styles/service.css'
 
 const Services = () => {
 
-    const { x, y} = useMousePosition()
+    let { x, y} = useMousePosition()
     // console.log(x,y)
     
 
@@ -63,12 +63,12 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
     return(
         <div >
              <motion.div ref={list}
+             onClick={() => { setListPosition(!listPosition);setHoverState(true)}}
              onHoverStart={() => setHoverState(true)}
             //  onMouseOver={() => setClickState(false)}
-             onClick={() => { setHoverState(true)}}
              onMouseLeave={() => setHoverState(false)}
-             onHoverEnd={() => setHoverState(false)}
-             x= {x} y={y}
+             onHoverEnd={() => {setHoverState(false);}}
+            //  x= {x} y={y}
              className="left-tab">
                  <img src={icon} className="icon" alt="icon" />
                 <h5>{title}</h5>
@@ -77,10 +77,8 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              initial={{
                 y:  y,
                 x:  x,
-                // visibility: 'hidden',
                 display: 'none',
                 opacity: 0,
-                
             }}
              animate={{
                 x:  x - listPosition.left,

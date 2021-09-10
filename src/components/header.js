@@ -12,7 +12,7 @@ class Header extends React.Component {
     super();
     this.state = {
       show: true,
-      scrollPos: -10,
+      scrollPos: -30,
       showMenu: false
     };
   }
@@ -35,10 +35,10 @@ class Header extends React.Component {
       scrollPos: document.body.getBoundingClientRect().top,
       show: document.body.getBoundingClientRect().top > this.state.scrollPos
     });
+    console.log(this.state.scrollPos);
   };
   
 
-  
 
   setLight = () => {
     document.body.classList.remove('dark')
@@ -48,6 +48,7 @@ class Header extends React.Component {
   
   
  render() {
+   
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header >
