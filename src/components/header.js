@@ -32,10 +32,11 @@ class Header extends React.Component {
   handleScroll = () => {
     // console.log(document.body.getBoundingClientRect());
     this.setState({
-      scrollPos: document.body.getBoundingClientRect().top,
+      scrollPos: document.body.getBoundingClientRect().top - 1,
       show: document.body.getBoundingClientRect().top > this.state.scrollPos
     });
     console.log(this.state.scrollPos);
+    console.log(this.state.show)
   };
   
 

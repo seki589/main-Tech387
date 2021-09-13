@@ -3,7 +3,7 @@ import {useState, useEffect,useRef} from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard} from 'swiper';
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -56,13 +56,18 @@ const IndexPage = () => {
     <PageTransition>
     <Seo title="Home" />
     <div className="container">
-    <Swiper      
+    <Swiper     
+      // modules={[Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard, EffectCreative]} 
       direction={'vertical'} 
       slidesPerView={1}
       spaceBetween={5}
       speed={400} 
       draggable={true}
       keyboard={true}
+      grabCursor={true}
+      effect={'creative'}
+      
+      
       mousewheel={{
         "thresholdDelta": 50,
         "lastScrollTime":500,

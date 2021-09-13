@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useRef } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -7,7 +8,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import '../styles/styles.css'
 
-const CompanyPage = () => (
+const CompanyPage = () => {
+
+    return(
     <Layout>
      <PageTransition>
             <Seo title="Company" />
@@ -37,7 +40,7 @@ const CompanyPage = () => (
                 </div>
             </section>
             
-            <div className="work-container">
+            <div className={'work-container image-container'}>
                 <div className="team-section">
                     <div className="team-images">
                     <div className="img-wraper1"><StaticImage src="../images/company_1.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
@@ -132,6 +135,7 @@ const CompanyPage = () => (
             </div>
     </PageTransition>
     </Layout>
-)
+  )
+}
 
 export default CompanyPage
