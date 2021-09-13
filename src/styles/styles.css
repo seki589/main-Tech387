@@ -1544,7 +1544,12 @@ p span{
     .navigation nav{
         height: 50%;
     }
-
+    .slide-1,
+    .slide-2,
+    .slide-3,
+    .slide-4{
+        overflow-y: visible;
+    }
     .main{
         padding-top: 0%;
         display: flex;
