@@ -1549,6 +1549,7 @@ p span{
     .slide-3,
     .slide-4{
         overflow-y: visible;
+        min-height: 100%;
     }
     .main{
         padding-top: 0%;
