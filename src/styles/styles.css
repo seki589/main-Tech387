@@ -120,7 +120,7 @@ section{
     position: relative;
     z-index: 1;
     background-color: #0C2317;
-
+    height: 100vh;
 }
 
 .slide-2 .text h1{
@@ -471,14 +471,17 @@ svg.partners-logo .st1.st0{
     background-position: center;
     background-size: cover;
     margin: auto;
+    display: flex;
+    align-items: center;
+    MIN-height: 100% !important;
 }
 .footer-iner{
     overflow: inherit;
     color: #fff;
     display: flex;
     flex-direction: row;
-    height: 100vh;
     width: 93%;
+    height: 50%;
     margin: auto;
 }
 .slide-4 .main{
@@ -530,6 +533,9 @@ svg.partners-logo .st1.st0{
 }
 .left-mid .linkedin p{
     color: #FFFFFFBD;
+}
+.right{
+    display: flex;
 }
 .right h3{
     font-family: "Rubik";
@@ -587,14 +593,14 @@ svg.partners-logo .st1.st0{
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
 }
 .footer .right{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 2;
+    flex: 1.5;
 }
 /* .footer-head,
 .footer-mid{
