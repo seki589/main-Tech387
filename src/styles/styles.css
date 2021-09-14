@@ -467,7 +467,7 @@ svg.partners-logo .st1.st0{
 .footer{
     width: 100% !important;
     max-width: 1280px;
-    background-image: url("../images/footer_web.png");
+    background-image: url("../images/Footer-plant.png");
     background-position: center;
     background-size: cover;
     margin: auto;
@@ -598,8 +598,8 @@ svg.partners-logo .st1.st0{
 }
 .footer .right{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content:center;
     flex: 1.5;
 }
 /* .footer-head,
