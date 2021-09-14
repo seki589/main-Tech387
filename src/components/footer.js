@@ -52,7 +52,7 @@ const Footer = () => {
                 <div className="left-bottom">
                 
                   <div className="copy">
-                      <p>2021© Copyright by Tech387 All rights received.</p>
+                      <p>2021© Copyright by Tech 387 All rights received.</p>
                   </div>
                 </div>
                 {/* <div className="footer-mid">

@@ -529,10 +529,11 @@ svg.partners-logo .st1.st0{
     font-size: 16px;
     text-align: left;
     line-height: 19px;
-
+    height: 32px;
 }
 .left-mid .linkedin p{
     color: #FFFFFFBD;
+    margin-left: 5px;
 }
 .right{
     display: flex;
@@ -543,12 +544,12 @@ svg.partners-logo .st1.st0{
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 0.15px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .right>div{
     flex: 1;
     padding: 0 30px;
-    border-right: 1px solid #FFFFFFBD;
+    border-right: 1px solid #ffffff2c;
 }
 .right>div:last-child{
     border-right: none;
@@ -562,14 +563,13 @@ svg.partners-logo .st1.st0{
     align-items: center;
     font-family: "Rubik";
     font-size: 16px;
-    font-weight: 500;
     line-height: 20px;
     color: #FFFFFFBD;
 }
 .right ul li span{
     font-size: 30px;
     margin-left: -10px;
-    margin-right: 10px;
+    margin-right: 15px;
     color: #27BA70;
 }
 .footer-bot{
