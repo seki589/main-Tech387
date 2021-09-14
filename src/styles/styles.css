@@ -1213,6 +1213,9 @@ p span{
         justify-content: space-between;
         width: 35%;
     }
+    .right h3{
+        margin-left: 20px;
+    }
     .right ul li span{
         margin-left: -30px;
     }
@@ -1460,6 +1463,9 @@ p span{
     .footer-iner .right {
         align-items: flex-start;
         padding-top: 15vh;
+    }
+    .footer-iner .left{
+        padding-left: 50px;
     }
     .footer-iner .left-mid {
         width: 50%;

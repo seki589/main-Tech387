@@ -59,39 +59,6 @@ const Footer = () => {
                       <p>2021© Copyright by Tech 387 All rights received.</p>
                   </div>
                 </div>
-                {/* <div className="footer-mid">
-                    <div className="left-li">
-                    <h3>Work with us</h3>
-                        <ul>
-                            <li> <Link to="/hire-us" onClick={() => setLight(!light)}>Hire us</Link> </li>
-                            <li> <a href="#">Start-Up Calculator</a> </li>
-                        </ul>
-                        <h3>Contact</h3>
-                        <ul>
-                            <li className="contact"> <a href="mailto:support@tech387.com">support@tech387.com</a> </li>
-                            <li className="contact"> <a >+387 62 667 266</a> </li>
-                        </ul>
-                     <div>
-                     <h3>Capabilities</h3>
-                     </div>
-                        <ul>
-                            <li> <a href="#">App Development</a> </li>
-                            <li> <a href="#">Web Development</a> </li>
-                            <li> <a href="#">Backend Solutions</a> </li>
-                            <li> <a href="#">Data Analytics</a> </li>  
-                        </ul>
-                         
-                              
-                    </div>
-                    <div className="right-li">                       
-                        <ul>
-                            <li> <a href="#">Branding</a> </li>
-                            <li> <a href="#">Design System</a> </li>
-                            <li> <a href="#">UI/UX</a> </li>
-                        </ul>                           
-                    </div>
-                </div> */}
-                
             </div>
             <div className="right">
             <div>
@@ -125,9 +92,6 @@ const Footer = () => {
                 </ul>
              </div>
             </div>
-            {/* <div className="mid">
-                
-            </div> */}
         </div>
         </div>
     )
