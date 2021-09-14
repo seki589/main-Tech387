@@ -61,8 +61,8 @@ const Footer = () => {
                 </div>
             </div>
             <div className="right">
-            <div>
-                <h3>End-to-end development <span>&gt;</span></h3>
+            <div className="right-list">
+                <h3>End-to-end development <span className="span">&gt;</span></h3>
                 <ul>
                     <li><span>&#8226;</span>No management overhead costs & synergy of teams </li>
                     <li><span>&#8226;</span>Cost-saving option by understanding full product picture in long run </li>
@@ -71,8 +71,8 @@ const Footer = () => {
                     
                 </ul>
              </div>
-            <div>
-                <h3>Dedicated team <span>&gt;</span></h3>
+            <div className="right-list">
+                <h3>Dedicated team <span className="span">&gt;</span></h3>
                 <ul>
                     <li><span>&#8226;</span>No need for staff management (hiring and talent acquisition) </li>
                     <li><span>&#8226;</span>Learning stays within the team </li>
@@ -81,8 +81,8 @@ const Footer = () => {
                     
                 </ul>
              </div>
-            <div>
-                <h3>Combined development <span>&gt;</span></h3>
+            <div className="right-list">
+                <h3>Combined development <span className="span">&gt;</span></h3>
                 <ul>
                     <li><span>&#8226;</span>Your to date product progress with our next stage design and development </li>
                     <li><span>&#8226;</span>Your to date product with our testing support </li>
