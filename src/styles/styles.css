@@ -470,6 +470,7 @@ svg.partners-logo .st1.st0{
     background-image: url("../images/Footer-plant.png");
     background-position: center;
     background-size: cover;
+    background-color: #0C2317;
     margin: auto;
     display: flex;
     align-items: center;
@@ -483,6 +484,7 @@ svg.partners-logo .st1.st0{
     width: 93%;
     /* height: 50%; */
     margin: auto;
+    padding: 10vh 0;
 }
 .slide-4 .main{
     padding-top: 0%;
