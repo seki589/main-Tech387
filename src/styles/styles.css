@@ -1669,8 +1669,11 @@ p span{
         transition: .3s all ease;
     }
     .span{
+        font-size: 16px;
+        line-height: 20px;
         display: inline-block;
         transition: .3s all ease;
+        margin-left: 10px;
     }
     /* .right h3:hover .footer-iner .right ul{
         visibility: visible;
