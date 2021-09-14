@@ -1189,12 +1189,6 @@ p span{
     .main .lottie{
         transform: translate(0);
     }
-    /* .footer{
-        background-image: none;
-        position: relative;
-        z-index: 1;
-    } */
-
     .footer-iner{
         flex-direction: column;
         padding: 0 10vw;
@@ -1210,18 +1204,20 @@ p span{
     }
     .footer-iner .right{
         order: 1;
-        align-items: flex-end;
+        align-items: flex-start;
+        padding-top: 30%;
     }
     .footer-iner .left-mid{
         display: flex;
         justify-content: space-between;
         width: 35%;
     }
+
     .right h3{
         margin-left: 20px;
     }
     .right ul li span{
-        margin-left: -30px;
+        margin-left: -10px;
     }
     .footer-bot{
         left: 0%;
@@ -1251,14 +1247,7 @@ p span{
     .main-text .lottie{
         transform: scale(1) translateY(5%) !important;
     }
-    .footer::after,
-    .footer::before{
-        position: relative;
-    }
-    .footer{
-        flex-direction: row;
-        background-image: url("../images/footer_web.png");
-    }
+
     .footer-head h1{
         display: none;
     }
