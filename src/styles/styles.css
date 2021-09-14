@@ -1663,7 +1663,7 @@ p span{
         opacity: 0;
         position: absolute;
         bottom: 2%;
-        transition: .3s all ease;
+        transition: .4s all ease;
     }
     .span{
         font-size: 16px;
@@ -1675,10 +1675,10 @@ p span{
     .right-list h3:hover span{
         transform: rotate(90deg);
     }
-    .right-list:hover ul{
+    .right-list h3:hover ~ ul{
         opacity: 1;
     }
-    .right-list:hover h3{
+    .right-list h3:hover {
         color: #FFFFFF;
         opacity: 1;
         transition: .3 all ease;
