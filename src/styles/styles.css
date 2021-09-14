@@ -1672,7 +1672,7 @@ p span{
         font-size: 16px;
         line-height: 20px;
         display: inline-block;
-        transition: .3s all ease;
+        transition: .2s all ease;
         margin-left: 10px;
     }
     /* .right h3:hover .footer-iner .right ul{
@@ -1723,6 +1723,9 @@ p span{
     }
     .right ul li{
         color: #FFFFFF;
+    }
+    .right ul{
+        width: 85%;
     }
 
 
