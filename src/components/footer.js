@@ -45,13 +45,13 @@ const Footer = () => {
                             </a>
                     </div>
                     <div className="linkedin">
-                            <a href="tel:+38762667266"><p>+387 62667266</p>
+                            <a href="tel:+38762667266"><p>+387 62 667 266</p>
                             </a>
                     </div>
                 </div>
                 <div className="left-bottom">
                 
-                  <div className="copy">
+                  <div className="copy"> 
                       <p>2021© Copyright by Tech 387 All rights received.</p>
                   </div>
                 </div>

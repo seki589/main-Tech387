@@ -481,7 +481,7 @@ svg.partners-logo .st1.st0{
     display: flex;
     flex-direction: row;
     width: 93%;
-    height: 50%;
+    /* height: 50%; */
     margin: auto;
 }
 .slide-4 .main{
@@ -495,8 +495,8 @@ svg.partners-logo .st1.st0{
 .footer-head h1{
     font-family: "Rubik";
     font-weight: 500;
-    font-size: 48px;
-    line-height: 57px;
+    font-size: 60px;
+    line-height: 71px;
 }
 .footer-mid{
     display: flex;
@@ -530,10 +530,17 @@ svg.partners-logo .st1.st0{
     text-align: left;
     line-height: 19px;
     height: 32px;
+    padding-right: 3px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    transition: .3s all ease;
+}
+.left-mid  a:hover{
+    background-color: #ffffff23;
 }
 .left-mid .linkedin p{
     color: #FFFFFFBD;
-    margin-left: 5px;
+    margin-left: 3px;
 }
 .right{
     display: flex;
