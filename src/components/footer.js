@@ -30,23 +30,27 @@ const Footer = () => {
                     <h1>Let's work together!</h1>
                 </div>
                 <div className="left-mid">
-                    <div className="linkedin">
-                            <a href="https://www.linkedin.com/company/tech-387">
-                            <img src={LinkeWhite} alt="linkedin"/> <p>Follow us</p>
-                            </a>
+                    <div>
+                        <div className="linkedin">
+                                <a href="https://www.linkedin.com/company/tech-387">
+                                <img src={LinkeWhite} alt="linkedin"/> <p>Follow us</p>
+                                </a>
+                        </div>
+                        <div className="linkedin">
+                                <a href="mailto:support@tech387.com">
+                                <img src={Mail} alt="linkedin"/> <p>Work with us</p>
+                                </a>
+                        </div>
                     </div>
-                    <div className="linkedin">
-                            <a href="mailto:support@tech387.com">
-                            <img src={Mail} alt="linkedin"/> <p>Work with us</p>
-                            </a>
-                    </div>
-                    <div className="linkedin">
-                            <a href="mailto:mail@tech387.com"><p>mail@tech387.com</p>
-                            </a>
-                    </div>
-                    <div className="linkedin">
-                            <a href="tel:+38762667266"><p>+387 62 667 266</p>
-                            </a>
+                    <div>
+                        <div className="linkedin">
+                                <a href="mailto:mail@tech387.com"><p>mail@tech387.com</p>
+                                </a>
+                        </div>
+                        <div className="linkedin">
+                                <a href="tel:+38762667266"><p>+387 62 667 266</p>
+                                </a>
+                        </div>
                     </div>
                 </div>
                 <div className="left-bottom">
