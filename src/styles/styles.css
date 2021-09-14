@@ -485,9 +485,9 @@ svg.partners-logo .st1.st0{
     padding-top: 0%;
 }
 
-.footer>div{
+/* .footer>div{
     flex: 1;
-}
+} */
 
 .footer-head h1{
     font-family: "Rubik";
@@ -520,7 +520,7 @@ svg.partners-logo .st1.st0{
 .footer-mid .contact{
     border-bottom: 1px solid transparent;
 }
-.footer-mid li a{
+.left-mid  a{
     color: #FFFFFFBD;
     font-family: "Rubik";
     font-size: 16px;
@@ -528,21 +528,43 @@ svg.partners-logo .st1.st0{
     line-height: 19px;
 
 }
-.left-li .linkedin p{
+.left-mid .linkedin p{
     color: #FFFFFFBD;
 }
-.footer-mid h3{
+.right h3{
     font-family: "Rubik";
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 28px;
     letter-spacing: 0.15px;
     margin-bottom: 10px;
+}
+.right>div{
+    flex: 1;
+    padding: 0 30px;
+    border-right: 1px solid #FFFFFFBD;
+}
+.right>div:last-child{
+    border-right: none;
+}
+.right ul{
+    list-style: none;
+    margin-left: 0;
+}
+.right ul li{
+    display: flex;
+    align-items: center;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
     color: #FFFFFFBD;
 }
-.right-li{
-    margin-right: 50px;
-    padding-top: 25px;
+.right ul li span{
+    font-size: 30px;
+    margin-left: -10px;
+    margin-right: 10px;
+    color: #27BA70;
 }
 .footer-bot{
     position: absolute;
@@ -552,7 +574,7 @@ svg.partners-logo .st1.st0{
     flex-direction: column;
     align-items: flex-start;
 }
-.footer-bot p{
+.left-bottom p{
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFFBD;
@@ -563,22 +585,21 @@ svg.partners-logo .st1.st0{
 .footer .left{
     position: relative;
     display: flex;
-    flex: 2;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
-    background: linear-gradient(270deg, #0C2317CC, #0C2317B5,#0C231700);
+    align-items: flex-start;
 }
 .footer .right{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1;
+    flex: 2;
 }
-.footer-head,
+/* .footer-head,
 .footer-mid{
     width: 50%;
-}
+} */
 .footer .right img{
     overflow-x: visible;
 }
