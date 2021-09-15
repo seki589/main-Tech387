@@ -69,9 +69,6 @@ const ServicePage = () => {
                  <div className="icon-name">  
                  </div>
              </div>
-             {/* <div className={`servRight text`} >
-             <Link to="/work"><p>Find out more &gt; </p></Link>
-             </div> */}
          </div>
      </section>
      <section className={`service-container service-2nd`}>
@@ -104,9 +101,6 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             {/* <div className={`text`}>
-             <Link to="/work"><p>See our creative work &gt; </p></Link>
-             </div> */}
          </div>
          <div></div>
      </section>
@@ -132,9 +126,6 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             {/* <div className={`text`}>
-             <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div> */}
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
@@ -177,9 +168,6 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             {/* <div className={`text`}>
-             <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div> */}
          </div>
          <div></div>
      </section>
@@ -193,10 +181,6 @@ const ServicePage = () => {
              your customers and partners can connect and centralize your shared data, explore it together to gain valuable insights, 
              and build joint solutions that create value for all. After we have the data, we use the ML to create predictive models that enhance user experience.
              </p>
-             {/* <p>
-             After we have the data, we use the ML for <strong>personalization,  
-             efficient searching experience</strong> for applications and ways to <strong>detect and control fraud</strong>.
-             </p> */}
              {dataFour.map(el => 
                       (
                      <ItemFour 
@@ -209,9 +193,6 @@ const ServicePage = () => {
                      />
                  )
                  )}
-             {/* <div className={`text`}>
-             <Link to="/work"><p>See our development focused projects &gt; </p></Link>
-             </div> */}
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
@@ -226,11 +207,6 @@ const ServicePage = () => {
      <section className="service-nd">
      <div className={`top-head two`}>
          <h3>Industries we served</h3>
-         {/* <div className="top-triangle">
-             <StaticImage src="../images/triangle_2.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
-             <StaticImage src="../images/triangle_9.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
-             <StaticImage src="../images/triangle_11.png" alt="triangle" className="trianglePng" placeholder="tracedSVG"/>
-         </div> */}
      </div>
      <Services />
      
@@ -410,8 +386,10 @@ const ItemThree = ({title, text,textTwo, setImageHoverThree}) => {
                                 y : hoverState?  0 : 50
                             }}
                             transition={{delay: 0.4, duration: 0.4, type: 'spring',}}
+                            className="bold-p"
                             >
                             {textTwo}
+                            
                             </motion.p>
                         </motion.div>
                     </div>
