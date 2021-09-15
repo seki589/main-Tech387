@@ -723,7 +723,7 @@ ol.tab-list{
         width: 93%;
         top: 0%;
         left: 3.75%;
-        overflow-y: scroll;
+        overflow: hidden;
     }
     .iner-hover{
         height: 39%;
@@ -741,6 +741,7 @@ ol.tab-list{
     .service-2nd .one{
         width: 93%;
         padding: 0 3.75;
+        margin: 4% 0;
     }
     .serviceImg1{
 
@@ -748,7 +749,6 @@ ol.tab-list{
     }
 
     .serviceImg2{
-        /* margin-left: 3.75%; */
         width: 100%;
     }
     .service-2nd .two{
@@ -770,6 +770,7 @@ ol.tab-list{
     }
     .service-4nd .one{
         padding: 2% 3.75%;
+        margin: 7% 0;
     }
     .service-4nd .one img{
         width: 100%;
