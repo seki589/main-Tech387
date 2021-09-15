@@ -737,6 +737,7 @@ ol.tab-list{
     }
     .iner-hover-3{
         height: 48%;
+        justify-content: flex-start;
     }
     .service-2nd .one{
         width: 93%;
