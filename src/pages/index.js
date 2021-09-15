@@ -103,7 +103,7 @@ const IndexPage = () => {
                   <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link>
                   </div>
                   <div className="lottie">
-                  <StaticImage src="../images/main.png"  alt="main" placeholder="tracedSVG"/>
+                  <StaticImage src="../images/Homepage.png"  alt="main" placeholder="tracedSVG"/>
                   {/* <Lottie/> */}
                   </div>
               </div>
