@@ -80,7 +80,7 @@ const CompanyPage = () => {
                     <div className={'benefits opening'}>
                         <div className='benefits-title'>
                                <h3>
-                                Current Openings
+                               Careers
                                 </h3>
                             </div>
                         <div className="benefit-text">
