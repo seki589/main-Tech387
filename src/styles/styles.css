@@ -1449,6 +1449,7 @@ p span{
     }
     .footer-iner {
         padding: 0;
+        height: 100vh;
     }
     .footer-iner .right {
         align-items: flex-start;
@@ -1462,6 +1463,9 @@ p span{
     }
     .right ul li span {
         margin-left: -10px;
+    }
+    .copy{
+        bottom: 10%;
     }
     
     .swiper-container-vertical > .swiper-pagination-bullets{

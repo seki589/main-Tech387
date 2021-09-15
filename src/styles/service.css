@@ -607,7 +607,7 @@ ol.tab-list{
         /* margin-left: 7.5%; */
     }
     .serviceImg3{
-        width: 85%;
+        width: 100%;
         margin-right: 0%;
     }
     .service-2nd .two{
@@ -642,6 +642,7 @@ ol.tab-list{
         height: 55%;
         top: 0%;
         left: 7.5%;
+        justify-content: center;
     }
     .top-head {
         padding: 0 3.75%;
