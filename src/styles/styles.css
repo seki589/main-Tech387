@@ -1578,6 +1578,7 @@ p span{
         left: 0;
         transform: translate(0);
         width:100vw;
+        height: calc(var(--vh, 1vh) * 100);
         min-height: 75px;
     }
     .navigation nav{

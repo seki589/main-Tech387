@@ -386,9 +386,6 @@ H5{
 .iner-hover-2 .bold-p{
     color: #0C2317;
 }
-.iner-hover-2 .bold-p::first-letter{
-    font-size: 30px;
-}
 .left-tabs{
     display: flex;
     flex-direction: column;

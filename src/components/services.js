@@ -13,7 +13,6 @@ import '../styles/service.css'
 const Services = () => {
 
     let { x, y} = useMousePosition()
-    // console.log(x,y)
     
 
     return(
@@ -37,16 +36,12 @@ const Services = () => {
             <StaticImage src="../images/pointilism.png" alt="cover" className="cover"/>
             </div>
          </div>
-    )
-
-   
+    )   
 }
 
 const List = ({ title,name,img,icon, position, text, x, y}) => {
     
     const [hoverState, setHoverState] = useState(false)
-    const [clickState, setClickState] = useState(false)
-
     const [listPosition, setListPosition] = useState({
         top: y,
         left: x,
@@ -59,7 +54,7 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              left: list.current.getBoundingClientRect().left,
          })
     },[hoverState]);
-    console.log(x, y)
+
     return(
         <div >
              <motion.div ref={list}
@@ -90,9 +85,6 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              className="tab-wraper">
              <img src={img} alt="service" className="serviceImg4"/>
              <div className="tab-head">
-                 {/* <div className="head-img">
-                     <StaticImage src="../images/user.png" alt="user" className="user"/>
-                 </div> */}
                  <div className="head-name">
                      <h6>{name}</h6>
                     <p>{position}</p>

@@ -6,6 +6,7 @@
  */
 
 import * as React from "react"
+import { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -22,6 +23,16 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  useEffect(() => {
+    function resize() {
+
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    
+    window.addEventListener('resize', resize);
+    window.addEventListener('load', resize);
+  })
   
   return (
     <>
