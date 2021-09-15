@@ -1632,6 +1632,24 @@ p span{
     .main-links{
         display: none;
     }
+    .footer{
+        background-image: none;
+        position: relative;
+    }
+    .footer::before{
+        content: "";
+        width: 100vh;
+	    height: 100vh;
+	    top: 0%;
+        bottom: 0;
+	    left: 5%;
+        position: absolute;
+        background-image: url("../images/Footer-plant.png");
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotate(-90deg);
+    }
     .footer-mid>div{
         margin: 0 10px 10px 0;
     }
