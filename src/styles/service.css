@@ -46,8 +46,10 @@ H5{
 .footer-service{
     /* height:90vh; */
     margin: auto;
-    max-width: 1776px; 
+    max-width: 1280px; 
+    padding-top: 10%;
     overflow: hidden;
+    background-color: #0C2317;
 }
 /* .footer-service .footer{
     transform: translateY(-10%);

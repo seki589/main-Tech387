@@ -546,6 +546,7 @@ svg.partners-logo .st1.st0{
 .right{
     display: flex;
 }
+
 .right-list h3{
     font-family: "Rubik";
     font-size: 24px;
@@ -570,6 +571,7 @@ svg.partners-logo .st1.st0{
 .right ul{
     list-style: none;
     margin-left: 0;
+    margin-bottom: 0;
 }
 .right ul li{
     display: flex;
@@ -615,13 +617,7 @@ svg.partners-logo .st1.st0{
     justify-content:center;
     flex: 1.5;
 }
-/* .footer-head,
-.footer-mid{
-    width: 50%;
-} */
-.footer .right img{
-    overflow-x: visible;
-}
+
 .tab{
     display: flex;
     flex-direction: column;
@@ -1661,6 +1657,7 @@ p span{
         flex-direction: column;
         justify-content: flex-start;
         position: relative;
+        z-index: 1;
     }
     .right>div{
         flex: none;
@@ -1670,7 +1667,8 @@ p span{
     .right-list ul{
         opacity: 0;
         position: absolute;
-        bottom: 2%;
+        bottom: 1%;
+        z-index: -1;
         transition: .4s all ease;
     }
     .span{
@@ -1690,6 +1688,9 @@ p span{
         color: #FFFFFF;
         opacity: 1;
         transition: .3 all ease;
+    }
+    .footer-iner {
+        height: 100vh;
     }
     .footer-iner .left{
         padding: 0;
@@ -1731,6 +1732,9 @@ p span{
     }
     .right ul{
         width: 90%;
+    }
+    .copy {
+        bottom: 3%;
     }
 
 
