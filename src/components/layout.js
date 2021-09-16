@@ -27,19 +27,26 @@ const Layout = ({ children }) => {
 
   const divRef = useRef(null);
   const { height } = useDimension(divRef);
-  useEffect(() => {
-    function resize() {
+  // useEffect(() => {
+  //   function resize() {
 
-      let vh = height * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
+  //     let vh = height * 0.01;
+  //     document.documentElement.style.setProperty('--vh', `${vh}px`);
+  //   }
 
-    // window.addEventListener('load', resize);
-    // window.addEventListener('resize', resize);
+  //   window.addEventListener('load', resize);
+  //   window.addEventListener('resize', resize);
     
-  },[height]);
+  // },[height]);
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  },[window.innerHeight])
 
-  console.log(height);
+  console.log(window.innerHeight);
 
   
   return (
