@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
       window.addEventListener('resize', resize);
       
     
-  },[!isBrowser,window.innerHeight]);
+  });
 
 
 
