@@ -33,9 +33,10 @@ const Layout = ({ children }) => {
       let vh = height * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     }
+
+    // window.addEventListener('load', resize);
+    // window.addEventListener('resize', resize);
     
-    window.addEventListener('resize', resize);
-    window.addEventListener('load', resize);
   },[height]);
 
   console.log(height);
