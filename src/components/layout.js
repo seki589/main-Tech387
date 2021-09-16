@@ -6,7 +6,8 @@
  */
 
 import * as React from "react"
-import { useEffect } from "react"
+import { useRef, useEffect } from "react"
+import useDimension from "../hooks/useDimension";
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -23,25 +24,31 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  // useEffect(() => {
-  //   function resize() {
 
-  //     let vh = window.innerHeight * 0.01;
-  //     document.documentElement.style.setProperty('--vh', `${vh}px`);
-  //   }
+  const divRef = useRef(null);
+  const { height } = useDimension(divRef);
+  useEffect(() => {
+    function resize() {
+
+      let vh = height * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
     
-  //   window.addEventListener('resize', resize);
-  //   window.addEventListener('load', resize);
-  // });
+    window.addEventListener('resize', resize);
+    window.addEventListener('load', resize);
+  },[height]);
+
+  console.log(height);
 
   
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
+      ref={divRef}
         style={{
           margin: `0 auto`,
-
+        
         }}
       >
         <main >{children}</main>

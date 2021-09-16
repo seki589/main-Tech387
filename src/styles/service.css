@@ -736,13 +736,13 @@ ol.tab-list{
         height: 58%;
         justify-content: flex-start;
     }
-    .iner-hover-1 p,
+    /* .iner-hover-1 p,
     .iner-hover-2 p,
     .iner-hover-3 p,
     .iner-hover p{
         font-size: 14px;
         line-height: 18px;
-    }
+    } */
     .service-2nd .one{
         width: 93%;
         padding: 0 3.75;
