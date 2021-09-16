@@ -1271,6 +1271,13 @@ p span{
     }
 }
 @media (max-width: 824px) and (orientation: Landscape){
+    .navigation{
+        padding-top:10% ;
+        justify-content: flex-start !important;
+    }
+    .navigation a{
+        padding: 5px 15px;
+    }
     .text h1{
         font-size: 8.5vh !important;
         line-height: 9.5vh !important;
