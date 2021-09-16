@@ -403,7 +403,7 @@ H5{
 .left-tab {
     display: flex;
     flex-direction: row;
-    padding: 24px 0;
+    padding: 20px 0;
     cursor: pointer;
     /* margin-bottom: 40px; */
 }
