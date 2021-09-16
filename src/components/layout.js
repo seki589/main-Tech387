@@ -7,6 +7,7 @@
 
 import * as React from "react"
 import { useEffect } from "react"
+import Div100vh from 'react-div-100vh'
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -37,7 +38,8 @@ const Layout = ({ children }) => {
   
   return (
     <>
-      <Header style={{"background-color":"white"}} siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <Div100vh>
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
           margin: `0 auto`,
@@ -46,6 +48,7 @@ const Layout = ({ children }) => {
       >
         <main >{children}</main>
       </div>
+    </Div100vh>
     </>
   )
 }

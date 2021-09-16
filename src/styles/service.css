@@ -733,13 +733,20 @@ ol.tab-list{
         height: 47%;
     }
     .iner-hover-3{
-        height: 48%;
+        height: 58%;
         justify-content: flex-start;
+    }
+    .iner-hover-1 p,
+    .iner-hover-2 p,
+    .iner-hover-3 p,
+    .iner-hover p{
+        font-size: 14px;
+        line-height: 18px;
     }
     .service-2nd .one{
         width: 93%;
         padding: 0 3.75;
-        margin: 4% 0;
+        margin-top: 10%;
     }
     .serviceImg1{
 
@@ -768,7 +775,7 @@ ol.tab-list{
     }
     .service-4nd .one{
         padding: 2% 3.75%;
-        margin: 7% 0;
+        margin-top: 16%;
     }
     .service-4nd .one img{
         width: 100%;
