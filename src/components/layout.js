@@ -6,8 +6,9 @@
  */
 
 import * as React from "react"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect,useState } from "react"
 import useDimension from "../hooks/useDimension";
+import {isBrowser} from "./utils"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
   `)
 
   const divRef = useRef(null);
-  const { height } = useDimension(divRef);
+  // const { height } = useDimension(divRef);
   // useEffect(() => {
   //   function resize() {
 
@@ -38,16 +39,28 @@ const Layout = ({ children }) => {
   //   window.addEventListener('resize', resize);
     
   // },[height]);
-  useEffect(() => {
-    window.addEventListener('resize', () => {
-      // We execute the same script as before
-      let vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    });
-  },[window.innerHeight])
+  
 
-  // console.log(window.innerHeight);
+     useEffect(() => {
 
+      function resize() {
+
+          let vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+
+
+      window.addEventListener('load', resize);
+      window.addEventListener('resize', resize);
+      
+    
+  },[!isBrowser,window.innerHeight]);
+
+
+
+  
+  
+  
   
   return (
     <>
