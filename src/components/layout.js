@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
     });
   },[window.innerHeight])
 
-  console.log(window.innerHeight);
+  // console.log(window.innerHeight);
 
   
   return (
