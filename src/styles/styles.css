@@ -1860,7 +1860,8 @@ p span{
     .benefits{
         flex-direction: column;
     }
-    .benefit-text{
+    .benefit-text,
+     .opening .benefit-text{
         padding: 5% 0%;
     }
     .team-head{
