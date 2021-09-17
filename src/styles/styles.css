@@ -124,6 +124,7 @@ section{
     background-color: #0C2317;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
+    overflow: hidden;
 }
 
 .slide-2 .text h1{
