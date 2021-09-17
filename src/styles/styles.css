@@ -67,7 +67,7 @@ H5{
 }
 .container{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 100);
     margin: auto;
     position: relative;
@@ -92,7 +92,7 @@ H5{
 section{
     width: 100%;
     padding: 0 0%;
-    height: 100vh;
+    /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 100);
     margin: auto;
     position: relative;
@@ -122,7 +122,7 @@ section{
     position: relative;
     z-index: 1;
     background-color: #0C2317;
-    height: 100vh;
+    /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -154,7 +154,7 @@ section{
 }
 .mySwiper{
       position: relative;
-      height: 100vh;
+      /* height: 100vh; */
       height: calc(var(--vh, 1vh) * 100);
       width: 100%;
 }
@@ -339,7 +339,7 @@ svg.partners-logo .st1.st0{
     width: 100%;
     max-width: 1280px;
     margin: auto;
-    height: 100vh;
+    /* height: 100vh; */
     height: calc(var(--vh, 1vh) * 100);
     display: flex;
     position: relative;
@@ -1345,7 +1345,7 @@ p span{
         left: 0;
         bottom: 0;
         height: -webkit-fill-available;
-        height: 100vh;
+        /* height: 100vh; */
         height: calc(var(--vh, 1vh) * 100);
         width: 100vw;
         background-color: var(--color-background) ;
@@ -1474,7 +1474,7 @@ p span{
     }
     .footer-iner {
         padding: 0;
-        height: 100vh;
+        /* height: 100vh; */
         height: calc(var(--vh, 1vh) * 100);
     }
     .footer-iner .right {
@@ -1720,7 +1720,7 @@ p span{
         transition: .3 all ease;
     }
     .footer-iner {
-        height: 100vh;
+        /* height: 100vh; */
         height: calc(var(--vh, 1vh) * 100);
     }
     .footer-iner .left{
