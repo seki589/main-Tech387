@@ -44,11 +44,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <div className="linkedin">
-                                <a href="mailto:mail@tech387.com"><p>mail@tech387.com</p>
-                                </a>
-                        </div>
-                        <div className="linkedin">
-                                <a href="tel:+38762667266"><p>+387 62 667 266</p>
+                                <a href="mailto:hello@tech387.com"><p>hello@tech387.com</p>
                                 </a>
                         </div>
                     </div>

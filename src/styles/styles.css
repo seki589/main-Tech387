@@ -313,6 +313,7 @@ header{
 
 .partners-title{
     visibility: visible;
+    color: #138E56 !important;
 }
 .partners .img{
     display: flex;
