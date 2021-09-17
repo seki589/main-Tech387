@@ -4,6 +4,7 @@ import Form from "../components/form";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
+import LinkeBlack from "../images/linkedin_light.png"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import PartnersLogo from "../components/partnersLogo";
 
@@ -43,8 +44,10 @@ const HireUsPage = () => {
                                     <a href="mailto:savdibegovic@tech387.com" 
                                     >savdibegovic@tech387.com</a>
                                     </div>
-                                    <div className="contact">
-                                    <a href="https://www.linkedin.com/in/samir-a-03110b18">Linkedin</a>
+                                    <div className="linkedin">
+                                        <a href="https://www.linkedin.com/in/samir-a-03110b18" target="_blank" rel="noreferrer">
+                                        <img src={LinkeBlack} alt="linkedin"/> Profile
+                                        </a>
                                     </div>
                                 </div>
                                 </div> 
@@ -61,9 +64,14 @@ const HireUsPage = () => {
                                     <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
                                     </div>
                                     <div className="contact">
-                                        <div>
+                                        {/* <div>
                                             <a href="https://ba.linkedin.com/in/emir-corbo">Linkedin</a>
-                                            {/* <a href="tel:+38760 315 9309">+38760 315 9309</a> */}
+                                            <a href="tel:+38760 315 9309">+38760 315 9309</a>
+                                        </div> */}
+                                        <div className="linkedin">
+                                            <a href="https://ba.linkedin.com/in/emir-corbo" target="_blank" rel="noreferrer">
+                                            <img src={LinkeBlack} alt="linkedin"/> Profile
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
