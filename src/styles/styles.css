@@ -1721,6 +1721,7 @@ p span{
     }
     .footer-iner {
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
     }
     .footer-iner .left{
         padding: 0;
