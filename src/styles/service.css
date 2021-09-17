@@ -435,12 +435,13 @@ H5{
     top: 15%;
     left: 35%;
     z-index: 1;
-    background-color: #FAFAFA;
+    /* background-color: #FAFAFA; */
 }
 .serviceImg4{
-    aspect-ratio: 21/9;
+    aspect-ratio: 18/9;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
 }
 .tab-head{
     display: flex;

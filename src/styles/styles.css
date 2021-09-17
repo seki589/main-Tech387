@@ -905,10 +905,14 @@ svg.partners-logo .st1.st0{
 .card:last-child{
     transform: translateY(15%);
 }
+.card h6{
+    color: #0C2317DE;
+}
 .card p{
     opacity: 0;
     margin-bottom: 50px;
     transition: all .3s ease;
+    color: #0C231799;
 }
 .card:hover p{
     opacity: 1;
