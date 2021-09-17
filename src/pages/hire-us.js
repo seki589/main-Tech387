@@ -46,7 +46,7 @@ const HireUsPage = () => {
                                     </div>
                                     <div className="linkedin">
                                         <a href="https://www.linkedin.com/in/samir-a-03110b18" target="_blank" rel="noreferrer">
-                                        <img src={LinkeBlack} alt="linkedin"/> Profile
+                                        <img src={LinkeBlack} alt="linkedin"/>
                                         </a>
                                     </div>
                                 </div>
@@ -70,7 +70,7 @@ const HireUsPage = () => {
                                         </div> */}
                                         <div className="linkedin">
                                             <a href="https://ba.linkedin.com/in/emir-corbo" target="_blank" rel="noreferrer">
-                                            <img src={LinkeBlack} alt="linkedin"/> Profile
+                                            <img src={LinkeBlack} alt="linkedin"/>
                                             </a>
                                         </div>
                                     </div>

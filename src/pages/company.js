@@ -72,7 +72,7 @@ const CompanyPage = () => {
                         </p>
                     </div>
                     <div className="benefit-img">
-                    <StaticImage src="../images/team.jpg"  className="company1" alt="plant" placeholder="blurred"/>  
+                    <StaticImage src="../images/team.jpg"  className="company1" alt="team" placeholder="blurred"/>  
                     </div>
                 </div>
             </div>

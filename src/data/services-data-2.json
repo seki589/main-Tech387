@@ -2,8 +2,7 @@
     {   
         "id" : 1,
         "title": "Cloud Architecture",
-        "text": "We build your product on a cloud-based delivery model which includes development of a front-end platform (the client or device used to access the cloud), back-end platform (servers and storage) and network.\n With our cloud architecture, your will gain:\n",
-        "textTwo": "\n•  Accelerated delivery of new products / features\n•  Compliance with the latest regulations (including GDPR)\n•  Greater transparency into resources to cut costs and prevent data breaches\n•  Faster provisioning of resources \n•  Consistency in meeting service targets \n•  Insight into IT spending patterns and cloud utilization"
+        "text": "We build your product on a cloud-based delivery model which includes development of a front-end platform (the client or device used to access the cloud), back-end platform (servers and storage) and network.\n\n With cloud architecture, you will gain accelerated delivery of new features, GDPR compliance, greater transparency into resources and many more benefits.\n"
     },
     {   
         "id" : 2,
@@ -13,7 +12,7 @@
     {
         "id" : 3,
         "title": "Scaling",
-        "text": "In order to meet your changing demand, our team efficiently scales data storage capacity, computing power and network while maintaining availability and performance as utilization changes.\n\n Our scalable solutions driven by virtualization enable stable, longer-term growth in a pre-planned manner. Whether your user requests increase or decrease, our IT administrators continually perform scalability tests in order to adapt your product accordingly and minimize operational overheads.\n\n By harnessing the power of cloud computing, your scaling process will be convenient, fast, flexible and cost-saving."
+        "text": "In order to meet your changing demand, our team efficiently scales data storage capacity, computing power and network while maintaining availability and performance as utilization changes.\n\n Our scalable solutions driven by virtualization enable stable, longer-term growth in a pre-planned manner. Whether your user requests increase or decrease, our IT administrators continually perform scalability tests in order to adapt your product accordingly and minimize operational overheads.\n"
     }
     
 ]
