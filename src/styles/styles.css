@@ -1006,10 +1006,15 @@ svg.partners-logo .st1.st0{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    flex: 1;
+    /* flex: 1; */
 }
 .benefit-text{
-    padding: 0 7%;
+    padding: 0 3% 0 7%;
+    flex: 1;
+    text-align: justify;
+}
+.benefit-img{
+    flex: 1.4;
 }
 .benefit-text p{
     font-family: "Roboto", sans-serif;
@@ -1031,6 +1036,8 @@ svg.partners-logo .st1.st0{
 .opening .benefit-text{
     display: flex;
     flex-direction: row;
+    gap: 2%;
+    padding: 0 7%;
 }
 .opening .benefit-text>p{
     flex: 1;
@@ -1894,8 +1901,8 @@ p span{
 }
 
 @keyframes arrow {
-  0%   {transform: translateX(-5px); opacity: 1;;}
-  25%  {transform: translateX(5px);}
+  0%   {transform: translateX(5px); opacity: 1;;}
+  25%  {transform: translateX(10px);}
   40%  {transform: translateX(15px);}
   60%  {transform: translateX(20px);}
   75%  {transform: translateX(25px); opacity: 0.5;}

@@ -55,10 +55,11 @@ const CompanyPage = () => {
                         <h3>
                         Take a closer<br/> look at us
                         </h3>
+                        {/* <p>
+                        
+                        </p> */}
                         <p>
-                        People are always more important than numbers.
-                        </p>
-                        <p>
+                        People are always more important than numbers.<br/>
                         We believe that if our employees are looked after, our clients will be too. Our people are 
                         fundamental to our success and represent a core tenant of our mission, vision and values. 
                         We believe that diversity and inclusion are a source of our innovation.
