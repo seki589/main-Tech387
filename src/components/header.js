@@ -12,7 +12,7 @@ class Header extends React.Component {
     super();
     this.state = {
       show: true,
-      scrollPos: 0,
+      scrollPos: -1,
       showMenu: false
     };
   }
