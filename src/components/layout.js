@@ -50,8 +50,10 @@ const Layout = ({ children }) => {
           document.documentElement.style.setProperty('--vh', `${vh}px`);
           console.log("reeeeerender");
         };
-
-      resize();
+        setTimeout(() => {
+          resize();
+        }, 100);
+      
       window.addEventListener('resize', resize);
 
     
