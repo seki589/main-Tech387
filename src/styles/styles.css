@@ -27,15 +27,9 @@ body{
 --logo-dark: none;
 --color-background: #0C2317;
 --color-text: #FFF;
---color-primary: #fff;
+--color-primary: #FFF;
 }
-/* :root[data-theme='dark']{
-    --logo-light: block;
-    --logo-dark: none;
-    --color-background: #0C2317;
-    --color-text: #FFF;
-    --color-primary: #fff;  
-} */
+
 h1{
 font-family: "Rubik", sans-serif;
 font-size: 96px;
