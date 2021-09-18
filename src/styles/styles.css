@@ -1359,7 +1359,7 @@ p span{
         padding-bottom: 15vh;
         z-index: 99;
         transform: translateX(100%);
-        transition: .3s ease;
+        transition: all .3s ease;
     }
     .is-active{
         transform: translateX(0);
