@@ -12,7 +12,7 @@ class Header extends React.Component {
     super();
     this.state = {
       show: true,
-      scrollPos: -100,
+      scrollPos: null,
       showMenu: false
     };
   }
@@ -35,8 +35,8 @@ class Header extends React.Component {
       scrollPos: document.body.getBoundingClientRect().top - 1,
       show: document.body.getBoundingClientRect().top > this.state.scrollPos
     });
-    console.log(this.state.scrollPos);
-    console.log(this.state.show)
+    // console.log(this.state.scrollPos);
+    // console.log(this.state.show)
   };
   
 

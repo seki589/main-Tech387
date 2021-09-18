@@ -14,6 +14,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import { render } from "react-dom";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -39,7 +40,7 @@ const Layout = ({ children }) => {
   //   window.addEventListener('resize', resize);
     
   // },[height]);
-  
+
 
      useEffect(() => {
 
@@ -47,14 +48,14 @@ const Layout = ({ children }) => {
 
           let vh = window.innerHeight * 0.01;
           document.documentElement.style.setProperty('--vh', `${vh}px`);
+          console.log("reeeeerender");
         };
 
-
-      window.addEventListener('load', resize);
+      resize();
       window.addEventListener('resize', resize);
-      
+
     
-  });
+      },[]);
 
 
 
