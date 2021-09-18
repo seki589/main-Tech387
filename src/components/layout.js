@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
         };
         setTimeout(() => {
           resize();
-        }, 100);
+        }, 3000);
       
       window.addEventListener('resize', resize);
 
