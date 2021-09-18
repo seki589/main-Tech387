@@ -1700,7 +1700,7 @@ p span{
     .right-list ul{
         opacity: 0;
         position: absolute;
-        bottom: 1%;
+        bottom: 2%;
         z-index: -1;
         transition: .4s all ease;
     }
