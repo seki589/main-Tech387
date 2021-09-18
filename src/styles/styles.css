@@ -1617,8 +1617,7 @@ p span{
     .slide-2,
     .slide-3,
     .slide-4{
-        overflow-y: visible;
-        min-height: -webkit-fill-available;
+        overflow: hidden;
     }
     .main{
         padding-top: 0%;
