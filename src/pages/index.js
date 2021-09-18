@@ -43,7 +43,7 @@ const IndexPage = () => {
   <Layout  >
     <PageTransition>
     <Seo title="Home" />
-    <div className="container">
+    {/* <div className="container"> */}
     <Swiper     
       direction={'vertical'} 
       slidesPerView={1}
@@ -149,7 +149,7 @@ const IndexPage = () => {
       </SwiperSlide>
     </Swiper>
     
-     </div>
+     {/* </div> */}
      </PageTransition>
     </Layout>
     
