@@ -159,7 +159,7 @@ section{
       height: calc(var(--vh, 1vh) * 100);
       width: 100%;
 }
-.swiper-wrapper{
+.swiper-slide{
     height: calc(var(--vh, 1vh) * 100);
 }
 .swiper-container-vertical > .swiper-pagination-bullets {
