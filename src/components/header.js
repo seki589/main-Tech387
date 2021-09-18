@@ -52,7 +52,7 @@ class Header extends React.Component {
    
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
-    <header >
+    <header>
       <div className="wraper">
         <div className={`header  ${!this.state.showMenu&&!this.state.show ? "hidden-nav" : ""}`}>
           <div >

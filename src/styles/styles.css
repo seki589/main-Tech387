@@ -29,13 +29,13 @@ body{
 --color-text: #FFF;
 --color-primary: #fff;
 }
-:root[data-theme='dark']{
+/* :root[data-theme='dark']{
     --logo-light: block;
     --logo-dark: none;
     --color-background: #0C2317;
     --color-text: #FFF;
     --color-primary: #fff;  
-}
+} */
 h1{
 font-family: "Rubik", sans-serif;
 font-size: 96px;
@@ -1359,7 +1359,7 @@ p span{
         padding-bottom: 15vh;
         z-index: 99;
         transform: translateX(100%);
-        transition: all .3s ease;
+        transition: all .3s cubic-bezier(.67,.01,.23,1);
     }
     .is-active{
         transform: translateX(0);
