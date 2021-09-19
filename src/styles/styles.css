@@ -1275,7 +1275,7 @@ p span{
     }
     .copy {
         position: absolute;
-        bottom: calc(var(--vh, 1vh) * 2);
+        bottom: calc(var(--vh, 1vh) * 5);
     }
     .footer-iner .mid{
         display: none;
