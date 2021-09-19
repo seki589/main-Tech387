@@ -1234,7 +1234,7 @@ p span{
     }
 }
 
-@media (max-width: 1300px) and (max-height: 500px) and (orientation: Landscape){
+@media (max-width: 1300px) and (max-height: 600px) and (orientation: Landscape){
     .main-text{
         flex-direction: row;
     }
