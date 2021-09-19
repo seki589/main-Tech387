@@ -69,7 +69,7 @@ class Header extends React.Component {
        },
        visible : {
          opacity :[0,0.5,1],
-         x : [60,30,-10,0],
+         x : [60,30,-10,5,0],
          transition : {
            duration : 0.4,
            ease: 'linear',
