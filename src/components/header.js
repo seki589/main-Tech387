@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import { motion} from "framer-motion"
 import { StaticImage } from "gatsby-plugin-image"
 import LogoLight from "../assets/LogoHorizontalLight.svg"
 import LogoDark from "../assets/LogoHorizontalDark.svg"
@@ -45,10 +46,36 @@ class Header extends React.Component {
     document.body.classList.remove('dark')
    }
   
-  
+
   
   
  render() {
+   const boxVariant = {
+       hidden : {
+         opacity : 1,
+       },
+       visible : {
+         opacity :[0,0.5,1],
+         transition : {
+           staggerChildren: 0.2,
+           
+         }
+       }
+   }
+   const listVariant = {
+       hidden : {
+         opacity : 1,
+         x: 0,
+       },
+       visible : {
+         opacity :[0,0.5,1],
+         x : [60,30,0],
+         transition : {
+           duration : 0.4,
+           ease: 'linear',
+         }
+       }
+   }
    
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
@@ -70,12 +97,30 @@ class Header extends React.Component {
             <div className={`menuIcon>div ${menuActive}`}/>
           </div>
           <div className={`navigation ${menuActive}`} >
-            <nav>
-            {Menu.map((li, id )=> (
-                <Link to={li.link} key={id} onClick={() => {this.toggleMenu(); this.setLight();}} activeClassName="active" partiallyActive={true}>{li.name}</Link>
-              )
+            <motion.nav
+            variants={boxVariant}
+            initial ={"hidden"}
+            animate = {this.state.showMenu? "visible": ""}
+            >
+            {Menu.map((li, id )=> {
+                return  <motion.li
+                         key={id}
+                        variants={listVariant}
+                        // initial ="hidden"
+                        // animate = "visible"
+                         >
+                         <Link
+                        to={li.link} 
+                        key={id}
+                        onClick={() => {this.toggleMenu(); this.setLight();}} 
+                        activeClassName="active" 
+                        partiallyActive={true}
+                        >{li.name}
+                        </Link>
+                       </motion.li>
+                      }
             )}
-            </nav>
+            </motion.nav>
             <div className="linkedin-menu">
             <a href="https://www.linkedin.com/company/tech-387">
             <StaticImage src="../images/linkedin.png" className="link-white" alt="linkedin"/>

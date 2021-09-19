@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 import PageTransition from 'gatsby-plugin-page-transitions'
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 // import '../styles/stylesWork.css'
 
@@ -38,22 +37,8 @@ const WorkPage = () => (
                         <StaticImage src="../images/triangle_plant_4.png" className="plant-1" alt="plant" placeholder="blurred"/>
                         <StaticImage src="../images/triangle_10.png" className="plant-1" alt="plant" placeholder="blurred"/>
                         <StaticImage src="../images/triangle_12.png" className="plant-1" alt="plant" placeholder="blurred"/>
-
                     </div>
                 </div>
-                {/* <div className="bottom-services">
-                    <div className="servLeft">
-                        
-                        <div className="icon-name">
-                            
-                            
-                            
-                        </div>
-                    </div>
-                    <div className={`servRight text`} >
-                    <Link to="/work"><p>Find out more &gt; </p></Link>
-                    </div>
-                </div> */}
             </section>
             <section className={`work-container`}>
                 <div className="work-midle">

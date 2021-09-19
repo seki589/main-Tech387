@@ -2,7 +2,7 @@ import React, {useState,useRef, useEffect} from 'react'
 
 
 import { StaticImage } from "gatsby-plugin-image"
-import { motion, transform } from "framer-motion"
+import { motion} from "framer-motion"
 import useMousePosition from "../hooks/useMousePosition"
 import data from "../data/services.json"
 
@@ -60,7 +60,6 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
              <motion.div ref={list}
              onClick={() => { setListPosition(!listPosition);setHoverState(true)}}
              onHoverStart={() => setHoverState(true)}
-            //  onMouseOver={() => setClickState(false)}
              onMouseLeave={() => setHoverState(false)}
              onHoverEnd={() => {setHoverState(false);}}
             //  x= {x} y={y}
@@ -81,7 +80,11 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
                  display: hoverState? 'block' : 'none',
                  opacity: hoverState? [0.3,1] : [0.3,0],
              }}
-            transition={{duration: 0.2, ease: 'linear'}}
+             exit={{
+                display: 'none',
+                opacity: 0,
+             }}
+            transition={{duration: 0.05, ease: 'linear'}}
              className="tab-wraper">
              <img src={img} alt="service" className="serviceImg4"/>
              <div className="tab-head">

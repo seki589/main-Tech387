@@ -99,7 +99,7 @@ const ServicePage = () => {
                      title={el.title}
                      text={el.text}
                      />
-                 )
+                      )
                  )}
          </div>
          <div></div>
@@ -124,7 +124,7 @@ const ServicePage = () => {
                      text={el.text}
                      textTwo={el.textTwo}
                      />
-                 )
+                      )
                  )}
          </div>
          <motion.div 
@@ -166,7 +166,7 @@ const ServicePage = () => {
                      text={el.text}
                      textTwo={el.textTwo}
                      />
-                 )
+                      )
                  )}
          </div>
          <div></div>
@@ -191,7 +191,7 @@ const ServicePage = () => {
                      text={el.text}
                      textTwo={el.textTwo}
                      />
-                 )
+                      )
                  )}
          </div>
          <motion.div 
@@ -209,9 +209,7 @@ const ServicePage = () => {
          <h3>Industries we served</h3>
      </div>
      <Services />
-     
      </section>
-     
      <div className="footer-service" >
          <Footer />
      </div>
