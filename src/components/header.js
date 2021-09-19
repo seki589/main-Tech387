@@ -63,7 +63,6 @@ class Header extends React.Component {
          },
          exit : {
           opacity : 1,
-          x: 0,
          }
        }
    }
@@ -108,9 +107,9 @@ class Header extends React.Component {
           <div className={`navigation ${menuActive}`} >
             <motion.nav
             variants={boxVariant}
-            initial ={"hidden"}
-            animate = {this.state.showMenu? "visible": ""}
-            exit ={"exit"}
+            initial ={this.state.showMenu?"hidden" : ""}
+            animate = {this.state.showMenu? "visible" : ""}
+            exit ={!this.state.showMenu?"hidden" : ""}
             >
             {Menu.map((li, id )=> {
                 return  <motion.li
