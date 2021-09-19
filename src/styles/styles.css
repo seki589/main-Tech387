@@ -1292,7 +1292,7 @@ p span{
 }
 @media (max-width: 824px) and (orientation: Landscape){
     .navigation{
-        justify-content: flex-start !important;
+        justify-content: flex-start;
     }
     .navigation a{
         padding: 5px 15px;
@@ -1323,10 +1323,8 @@ p span{
     .right-li{
         padding-top: 35px;
     }
-    /* .left-li .linkedin{
-        display: none;
-    } */
 }
+
 @media only screen and (max-width: 768px){
     /* Mobile navigation */
     .navigation {
@@ -1569,10 +1567,15 @@ p span{
         flex-direction: column;
     }
 }
+@media only screen and (max-width: 768px) and (orientation: Landscape){
+    .navigation{
+        justify-content: center;
+        padding-top: 0;
+    }
+}
 @media  (max-width: 640px) and (orientation: Landscape){
     .navigation{
-        justify-content: flex-start;
-        padding-top: 10%;
+        justify-content: center;
     }
     .navigation a{
         font-size: 38px;
@@ -1584,6 +1587,9 @@ p span{
     }
     .hireUs{
         padding-top: 20% !important;
+    }
+    .footer-iner .left {
+        padding-left: 16px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -1752,7 +1758,7 @@ p span{
         color: #FFFFFF;
     }
     .right ul{
-        width: 90%;
+        width: 95%;
     }
     .copy {
         bottom: 3%;
@@ -1895,6 +1901,22 @@ p span{
     .footer .left {
         justify-content: center;
 
+    }
+    
+}
+@media (max-width: 320px) {
+    .footer-head h1 {
+        font-size: 38px;
+        line-height: 47px;
+        margin-bottom: 0;
+    }
+    .right-list h3{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .right ul li{
+        font-size: 12px;
+        line-height: 14px;
     }
 }
 

@@ -61,9 +61,10 @@ class Header extends React.Component {
            staggerChildren: 0.2,
            when: "beforeChildren"
          },
-         exit : {
-          opacity : 1,
-         }
+        
+       },
+       exit : {
+        opacity : 1,
        }
    }
    const listVariant = {
@@ -81,7 +82,7 @@ class Header extends React.Component {
        },
        exit : {
         opacity : 1,
-        x: 0,
+        x : 0,
        }
    }
    
@@ -109,7 +110,7 @@ class Header extends React.Component {
             variants={boxVariant}
             initial ={this.state.showMenu?"hidden" : ""}
             animate = {this.state.showMenu? "visible" : ""}
-            exit ={!this.state.showMenu?"hidden" : ""}
+            exit = {!this.state.showMenu? "hidden" : ""}
             >
             {Menu.map((li, id )=> {
                 return  <motion.li
