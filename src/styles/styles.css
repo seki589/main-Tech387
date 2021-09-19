@@ -1379,9 +1379,10 @@ p span{
     .navigation a:hover{
         background-color: transparent;
     }
-    .navigation a:last-child.active, 
-    .navigation a:last-child:hover {
+    .navigation li:last-child a.active, 
+    .navigation li:last-child:hover a{
         background-color: transparent;
+        color: #27BA70;
     }
     .navigation a.active{
         color: #27BA70;
