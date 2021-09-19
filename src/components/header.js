@@ -55,11 +55,10 @@ class Header extends React.Component {
          opacity : 1,
        },
        visible : {
-         opacity :[0,0.5,1],
          transition : {
+           duration: 0,
            staggerChildren: 0.3,
-           delay: 0.1,
-           
+           when: "beforeChildren"
          }
        }
    }
@@ -69,11 +68,10 @@ class Header extends React.Component {
          x: 0,
        },
        visible : {
-        //  opacity :[0,0.5,1],
-         x : [60,30,0],
+         opacity :[0,0.5,1],
+         x : [60,30,-10,0],
          transition : {
-          //  delay: 0.3,
-           duration : 0.3,
+           duration : 0.4,
            ease: 'linear',
          }
        }
@@ -101,15 +99,13 @@ class Header extends React.Component {
           <div className={`navigation ${menuActive}`} >
             <motion.nav
             variants={boxVariant}
-            initial ={"hidden"}
+            initial ={this.state.showMenu? "hidden" : ""}
             animate = {this.state.showMenu? "visible": ""}
             >
             {Menu.map((li, id )=> {
                 return  <motion.li
                          key={id}
                         variants={listVariant}
-                        // initial ="hidden"
-                        // animate = "visible"
                          >
                          <Link
                         to={li.link} 

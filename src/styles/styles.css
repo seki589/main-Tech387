@@ -1384,7 +1384,7 @@ p span{
         background-color: transparent;
         color: #27BA70;
     }
-    .navigation a.active{
+    .navigation li a.active{
         color: #27BA70;
         background-color: transparent;
     }
