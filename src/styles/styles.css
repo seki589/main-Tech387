@@ -1234,7 +1234,7 @@ p span{
     }
 }
 
-@media (max-width: 1300px) and (max-height: 600px) and (orientation: Landscape){
+@media (max-width: 1024px) and (orientation: Landscape){
     .main-text{
         flex-direction: row;
     }
@@ -1244,6 +1244,11 @@ p span{
     }
     .main{
         padding-top: 0vh;
+    }
+    .text h1{
+        font-size: 8.5vh !important;
+        line-height: 9.5vh !important;
+        -webkit-line-clamp: initial;
     }
     .main-text .text {
         order: initial;
@@ -1277,6 +1282,7 @@ p span{
     }
     .footer-iner .right{
         flex: 0;
+        display: none;
     }
     .right-li{
         padding-top: 35px;
