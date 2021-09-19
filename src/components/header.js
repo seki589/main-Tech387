@@ -55,9 +55,10 @@ class Header extends React.Component {
          opacity : 1,
        },
        visible : {
+         opacity :[0,0.5,1],
          transition : {
-           duration: 0,
-           staggerChildren: 0.3,
+           duration: 0.2,
+           staggerChildren: 0.2,
            when: "beforeChildren"
          }
        }
@@ -69,9 +70,10 @@ class Header extends React.Component {
        },
        visible : {
          opacity :[0,0.5,1],
-         x : [60,30,-10,5,0],
+         x : [60,30,0],
          transition : {
-           duration : 0.4,
+           
+           duration : 0.2,
            ease: 'linear',
          }
        }
