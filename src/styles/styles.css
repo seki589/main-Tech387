@@ -1199,6 +1199,7 @@ p span{
         flex-direction: column;
         padding: 0 10vw;
         height: 95vh;
+        height: calc(var(--vh, 1vh) * 95);
     }
     .footer-iner .left{
         order: 2;
@@ -1663,6 +1664,7 @@ p span{
         content: "";
         width: 100vh;
 	    height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
 	    top: 0%;
         bottom: 0;
 	    left: 5%;
