@@ -1260,7 +1260,7 @@ p span{
     }
 
     .footer-head h1{
-        padding-top: calc(var(--vh, 1vh) * 20);
+        padding-top: calc(var(--vh, 1vh) * 25);
         font-size: 8.5vh !important;
         line-height: 9.5vh !important;
     }
@@ -1268,7 +1268,6 @@ p span{
         flex-direction: row;
         width: 100%;
         padding: 0;
-        /* padding-top: calc(var(--vh, 1vh) * 10); */
     }
     .footer-iner .left-mid{
         display: block;
@@ -1298,11 +1297,6 @@ p span{
     .navigation a{
         padding: 5px 15px;
     }
-    .text h1{
-        font-size: 8.5vh !important;
-        line-height: 9.5vh !important;
-        -webkit-line-clamp: initial;
-    }
     .workLeft h1,
     .servLeft h1,
     .companyLeft h1{
@@ -1312,13 +1306,7 @@ p span{
     .companyLeft p{
         width: 80%;
     }
-    .partners-title,
-    .partners{
-        display: none;
-    }
-    /* .footer-head h1{
-        display: none;
-    } */
+
     .hireUs{
         padding-top: 15%;
         height: 100% !important;
@@ -1326,9 +1314,6 @@ p span{
 
     .footer-mid{
         padding-top: 10%;
-    }
-    .footer-iner .mid{
-        display: none;
     }
     .footer-iner .right{
         flex: 0;
@@ -1338,9 +1323,9 @@ p span{
     .right-li{
         padding-top: 35px;
     }
-    .left-li .linkedin{
+    /* .left-li .linkedin{
         display: none;
-    }
+    } */
 }
 @media only screen and (max-width: 768px){
     /* Mobile navigation */
