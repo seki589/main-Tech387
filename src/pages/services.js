@@ -110,7 +110,7 @@ const ServicePage = () => {
              <p>
              Bringing your original vision for a product to life rarely 
              resembles a straight line. We will work collaboratively to define 
-             and develop your digital product and solution that will set your brand apart
+             and develop your digital product and solution that will set your brand apart.
              </p>
              {dataTwo.map(el => 
                       (
@@ -152,7 +152,7 @@ const ServicePage = () => {
              <p>
              In today's world we know that software size will grow, but software complexity will grow even faster. We create global, 
              reliable and complex software systems that may require software containers, cloud architecture, continuous delivery/ continuous 
-             integration, microservices and we will be here to help you get the best possible solutions for your business
+             integration, microservices and we will be here to help you get the best possible solutions for your business.
              </p>
              {dataThree.map(el => 
                       (
