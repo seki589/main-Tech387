@@ -1082,7 +1082,7 @@ p span{
     padding: 7% 0;
     overflow-x: auto;
     transform: scaleX(108%);
-    padding-left: 3.5%;
+    padding-left: 6.5%;
     gap: 15px;
 }
 .team-images>div{
@@ -1090,22 +1090,33 @@ p span{
     justify-content: center;
     align-items: flex-start; 
 }
-.img-wraper1,
+/* .img-wraper1,
 .img-wraper3{
     min-width: 40%;
 }
 .img-wraper2{
     min-width: 35%;
-}
+} */
 .team-images::-webkit-scrollbar{
     display: none;
     
 }
-.team-img img{
+.team-img1 {
+    height: 517px;
+    min-width: 399px;
+    aspect-ratio: 9/16;
+}
+.team-img2 {
+    height: 407px;
+    min-width: 584px;
+    aspect-ratio: 16/9;
+}
+/* .team-img1 img,
+.team-img2 img{
     object-fit: unset !important;
     margin-top: 0 !important;
     width: 100%;
-}
+} */
 .carier-bot{
     display: flex;
     flex-direction: column;
@@ -1549,12 +1560,20 @@ p span{
     .companyLeft p{
         width: 100%;
     }
-    .img-wraper1,
+    /* .img-wraper1,
     .img-wraper3{
         min-width: 60%;
     }
     .img-wraper2{
         min-width: 45%;
+    } */
+    .team-img1{
+        min-width: 45%;
+        height: 400px;
+    }
+    .team-img2{
+        min-width: 60%;
+        height: 300px;
     }
     .team-images{
         gap: 10px;
@@ -1795,13 +1814,21 @@ p span{
         gap: 10px;
         padding: 10% 0;
     }
-    .img-wraper1,
+    .team-img1{
+        min-width: 60%;
+        height: 300px;
+    }
+    .team-img2{
+        min-width: 100%;
+        height: 250px;
+    }
+    /* .img-wraper1,
     .img-wraper3{
         min-width: 70%;
     }
     .img-wraper2{
         min-width: 50%;
-    }
+    } */
     .team{
         padding-top: 0;
     }
