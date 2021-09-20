@@ -267,7 +267,7 @@ H5{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 11;
 }
 .iner-hover{
     top: 25%;
@@ -314,19 +314,23 @@ H5{
 }
 .iner-hover::after{
     bottom: 0;
-    transform: translateX(-10%);
+    transform: translateX(0%);
+    margin-left: -10%;
 }
 .iner-hover-1::after{
     top: 0;
-    transform: translateX(10%);
+    transform: translateX(0%);
+    margin-right: -20%;
 }
 .iner-hover-2::after{
     bottom: 0;
-    transform: translateX(-20%);
+    transform: translateX(0%);
+    margin-left: -10%;
 }
 .iner-hover-3::after{
     top: 0;
-    transform: translateX(10%);
+    transform: translateX(0%);
+    margin-right: -20%;
 }
 .text-hover h6{
     cursor: pointer;
@@ -674,26 +678,26 @@ ol.tab-list{
         width: 93%;
         top: 0%;
         left: 3.75%;
-        overflow: hidden;
     }
     .iner-hover{
         height: 39%;
     }
     .iner-hover-1{
-
+        
         height: 39%;
     }
     .iner-hover-2{
         height: 47%;
+        justify-content: flex-start;
     }
     .iner-hover-3{
-        height: 58%;
-        justify-content: flex-start;
+        height: 38%;
+        justify-content: flex-end;
     }
     .service-2nd .one{
         width: 93%;
         padding: 0 3.75;
-        margin-top: 10%;
+        /* margin-top: 10%; */
     }
     .serviceImg1{
         width: 100%;
@@ -707,6 +711,7 @@ ol.tab-list{
     .service-3nd .one{
         width: 93%;
         padding: 0 3.75;
+        margin-top: 5%; 
     }
     .service-3nd .two{
         width: 93%;
@@ -739,5 +744,14 @@ ol.tab-list{
     }
     .tab-wraper{
         width: 100% !important;
+    }
+}
+@media only screen and (max-width: 320px){
+    .iner-hover-1 p, 
+    .iner-hover-2 p, 
+    .iner-hover-3 p, 
+    .iner-hover p {
+        font-size: 14px;
+        line-height: 16px;
     }
 }
