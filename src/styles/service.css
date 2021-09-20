@@ -194,6 +194,7 @@ H5{
     justify-content: center;
     align-items: flex-start;
     flex: 1;
+
 }
 .service-2nd .two{
     padding: 2% 5% 2% 0;
@@ -257,6 +258,9 @@ H5{
     display: flex;
     position: relative !important;
     overflow: hidden;
+}
+.one-mobile{
+    display: none;
 }
 .iner-hover-1,
 .iner-hover-2,
@@ -556,6 +560,11 @@ ol.tab-list{
     .servRight{
         display: none;
     }
+    .service-2nd .two,
+    .service-4nd .two,
+    .service-3nd .two{
+       position: relative;
+    }
     .service-2nd,
     .service-4nd,
     .service-3nd{
@@ -576,18 +585,22 @@ ol.tab-list{
     }
     .service-2nd .two{
         width: 85%;
+        padding: 2% 0% 2% 0;
     }
     .service-3nd .two{
         padding: 2% 0 2% 0;;
         width: 85%;
         order: 2;
+        
     }
     .service-3nd .one{
         width: 85%;
+        display: none;
     }
     .service-2nd .one{
         justify-content: flex-start;
         width: 85%;
+        display: none;
     }
     .service-4nd .two{
         order: 2;
@@ -597,16 +610,27 @@ ol.tab-list{
     .service-4nd .one{
         padding: 2% 7.5%;
         width: 100%;
+        display: none;
+    }
+    .one-mobile{
+        display: block;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 10%;
     }
     .iner-hover-1,
     .iner-hover-2,
     .iner-hover-3,
     .iner-hover{
         width: 85%;
-        height: 55%;
-        top: 0%;
-        left: 7.5%;
+        height: 45%;
+        top: 30%;
+        padding: 0;
+        left: 0%;
         justify-content: center;
+    }
+    .iner-hover-3{
+        left: 7.5%;
     }
     .top-head {
         padding: 0 3.75%;
@@ -675,24 +699,30 @@ ol.tab-list{
     .iner-hover-2,
     .iner-hover-3,
     .iner-hover{
-        width: 93%;
-        top: 0%;
-        left: 3.75%;
+        width: 100%;
+        justify-content: flex-end;
     }
     .iner-hover{
         height: 39%;
+        justify-content: center;
     }
     .iner-hover-1{
-        
-        height: 39%;
+        margin-top: 10%;
+        height: 35%;
     }
     .iner-hover-2{
-        height: 47%;
+        top:40%;
+        margin-top: 5%;
+        height: 40%;
         justify-content: flex-start;
     }
     .iner-hover-3{
+        width: 95%;
+        margin-top: 5%;
+        top:40%;
         height: 38%;
         justify-content: flex-end;
+        left: 3.75%;
     }
     .service-2nd .one{
         width: 93%;
