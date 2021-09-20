@@ -38,11 +38,7 @@ const Layout = ({ children }) => {
 
       resize();
       window.addEventListener('resize', resize);
-      return(
-        window.removeEventListener('resize', resize)
-        )
 
-    
       },[]);
 
   return (
