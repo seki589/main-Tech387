@@ -1,6 +1,5 @@
 import * as React from "react"
 import {useState, useEffect,useRef} from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import {Swiper, SwiperSlide } from "swiper/react"
 import SwiperCore, {Navigation, Pagination, Scrollbar, A11y, Mousewheel, Keyboard} from 'swiper';
@@ -14,7 +13,7 @@ import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin_light.png"
 import PartnersLogo from "../components/partnersLogo"
 import PageTransition from 'gatsby-plugin-page-transitions';
-import gsap from "gsap";
+// import gsap from "gsap";
 import "swiper/swiper-bundle.css";
 import '../styles/styles.css'
 

@@ -14,7 +14,8 @@ class Header extends React.Component {
     this.state = {
       show: true,
       scrollPos: -1,
-      showMenu: false
+      showMenu: false,
+      animate: false,
     };
   }
 
@@ -22,6 +23,17 @@ class Header extends React.Component {
     this.setState({
       showMenu: !this.state.showMenu,
     });
+  }
+  closeMenu = () => {
+    this.setState({
+      showMenu: false,
+      animate:false,
+    });
+  }
+  toggleAnimation = () => {
+    this.setState({
+      animate: !this.state.animate,
+    })
   }
 
   componentDidMount() {
@@ -69,7 +81,7 @@ class Header extends React.Component {
    }
    const listVariant = {
        hidden : {
-         opacity : 1,
+         opacity : [1,0],
          x: 0,
        },
        visible : {
@@ -100,17 +112,17 @@ class Header extends React.Component {
           <div className="menuIcon"
           role="button"
           aria-hidden="true"
-          onClick={this.toggleMenu}>
+          onClick={() => {this.toggleMenu(); this.toggleAnimation();}}>
             <div className={`menuIcon>div ${menuActive}`}/>
             <div className={`menuIcon>div ${menuActive}`}/>
             <div className={`menuIcon>div ${menuActive}`}/>
           </div>
           <div className={`navigation ${menuActive}`} >
             <motion.nav
+            initial ="hidden"
+            animate = {this.state.animate? "visible" : ""}
+            exit= "exit"
             variants={boxVariant}
-            initial ={this.state.showMenu?"hidden" : ""}
-            animate = {this.state.showMenu? "visible" : ""}
-            exit = {!this.state.showMenu? "hidden" : ""}
             >
             {Menu.map((li, id )=> {
                 return  <motion.li
@@ -120,7 +132,7 @@ class Header extends React.Component {
                          <Link
                         to={li.link} 
                         key={id}
-                        onClick={() => {this.toggleMenu(); this.setLight();}} 
+                        onClick={() => {this.closeMenu(); this.setLight();}} 
                         activeClassName="active" 
                         partiallyActive={true}
                         >{li.name}

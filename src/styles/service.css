@@ -51,10 +51,6 @@ H5{
     overflow: hidden;
     background-color: #0C2317;
 }
-/* .footer-service .footer{
-    transform: translateY(-10%);
-
-} */
 .services{
     display: flex;
     flex-direction: column;

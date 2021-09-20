@@ -1,5 +1,4 @@
 import * as React from "react"
-import { useRef } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"

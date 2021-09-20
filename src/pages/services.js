@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import { Link } from "gatsby"
-// import Tabs from "../components/tabs"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
@@ -43,9 +41,9 @@ const ServicePage = () => {
                 </div>
              </div>
              <div className="servRight">
-                 <StaticImage src="../images/triangle_3.png" className="plant" alt="plant" placeholder="blurred"/>
-                 <StaticImage src="../images/triangle_plant_1.png" className="plant" alt="plant" placeholder="blurred"/>
-                 <StaticImage src="../images/triangle_5.png" className="plant" alt="plant" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_3.png" className="plant" alt="triangle" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_plant_1.png" className="plant" alt="triangle" placeholder="blurred"/>
+                 <StaticImage src="../images/triangle_5.png" className="plant" alt="triangle" placeholder="blurred"/>
              </div>
          </div>
          <div className="bottom-services">
