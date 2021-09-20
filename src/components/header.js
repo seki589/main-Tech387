@@ -47,7 +47,7 @@ class Header extends React.Component {
     console.log(document.body.getBoundingClientRect().top,"nova-pozicija");
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
-      show: this.state.background? document.body.getBoundingClientRect().top +1 > this.state.scrollPos : true,
+      show: this.state.background? document.body.getBoundingClientRect().top > this.state.scrollPos : true,
       background: document.body.getBoundingClientRect().top < -80,
 
     });

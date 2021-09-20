@@ -42,8 +42,9 @@ const CompanyPage = () => {
             <div className={'work-container image-container'}>
                 <div className="team-section">
                     <div className="team-images">
-                    <StaticImage src="../images/company_1.png" className="team-img1" alt="team" placeholder="blurred"/>
                     <StaticImage src="../images/company_2.jpg" className="team-img2" alt="team" placeholder="blurred"/>
+                    <StaticImage src="../images/company_1.png" className="team-img1" alt="team" placeholder="blurred"/>
+                    
                     <StaticImage src="../images/company_3.jpg" className="team-img2" alt="team" placeholder="blurred"/>
                     <StaticImage src="../images/company_4.jpg" className="team-img1" alt="team" placeholder="blurred"/>
                     {/* <div className="img-wraper2"><StaticImage src="../images/company_1.png" className="team-img" alt="team" placeholder="blurred"/>  </div>
