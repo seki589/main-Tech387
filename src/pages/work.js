@@ -61,8 +61,8 @@ const WorkPage = () => (
                         <p> All your social media in one place</p>  
                         </div>
                         <div className="card">
-                        <StaticImage src="../images/12charge.png" className="plant-2" alt="EV Buttler" placeholder="blurred"/>
-                        <h6>EV Buttler </h6>
+                        <StaticImage src="../images/12charge.png" className="plant-2" alt="EV Butler" placeholder="blurred"/>
+                        <h6>EV Butler </h6>
                         <p>Easily locate your electric vehicle chargers</p>  
                         </div>
                     </div>
