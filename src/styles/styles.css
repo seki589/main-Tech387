@@ -1213,8 +1213,8 @@ p span{
     .footer-iner{
         flex-direction: column;
         padding: 0 10vw;
-        height: 95vh;
-        height: calc(var(--vh, 1vh) * 95);
+        height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
     }
     .footer-iner .left{
         order: 2;
