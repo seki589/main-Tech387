@@ -1852,10 +1852,7 @@ p span{
         width: 100%;
         padding: 0 3.75%;
     }
-    .team-images{
-        gap: 10px;
-        padding: 10% 0;
-    }
+
     .team-img1{
         min-width: 60%;
         height: 350px;
@@ -1988,11 +1985,15 @@ p span{
         aspect-ratio: 16/9 !important;
     }
     .swiper-images .swiper-wrapper {
+        min-width: 300%;
         width: initial;
-        padding-left: 110%;
+        padding-left: 100%;
     }
     .image-container{
         padding: 0;
+    }
+    .image-container{
+        margin-bottom: -20px;
     }
 
 }
