@@ -57,19 +57,19 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
          })
     },[hoverState]);
 
-    // useEffect(() => {
-    //     function setDefoult(){
-    //         let dD = close? "block" : "none";
-    //         let dO = close? 1  : 0 ;
-    //         document.documentElement.style.setProperty('--defaultD', `${dD}`);
-    //         document.documentElement.style.setProperty('--defaultO', `${dO}`);
-    //     }
-    //     setDefoult();
-    // },[close]);
+    useEffect(() => {
+        function setDefoult(){
+            let dD = close? "block" : "none";
+            let dO = close? 1  : 0 ;
+            document.documentElement.style.setProperty('--defaultD', `${dD}`);
+            document.documentElement.style.setProperty('--defaultO', `${dO}`);
+        }
+        setDefoult();
+    },[close]);
     return(
         <div className="hover-tab">
              <motion.div ref={list}
-             onClick={() => { setListPosition(true);setHoverState(true);setClose(!close);}}
+             onClick={() => { setListPosition(true);setHoverState(true);}}
              onHoverStart={() => setHoverState(true)}
              onMouseLeave={() => setHoverState(false)}
             //  onHoverEnd={() => {setHoverState(false);}}

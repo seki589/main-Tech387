@@ -659,6 +659,10 @@ ol.tab-list{
         display: var(--defaultD) !important;
         opacity: var(--defaultO) !important;
     } */
+    .hover-tab .tab-wraper{
+        display: var(--defaultD) !important;
+        opacity: var(--defaultO) !important;
+    }
 
 
 }

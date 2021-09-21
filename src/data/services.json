@@ -5,8 +5,8 @@
         "icon": "/icons/heart.svg",
         "src": "/images/Health&Fitness.png",
         "name": "David Rogosky",
-        "position": "Spartan",
-        "text": "“ Tech 387 has built out a superb production-level software which is competing against top health and fitness apps in the industry. They tackled hard tasks such as transferring users to the cloud with great ease and agility, while retaining excellent app performance.”"  
+        "position": "SpartanApps",
+        "text": "“Tech 387 has built out a superb production-level software which is competing against top health and fitness apps in the industry. They tackled hard tasks such as transferring users to the cloud with great ease and agility, while retaining excellent app performance.”"  
     },
     {
         "title": "Automotive",
@@ -15,7 +15,7 @@
         "src": "/images/Automotive.png",
         "name": "Anonymous",
         "position": "Automotive",
-        "text": "“Working with Tech 387 has been a blissful experience. From responding to my changing requirements in a completely agile manner to suggesting innovative solutions to challenging technical problems, they have proved as a prime partner for development. ”"   
+        "text": "“Working with Tech 387 has been a blissful experience. From responding to my changing requirements in a completely agile manner to suggesting innovative solutions to challenging technical problems, they have proved as a prime partner for development.”"   
     },
     {
         "title": "E Commerce",
@@ -33,7 +33,7 @@
         "src": "/images/Finance.png",
         "name": "Anonymous",
         "position": "Finance",
-        "text": "“For anyone looking for a reliable development partner who will fully support you throughout the process, I recommend working with Tech 387. Their professionalism and devotion has resulted in our relationship taking the form of a long-term partnership. ”"   
+        "text": "“For anyone looking for a reliable development partner who will fully support you throughout the process, I recommend working with Tech 387. Their professionalism and devotion has resulted in our relationship taking the form of a long-term partnership.”"   
     },
     {
         "title": "Hospitality",
@@ -69,6 +69,6 @@
         "src": "/images/Custom-final.png",
         "name": "Bakir Silajdžić",
         "position": "Frozen Crow",
-        "text": "“Tech387’s team members proved to be extremely flexible and responsive. They stayed in daily contact with us, which allowed us to adjust the scope of works promptly and implement new requirements on the fly.”"   
+        "text": "“Tech 387’s team members proved to be extremely flexible and responsive. They stayed in daily contact with us, which allowed us to adjust the scope of works promptly and implement new requirements on the fly.”"   
     }
 ]
