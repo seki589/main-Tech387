@@ -11,8 +11,9 @@ import '../styles/service.css'
 
 
 const Services = () => {
-
-    let { x, y} = useMousePosition()
+    
+    let { x, y} = useMousePosition();
+    
     
 
     return(
@@ -40,7 +41,7 @@ const Services = () => {
 }
 
 const List = ({ title,name,img,icon, position, text, x, y}) => {
-    
+    const [close, setClose] = useState(true);
     const [hoverState, setHoverState] = useState(false)
     const [listPosition, setListPosition] = useState({
         top: y,
@@ -55,13 +56,23 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
          })
     },[hoverState]);
 
+    useEffect(() => {
+        function setDefoult(){
+            let dD = close? `block !important` : `none`;
+            let dO = close? `1 !important` : `0`;
+            document.documentElement.style.setProperty('--defaultD', `${dD}`);
+            document.documentElement.style.setProperty('--defaultO', `${dO}`);
+        }
+        setDefoult();
+    },[]);
+
     return(
-        <div >
+        <div className="hover-tab">
              <motion.div ref={list}
-             onClick={() => { setListPosition(!listPosition);setHoverState(true)}}
+             onClick={() => { setListPosition(true);setHoverState(true);setClose(false)}}
              onHoverStart={() => setHoverState(true)}
              onMouseLeave={() => setHoverState(false)}
-             onHoverEnd={() => {setHoverState(false);}}
+            //  onHoverEnd={() => {setHoverState(false);}}
             //  x= {x} y={y}
              className="left-tab">
                  <img src={icon} className="icon" alt="icon" />

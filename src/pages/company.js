@@ -3,10 +3,14 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Mousewheel} from 'swiper';
+  
 import { StaticImage } from "gatsby-plugin-image"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import '../styles/styles.css'
 
+SwiperCore.use(Mousewheel);
 const CompanyPage = () => {
 
     return(
@@ -42,11 +46,37 @@ const CompanyPage = () => {
             <div className={'work-container image-container'}>
                 <div className="team-section">
                     <div className="team-images">
-                    <StaticImage src="../images/company_2.jpg" className="team-img2" alt="team" placeholder="blurred"/>
+                    <Swiper 
+                    direction={'horizontal'}
+                    slidesPerView={3} 
+                    centeredSlides={true}
+                    freeMode= {{
+                        'enabled': true,
+                        'sticky': true,
+                        'momentum': true,
+                    }}
+                    spaceBetween={30} 
+                    grabCursor={true}
+                    mousewheel={true}
+                    className="swiper-images">
+                    <SwiperSlide className="team-img2">
+                      <StaticImage src="../images/company_2.jpg" className="team-img2-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    <SwiperSlide className="team-img1">
+                    <StaticImage src="../images/company_1.png" className="team-img1-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    <SwiperSlide className="team-img2">
+                    <StaticImage src="../images/company_3.jpg" className="team-img2-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    <SwiperSlide className="team-img1">
+                    <StaticImage src="../images/company_4.jpg" className="team-img1-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    </Swiper>
+                    {/* <StaticImage src="../images/company_2.jpg" className="team-img2" alt="team" placeholder="blurred"/>
                     <StaticImage src="../images/company_1.png" className="team-img1" alt="team" placeholder="blurred"/>
                     
                     <StaticImage src="../images/company_3.jpg" className="team-img2" alt="team" placeholder="blurred"/>
-                    <StaticImage src="../images/company_4.jpg" className="team-img1" alt="team" placeholder="blurred"/>
+                    <StaticImage src="../images/company_4.jpg" className="team-img1" alt="team" placeholder="blurred"/> */}
                     {/* <div className="img-wraper2"><StaticImage src="../images/company_1.png" className="team-img" alt="team" placeholder="blurred"/>  </div>
                     <div className="img-wraper1"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
                     <div className="img-wraper1"><StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>

@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
 import dataOne from "../data/services-data.json"
 import dataTwo from "../data/services-data-1.json"
@@ -21,10 +21,20 @@ import '../styles/service.css'
 
 const ServicePage = () => {
    
+    
     const [imageHoverOne, setImageHoverOne] = useState(false);
     const [imageHoverTwo, setImageHoverTwo] = useState(false);
     const [imageHoverThree, setImageHoverThree] = useState(false);
     const [imageHoverFour, setImageHoverFour] = useState(false);
+
+    const defoult = `@media (max-width: 1024px){
+        .hover-tab:first-child .tab-wraper{
+            display: block !important;
+            opacity: 1 !important;
+        }
+    }
+    `
+    
 
    return(
     <Layout>
@@ -259,10 +269,10 @@ const ItemOne = ({title, text, setImageHoverOne}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
+                        onMouseOver={() => setHoverState(true)&setImageHoverOne(true)}
                         onClick={() => setHoverState(true)&setImageHoverOne(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
-                        onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
+                        // onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
                         >{title}
                         </motion.h6>
                         <motion.div

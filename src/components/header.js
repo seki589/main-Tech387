@@ -44,7 +44,7 @@ class Header extends React.Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll = () => {
-    console.log(document.body.getBoundingClientRect().top,"nova-pozicija");
+    // console.log(document.body.getBoundingClientRect().top,"nova-pozicija");
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
       show: this.state.background? document.body.getBoundingClientRect().top > this.state.scrollPos : true,
@@ -52,7 +52,7 @@ class Header extends React.Component {
 
     });
     // console.log(this.state.scrollPos);
-    console.log(this.state.scrollPos,"pozicija")
+    // console.log(this.state.scrollPos,"pozicija")
   };
   
 

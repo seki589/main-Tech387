@@ -423,6 +423,7 @@ H5{
     object-position: center;
     border-radius: 10px;
 }
+
 .tab-head{
     display: flex;
     padding: 16px;
@@ -653,6 +654,10 @@ ol.tab-list{
     }
     .tabs{
         padding: 2% 3.5%;
+    }
+    .hover-tab:first-child .tab-wraper{
+        display: var(--defaultD);
+        opacity: var(--defaultO);
     }
 
 
