@@ -23,7 +23,7 @@ const CompanyPage = () => {
                         <div>
                         <h1>Expand your horizons</h1>
                         <p>
-                        We are a young, dynamic and positive organisation where every person is part of our success. The same transparency we offer our customers applies internally: we believe in honest, open communication and giving everyone a chance to contribute to achieving our goals.
+                           We are a young, dynamic and positive organisation where every person is part of our success. The same transparency we offer our customers applies internally: we believe in honest, open communication and giving everyone a chance to contribute to achieving our goals.
                         </p>
                         </div>
                     </div>
@@ -71,6 +71,8 @@ const CompanyPage = () => {
                     </SwiperSlide>
                     <SwiperSlide className="team-img1">
                     <StaticImage src="../images/company_4.jpg" className="team-img1-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    <SwiperSlide className={`team-img1 none-img`}>
                     </SwiperSlide>
                     <SwiperSlide className={`team-img1 none-img`}>
                     </SwiperSlide>

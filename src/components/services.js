@@ -47,7 +47,7 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
         top: y,
         left: x,
     })
-    console.log(close);
+    // console.log(close);
     let list = useRef()
 
     useEffect(() => {
