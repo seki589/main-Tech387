@@ -701,10 +701,12 @@ ol.tab-list{
     .icons-tab h3{
         font-size: 13px;
     }
-    .dots{
+    .dots {
         padding: 0;
-        transform: scaleX(.7);
+        -webkit-transform: scaleX(.6);
+        transform: scaleX(.6);
         overflow-x: hidden;
+        margin: 0 -20px 30px -20px;
     }
     .servLeft>div{
         width: 85%;
