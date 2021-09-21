@@ -1226,6 +1226,9 @@ p span{
     .main .lottie{
         transform: translate(0);
     }
+    .benefit-text{
+        text-align: left;
+    }
     .footer-iner{
         flex-direction: column;
         padding: 0 10vw;
@@ -1576,13 +1579,7 @@ p span{
     .companyLeft p{
         width: 100%;
     }
-    /* .img-wraper1,
-    .img-wraper3{
-        min-width: 60%;
-    }
-    .img-wraper2{
-        min-width: 45%;
-    } */
+
     .team-img1{
         min-width: 45%;
         height: 400px;
@@ -1600,9 +1597,9 @@ p span{
     .benefit-img{
         padding-left: 7%;
     }
-    .benefit-text p{
+    /* .benefit-text p{
         width: 60%;
-    }
+    } */
     .opening .benefit-text{
         flex-direction: column;
     }
@@ -1735,7 +1732,7 @@ p span{
         opacity: 0;
         position: absolute;
         bottom: 2%;
-        z-index: -1;
+        /* z-index: -1; */
         transition: .4s all ease;
     }
     .span{
@@ -1745,13 +1742,18 @@ p span{
         transition: .2s all ease;
         margin-left: 10px;
     }
-    .right-list h3:hover span{
+    .right-list:hover>h3 span{
         transform: rotate(90deg);
     }
-    .right-list h3:hover ~ ul{
+    /* .right-list h3:hover ~ ul{
         opacity: 1;
+        z-index: 1;
+    } */
+    .right-list:hover>ul{
+        opacity: 1;
+        z-index: 1;
     }
-    .right-list h3:hover {
+    .right-list:hover>h3 {
         color: #FFFFFF;
         opacity: 1;
         transition: .3 all ease;

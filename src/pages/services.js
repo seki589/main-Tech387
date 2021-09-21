@@ -27,13 +27,6 @@ const ServicePage = () => {
     const [imageHoverThree, setImageHoverThree] = useState(false);
     const [imageHoverFour, setImageHoverFour] = useState(false);
 
-    const defoult = `@media (max-width: 1024px){
-        .hover-tab:first-child .tab-wraper{
-            display: block !important;
-            opacity: 1 !important;
-        }
-    }
-    `
     
 
    return(
@@ -44,7 +37,7 @@ const ServicePage = () => {
          <div className="top-services">
              <div className="servLeft">
                 <div>
-                <h1>We offer <br/>the diversity <br/>of skills</h1>
+                <h1>Bring your<br/> idea to life</h1>
                  <p>
                  We work with you from idea to launch or help you solve a specific problem using cutting-edge technology. We are here to prepare you for a more digital future.
                  </p>
