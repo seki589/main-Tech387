@@ -56,7 +56,7 @@ const CompanyPage = () => {
                         'momentum': true,
                         'momentumBounce': false,
                     }}
-                    spaceBetween={30} 
+                    spaceBetween={20} 
                     grabCursor={true}
                     mousewheel={true}
                     className="swiper-images">
@@ -73,21 +73,10 @@ const CompanyPage = () => {
                     <StaticImage src="../images/company_4.jpg" className="team-img1-img" alt="team" placeholder="blurred"/>
                     </SwiperSlide>
                     <SwiperSlide className={`team-img1 none-img`}>
-                    
                     </SwiperSlide>
                     <SwiperSlide className={`team-img1 none-img`}>
-                    
                     </SwiperSlide>
                     </Swiper>
-                    {/* <StaticImage src="../images/company_2.jpg" className="team-img2" alt="team" placeholder="blurred"/>
-                    <StaticImage src="../images/company_1.png" className="team-img1" alt="team" placeholder="blurred"/>
-                    
-                    <StaticImage src="../images/company_3.jpg" className="team-img2" alt="team" placeholder="blurred"/>
-                    <StaticImage src="../images/company_4.jpg" className="team-img1" alt="team" placeholder="blurred"/> */}
-                    {/* <div className="img-wraper2"><StaticImage src="../images/company_1.png" className="team-img" alt="team" placeholder="blurred"/>  </div>
-                    <div className="img-wraper1"><StaticImage src="../images/company_2.jpg" className="team-img" alt="team" placeholder="blurred"/> </div>
-                    <div className="img-wraper1"><StaticImage src="../images/company_3.jpg" className="team-img" alt="team" placeholder="blurred"/>  </div>
-                    <div className="img-wraper2"><StaticImage src="../images/company_4.jpg" className="team-img" alt="team" placeholder="blurred"/></div> */}
                     </div>
                 </div>
             </div>
@@ -97,9 +86,6 @@ const CompanyPage = () => {
                         <h3>
                         Take a closer<br/> look at us
                         </h3>
-                        {/* <p>
-                        
-                        </p> */}
                         <p>
                         People are always more important than numbers.<br/>
                         We believe that if our employees are looked after, our clients will be too. Our people are 
@@ -127,7 +113,6 @@ const CompanyPage = () => {
                                 </h3>
                             </div>
                         <div className="benefit-text">
-                            
                             <p>
                             Working at Tech 387 is not just about technical knowledge. With Tech 387 you'll work in the industry you love, 
                             all while improving people’s experiences and working with colleagues who share your passion. Being part of the 
@@ -160,15 +145,6 @@ const CompanyPage = () => {
                             Full Time
                             </p>
                         </a>
-                        {/* <div className="carier-card">
-                        <div className='top-card'>
-                        <h5>Project Manager</h5>
-                        <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
-                        </div>
-                        <p>
-                        Full Time
-                        </p>
-                        </div> */}
                     </div>  
                     </div>  
                 </div>
