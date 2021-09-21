@@ -21,7 +21,7 @@ const CompanyPage = () => {
             <div className="top-company">
                     <div className="companyLeft">
                         <div>
-                        <h1>We make<br/> products shine</h1>
+                        <h1>Expand your horizons</h1>
                         <p>
                         We are a young, dynamic and positive organisation where every person is part of our success. The same transparency we offer our customers applies internally: we believe in honest, open communication and giving everyone a chance to contribute to achieving our goals.
                         </p>

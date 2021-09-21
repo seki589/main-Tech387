@@ -655,21 +655,23 @@ ol.tab-list{
     .tabs{
         padding: 2% 3.5%;
     }
-    .hover-tab:first-child .tab-wraper{
-        display: var(--defaultD) !important;
-        opacity: var(--defaultO) !important;
-    }
+
     .hover-tab:not(:first-child) .tab-wraper{
         display: none !important;
         opacity: 0 !important;
+        transition: all .3s ease;
     }
     .hover-tab:first-child .tab-wraper{
         display: var(--defaultD) !important;
         opacity: var(--defaultO) !important;
+        transition: all .3s ease;
     }
     .hover-tab:hover .tab-wraper{
         display: block !important;
         opacity: 1 !important;
+    }
+    .hover-tab:hover .left-tab h5{
+        color:#27BA70;
     }
 
 
