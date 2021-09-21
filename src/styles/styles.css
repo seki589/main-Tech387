@@ -1597,9 +1597,33 @@ p span{
     .benefit-img{
         padding-left: 7%;
     }
-    /* .benefit-text p{
-        width: 60%;
-    } */
+
+    .benefit-img{
+        padding-left: 0;
+    }
+    .team-img1 {
+        height: 380px;
+        min-width: 300px;
+        aspect-ratio: 9/16 !important;
+    }
+    .team-img2 {
+        height: 300px;
+        min-width: 450px;
+        aspect-ratio: 16/9 !important;
+    }
+    .team-img1-img {
+        height: 380px;
+        width: 399px;
+        /* aspect-ratio: 9/16; */
+    }
+    .team-img2-img {
+        height: 300px;
+        width: 584px;
+    
+    }
+    .work-container{
+        padding: 0;
+    }
     .opening .benefit-text{
         flex-direction: column;
     }
@@ -1939,6 +1963,36 @@ p span{
     }
     .carier-bot{
         flex-direction: column;
+    }
+    .work-container{
+        padding: 0 3.75%;
+    }
+    .team-img1 {
+        height: 300px;
+        min-width: 200px;
+        /* aspect-ratio: 9/16 !important; */
+    }
+    .team-img2 {
+        height: 250px;
+        min-width: 300px;
+
+    }
+    .team-img1-img {
+        height: 300px;
+        width: 200px;
+        aspect-ratio: 9/16 !important;
+    }
+    .team-img2-img {
+        height: 200px;
+        width: 350px;
+        aspect-ratio: 16/9 !important;
+    }
+    .swiper-images .swiper-wrapper {
+        width: initial;
+        padding-left: 110%;
+    }
+    .image-container{
+        padding: 0;
     }
 
 }
