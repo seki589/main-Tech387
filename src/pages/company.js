@@ -52,8 +52,9 @@ const CompanyPage = () => {
                     centeredSlides={true}
                     freeMode= {{
                         'enabled': true,
-                        'sticky': true,
+                        'sticky': false,
                         'momentum': true,
+                        'momentumBounce': false,
                     }}
                     spaceBetween={30} 
                     grabCursor={true}
@@ -70,6 +71,12 @@ const CompanyPage = () => {
                     </SwiperSlide>
                     <SwiperSlide className="team-img1">
                     <StaticImage src="../images/company_4.jpg" className="team-img1-img" alt="team" placeholder="blurred"/>
+                    </SwiperSlide>
+                    <SwiperSlide className={`team-img1 none-img`}>
+                    
+                    </SwiperSlide>
+                    <SwiperSlide className={`team-img1 none-img`}>
+                    
                     </SwiperSlide>
                     </Swiper>
                     {/* <StaticImage src="../images/company_2.jpg" className="team-img2" alt="team" placeholder="blurred"/>

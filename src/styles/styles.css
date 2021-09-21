@@ -1127,6 +1127,9 @@ p span{
     width: 584px;
 
 }
+.none-img{
+    display: none;
+}
 
 .carier-bot{
     display: flex;
@@ -1987,13 +1990,16 @@ p span{
     .swiper-images .swiper-wrapper {
         min-width: 300%;
         width: initial;
-        padding-left: 100%;
+        padding-left: 130%;
     }
     .image-container{
         padding: 0;
     }
     .image-container{
         margin-bottom: -20px;
+    }
+    .none-img{
+        display: block;
     }
 
 }
