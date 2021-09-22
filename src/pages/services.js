@@ -90,15 +90,7 @@ const ServicePage = () => {
              In order to plan out execution of your final product, our experts work with you to conceptualize your idea, 
              gather requirements and build product prototypes.
              </p>
-             <motion.div 
-                initial={{opacity: 1, scale: 1}}
-                animate={{
-                    opacity: imageHoverOne? 0 : [0, 1],
-                    scale: imageHoverOne? 1 : 1,
-                }}
-                className="one-mobile">
-                    <StaticImage src="../images/buisiness_dev.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
-             </motion.div>
+             
              
                  {dataOne.map(el => 
                       (
@@ -111,6 +103,16 @@ const ServicePage = () => {
                      />
                       )
                  )}
+
+            <motion.div 
+                initial={{opacity: 1, scale: 1}}
+                animate={{
+                    opacity: imageHoverOne? 0 : [0, 1],
+                    scale: imageHoverOne? 1 : 1,
+                }}
+                className="one-mobile">
+                    <StaticImage src="../images/buisiness_dev.jpg" className="serviceImg1" alt="bussines-idea" placeholder="blurred"/>
+            </motion.div>
          </div>
          <div></div>
      </section>
@@ -124,15 +126,7 @@ const ServicePage = () => {
              resembles a straight line. We will work collaboratively to define 
              and develop your digital product and solution that will set your brand apart.
              </p>
-             <motion.div 
-                initial={{opacity: 1, scale: 1}}
-                animate={{
-                    opacity: imageHoverTwo? 0 : [0, 1],
-                    scale: imageHoverTwo? 1 : 1,
-                    }}
-                className="one-mobile">
-                    <StaticImage src="../images/product_dev.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
-             </motion.div>
+             
              {dataTwo.map(el => 
                       (
                      <ItemTwo 
@@ -145,6 +139,15 @@ const ServicePage = () => {
                      />
                       )
                  )}
+            <motion.div 
+                initial={{opacity: 1, scale: 1}}
+                animate={{
+                    opacity: imageHoverTwo? 0 : [0, 1],
+                    scale: imageHoverTwo? 1 : 1,
+                    }}
+                className="one-mobile">
+                    <StaticImage src="../images/product_dev.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
+             </motion.div>     
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}
@@ -175,15 +178,7 @@ const ServicePage = () => {
              reliable and complex software systems that may require software containers, cloud architecture, continuous delivery/ continuous 
              integration, microservices and we will be here to help you get the best possible solutions for your business.
              </p>
-             <motion.div 
-                initial={{opacity: 1, scale: 1}}
-                animate={{
-                    opacity: imageHoverThree? 0 : [0, 1],
-                    scale: imageHoverThree? 1 : 1,
-                    }}
-                className="one-mobile">
-                    <StaticImage src="../images/complex_systems.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
-             </motion.div>
+             
              {dataThree.map(el => 
                       (
                      <ItemThree 
@@ -196,6 +191,15 @@ const ServicePage = () => {
                      />
                       )
                  )}
+            <motion.div 
+                initial={{opacity: 1, scale: 1}}
+                animate={{
+                    opacity: imageHoverThree? 0 : [0, 1],
+                    scale: imageHoverThree? 1 : 1,
+                    }}
+                className="one-mobile">
+                    <StaticImage src="../images/complex_systems.jpg" className="serviceImg2" alt="bussines-idea" placeholder="blurred"/>
+             </motion.div>
          </div>
          <div></div>
      </section>
@@ -209,15 +213,7 @@ const ServicePage = () => {
              your customers and partners can connect and centralize your shared data, explore it together to gain valuable insights, 
              and build joint solutions that create value for all. After we have the data, we use the ML to create predictive models that enhance user experience.
              </p>
-             <motion.div 
-                initial={{opacity: 1, scale: 1}}
-                animate={{
-                    opacity: imageHoverFour? 0 : [0, 1],
-                    scale: imageHoverFour? 1 : 1,
-                    }}
-                className="one-mobile">
-                    <StaticImage src="../images/data_sience.jpg" className="serviceImg3" alt="data_sience" placeholder="blurred"/>
-             </motion.div>
+             
              {dataFour.map(el => 
                       (
                      <ItemFour 
@@ -230,6 +226,15 @@ const ServicePage = () => {
                      />
                       )
                  )}
+            <motion.div 
+                initial={{opacity: 1, scale: 1}}
+                animate={{
+                    opacity: imageHoverFour? 0 : [0, 1],
+                    scale: imageHoverFour? 1 : 1,
+                    }}
+                className="one-mobile">
+                    <StaticImage src="../images/data_sience.jpg" className="serviceImg3" alt="data_sience" placeholder="blurred"/>
+             </motion.div>
          </div>
          <motion.div 
          initial={{opacity: 1, scale: 1}}

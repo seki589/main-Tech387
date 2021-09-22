@@ -625,7 +625,7 @@ ol.tab-list{
     .iner-hover{
         width: 85%;
         height: 45%;
-        top: 30%;
+        top: 50%;
         padding: 0;
         left: 0%;
         justify-content: center;
@@ -722,17 +722,18 @@ ol.tab-list{
     .iner-hover{
         width: 100%;
         justify-content: flex-end;
+        top: 60%;
     }
     .iner-hover{
         height: 39%;
         justify-content: center;
+        
     }
     .iner-hover-1{
         margin-top: 10%;
         height: 35%;
     }
     .iner-hover-2{
-        top:40%;
         margin-top: 5%;
         height: 40%;
         justify-content: flex-start;
@@ -740,7 +741,6 @@ ol.tab-list{
     .iner-hover-3{
         width: 95%;
         margin-top: 5%;
-        top:40%;
         height: 38%;
         justify-content: flex-end;
         left: 3.75%;
