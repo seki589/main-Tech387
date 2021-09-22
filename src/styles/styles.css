@@ -1616,6 +1616,13 @@ p span{
         min-width: 450px;
         aspect-ratio: 16/9 !important;
     }
+
+    .team-img2:active,
+    .team-img1:active {
+        transform: scale(1.1);
+        transform-origin: top center;
+        transition: all .3s ease;
+    }
     .team-img1-img {
         height: 380px;
         width: 399px;
