@@ -1409,7 +1409,7 @@ p span{
         text-align: left;
         color:  var(--color-text);
         transition: all .3s ease;
-        text-transform: capitalize;
+        text-transform: initial;
         
     }
     .navigation li:last-child:hover a,
