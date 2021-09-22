@@ -267,6 +267,7 @@ const ItemOne = ({title, text, setImageHoverOne}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
+                        // onHoverStart={() => setHoverState(true)&setImageHoverOne(true)}
                         onMouseOver={() => setHoverState(true)&setImageHoverOne(true)}
                         onClick={() => setHoverState(true)&setImageHoverOne(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
@@ -316,7 +317,8 @@ const ItemTwo = ({title, text,textTwo, setImageHoverTwo}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
+                        onMouseOver={() => setHoverState(true)&setImageHoverTwo(true)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverTwo(true)}
                         onClick={() => setHoverState(true)&setImageHoverTwo(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverTwo(false)}
                         onHoverEnd={() => setHoverState(false)&setImageHoverTwo(false)}
@@ -378,7 +380,8 @@ const ItemThree = ({title, text,textTwo, setImageHoverThree}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
+                        onMouseOver={() => setHoverState(true)&setImageHoverThree(true)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverThree(true)}
                         onClick={() => setHoverState(true)&setImageHoverThree(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverThree(false)}
                         onHoverEnd={() => setHoverState(false)&setImageHoverThree(false)}
@@ -442,7 +445,8 @@ const ItemFour = ({title, text,textTwo, setImageHoverFour}) => {
     return(
         <div className="text-hover"  >
                         <motion.h6
-                        onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
+                        onMouseOver={() => setHoverState(true)&setImageHoverFour(true)}
+                        // onHoverStart={() => setHoverState(true)&setImageHoverFour(true)}
                         onClick={() => setHoverState(true)&setImageHoverFour(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverFour(false)}
                         onHoverEnd={() => setHoverState(false)&setImageHoverFour(false)}
