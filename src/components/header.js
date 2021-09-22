@@ -48,7 +48,7 @@ class Header extends React.Component {
     this.setState({
       scrollPos: document.body.getBoundingClientRect().top,
       show: this.state.background? document.body.getBoundingClientRect().top > this.state.scrollPos : true,
-      background: document.body.getBoundingClientRect().top < -80,
+      background: document.body.getBoundingClientRect().top < -75,
 
     });
     // console.log(this.state.scrollPos);
