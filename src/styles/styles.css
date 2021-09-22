@@ -1077,7 +1077,6 @@ p span{
 .image-container {
     max-width: 100%;
     padding-top: 100px;
-    margin-bottom: -16%;
 }
 .swiper-images{
     width: 100%;
@@ -1086,12 +1085,11 @@ p span{
 }
 .swiper-images .swiper-slide{
     align-items: flex-start;
-    height: initial !important;
+    height: 60% !important;
 }
 .swiper-images .swiper-wrapper{
     width: initial;
-    /* min-width: 100%; */
-    /* padding-left: 70%; */
+    height: 60vh;
 }
 .team-images{
     min-width: 100%;
@@ -1101,7 +1099,7 @@ p span{
 .team-images>div{
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: center; 
 }
 
 .team-images::-webkit-scrollbar{
@@ -1222,6 +1220,7 @@ p span{
         /* width: initial; */
         padding-left: 50%;
         margin-right: 40%;
+        height: 40vh;
     }
     .main-text .text{
         order: 2;
@@ -1271,6 +1270,10 @@ p span{
     .copy{
         position: absolute;
         bottom: 0;
+    }
+    .swiper-images .swiper-slide{
+        align-items: flex-start;
+        height: 50vh !important;
     }
 }
 
@@ -1593,9 +1596,6 @@ p span{
     .team-img2{
         min-width: 60%;
         height: 300px;
-    }
-    .team-images{
-        gap: 10px;
     }
     .benefits{
         flex-direction: column;
