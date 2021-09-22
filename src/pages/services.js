@@ -270,7 +270,7 @@ const ItemOne = ({title, text, setImageHoverOne}) => {
                         onMouseOver={() => setHoverState(true)&setImageHoverOne(true)}
                         onClick={() => setHoverState(true)&setImageHoverOne(true)}
                         onMouseLeave={() => setHoverState(false)&setImageHoverOne(false)}
-                        // onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
+                        onHoverEnd={() => setHoverState(false)&setImageHoverOne(false)}
                         >{title}
                         </motion.h6>
                         <motion.div
