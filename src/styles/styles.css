@@ -200,8 +200,8 @@ section{
 header{
     overflow: hidden;
 }
-.back{
-    background-color: #FAFAFA;
+.back .header{
+    background-color: transparent;
 }
 .header{
     position: fixed;
@@ -214,16 +214,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color:#FAFAFA;
     padding: 16px 3.75%;
     z-index: 100;
-    transition: all 0.5s ease;
+    /* transition: all .3s ease; */
 }
 .active-nav {
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 .hidden-nav {
     top: -20% !important;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 .menuIcon{
     position: fixed;

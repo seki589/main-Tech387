@@ -13,6 +13,7 @@ import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin_light.png"
 import PartnersLogo from "../components/partnersLogo"
 import PageTransition from 'gatsby-plugin-page-transitions';
+import { Helmet } from 'react-helmet'
 // import gsap from "gsap";
 import "swiper/swiper-bundle.css";
 import '../styles/styles.css'
@@ -40,6 +41,7 @@ const IndexPage = () => {
   return(
   
   <Layout  >
+    <Helmet bodyAttributes={{ class: 'back' }} />
     <PageTransition>
     <Seo title="Home" />
     <Swiper     

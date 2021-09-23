@@ -16,7 +16,7 @@ class Header extends React.Component {
       scrollPos: -1,
       showMenu: false,
       animate: false,
-      background: false,
+      // background: false,
     };
   }
 
@@ -49,7 +49,7 @@ class Header extends React.Component {
       scrollPos: document.body.getBoundingClientRect().top,
       // show: this.state.background? document.body.getBoundingClientRect().top > this.state.scrollPos : true,
       show: this.state.scrollPos < -70? document.body.getBoundingClientRect().top > this.state.scrollPos : true,
-      background: document.body.getBoundingClientRect().top < -3,
+      // background: document.body.getBoundingClientRect().top < -3,
 
     });
     // console.log(this.state.scrollPos);
@@ -101,12 +101,13 @@ class Header extends React.Component {
         x : 0,
        }
    }
-  const background = this.state.background? 'back' : '';
+  // const background = this.state.background? 'back' : '';
   const menuActive = this.state.showMenu ? 'is-active' : '';
   return(
     <header>
       <div className="wraper">
-        <div className={`header  ${background}  ${!this.state.showMenu&&!this.state.show ? "hidden-nav" : ""}`}>
+        {/* <div className={`header  ${background}  ${!this.state.showMenu&&!this.state.show ? "hidden-nav" : ""}`}> */}
+        <div className={`header ${!this.state.showMenu&&!this.state.show ? "hidden-nav" : "active-nav"}`}>
           <div >
             <Link className="logo" to="/">
               <LogoLight className="logoDark"/>
