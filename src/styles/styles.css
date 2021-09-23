@@ -201,7 +201,7 @@ header{
     overflow: hidden;
 }
 .back .header{
-    background-color: transparent;
+    background-color: transparent ;
 }
 .header{
     position: fixed;
