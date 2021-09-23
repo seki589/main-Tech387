@@ -199,7 +199,6 @@ section{
 }
 header{
     overflow: hidden;
-    background-color: transparent;
 }
 .back{
     background-color: #FAFAFA;
@@ -224,6 +223,7 @@ header{
 }
 .hidden-nav {
     top: -20% !important;
+    transition: all .3s ease;
 }
 .menuIcon{
     position: fixed;
@@ -1386,10 +1386,11 @@ p span{
         padding-bottom: 15vh;
         z-index: 99;
         transform: translateX(100%);
-        transition: all .3s cubic-bezier(.67,.01,.23,1);
+        
     }
     .is-active{
         transform: translateX(0);
+        transition: all .3s cubic-bezier(.67,.01,.23,1);
     }
 
     .navigation nav {
