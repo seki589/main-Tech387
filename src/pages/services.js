@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import {useState,useEffect} from 'react'
+import {useState} from 'react'
 
 import dataOne from "../data/services-data.json"
 import dataTwo from "../data/services-data-1.json"

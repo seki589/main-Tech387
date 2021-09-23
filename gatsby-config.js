@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Tech387`,
-    description: ``,
+    description: `We develop the most demanding and ambitious software projects of the 21st century.`,
     author: `Tech387`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    keywords: `app development companies, app development, sarajevo, bih, bosnia, bosnia and hercegovina, mobile app, software, app programming, phone app development, development of apps, app development app, cell phone app development, programming apps, developing phone apps`,
+    siteUrl: `https://tech387.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,7 +27,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/faviconTech387.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-gatsby-cloud`,
