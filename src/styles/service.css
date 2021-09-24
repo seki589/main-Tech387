@@ -387,6 +387,12 @@ H5{
     padding: 20px 0;
     cursor: pointer;
 }
+.title-hover{
+    display: block;
+}
+.title-click{
+    display: none;
+}
 
 .left-tab h5{
     margin-top: 5px;
@@ -641,6 +647,12 @@ ol.tab-list{
     }
     .left-tab {
         margin-bottom: 0;
+    }
+    .title-hover{
+        display: none;
+    }
+    .title-click{
+        display: block;
     }
     .right-tabs{
         display: none;
