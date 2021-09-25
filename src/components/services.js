@@ -69,13 +69,12 @@ const List = ({ title,name,img,icon, position, text, x, y}) => {
     return(
         <div className="hover-tab">
              <motion.div ref={list}
-            //  onClick={() => { setListPosition(true);setHoverState(true);}}
              onHoverStart={() => setHoverState(true)}
              onMouseLeave={() => setHoverState(false)}
-            //  onHoverEnd={() => {setHoverState(false);}}
             //  x= {x} y={y}
              className="left-tab">
-                 <img src={icon} className="icon" alt="icon" />
+                 <img src={icon} className= {`icon title-hover`} alt="icon" />
+                 <img src={icon} className= {`icon title-click`} alt="icon" onClick={() => setClose(false)} />
                 <h5 className="title-hover">{title}</h5>
                 <h5 className="title-click" onClick={() => setClose(false)}>{title}</h5>
              </motion.div>
