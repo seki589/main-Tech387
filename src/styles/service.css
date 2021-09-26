@@ -84,10 +84,10 @@ H5{
     white-space: nowrap;
 }
 .servLeft p{
-    font-family: "Roboto", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 16px;
     line-height: 21px;
-    color: #0C231799;
+    color: #092628;
 }
 .servRight{
     display: flex;
@@ -720,7 +720,13 @@ ol.tab-list{
         overflow-x: hidden;
         margin: 0 -20px 30px -20px;
     }
-    .servLeft>div{
+    .top-services .servLeft>div{
+        width: 100%;
+    }
+    .bottom-services .servLeft>div{
+        width: 85%;
+    }
+    .bottom-services .servLeft{
         width: 85%;
     }
     .icons .icon{
