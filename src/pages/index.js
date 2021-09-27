@@ -40,9 +40,9 @@ const IndexPage = () => {
 
 
   return(
-  <>
-  <Seo title="Home" />
+  
   <Layout  >
+    <Seo title="Home" />
     <Helmet bodyAttributes={{ class: 'back' }} />
     <PageTransition>
     <Swiper     
@@ -151,6 +151,5 @@ const IndexPage = () => {
      </Swiper>
      </PageTransition>
     </Layout>
-    </>
   );}
 export default IndexPage
