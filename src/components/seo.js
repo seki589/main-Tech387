@@ -34,6 +34,7 @@ function Seo({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
+      defer={false}
       title={title}
       titleTemplate={defaultTitle ? `${defaultTitle} | %s` : null }
       meta={[
