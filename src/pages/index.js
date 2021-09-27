@@ -42,9 +42,9 @@ const IndexPage = () => {
   return(
   
   <Layout  >
+    <Seo title="Home" />
     <Helmet bodyAttributes={{ class: 'back' }} />
     <PageTransition>
-    <Seo title="Home" />
     <Swiper     
       direction={'vertical'} 
       slidesPerView={1}

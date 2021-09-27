@@ -28,7 +28,6 @@ function Seo({ description, lang, meta, title }) {
   const keywords = site.siteMetadata.keywords
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
-  console.log(metaDescription)
 
   return (
     <Helmet
