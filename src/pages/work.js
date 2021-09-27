@@ -43,7 +43,7 @@ const WorkPage = () => (
             <section className={`work-container`}>
                 <div className="work-midle">
                     <div className="midle-top">
-                        <a className="card" href="./pdf/Spartan.pdf" target="_blank" rel="noreferrer">
+                        <a className="card" href={`/pdf/Spartan.pdf`}  target="_blank" rel="noreferrer">
                         <StaticImage src="../images/spartanApp.png" className="plant-2" alt="Spartan" placeholder="blurred"/>
                         <h6>Spartan</h6>
                         <p> Personalised training and nutrition app designed to help you reach your goals </p>  
