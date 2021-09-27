@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import { StaticImage } from "gatsby-plugin-image"
-import PDF from "/static/pdf/Spartan.pdf"
+import PDF from "/public/pdf/Spartan.pdf"
 // import '../styles/stylesWork.css'
 
 
