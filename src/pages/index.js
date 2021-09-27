@@ -8,6 +8,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Footer from "../components/footer"
 // import Lottie from "../components/lottie"
+import PDF from "static/pdf/Spartan.pdf"
 import Spartan from "../images/spartan_dark.png"
 import Echarge from "../images/echarge.svg"
 import LinkeBlack from "../images/linkedin_light.png"
@@ -113,7 +114,7 @@ const IndexPage = () => {
                     <h1>
                     Innovating the<br></br> fitness industry
                     </h1>
-                    <a href="./pdf/Spartan.pdf" target="_blank" rel="noreferrer"><p>Read more about SpartanApps &gt; </p></a>
+                    <a href={PDF} target="_blank" rel="noreferrer"><p>Read more about SpartanApps &gt; </p></a>
                     </div>
                     <div className="lottie"  >
                     <StaticImage src="../images/spartan.png" className="main-image" alt="spartan" placeholder="tracedSVG"/>
