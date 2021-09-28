@@ -14,7 +14,7 @@ const WorkPage = () => (
     <Layout>
      
             <PageTransition>
-            <Seo title="Work" />
+            <Seo title="Work" description="We develop the most demanding and ambitious software." />
             <section className={`work-container topPad`}>
                 <div className="top-services">
                     <div className="workLeft">

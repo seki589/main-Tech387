@@ -16,7 +16,7 @@ const HireUsPage = () => {
             
             <Layout>
             <PageTransition>
-            <Seo title="Work with us" />
+            <Seo title="Work with us" description="Contact our partnerships team to connect. " />
                 <section className="hireUs">
                    <div className="hireTop">
                     <div className="client">

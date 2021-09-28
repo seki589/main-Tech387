@@ -16,7 +16,7 @@ const CompanyPage = () => {
     return(
     <Layout>
      <PageTransition>
-            <Seo title="Company" />
+            <Seo title="Company" description="We are a young, dynamic and positive organisation where every person is part of our success." />
             <section className={`work-container topPad`}>
             <div className="top-company">
                     <div className="companyLeft">

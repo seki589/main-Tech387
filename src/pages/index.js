@@ -42,7 +42,7 @@ const IndexPage = () => {
   return(
   
   <Layout  >
-    <Seo title="Home" />
+    <Seo title="Home" description="We develop the most demanding and ambitious software projects of the 21st century." />
     <Helmet bodyAttributes={{ class: 'back' }} />
     <PageTransition>
     <Swiper     
