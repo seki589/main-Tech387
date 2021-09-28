@@ -36,16 +36,22 @@ exports.onPreRenderHTML = function onPreRenderHTML({
   
       return 0;
     });
-  
-    replaceHeadComponents(headComponents);
-  };
-exports.onPreRenderHTML = ({ replaceHeadComponents, getHeadComponents }) => {
-	const headComponents = getHeadComponents();
-	console.log(headComponents);
-	headComponents.forEach(head => {
+
+    headComponents.forEach(head => {
 		if (head.props && head.props['data-react-helmet']) {
 			delete head.props['data-react-helmet'];
 		}
 	});
-	replaceHeadComponents(headComponents);
-};
+  
+    replaceHeadComponents(headComponents);
+  };
+// exports.onPreRenderHTML = ({ replaceHeadComponents, getHeadComponents }) => {
+// 	const headComponents = getHeadComponents();
+// 	console.log(headComponents);
+// 	headComponents.forEach(head => {
+// 		if (head.props && head.props['data-react-helmet']) {
+// 			delete head.props['data-react-helmet'];
+// 		}
+// 	});
+// 	replaceHeadComponents(headComponents);
+// };
