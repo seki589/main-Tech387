@@ -40,6 +40,10 @@ function Seo({ description, lang, meta, title }) {
       meta={[
         
         {
+          name: `robots`,
+          content: `noodp,noydir`,
+        },
+        {
           name: `description`,
           content: site.siteMetadata?.description || ``,
         },
