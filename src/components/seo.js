@@ -29,6 +29,7 @@ function Seo({ description, lang, meta, title }) {
       }
     `
   )
+  const url = site.siteMetadata.siteUrl
   const image = site.siteMetadata.image
   const keywords = site.siteMetadata.keywords
   const metaDescription = description || site.siteMetadata.description
@@ -66,7 +67,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           property: `og:url`,
-          content: `siteUrl ${pathname}`,
+          content: `${url}${pathname}`,
         },
         {
           name: `author`,
