@@ -17,11 +17,11 @@ exports.onPreRenderHTML = function onPreRenderHTML({
       return 0;
     });
 
-    headComponents.forEach(head => {
-		if (head.props && head.props['data-react-helmet']) {
-			delete head.props['data-react-helmet'];
-		}
-	});
+    // headComponents.forEach(head => {
+	// 	if (head.props && head.props['data-react-helmet']) {
+	// 		delete head.props['data-react-helmet'];
+	// 	}
+	// });
   
     replaceHeadComponents(headComponents);
   };
