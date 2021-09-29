@@ -66,7 +66,6 @@ function Seo({ description, lang, meta, title }) {
           content: site.siteMetadata?.author || ``,
         },
         {
-          name: `image`,
           property: `og:image`,
           content: image,
         },
