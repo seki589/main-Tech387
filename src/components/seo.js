@@ -47,10 +47,10 @@ function Seo({ description, lang, meta, title }) {
           property: `og:title`,
           content: title,
         },
-        {
-          name: "keywords",
-          content: keywords,
-        },
+        // {
+        //   name: "keywords",
+        //   content: keywords,
+        // },
         {
           property: `og:description`,
           content: metaDescription,
