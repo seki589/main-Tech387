@@ -66,7 +66,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `robots`,
-          content: `noodp,noydir`,
+          content: `noodp, noydir`,
         },
         // {
         //   name: `twitter:card`,
