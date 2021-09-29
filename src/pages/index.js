@@ -44,7 +44,6 @@ const IndexPage = () => {
   <Layout  >
     <Seo 
     title="Home" 
-    description="We develop the most demanding and ambitious software projects of the 21st century." 
     />
     <Helmet bodyAttributes={{ class: 'back' }} />
     <PageTransition>

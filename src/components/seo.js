@@ -38,11 +38,7 @@ function Seo({ description, lang, meta, title }) {
       title={title}
       titleTemplate={defaultTitle ? `${defaultTitle} | %s` : null }
       meta={[
-        
-        {
-          name: `robots`,
-          content: `noodp,noydir`,
-        },
+
         {
           name: `description`,
           content: site.siteMetadata?.description || ``,
@@ -67,6 +63,10 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `author`,
           content: site.siteMetadata?.author || ``,
+        },
+        {
+          name: `robots`,
+          content: `noodp,noydir`,
         },
         // {
         //   name: `twitter:card`,

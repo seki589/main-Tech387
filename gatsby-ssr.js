@@ -1,23 +1,3 @@
-// import React from "react"
-// import { Helmet } from "react-helmet"
-
-// export const onRenderBody = (
-//   { setHeadComponents, setHtmlAttributes, setBodyAttributes },
-//   pluginOptions
-// ) => {
-//   const helmet = Helmet.renderStatic()
-//   setHtmlAttributes(helmet.htmlAttributes.toComponent())
-//   setBodyAttributes(helmet.bodyAttributes.toComponent())
-//   setHeadComponents([
-//     helmet.title.toComponent(),
-//     helmet.link.toComponent(),
-//     helmet.meta.toComponent(),
-//     helmet.noscript.toComponent(),
-//     helmet.script.toComponent(),
-//     helmet.style.toComponent()
-//   ])
-// }
-
 exports.onPreRenderHTML = function onPreRenderHTML({
     getHeadComponents,
     replaceHeadComponents,
@@ -45,13 +25,3 @@ exports.onPreRenderHTML = function onPreRenderHTML({
   
     replaceHeadComponents(headComponents);
   };
-// exports.onPreRenderHTML = ({ replaceHeadComponents, getHeadComponents }) => {
-// 	const headComponents = getHeadComponents();
-// 	console.log(headComponents);
-// 	headComponents.forEach(head => {
-// 		if (head.props && head.props['data-react-helmet']) {
-// 			delete head.props['data-react-helmet'];
-// 		}
-// 	});
-// 	replaceHeadComponents(headComponents);
-// };

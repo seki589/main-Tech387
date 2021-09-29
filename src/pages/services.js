@@ -32,7 +32,7 @@ const ServicePage = () => {
    return(
     <Layout>
     <PageTransition>
-    <Seo title="Services" description="We are here to prepare you for a more digital future." />
+    <Seo title="Services"/>
      <section className={`service-container topPad`}>
          <div className="top-services">
              <div className="servLeft">
