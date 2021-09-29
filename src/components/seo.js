@@ -20,11 +20,13 @@ function Seo({ description, lang, meta, title }) {
             description
             keywords
             author
+            image
           }
         }
       }
     `
   )
+  const image = site.siteMetadata.image
   const keywords = site.siteMetadata.keywords
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
@@ -47,10 +49,10 @@ function Seo({ description, lang, meta, title }) {
           property: `og:title`,
           content: title,
         },
-        // {
-        //   name: "keywords",
-        //   content: keywords,
-        // },
+        {
+          name: "keywords",
+          content: keywords,
+        },
         {
           property: `og:description`,
           content: metaDescription,
@@ -59,27 +61,30 @@ function Seo({ description, lang, meta, title }) {
           property: `og:type`,
           content: `website`,
         },
-       
         {
           name: `author`,
           content: site.siteMetadata?.author || ``,
         },
         {
+          property: `og:image`,
+          content: image,
+        },
+        {
           name: `robots`,
           content: `noodp, noydir`,
         },
-        // {
-        //   name: `twitter:card`,
-        //   content: `summary`,
-        // },
-        // {
-        //   name: `twitter:title`,
-        //   content: title,
-        // },
-        // {
-        //   name: `twitter:description`,
-        //   content: metaDescription,
-        // },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:title`,
+          content: title,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
       ].concat(meta)}
     />
   )

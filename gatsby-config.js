@@ -5,6 +5,7 @@ module.exports = {
     author: `Tech387`,
     keywords: `app development companies, app development, sarajevo, bih, bosnia, bosnia and hercegovina, mobile app, software, app programming, phone app development, development of apps, app development app, cell phone app development, programming apps, developing phone apps`,
     siteUrl: `https://tech387.com/`,
+    image: `/images/faviconTech387.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
