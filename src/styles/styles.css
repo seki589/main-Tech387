@@ -1727,8 +1727,11 @@ p span{
         line-height: 57px;
         letter-spacing: 0.36px;
     }
+    .partners{
+        width: 93vw;
+    }
     .partners-logo {
-        width: 50px;
+        flex: 1;
         margin-right: 10px;
     }
     .main-links p{
@@ -1742,6 +1745,7 @@ p span{
     }
     .partners .img{
         margin-bottom: 0;
+        width: 100%;
     }
     .footer{
         background-image: none;
