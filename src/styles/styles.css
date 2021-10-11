@@ -1758,18 +1758,20 @@ p span{
     .footer::before{
         content: "";
         width: 100vh;
-        width: calc(var(--vh, 1vh) * 100);
-	    height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        /* width: calc(var(--vh, 1vh) * 100); */
+	    /* height: 100vh;
+        height: calc(var(--vh, 1vh) * 100); */
+        height: 100vh;
 	    top: 0%;
         bottom: 0;
-	    left: 5%;
+	    left: 10vw;
         position: absolute;
         background-image: url("../images/Footer-plant.png");
         background-position: top;
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(-90deg);
+        transform-origin: center;
     }
     .footer-mid>div{
         margin: 0 10px 10px 0;
