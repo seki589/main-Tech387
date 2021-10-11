@@ -1734,6 +1734,9 @@ p span{
         flex: 1;
         margin-right: 10px;
     }
+    .partners-logo:last-child{
+        margin-right: 0;
+    }
     .main-links p{
         margin-bottom: 0;
     }
