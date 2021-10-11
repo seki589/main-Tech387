@@ -1900,6 +1900,9 @@ p span{
         height: 250px;
     }
 
+    .hireBot .partners{
+        display: none;
+    }
     .team{
         padding-top: 0;
     }
