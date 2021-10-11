@@ -84,7 +84,7 @@ const IndexPage = () => {
                 <div className={`main-text `} ref={headText1}>
                     <div className="text" >
                     <h1>
-                    Designing and developing ideas into data-driven digital products
+                    Your ideas into data-driven digital products
                     </h1>
                     {/* <Link to="/hire-us"><p>Let’s create something together &gt; </p></Link> */}
                     </div>

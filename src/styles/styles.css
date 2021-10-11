@@ -1288,10 +1288,10 @@ p span{
     .main-text{
         flex-direction: row;
     }
-    .partners-title,
+    /* .partners-title,
     .partners{
         display: none;
-    }
+    } */
     .main{
         padding-top: 0vh;
     }
@@ -1502,9 +1502,9 @@ p span{
         width: 80%;
     }
 
-    .partners{
+    /* .partners{
         display: none;
-    }
+    } */
     .footer-head h1{
         font-size: 48px;
         line-height: 57px;
@@ -1727,8 +1727,21 @@ p span{
         line-height: 57px;
         letter-spacing: 0.36px;
     }
-    .main-links{
+    .partners-logo {
+        width: 50px;
+        margin-right: 10px;
+    }
+    .main-links p{
+        margin-bottom: 0;
+    }
+    .main-links .linkedin{
         display: none;
+    }
+    .main-links{
+        bottom: 0%;
+    }
+    .partners .img{
+        margin-bottom: 0;
     }
     .footer{
         background-image: none;
