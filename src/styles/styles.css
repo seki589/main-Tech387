@@ -1288,10 +1288,10 @@ p span{
     .main-text{
         flex-direction: row;
     }
-    /* .partners-title,
+    .partners-title,
     .partners{
         display: none;
-    } */
+    }
     .main{
         padding-top: 0vh;
     }
@@ -1502,9 +1502,9 @@ p span{
         width: 80%;
     }
 
-    /* .partners{
+    .partners{
         display: none;
-    } */
+    }
     .footer-head h1{
         font-size: 48px;
         line-height: 57px;
@@ -1728,6 +1728,7 @@ p span{
         letter-spacing: 0.36px;
     }
     .partners{
+        display: block;
         width: 93vw;
     }
     .partners-logo {
