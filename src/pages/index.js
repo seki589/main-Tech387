@@ -94,7 +94,7 @@ const IndexPage = () => {
                     </div>
                 </div>
                 <div className="main-links">
-                    <p className="partners-title">Partners</p>
+                    <p className="partners-title">Trusted by</p>
                     <div className="partners">
                       <PartnersLogo/>
                     </div>
