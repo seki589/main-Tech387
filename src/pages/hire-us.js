@@ -31,7 +31,7 @@ const HireUsPage = () => {
                     </div>
                     <div className="team">
                         <div className="team-box">
-                            <div className="team-cards">
+                            {/* <div className="team-cards">
                                 <div className="team-card">
                                 <div className="team-img">
                                 <StaticImage src="../images/hire_samir.png" alt="Samir Avdibegović" className="profile" placeholder="tracedSVG"/>
@@ -51,7 +51,7 @@ const HireUsPage = () => {
                                     </div>
                                 </div>
                                 </div> 
-                            </div>
+                            </div> */}
                             <div className="team-cards">
                                 <div className="team-card">
                                 <div className="team-img">
@@ -59,7 +59,7 @@ const HireUsPage = () => {
                                 </div>  
                                 <div className="team-name">
                                     <p>Emir Čorbo</p>
-                                    <h6>Business Development <br></br>Executive</h6>
+                                    <h6>Business Development<br></br> Manager</h6>
                                     <div className="contact">
                                     <a href="mailto:ecorbo@tech387.com">ecorbo@tech387.com</a>
                                     </div>

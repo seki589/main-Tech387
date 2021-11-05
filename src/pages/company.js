@@ -129,16 +129,16 @@ const CompanyPage = () => {
                     </div>
                     <div className="carier-bot">
                     <div className="carier-cards">
-                        <a  href="https://www.linkedin.com/jobs/view/2694596165/?refId=ZelDaHCjNwUBxs2LcNpM%2FQ%3D%3D&trackingId=a9aAv0MMEJgqsh8YkPYlsg%3D%3D&trk=d_flagship3_company" className="carier-card" target="_blank" rel="noreferrer">
+                        <a  href="https://lnkd.in/enHvWhdQ" className="carier-card" target="_blank" rel="noreferrer">
                             <div className='top-card'>
-                            <h5>Angular Developer</h5>
+                            <h5>Full Stack</h5>
                             <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
                             </div>                       
                             <p>
                             Full Time
                             </p>
                         </a>
-                        <a  className="carier-card" href="https://www.linkedin.com/jobs/view/2691829142/?refId=ZelDaHCjNwUBxs2LcNpM%2FQ%3D%3D&trackingId=AURUNtl7FYp6bogzGku3Kg%3D%3D&trk=d_flagship3_company" target="_blank" rel="noreferrer">
+                        <a  className="carier-card" href="https://lnkd.in/gxePP7e8" target="_blank" rel="noreferrer">
                             <div className='top-card'>
                             <h5>Flutter Developer</h5>
                             <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
@@ -149,6 +149,47 @@ const CompanyPage = () => {
                         </a>
                     </div>  
                     </div>  
+                </div>
+                <div className={`team-section padBot`}>
+                <div className={'benefits opening'}>
+                        <div className='benefits-title'>
+                               <h3>
+                               Join our Internship Program
+                                </h3>
+                            </div>
+                        <div className="benefit-text">
+                            <p>
+                            The internship that Tech 387 provides is a great way to gain a hands-on experience, build connections, and make the first step
+                             into your chosen industry. Our talented and devoted team of developers will help you gain new knowledge, pick up new skills 
+                             and choose your path. Check out our available internships, submit your application, and prepare for a rewarding experience.
+                            </p>
+                            <p>
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <div className="carier-bot">
+                    <div className="carier-cards">
+                        <a  href="https://www.linkedin.com/jobs/view/2699359663" className="carier-card" target="_blank" rel="noreferrer">
+                            <div className='top-card'>
+                            <h5>Internship</h5>
+                            <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
+                            </div>                       
+                            <p>
+                            Full Time
+                            </p>
+                        </a>
+                        {/* <a  className="carier-card" href="https://lnkd.in/gxePP7e8" target="_blank" rel="noreferrer">
+                            <div className='top-card'>
+                            <h5>Flutter Developer</h5>
+                            <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
+                            </div>
+                            <p>
+                            Full Time
+                            </p>
+                        </a> */}
+                    </div>  
+                    </div>
                 </div>
             </div>
             <div className="footer-service" >
