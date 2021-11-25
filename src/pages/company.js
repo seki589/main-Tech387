@@ -209,7 +209,7 @@ const CompanyPage = () => {
                     </div>
                     <div className="carier-bot">
                     <div className="carier-cards">
-                        <a  href="https://www.linkedin.com/jobs/view/2699359663" className="carier-card" target="_blank" rel="noreferrer">
+                        <a  href="https://www.linkedin.com/pulse/tech-387-joins-pangea-highest-rated-software-development-vendor-/?published=t" className="carier-card" target="_blank" rel="noreferrer">
                             <div className='top-card'>
                             <h5>Pangea Verification</h5>
                             <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
