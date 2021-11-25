@@ -213,10 +213,8 @@ const CompanyPage = () => {
                             <div className='top-card'>
                             <h5>Pangea Verification</h5>
                             <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
-                            </div>                       
-                            <p>
-                            <PangeaLogoDark/>
-                            </p>
+                            </div>                                                  
+                            <PangeaLogoDark/>                           
                         </a>
                     </div>  
                     </div>

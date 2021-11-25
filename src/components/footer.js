@@ -48,7 +48,10 @@ const Footer = () => {
                                 </a>
                         </div>
                         <div className="linkedin">
-                                <a href="mailto:hello@tech387.com"><PangeaLogo/>
+                                <a href="https://www.pangea.ai/vendors/tech387/"
+                                rel="nofollow" 
+                                title="Hire elite software development vendors at Pangea"
+                                ><PangeaLogo/>
                                 </a>
                         </div>
                     </div>
