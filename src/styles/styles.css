@@ -567,6 +567,9 @@ svg.partners-logo .st1.st0{
 .span{
     display: none;
 }
+.pangea{
+    margin-left: -18px;
+}
 
 .right>div{
     flex: 1;

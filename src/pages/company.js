@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 import Footer from "../components/footer"
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Mousewheel} from 'swiper';
-  
+import PangeaLogoDark from '../components/pangeaLogoDark'
 import { StaticImage } from "gatsby-plugin-image"
 import PageTransition from 'gatsby-plugin-page-transitions'
 import '../styles/styles.css'
@@ -188,6 +188,36 @@ const CompanyPage = () => {
                             Full Time
                             </p>
                         </a> */}
+                    </div>  
+                    </div>
+                    <div className={'benefits opening'}>
+                        <div className='benefits-title'>
+                               <h3>
+                               Blog
+                                </h3>
+                        </div>
+                        <div className="benefit-text">
+                            <p>
+                            We are proud to announce that Tech 387 successfully joined the community of the top 7% global software engineering vendors. 
+                            With an overall score of 9.6, Tech 387 tops the Pangea ranks for New Product Development after being rated 9.7 by our clients and 9.5 by our team. 
+                            From now on, our current and future partners will have a completely transparent overview of our organization.
+                            </p>
+                            <p>
+                            
+                            </p>
+                        </div>
+                    </div>
+                    <div className="carier-bot">
+                    <div className="carier-cards">
+                        <a  href="https://www.linkedin.com/jobs/view/2699359663" className="carier-card" target="_blank" rel="noreferrer">
+                            <div className='top-card'>
+                            <h5>Pangea Verification</h5>
+                            <StaticImage src="../images//rightArrow.png"  className="card-icon" alt="icon" placeholder="blurred" />
+                            </div>                       
+                            <p>
+                            <PangeaLogoDark/>
+                            </p>
+                        </a>
                     </div>  
                     </div>
                 </div>

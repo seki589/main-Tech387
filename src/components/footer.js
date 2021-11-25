@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { useState, useEffect } from 'react'
-// import {StaticImage} from 'gatsby-plugin-image'
+import PangeaLogo from './pangeaLogo'
 import LinkeWhite from '../images/linkedin.png'
 import Mail from '../images/mail .png'
 // import { Link } from "gatsby"
@@ -45,6 +45,10 @@ const Footer = () => {
                     <div>
                         <div className="linkedin">
                                 <a href="mailto:hello@tech387.com"><p>hello@tech387.com</p>
+                                </a>
+                        </div>
+                        <div className="linkedin">
+                                <a href="mailto:hello@tech387.com"><PangeaLogo/>
                                 </a>
                         </div>
                     </div>
