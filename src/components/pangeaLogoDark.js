@@ -4,7 +4,7 @@ import PangeaLogo from "../assets/pangeaDark.svg"
 
 const pangeaLogoDark = () =>(
     <div>
-      <PangeaLogo className="logo pangea"/>
+      <PangeaLogo className="pangea"/>
     </div>
 )
 
